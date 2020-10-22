@@ -13,18 +13,6 @@
 <!-- ホーム画面に表示されるアプリアイコン -->
 <link rel="apple-touch-icon" href="icons/icon-152x152.png">
 
-<!-- ウェブアプリマニフェストの読み込み -->
-<link rel="manifest" href="manifest.json">
-<!-- ServiceWorkerの登録 -->
-<script>
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-      .then((reg) => {
-        console.log('Service worker registered.', reg);
-      });
-}
-</script>
-
 <title>TAP10</title>
 <link rel="stylesheet" type="text/css" href="app.css">
 </head>
@@ -40,5 +28,17 @@ if ('serviceWorker' in navigator) {
 </section>
 
 <script src="app.js"></script>
+
+<!-- ウェブアプリマニフェストの読み込み -->
+<link rel="manifest" href="manifest.json">
+<!-- ServiceWorkerの登録 -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+  }
+</script>
 </body>
 </html>
