@@ -11,7 +11,7 @@
 <!-- ホーム画面に表示されるアプリ名 -->
 <meta name="apple-mobile-web-app-title" content="TAP10">
 <!-- ホーム画面に表示されるアプリアイコン -->
-<link rel="apple-touch-icon" href="icons/icon-152x152.png">
+<link rel="apple-touch-icon" href="https://tama-jp.github.io/tap/icons/icon-152x152.png">
 
 <title>TAP10</title>
 <link rel="stylesheet" type="text/css" href="app.css">
@@ -27,14 +27,14 @@
   <button id="js-startBtn" class="btn">START</button>
 </section>
 
-<script src="app.js"></script>
+<script src="https://tama-jp.github.io/tap/app.js"></script>
 
 <!-- ウェブアプリマニフェストの読み込み -->
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="https://tama-jp.github.io/tap/manifest.json">
 <!-- ServiceWorkerの登録 -->
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(() => {
+    navigator.serviceWorker.register('https://tama-jp.github.io/tap/sw.js').then(() => {
       console.log('登録成功');
     },() => {
       console.log('登録失敗');
