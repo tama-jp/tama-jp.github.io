@@ -1,45 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- アドレスバー等のブラウザのUIを非表示 -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<!-- ホーム画面に表示されるアプリ名 -->
-<meta name="apple-mobile-web-app-title" content="TAP10">
-<!-- ホーム画面に表示されるアプリアイコン -->
-<link rel="apple-touch-icon" href="icons/icon-152x152.png">
+  <meta charset=utf-8>
+  <meta content="width=device-width,minimum-scale=1,initial-scale=1" name=viewport>
+  <title>🕵️ Progressive Web App Feature Detector</title>
+  <link href=manifest.webmanifest rel=manifest>
+  <style>*, :after, :before {
+    box-sizing: border-box
+  }
 
-<title>TAP10</title>
-<link rel="stylesheet" type="text/css" href="app.css">
+  body, html {
+    background-color: gold;
+    font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12pt
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  h1 {
+    color: #ff8032;
+    font-size: 1.25rem
+  }
+
+  h2 {
+    color: #000;
+    font-size: 1rem
+  }
+
+  table {
+    border: solid 1px #ff8032;
+    border-collapse: collapse;
+    width: 90vw;
+    max-width: 400px
+  }
+
+  td, tr {
+    margin: 0
+  }
+
+  tr:nth-child(even) {
+    background-color: #ddd
+  }
+
+  tr:nth-child(odd) {
+    background-color: #eee
+  }
+
+  td {
+    padding: .25rem
+  }
+
+  .feature {
+    font-weight: 700
+  }
+
+  .support {
+    text-align: center;
+    color: #00c500
+  }
+
+  #userAgent {
+    border: solid 1px #ff8032;
+    background-color: #fff;
+    padding: .25rem;
+    margin-bottom: 1rem;
+    width: 90vw;
+    max-width: 400px
+  }</style>
+  <script src=main.min.js></script>
 </head>
 <body>
-
-<section class="container">
-  <h1 class="title">10秒で何回タップできるか</h1>
-  <button id="js-tapBtn" class="btn-tap" disabled>
-    <span id="js-count"></span><br>タップ!!
-  </button>
-  <div class="time">残り時間 <span id="js-time"></span> 秒</div>
-  <button id="js-startBtn" class="btn">START</button>
-</section>
-
-<script src="app.js"></script>
-
-<!-- ウェブアプリマニフェストの読み込み -->
-<link rel="manifest" href="manifest.json">
-<!-- ServiceWorkerの登録 -->
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(() => {
-      console.log('登録成功');
-    },() => {
-      console.log('登録失敗');
-    });
-  }
-</script>
+<main><h1>Progressive Web App</h1>
+  <h2>🕵️ Feature Detector</h2>
+  <p>Read the corresponding <a href=https://ai.google/research/pubs/pub46739>research paper</a>.</p>
+  <div id=features>
+    <div id=userAgent></div>
+    <table>
+      <tr id=placeholder>
+        <td>
+          <svg enable-background="new 0 0 40 40" height=40px id=loader-1 version=1.1 viewBox="0 0 40 40" width=40px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><path d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" fill=#000 opacity=0.2></path><path
+            d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z"
+            fill=#000 transform="rotate(12 20 20)"><animateTransform attributeName=transform attributeType=xml dur=0.5s from="0 20 20" repeatCount=indefinite to="360 20 20" type=rotate></animateTransform></path></svg>
+        </td>
+        <td>Detecting Progressive Web App features…</td>
+      </tr>
+    </table>
+    <template id=featureRow>
+      <tr>
+        <td class=feature></td>
+        <td class=support></td>
+      </tr>
+    </template>
+  </div>
+</main>
 </body>
 </html>
