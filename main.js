@@ -26,7 +26,7 @@
     g.parentNode.replaceChild(c, g)
   };
   a.addEventListener("load", () => {
-    b.getElementById("userAgent").textContent = c.userAgent, a.setTimeout(() => "serviceWorker" in c ? c.serviceWorker.register("sw.min.js").then(a => {
+    b.getElementById("userAgent").textContent = c.userAgent, a.setTimeout(() => "serviceWorker" in c ? c.serviceWorker.register("sw.js").then(a => {
       const b = d(a);
       e(b)
     }) : void e({"Service Workers Not Supported": !1}), 500)
