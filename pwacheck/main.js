@@ -1,7 +1,7 @@
 ((a, b, c) => {
   const d = d => ({
-    "Offline Capabilities": "caches" in a,
-    "Push Notifications": "pushManager" in d,
+    "オフライン機能": "caches" in a,
+    "プッシュ通知": "pushManager" in d,
     "Add to Home Screen": "relList" in HTMLLinkElement.prototype && b.createElement("link").relList.supports("manifest") && "onbeforeinstallprompt" in a,
     "Background Sync": "sync" in d,
     "Periodic Background Sync": "periodicSync" in d,
