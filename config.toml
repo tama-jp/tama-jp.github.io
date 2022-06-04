@@ -1,0 +1,5 @@
+baseURL = 'https://tama-jp.github.io/'
+languageCode = 'ja'
+title = 'たまたんぶろぐ'
+theme = "mainroad"
+#theme = "ananke"
