@@ -3,3 +3,6 @@ languageCode = 'ja'
 title = 'たまたんぶろぐ'
 theme = "mainroad"
 #theme = "ananke"
+
+[params]
+mainSections = ['blog']
