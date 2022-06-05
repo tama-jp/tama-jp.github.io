@@ -3,9 +3,9 @@ languageCode = 'ja'
 title = 'たまたんぶろぐ'
 #theme = "hugo-scroll" # だめ
 #theme = "mainroad"
-theme = "showfolio"
+#theme = "showfolio"
 #theme = "ananke"
-
+theme = "paper"
 
 #[params]
 #mainSections = ['blog']
