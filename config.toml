@@ -1,9 +1,17 @@
 baseURL = 'https://tama-jp.github.io/'
 languageCode = 'ja'
 title = 'たまたんぶろぐ'
+# https://github.com/Vimux/Mainroad
 theme = "mainroad"
+# https://github.com/theNewDynamic/gohugo-theme-ananke
 #theme = "ananke"
+# https://github.com/nanxiaobei/hugo-paper
 #theme = "paper"
 
-#[params]
+# 日本語の文字数を正しく数えて、短いサマリーを表示できるようにするには、設定ファイルで下記のように hasCJKLanguage を true に設定します。
+hasCJKLanguage = true
+
+[params]
+description = '適当にやっているブログです。'
+
 #mainSections = ['blog']
