@@ -2,8 +2,10 @@ baseURL = 'https://tama-jp.github.io/'
 languageCode = 'ja'
 title = 'たまたんぶろぐ'
 #theme = "hugo-scroll" # だめ
-theme = "mainroad"
+#theme = "mainroad"
+theme = "showfolio"
 #theme = "ananke"
+
 
 #[params]
 #mainSections = ['blog']
