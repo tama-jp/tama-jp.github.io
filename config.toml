@@ -1,9 +1,9 @@
 baseURL = 'https://tama-jp.github.io/'
 languageCode = 'ja'
 title = 'たまたんぶろぐ'
-#theme = "mainroad"
+theme = "mainroad"
 #theme = "ananke"
-theme = "paper"
+#theme = "paper"
 
 #[params]
 #mainSections = ['blog']
