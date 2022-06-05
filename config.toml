@@ -13,5 +13,5 @@ hasCJKLanguage = true
 
 [params]
 description = '適当にやっているブログです。'
-
+copyright = 'kodawari'
 #mainSections = ['blog']
