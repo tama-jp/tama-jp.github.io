@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 05 Jun 2022 02:43:45 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>初めまして</title><link>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</link><pubDate>Sun, 05 Jun 2022 02:43:45 +0900</pubDate><guid>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</guid><description>たまたんです。久しぶりにブログ再開です。 今回から、 Hugo で作成を挑戦してみます。 よろしくお願いいたします。m(__)m</description><content:encoded><![CDATA[
-              <p>たまたんです。久しぶりにブログ再開です。</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 06 Jun 2022 16:51:49 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugoの画像の置き方</title><link>https://kodawari.info/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</link><pubDate>Mon, 06 Jun 2022 16:51:49 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</guid><description>Hugoの画像の置き方 どうやら、ファイル名が変換されてフォルダ名として扱っちゃうみたいなので、 同じディレクトリ内なら ![代替テキスト](..</description><content:encoded><![CDATA[
+              <h1 id="hugoの画像の置き方">Hugoの画像の置き方</h1>
+<p>どうやら、ファイル名が変換されてフォルダ名として扱っちゃうみたいなので、
+同じディレクトリ内なら</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">代替テキスト</span>](<span style="color:#a6e22e">../thank_you.png</span>)
+</code></pre></div><p>↓</p>
+<p><img src="../thank_you.png" alt="代替テキスト"></p>
+<p>一つ下なら</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">![<span style="color:#f92672">代替テキスト</span>](<span style="color:#a6e22e">../img/sorry.png</span>)
+</code></pre></div><p>↓</p>
+<p><img src="../img/sorry.png" alt="代替テキスト"></p>
+<p>でなります。</p>
+
+              ]]></content:encoded></item><item><title>初めまして</title><link>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</link><pubDate>Sun, 05 Jun 2022 02:43:45 +0900</pubDate><guid>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</guid><description>初めまして たまたんです。久しぶりにブログ再開です。 今回から、 Hugo で作成を挑戦してみます。 よろしくお願いいたします。m(__)m</description><content:encoded><![CDATA[
+              <h1 id="初めまして">初めまして</h1>
+<p>たまたんです。久しぶりにブログ再開です。</p>
 <p>今回から、 <strong>Hugo</strong> で作成を挑戦してみます。</p>
 <p>よろしくお願いいたします。m(__)m</p>
 
