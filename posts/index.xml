@@ -1,1 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on たまたんぶろぐ</title><link>https://tama-jp.github.io/posts/</link><description>Recent content in Posts on たまたんぶろぐ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 05 Jun 2022 02:43:45 +0900</lastBuildDate><atom:link href="https://tama-jp.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>初めまして</title><link>https://tama-jp.github.io/posts/my-first-post/</link><pubDate>Sun, 05 Jun 2022 02:43:45 +0900</pubDate><guid>https://tama-jp.github.io/posts/my-first-post/</guid><description>たまたんです。久しぶりにブログ再開です。 今回から、 Hugo で作成を挑戦してみます。 よろしくお願いいたします。m(__)m</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ko-Da-Wa-Ri</title><link>https://kodawari.info/posts/</link><description>Recent content in Posts on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Mon, 06 Jun 2022 14:28:28 +0900</lastBuildDate><atom:link href="https://kodawari.info/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo便利スクリプト</title><link>https://kodawari.info/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link><pubDate>Mon, 06 Jun 2022 14:28:28 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</guid><description>HUGOの使い方がようやくわかってきて、今必死ですw コンテントを作成する時 hugo new post/なんたらー.md って、書かなきゃならなく、中身もちょ</description><content:encoded><![CDATA[
+              <p>HUGOの使い方がようやくわかってきて、今必死ですw</p>
+<p>コンテントを作成する時</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new post/なんたらー.md
+</code></pre></div><p>って、書かなきゃならなく、中身もちょびちょび書き直さなければならない。
+これって面倒ですね。</p>
+<p>っで、下のサイトの方がスクリプトを書いてました。便利便利♪</p>
+<p><a href="https://techblog.sgr-ksmt.dev/2016/02/05/hugo_new_post/">https://techblog.sgr-ksmt.dev/2016/02/05/hugo_new_post/</a></p>
+<ul>
+<li>
+<p>毎回post/と付けるのを省きたい</p>
+</li>
+<li>
+<p>markdownファイル名の前に日付を付けたい</p>
+</li>
+</ul>
+<p>ホント助かりました。</p>
+<p>ただ、記事が古いのか「設定」などが「=」で書かれていてうまく動かなかったので、
+直して使ってます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>set -u
+
+usage<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  echo <span style="color:#e6db74">&#34;Usage : </span>$0<span style="color:#e6db74"> [-w] [title_name]&#34;</span> 1&gt;&amp;<span style="color:#ae81ff">2</span>
+<span style="color:#f92672">}</span>
+
+main <span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  cd <span style="color:#66d9ef">$(</span>cd <span style="color:#66d9ef">$(</span>dirname $0<span style="color:#66d9ef">)</span> <span style="color:#f92672">&amp;&amp;</span> pwd<span style="color:#66d9ef">)</span>
+  OPEN_EDITOR<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+  <span style="color:#66d9ef">for</span> ARG; <span style="color:#66d9ef">do</span>
+    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$ARG<span style="color:#e6db74">&#34;</span> in
+      -*<span style="color:#f92672">)</span>
+      <span style="color:#66d9ef">while</span> getopts w OPT <span style="color:#e6db74">&#34;</span>$ARG<span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$OPT<span style="color:#e6db74">&#34;</span> in
+          w<span style="color:#f92672">)</span> OPEN_EDITOR<span style="color:#f92672">=</span>1;;
+          *<span style="color:#f92672">)</span> usage; exit 1;;
+        <span style="color:#66d9ef">esac</span>
+      <span style="color:#66d9ef">done</span>
+      ;;
+    <span style="color:#66d9ef">esac</span>
+  <span style="color:#66d9ef">done</span>
+
+  shift <span style="color:#66d9ef">$(</span>expr $OPTIND - 1<span style="color:#66d9ef">)</span>
+  <span style="color:#f92672">[</span> $# -ne <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> usage <span style="color:#f92672">&amp;&amp;</span> exit <span style="color:#ae81ff">1</span>
+
+  slug<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+  file_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;posts/</span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#34;%Y-%m-%d-%H-%M-%S&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">-</span><span style="color:#e6db74">${</span>slug<span style="color:#e6db74">}</span><span style="color:#e6db74">.md&#34;</span>
+  file_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content/</span>$file_name<span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -e <span style="color:#e6db74">&#34;</span>$file_path<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+    hugo new <span style="color:#e6db74">&#34;</span>$file_name<span style="color:#e6db74">&#34;</span>
+    sed -i <span style="color:#e6db74">&#39;&#39;</span> <span style="color:#e6db74">&#34;s/title: \&#34;.*\&#34;/title: \&#34;</span>$slug<span style="color:#e6db74">\&#34;/g&#34;</span> <span style="color:#e6db74">&#34;</span>$file_path<span style="color:#e6db74">&#34;</span>
+    sed -i <span style="color:#e6db74">&#39;&#39;</span> <span style="color:#e6db74">&#34;s/slug: \&#34;.*\&#34;/slug: \&#34;</span>$slug<span style="color:#e6db74">\&#34;/g&#34;</span> <span style="color:#e6db74">&#34;</span>$file_path<span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">else</span>
+    echo <span style="color:#e6db74">&#34;</span>$file_name<span style="color:#e6db74"> already exists.&#34;</span>
+  <span style="color:#66d9ef">fi</span>
+
+  <span style="color:#f92672">[</span> $OPEN_EDITOR -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> atom <span style="color:#e6db74">&#34;</span>$file_path<span style="color:#e6db74">&#34;</span>
+
+<span style="color:#f92672">}</span>
+main <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</code></pre></div>
+              ]]></content:encoded></item><item><title>Hugoのインストール</title><link>https://kodawari.info/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link><pubDate>Mon, 06 Jun 2022 14:28:23 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid><description>ほぼここを見ればすぐできます。 これに、私は、テーマをMainroadにしました。</description><content:encoded><![CDATA[
+              <p>ほぼ<a href="https://gohugo.io/getting-started/quick-start/">ここ</a>を見ればすぐできます。</p>
+<p>これに、私は、テーマを<a href="https://github.com/Vimux/Mainroad">Mainroad</a>にしました。</p>
+
+              ]]></content:encoded></item><item><title>初めまして</title><link>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</link><pubDate>Sun, 05 Jun 2022 02:43:45 +0900</pubDate><guid>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</guid><description>たまたんです。久しぶりにブログ再開です。 今回から、 Hugo で作成を挑戦してみます。 よろしくお願いいたします。m(__)m</description><content:encoded><![CDATA[
+              <p>たまたんです。久しぶりにブログ再開です。</p>
+<p>今回から、 <strong>Hugo</strong> で作成を挑戦してみます。</p>
+<p>よろしくお願いいたします。m(__)m</p>
+
+              ]]></content:encoded></item></channel></rss>
