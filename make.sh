@@ -32,7 +32,6 @@ main () {
     hugo new "$file_name"
 #    sed -i '' "s/title: \".*\"/title: \"${date_string} ${slug}\"/g" "$file_path"
     sed -i '' "s/title: \".*\"/title: \"${slug}\"/g" "$file_path"
-    sed -i '' "s/# title: /\# ${slug}/g" "$file_path"
     sed -i '' "s/slug: \".*\"/slug: \"${slug}\"/g" "$file_path"
   else
     echo "$file_name already exists."
