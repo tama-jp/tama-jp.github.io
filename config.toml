@@ -19,22 +19,22 @@ bio = "いろいろプログラミングをやっています。今は、go言�
 avatar = "img/avatar.png"
 
 [Params]
-opengraph = true # Enable OpenGraph if true
-schema = true # Enable Schema
-twitter_cards = true # Enable Twitter Cards if true
-readmore = false # Show "Read more" button in list if true
-authorbox = true # Show authorbox at bottom of pages if true
-toc = true # Enable Table of Contents
-pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
-dateformat = "2006-01-02" # Change the format of dates
+#opengraph = true # Enable OpenGraph if true
+#schema = true # Enable Schema
+#twitter_cards = true # Enable Twitter Cards if true
+#readmore = false # Show "Read more" button in list if true
+#authorbox = true # Show authorbox at bottom of pages if true
+#toc = true # Enable Table of Contents
+#pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+#post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+#mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+#dateformat = "2006-01-02" # Change the format of dates
 mathjax = true # Enable MathJax
 mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
 mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
 googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
-customCSS = ["css/custom.css"] # Include custom CSS files
-customJS = ["js/custom.js"] # Include custom JS files
+#customCSS = ["css/custom.css"] # Include custom CSS files
+#customJS = ["js/custom.js"] # Include custom JS files
 
 # DEPRECATED PARAMS
 subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
@@ -69,7 +69,7 @@ widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 [Params.widgets]
 recent_num = 5 # Set the number of articles in the "Recent articles" widget
 categories_counter = false # Enable counter for each category in "Categories" widget
-tags_counter = true # Enable counter for each tag in "Tags" widget
+tags_counter = false # Enable counter for each tag in "Tags" widget
 
 [Params.widgets.social]
 # Enable parts of social widget
