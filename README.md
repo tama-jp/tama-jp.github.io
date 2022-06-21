@@ -6,3 +6,7 @@ or
 
 http://kodawari.info/
 
+
+```
+hugo server -D
+```
