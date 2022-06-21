@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://kodawari.info/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 07 Jun 2022 00:19:50 +0000</lastBuildDate><atom:link href="https://kodawari.info/index.xml" rel="self" type="application/rss+xml"/><item><title>時刻ではまった</title><link>https://kodawari.info/posts/2022-06-07-00-19-49-time/</link><pubDate>Tue, 07 Jun 2022 00:19:50 +0000</pubDate><guid>https://kodawari.info/posts/2022-06-07-00-19-49-time/</guid><description>時刻ではまった。。。。 文字列をtime型にしてからunixtimeに入れようとしたら、 timeStr := &amp;#34;2022-06-07 09:00:00&amp;#34; layout := &amp;#34;2006-01-02 15:04:05&amp;#34; timeData, _ = time.Parse(layout, timeStr) fmt.Println(timeData.Unix()) # =&amp;gt; 1654592400 タイムゾーンが、日本</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://kodawari.info/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 21 Jun 2022 18:20:23 +0900</lastBuildDate><atom:link href="https://kodawari.info/index.xml" rel="self" type="application/rss+xml"/><item><title>goumlでgoプロジェクトを自動でUML図に出力するツール</title><link>https://kodawari.info/posts/gouml%E3%81%A7go%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7uml%E5%9B%B3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB/</link><pubDate>Tue, 21 Jun 2022 18:20:23 +0900</pubDate><guid>https://kodawari.info/posts/gouml%E3%81%A7go%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7uml%E5%9B%B3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB/</guid><description>go言語のプロジェクトを可視化したいと思いPlantUMLで自動で出来たらなと。 2つ見つけました。 goplantumlとgoumlです。 前者</description><content:encoded><![CDATA[
+              <p>go言語のプロジェクトを可視化したいと思いPlantUMLで自動で出来たらなと。</p>
+<p>2つ見つけました。</p>
+<p><a href="https://github.com/jfeliu007/goplantuml">goplantuml</a>と<a href="https://github.com/kazukousen/gouml">gouml</a>です。</p>
+<p>前者の<a href="https://github.com/jfeliu007/goplantuml">goplantuml</a>は、
+結構有名でよく紹介されており、メンテが数ヶ月前にされているようです。</p>
+<p>後者の<a href="https://github.com/kazukousen/gouml">gouml</a>と言うものですが、数年前から開発がとまっていて、</p>
+<p>goのver1.18でコンパイルして実行してみると表示が出来ない部分があったので、</p>
+<p>それで、最新のモジュールに差し替えて、みました。
+<a href="https://github.com/tama-jp/gouml">こちら</a>にあります。</p>
+<p>Macなら以下で動くと思います。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/tama-jp/gouml.git
+</span></span><span style="display:flex;"><span>cd gouml/cmd/gouml
+</span></span><span style="display:flex;"><span>go build -o /usr/local/bin/gouml main.go
+</span></span><span style="display:flex;"><span>gouml --version 
+</span></span></code></pre></div><p>このふたつのツールを<a href="https://github.com/sue445/plant_erd">plant_erd</a>という、データベースをplantumlでER図を生成するソースを試しにしてみました。</p>
+<p>goplantuml
+<img src="../img/2022-06-21-sample.png" alt="2022-06-21-sample.png"></p>
+<p>gouml
+<img src="../img/2022-06-21-file.png" alt="2022-06-21-file.png"></p>
+<p>でかたが違う。。。。(´ヘ｀;)　う〜ん・・・。どちらがいいのかがわかりません。</p>
+<p>ただ、goumlは、戻り値にクラスが使われたときの軌跡はわかるので、個人的にはこっちがいいと感じますが。。。。</p>
+<p>皆さんどうしてるんだろ。。。。．</p>
+
+              ]]></content:encoded></item><item><title>時刻ではまった</title><link>https://kodawari.info/posts/2022-06-07-00-19-49-time/</link><pubDate>Tue, 07 Jun 2022 00:19:50 +0000</pubDate><guid>https://kodawari.info/posts/2022-06-07-00-19-49-time/</guid><description>時刻ではまった。。。。 文字列をtime型にしてからunixtimeに入れようとしたら、 timeStr := &amp;#34;2022-06-07 09:00:00&amp;#34; layout := &amp;#34;2006-01-02 15:04:05&amp;#34; timeData, _ = time.Parse(layout, timeStr) fmt.Println(timeData.Unix()) # =&amp;gt; 1654592400 タイムゾーンが、日本</description><content:encoded><![CDATA[
               <p>時刻ではまった。。。。
 文字列をtime型にしてからunixtimeに入れようとしたら、</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#a6e22e">timeStr</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;2022-06-07 09:00:00&#34;</span>
