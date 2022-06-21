@@ -9,5 +9,5 @@ tags: ["ETC"]
 description: ""
 image: ""
 author: "tama-tan"
-draft: true
+draft: false
 ---
