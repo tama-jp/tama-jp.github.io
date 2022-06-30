@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>golang on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/golang/</link><description>Recent content in golang on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 30 Jun 2022 11:56:12 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>時間の取り扱い方</title><link>https://kodawari.info/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</link><pubDate>Thu, 30 Jun 2022 11:56:12 +0900</pubDate><guid>https://kodawari.info/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</guid><description>time型を取得する time.Time型の変数を取得する方法。 現在時刻から取得する fmt.Println(time.Now()) // Output: // 2009-11-10 23:00:00 +0000 UTC 日付から取得する fmt.Println(time.Date(2014, time.December, 31, 12, 13, 24, 0, time.UTC)) // Output: // 2014-12-31 12:13:24</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>golang on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/golang/</link><description>Recent content in golang on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 30 Jun 2022 19:41:20 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>GORMでtime型をするときの注意</title><link>https://kodawari.info/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</link><pubDate>Thu, 30 Jun 2022 19:41:20 +0900</pubDate><guid>https://kodawari.info/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</guid><description>GORMでtime型をするときの注意 GORMで構造体をマイグレーションしたときに 以下のようにしてもtime型にはならなかった、、、 type test struct { BreakTime</description><content:encoded><![CDATA[
+              <h1 id="gormでtime型をするときの注意">GORMでtime型をするときの注意</h1>
+<p>GORMで構造体をマイグレーションしたときに
+以下のようにしてもtime型にはならなかった、、、</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">test</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">BreakTime</span>                  <span style="color:#f92672">*</span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>               <span style="color:#e6db74">`gorm:&#34;type:time;comment:休憩時間&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>↓ マイグレすると</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> test
+</span></span><span style="display:flex;"><span>(
+</span></span><span style="display:flex;"><span>    break_time                   <span style="color:#66d9ef">timestamp</span> <span style="color:#66d9ef">with</span> time <span style="color:#66d9ef">zone</span>,
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>となった、</p>
+<p>どうも、「time」のあとにスペースを入れれば解決するみたい。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">test</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">BreakTime</span>                  <span style="color:#f92672">*</span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>               <span style="color:#e6db74">`gorm:&#34;type:time ;comment:休憩時間&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>↓ マイグレすると</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> test
+</span></span><span style="display:flex;"><span>(
+</span></span><span style="display:flex;"><span>    break_time                   time,
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>時間がかかったけどこんな事があるのだと。。。。。</p>
+
+              ]]></content:encoded></item><item><title>時間の取り扱い方</title><link>https://kodawari.info/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</link><pubDate>Thu, 30 Jun 2022 11:56:12 +0900</pubDate><guid>https://kodawari.info/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</guid><description>time型を取得する time.Time型の変数を取得する方法。 現在時刻から取得する fmt.Println(time.Now()) // Output: // 2009-11-10 23:00:00 +0000 UTC 日付から取得する fmt.Println(time.Date(2014, time.December, 31, 12, 13, 24, 0, time.UTC)) // Output: // 2014-12-31 12:13:24</description><content:encoded><![CDATA[
               <h1 id="time型を取得する">time型を取得する</h1>
 <p><code>time.Time型</code>の変数を取得する方法。</p>
 <h2 id="現在時刻から取得する">現在時刻から取得する</h2>
