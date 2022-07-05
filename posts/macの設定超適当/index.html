@@ -1,0 +1,249 @@
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Macの設定（超適当） - Ko-Da-Wa-Ri</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><meta itemprop=name content="Macの設定（超適当）"><meta itemprop=description content="雑な書き方だけどMacのインストールのファイルなどを公開 Homebrewのインストール 以下のファイルの内容() Brewfile tap &#34;homebrew/bundle&#34; tap &#34;homebrew/cask&#34; tap &#34;homebrew/cask-fonts&#34; tap &#34;homebrew/core&#34; brew &#34;cloc&#34; brew &#34;colordiff&#34; brew &#34;coreutils&#34;"><meta itemprop=datePublished content="2022-07-04T17:28:43+09:00"><meta itemprop=dateModified content="2022-07-04T17:28:43+09:00"><meta itemprop=wordCount content="963"><meta itemprop=keywords content="ETC,"><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class="logo logo--mixed"><a class=logo__link href=/ title=Ko-Da-Wa-Ri rel=home><div class="logo__item logo__imagebox"><img class=logo__img src=/img/cheer.png></div><div class="logo__item logo__text"><div class=logo__title>Ko-Da-Wa-Ri</div><div class=logo__tagline>たまたんの適当なブログ</div></div></a></div><div class=divider></div></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Macの設定（超適当）</h1><div class="post__meta meta"><div class="meta__item-author meta__item"><svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2.0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class=meta__text>tama-tan</span></div><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2022-07-04T17:28:43+09:00>2022-07-04</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/etc/ rel=category>ETC</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#homebrewのインストール>Homebrewのインストール</a></li><li><a href=#zshrc>zshrc</a></li><li><a href=#starshipの設定>starshipの設定</a></li></ul></nav></div></div><div class="content post__content clearfix"><p>雑な書き方だけどMacのインストールのファイルなどを公開</p><h2 id=homebrewのインストール>Homebrewのインストール</h2><p>以下のファイルの内容()</p><p>Brewfile</p><pre tabindex=0><code>tap &#34;homebrew/bundle&#34;
+tap &#34;homebrew/cask&#34;
+tap &#34;homebrew/cask-fonts&#34;
+tap &#34;homebrew/core&#34;
+brew &#34;cloc&#34;
+brew &#34;colordiff&#34;
+brew &#34;coreutils&#34;
+brew &#34;curl&#34;
+brew &#34;ffmpeg&#34;
+brew &#34;gnu-sed&#34;
+brew &#34;go&#34;
+brew &#34;graphviz&#34;
+brew &#34;htop&#34;
+brew &#34;hugo&#34;
+brew &#34;jq&#34;
+brew &#34;mas&#34;
+brew &#34;nkf&#34;
+brew &#34;nodebrew&#34;
+brew &#34;pandoc&#34;
+brew &#34;plantuml&#34;
+brew &#34;starship&#34;
+brew &#34;tree&#34;
+brew &#34;wget&#34;
+brew &#34;yarn&#34;
+brew &#34;yt-dlp&#34;
+brew &#34;zsh-autosuggestions&#34;
+brew &#34;zsh-completions&#34;
+brew &#34;zsh-syntax-highlighting&#34;
+cask &#34;adobe-acrobat-reader&#34;
+cask &#34;alfred&#34;
+cask &#34;apparency&#34;
+cask &#34;astah-professional&#34;
+cask &#34;atok&#34;
+cask &#34;bbedit&#34;
+cask &#34;bettertouchtool&#34;
+cask &#34;beyond-compare&#34;
+cask &#34;bootstrap-studio&#34;
+cask &#34;brave-browser&#34;
+cask &#34;brooklyn&#34;
+cask &#34;browserosaurus&#34;
+cask &#34;calibre&#34;
+cask &#34;coderunner&#34;
+cask &#34;dash&#34;
+cask &#34;docker&#34;
+cask &#34;drawio&#34;
+cask &#34;firefox&#34;
+cask &#34;font-ricty-diminished&#34;
+cask &#34;google-chrome&#34;
+cask &#34;gyazmail&#34;
+cask &#34;istat-menus&#34;
+cask &#34;iterm2&#34;
+cask &#34;jedit-omega&#34;
+cask &#34;jetbrains-toolbox&#34;
+cask &#34;joplin&#34;
+cask &#34;kaleidoscope&#34;
+cask &#34;mamp&#34;
+cask &#34;openinterminal&#34;
+cask &#34;path-finder&#34;
+cask &#34;paw&#34;
+cask &#34;qlcolorcode&#34;
+cask &#34;qlimagesize&#34;
+cask &#34;qlmarkdown&#34;
+cask &#34;qlprettypatch&#34;
+cask &#34;qlstephen&#34;
+cask &#34;qlvideo&#34;
+cask &#34;quicklook-csv&#34;
+cask &#34;quicklook-json&#34;
+cask &#34;quicklookapk&#34;
+cask &#34;quicklookase&#34;
+cask &#34;smartgit&#34;
+cask &#34;stoplight-studio&#34;
+cask &#34;sublime-text&#34;
+cask &#34;suspicious-package&#34;
+cask &#34;syntax-highlight&#34;
+cask &#34;transmit&#34;
+cask &#34;typora&#34;
+cask &#34;vivaldi&#34;
+cask &#34;webpquicklook&#34;
+cask &#34;zoc&#34;
+mas &#34;Affinity Designer&#34;, id: 824171161
+mas &#34;Display Menu&#34;, id: 549083868
+mas &#34;Graphic&#34;, id: 404705039
+mas &#34;GraphicConverter 11&#34;, id: 1465576485
+mas &#34;Hidden Bar&#34;, id: 1452453066
+mas &#34;Keka&#34;, id: 470158793
+mas &#34;LINE&#34;, id: 539883307
+mas &#34;Microsoft Excel&#34;, id: 462058435
+mas &#34;Microsoft PowerPoint&#34;, id: 462062816
+mas &#34;OmniPlan&#34;, id: 1460319993
+mas &#34;Peek&#34;, id: 1554235898
+mas &#34;Pixelmator Pro&#34;, id: 1289583905
+mas &#34;Power JSON Editor&#34;, id: 499768540
+mas &#34;QREncoderPro&#34;, id: 479397466
+mas &#34;RunCat&#34;, id: 1429033973
+mas &#34;SimpleMind Pro&#34;, id: 434808346
+mas &#34;Xcode&#34;, id: 497799835
+mas &#34;デスクトップ時計 +&#34;, id: 892038932
+</code></pre><h2 id=zshrc>zshrc</h2><p>~/.zshrc</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#75715e># --------------------------------------------------------------------</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 基本的な環境変数</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># --------------------------------------------------------------------</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>export LANG<span style=color:#f92672>=</span>ja_JP.UTF-8
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>export EDITOR<span style=color:#f92672>=</span>vim
+</span></span><span style=display:flex><span>export PAGER<span style=color:#f92672>=</span>lv
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Python venv</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> -e venv/bin/activate <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># 存在する場合</span>
+</span></span><span style=display:flex><span>    source venv/bin/activate
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fi</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># --------------------------------------------------------------------</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># alias</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># --------------------------------------------------------------------</span>
+</span></span><span style=display:flex><span>alias brew<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew&#39;</span> 
+</span></span><span style=display:flex><span>alias ls<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;ls -G&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>alias brew<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin brew&#39;</span>
+</span></span><span style=display:flex><span>alias sed<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;gsed&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>alias clean<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;rm -rf ~/Library/Developer/Xcode/DerivedData&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>alias diff<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;colordiff&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>alias vi<span style=color:#f92672>=</span>vim
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># --------------------------------------------------------------------</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 環境変数</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># --------------------------------------------------------------------</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># path</span>
+</span></span><span style=display:flex><span>export PATH<span style=color:#f92672>=</span>/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># starship</span>
+</span></span><span style=display:flex><span>eval <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>starship init zsh<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># android</span>
+</span></span><span style=display:flex><span>export ANDROID_NDK_ROOT<span style=color:#f92672>=</span>$HOME/Library/Android/sdk/ndk/24.0.8215888
+</span></span><span style=display:flex><span>export ANDROID_NDK_HOME<span style=color:#f92672>=</span>$HOME/Library/Android/sdk/ndk/24.0.8215888
+</span></span><span style=display:flex><span>export ANDROID_HOME<span style=color:#f92672>=</span>$HOME/Library/Android/sdk
+</span></span><span style=display:flex><span>export PATH<span style=color:#f92672>=</span>$ANDROID_HOME/bin:$PATH:<span style=color:#e6db74>${</span>HOME<span style=color:#e6db74>}</span>/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools/bin
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># plantuml</span>
+</span></span><span style=display:flex><span>export PLANTUML_LIMIT_SIZE<span style=color:#f92672>=</span><span style=color:#ae81ff>32768</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># nodebrew</span>
+</span></span><span style=display:flex><span>export PATH<span style=color:#f92672>=</span>$HOME/.nodebrew/current/bin:$PATH
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># homebrew</span>
+</span></span><span style=display:flex><span>export PATH<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/usr/local/sbin:</span>$PATH<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># zsh関連</span>
+</span></span><span style=display:flex><span>source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+</span></span><span style=display:flex><span>source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> type brew &amp;&gt;/dev/null; <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>    FPATH<span style=color:#f92672>=</span>/usr/local/share/zsh-completions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.8.1/functions
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    autoload -Uz compinit
+</span></span><span style=display:flex><span>    compinit
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fi</span>
+</span></span></code></pre></div><h2 id=starshipの設定>starshipの設定</h2><p>mkdir -p ~/.config && touch ~/.config/starship.toml</p><pre tabindex=0><code>[directory]
+#ディレクトリ表示
+truncation_length = 100
+truncate_to_repo = false
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = &#34; &#34;
+style = &#34;bold dimmed blue&#34;
+format = &#34;$symbol[${ram}( | ${swap})]($style) &#34;
+
+
+[battery]
+full_symbol = &#34;🔋&#34;
+charging_symbol = &#34;🔌&#34;
+discharging_symbol = &#34;⚡&#34;
+
+[[battery.display]]
+#バッテリーを表示するタイミング、表示する際の文字のスタイル
+threshold = 100
+style = &#34;bold blue&#34;
+
+[time]
+#時間の表示をオンにして12時間表示に
+use_12hr = false
+time_format = &#34;%T&#34;
+format = &#34;🕙 $time($style) &#34;
+style = &#34;bright-white&#34;
+disabled = false
+
+
+[package]
+disabled = true
+
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = &#34; took [$duration]($style)&#34;
+
+[character]
+success_symbol = &#34;[➜](bold green) &#34;
+error_symbol = &#34;[✗](bold red) &#34;
+
+[git_branch]
+format = &#34; [$symbol$branch]($style) &#34;
+symbol = &#34;🍣 &#34;
+style = &#34;bold yellow&#34;
+
+[git_commit]
+commit_hash_length = 8
+style = &#34;bold white&#34;
+
+[git_state]
+format = &#39;[\($state( $progress_current of $progress_total)\)]($style) &#39;
+
+[git_status]
+conflicted = &#34;⚔️ &#34;
+ahead = &#34;🏎️ 💨 ×${count}&#34;
+behind = &#34;🐢 ×${count}&#34;
+diverged = &#34;🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}&#34;
+untracked = &#34;🛤️  ×${count}&#34;
+stashed = &#34;📦 &#34;
+modified = &#34;📝 ×${count}&#34;
+staged = &#34;🗃️  ×${count}&#34;
+renamed = &#34;📛 ×${count}&#34;
+deleted = &#34;🗑️  ×${count}&#34;
+style = &#34;bright-white&#34;
+format = &#34;$all_status$ahead_behind&#34;
+
+[python]
+format = &#34;[$symbol$version]($style) &#34;
+style = &#34;bold green&#34;
+
+[rust]
+format = &#34;[$symbol$version]($style) &#34;
+style = &#34;bold green&#34;
+
+[username]
+style_user = &#34;bold dimmed blue&#34;
+show_always = false
+</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/etc/ rel=tag>ETC</a></li></ul></div></footer></article></main><div class="authorbox clearfix"><figure class=authorbox__avatar><img alt="tama-tan avatar" src=/img/avatar.png class=avatar height=90 width=90></figure><div class=authorbox__header><span class=authorbox__name>About tama-tan</span></div><div class=authorbox__description>いろいろプログラミングをやっています。今は、go言語にはまってます。</div></div><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>GORMでtime型をするときの注意</p></a></div></nav></div></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2022 Ko-Da-Wa-Ri.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script></body></html>
