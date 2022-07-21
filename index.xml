@@ -1,13 +1,277 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://kodawari.info/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 12 Jul 2022 17:12:30 +0900</lastBuildDate><atom:link href="https://kodawari.info/index.xml" rel="self" type="application/rss+xml"/><item><title>PC-8801のエミュレータ、「quasi88」のSDL2対応版</title><link>https://kodawari.info/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</link><pubDate>Tue, 12 Jul 2022 17:12:30 +0900</pubDate><guid>https://kodawari.info/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</guid><description>Mac用PC88のエミュレータが欲しいと思ってたら、 こんなところに！！ HomeBrewのインストーラーだと、SDL1なのでワーニングがでるけ</description><content:encoded><![CDATA[
-              <p>Mac用PC88のエミュレータが欲しいと思ってたら、
-こんなところに！！</p>
-<p>HomeBrewのインストーラーだと、SDL1なのでワーニングがでるけど、
-SDL2対応だから、これならでない！！</p>
-<p><a href="http://kameya-z.way-nifty.com/blog/2021/08/post-bf1e89.html">http://kameya-z.way-nifty.com/blog/2021/08/post-bf1e89.html</a></p>
-<p><img src="../img/icon20220712.png" alt="icon20220712">
-コンパイルしたら出てきた。</p>
-<p><img src="../img/JESUS-pic1.png" alt="icon20220712">
-JESUSを動かしてみたらこんな感じ♪</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://kodawari.info/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 21 Jul 2022 22:16:58 +0900</lastBuildDate><atom:link href="https://kodawari.info/index.xml" rel="self" type="application/rss+xml"/><item><title>iOS(obj-c)の画面遷移</title><link>https://kodawari.info/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</link><pubDate>Thu, 21 Jul 2022 22:16:58 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</guid><description>・コードでの遷移 ・StoryBoardのsegueを使った遷移 ・NavigationControllerを使った遷移 Present [self presentVie</description><content:encoded><![CDATA[
+              <p>・コードでの遷移
+・StoryBoardのsegueを使った遷移
+・NavigationControllerを使った遷移</p>
+<h2 id="present">Present</h2>
+<pre tabindex="0"><code>[self presentViewController:移動先ViewController animated:YES completion:nil];
+</code></pre><h2 id="segue">segue</h2>
+<pre tabindex="0"><code>[self performSegueWithIdentifier:@&#34;セグエのID&#34; sender:self];
+</code></pre><h2 id="push">Push</h2>
+<pre tabindex="0"><code>[self.navigationController pushViewController:移動先ViewController animated:YES];
+</code></pre><h2 id="pop">Pop</h2>
+<h3 id="指定ビューコントローラーへ">指定ビューコントローラーへ</h3>
+<pre tabindex="0"><code>[self.navigationController popToViewController:viewController animated:YES];
+</code></pre><h3 id="前の画面に戻る">前の画面に戻る</h3>
+<pre tabindex="0"><code>[self.navigationController popViewControllerAnimated:YES];
+</code></pre><h3 id="navigationcontrollerの１番目の画面に戻る">NavigationControllerの１番目の画面に戻る</h3>
+<pre tabindex="0"><code>[self.navigationController popToRootViewControllerAnimated:YES];
+</code></pre><h2 id="storyboard">StoryBoard</h2>
+<h4 id="storyboard-id">・StoryBoard ID</h4>
+<p>※storyboardファイルで &lsquo;identify → StoryBoard ID&rsquo;の入力が必要</p>
+<pre tabindex="0"><code>UIStoryBoard* storyBoard = [UIStoryboard storyboardWithName:@&#34;ストーリボードID&#34; bundle:nil];
+UIViewController* viewController = [storyboard instantiateInitialViewController];
+</code></pre><h4 id="storyboard-initial-viewcontroller">・StoryBoard initial ViewController</h4>
+<p>※storyboardファイルで &lsquo;is initial View Controller&rsquo;のチェックが必要</p>
+<pre tabindex="0"><code>UINavigationController* rootNavigationController = [storyboard instantiateInitialViewController];
+UIViewController* viewController = [[rootNavigationController viewControllers] lastObject];
+</code></pre>
+              ]]></content:encoded></item><item><title>iOS(obj-c)のセグエの戻り(push)</title><link>https://kodawari.info/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</link><pubDate>Thu, 21 Jul 2022 22:14:45 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</guid><description>１つ前の画面に戻る [self.navigationController popViewControllerAnimated:YES]; ルート画面まで一気に戻る [self.navigationController popToRootViewControllerAnimated:YES]; 任意の画面（UIViewController）まで戻る [self.navigationController popToViewController:UIViewController animated:YES];</description><content:encoded><![CDATA[
+              <h2 id="１つ前の画面に戻る">１つ前の画面に戻る</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[self.navigationController popViewControllerAnimated:YES];
+</span></span></code></pre></div><h2 id="ルート画面まで一気に戻る">ルート画面まで一気に戻る</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[self.navigationController popToRootViewControllerAnimated:YES];
+</span></span></code></pre></div><h2 id="任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[self.navigationController popToViewController:UIViewController animated:YES];
+</span></span></code></pre></div>
+              ]]></content:encoded></item><item><title>iOS(obj-c)で文字列結合</title><link>https://kodawari.info/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</link><pubDate>Thu, 21 Jul 2022 22:12:09 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</guid><description>NSString *urlString =[NSString stringWithFormat:@&amp;#34;%@/test.php&amp;#34;,dns];</description><content:encoded><![CDATA[
+              <pre tabindex="0"><code class="language-ca" data-lang="ca">    NSString *urlString =[NSString stringWithFormat:@&#34;%@/test.php&#34;,dns];
+</code></pre>
+              ]]></content:encoded></item><item><title>iOS(obj-c)でgetとPOST</title><link>https://kodawari.info/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:09:00 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</guid><description>GET NSString *urlString = [NSString stringWithFormat:@&amp;#34;https://xxxxx.co.jp/test?key1=%@&amp;#34;,key1]; DLog(@&amp;#34;urlString:%@&amp;#34;, urlString) NSURLSession *urlSession; NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration]; sessionConfig.timeoutIntervalForRequest = 5; sessionConfig.timeoutIntervalForResource = 20; // 処理を単純化させるためにdelegateは使用しませんでした。 // UI関連の処理を想定していないた</description><content:encoded><![CDATA[
+              <h2 id="get">GET</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>NSString <span style="color:#f92672">*</span>urlString <span style="color:#f92672">=</span> [NSString stringWithFormat:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;https://xxxxx.co.jp/test?key1=%@&#34;</span>,key1];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;urlString:%@&#34;</span>, urlString)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    NSURLSession <span style="color:#f92672">*</span>urlSession;
+</span></span><span style="display:flex;"><span>    NSURLSessionConfiguration <span style="color:#f92672">*</span>sessionConfig <span style="color:#f92672">=</span> [NSURLSessionConfiguration defaultSessionConfiguration];
+</span></span><span style="display:flex;"><span>    sessionConfig.timeoutIntervalForRequest <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>    sessionConfig.timeoutIntervalForResource <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 処理を単純化させるためにdelegateは使用しませんでした。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    urlSession <span style="color:#f92672">=</span> [NSURLSession sessionWithConfiguration:sessionConfig
+</span></span><span style="display:flex;"><span>                                               delegate:nil
+</span></span><span style="display:flex;"><span>                                          delegateQueue:nil];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    NSLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;get start&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    NSMutableURLRequest <span style="color:#f92672">*</span>request <span style="color:#f92672">=</span> [NSMutableURLRequest new];
+</span></span><span style="display:flex;"><span>    [request setURL:[NSURL URLWithString:urlString]];
+</span></span><span style="display:flex;"><span>    [request setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
+</span></span><span style="display:flex;"><span>    [request setValue:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;YKTHttpClient&#34;</span> forHTTPHeaderField:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;User-Agent&#34;</span>];
+</span></span><span style="display:flex;"><span>    [request setHTTPMethod:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;GET&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    NSURLSessionDataTask <span style="color:#f92672">*</span>dataTask
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">=</span> [urlSession dataTaskWithRequest:request
+</span></span><span style="display:flex;"><span>                            completionHandler:<span style="color:#f92672">^</span>(NSData <span style="color:#f92672">*</span>data, NSURLResponse <span style="color:#f92672">*</span>response, NSError <span style="color:#f92672">*</span>error) {
+</span></span><span style="display:flex;"><span>                                NSHTTPURLResponse <span style="color:#f92672">*</span>httpUrlResponse <span style="color:#f92672">=</span> (NSHTTPURLResponse <span style="color:#f92672">*</span>) response;
+</span></span><span style="display:flex;"><span>                                DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Status code: %ld&#34;</span>, httpUrlResponse.statusCode);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                CFStringEncoding encoding <span style="color:#f92672">=</span> CFStringConvertIANACharSetNameToEncoding((CFStringRef) [response textEncodingName]);
+</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>body <span style="color:#f92672">=</span> [[NSString alloc] initWithData:data encoding:CFStringConvertEncodingToNSStringEncoding(encoding)];
+</span></span><span style="display:flex;"><span>                                NSData <span style="color:#f92672">*</span>restoreData <span style="color:#f92672">=</span> [[NSData alloc] initWithBase64EncodedString:body options:<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>restoreString <span style="color:#f92672">=</span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
+</span></span><span style="display:flex;"><span>                                dispatch_async(
+</span></span><span style="display:flex;"><span>                                        dispatch_get_main_queue(),
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">^</span>{
+</span></span><span style="display:flex;"><span>                                            self.textView.text <span style="color:#f92672">=</span> restoreString;
+</span></span><span style="display:flex;"><span>                                        }
+</span></span><span style="display:flex;"><span>                                );
+</span></span><span style="display:flex;"><span>                            }];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    [dataTask resume];
+</span></span></code></pre></div><h2 id="post">POST</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NSString <span style="color:#f92672">*</span>urlString <span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;https://xxxx.co.jp/test&#34;</span>;
+</span></span><span style="display:flex;"><span>    NSDictionary <span style="color:#f92672">*</span>params <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">@</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> name,
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;uuid&#34;</span><span style="color:#f92672">:</span> uuid,
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>    DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;urlString:%@&#34;</span>, urlString)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 連想配列として与えられたパラメータをクエリ文字列に変換する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    NSData <span style="color:#f92672">*</span>query <span style="color:#f92672">=</span> [self buildQueryWithDictionary: params];
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    NSURLSession <span style="color:#f92672">*</span>urlSession;
+</span></span><span style="display:flex;"><span>    NSURLSessionConfiguration <span style="color:#f92672">*</span>sessionConfig <span style="color:#f92672">=</span> [NSURLSessionConfiguration defaultSessionConfiguration];
+</span></span><span style="display:flex;"><span>    sessionConfig.timeoutIntervalForRequest <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>    sessionConfig.timeoutIntervalForResource <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 処理を単純化させるためにdelegateは使用しませんでした。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    urlSession <span style="color:#f92672">=</span> [NSURLSession sessionWithConfiguration:sessionConfig
+</span></span><span style="display:flex;"><span>                                               delegate:nil
+</span></span><span style="display:flex;"><span>                                          delegateQueue:nil];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    NSLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;get start&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    NSMutableURLRequest <span style="color:#f92672">*</span>request <span style="color:#f92672">=</span> [NSMutableURLRequest new];
+</span></span><span style="display:flex;"><span>    [request setURL:[NSURL URLWithString:urlString]];
+</span></span><span style="display:flex;"><span>    [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
+</span></span><span style="display:flex;"><span>    [request setValue:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;iOS&#34;</span> forHTTPHeaderField:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;User-Agent&#34;</span>];
+</span></span><span style="display:flex;"><span>    [request setHTTPMethod:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;POST&#34;</span>];
+</span></span><span style="display:flex;"><span>    [request setValue: <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;application/x-www-form-urlencoded&#34;</span>  forHTTPHeaderField: <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Content-Type&#34;</span>];
+</span></span><span style="display:flex;"><span>    [request setValue: [NSString stringWithFormat: <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;%lu&#34;</span>, (<span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span>)[query length]]  forHTTPHeaderField: <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Content-Length&#34;</span>];
+</span></span><span style="display:flex;"><span>    [request setHTTPBody: query];
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    NSURLSessionDataTask <span style="color:#f92672">*</span>dataTask
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">=</span> [urlSession dataTaskWithRequest:request
+</span></span><span style="display:flex;"><span>                            completionHandler:<span style="color:#f92672">^</span>(NSData <span style="color:#f92672">*</span>data, NSURLResponse <span style="color:#f92672">*</span>response, NSError <span style="color:#f92672">*</span>error) {
+</span></span><span style="display:flex;"><span>                                NSHTTPURLResponse <span style="color:#f92672">*</span>httpUrlResponse <span style="color:#f92672">=</span> (NSHTTPURLResponse <span style="color:#f92672">*</span>) response;
+</span></span><span style="display:flex;"><span>                                DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Status code: %ld&#34;</span>, httpUrlResponse.statusCode);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                CFStringEncoding encoding <span style="color:#f92672">=</span> CFStringConvertIANACharSetNameToEncoding((CFStringRef) [response textEncodingName]);
+</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>body <span style="color:#f92672">=</span> [[NSString alloc] initWithData:data encoding:CFStringConvertEncodingToNSStringEncoding(encoding)];
+</span></span><span style="display:flex;"><span>                                NSData <span style="color:#f92672">*</span>restoreData <span style="color:#f92672">=</span> [[NSData alloc] initWithBase64EncodedString:body options:<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>restoreString <span style="color:#f92672">=</span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
+</span></span><span style="display:flex;"><span>                                dispatch_async(
+</span></span><span style="display:flex;"><span>                                        dispatch_get_main_queue(),
+</span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">^</span>{
+</span></span><span style="display:flex;"><span>                                        }
+</span></span><span style="display:flex;"><span>                                );
+</span></span><span style="display:flex;"><span>                            }];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    [dataTask resume];
+</span></span></code></pre></div>
+              ]]></content:encoded></item><item><title>AndroidでgetとPOST</title><link>https://kodawari.info/posts/android%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:04:39 +0900</pubDate><guid>https://kodawari.info/posts/android%E3%81%A7get%E3%81%A8post/</guid><description>こんな感じ GET public String getHistoryData(String key1) { HttpURLConnection urlConnection = null; InputStream inputStream = null; String result = &amp;#34;&amp;#34;; String str = &amp;#34;&amp;#34;; try { URL url = new URL(&amp;#34;https://xxxxx.co.jp/test?key1=&amp;#34; + key1); // 接続先URLへのコネクションを開く．まだ接続されていない urlConnection = (HttpURLConnection) url.openConnection(); //</description><content:encoded><![CDATA[
+              <p>こんな感じ</p>
+<h2 id="get">GET</h2>
+<pre tabindex="0"><code class="language-aidl" data-lang="aidl"> public String getHistoryData(String key1) {
+        HttpURLConnection urlConnection = null;
+        InputStream inputStream = null;
+        String result = &#34;&#34;;
+        String str = &#34;&#34;;
+        try {
+            URL url = new URL(&#34;https://xxxxx.co.jp/test?key1=&#34; + key1);
+            // 接続先URLへのコネクションを開く．まだ接続されていない
+            urlConnection = (HttpURLConnection) url.openConnection();
+            // 接続タイムアウトを設定
+            urlConnection.setConnectTimeout(10000);
+            // レスポンスデータの読み取りタイムアウトを設定
+            urlConnection.setReadTimeout(10000);
+            // ヘッダーにUser-Agentを設定
+            urlConnection.addRequestProperty(&#34;User-Agent&#34;, &#34;Android&#34;);
+            // ヘッダーにAccept-Languageを設定
+            urlConnection.addRequestProperty(&#34;Accept-Language&#34;, Locale.getDefault().toString());
+            // HTTPメソッドを指定
+            urlConnection.setRequestMethod(&#34;GET&#34;);
+            //リクエストボディの送信を許可しない
+            urlConnection.setDoOutput(false);
+            //レスポンスボディの受信を許可する
+            urlConnection.setDoInput(true);
+            // 通信開始
+            urlConnection.connect();
+            // レスポンスコードを取得
+            int statusCode = urlConnection.getResponseCode();
+            // レスポンスコード200は通信に成功したことを表す
+            if (statusCode == 200) {
+                inputStream = urlConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, &#34;utf-8&#34;));
+                // 1行ずつレスポンス結果を取得しstrに追記
+                result = bufferedReader.readLine();
+                while (result != null) {
+                    str += result;
+                    result = bufferedReader.readLine();
+                }
+                bufferedReader.close();
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // レスポンス結果のJSONをString型で返す
+        return str;
+    }
+</code></pre><h2 id="post">POST</h2>
+<pre tabindex="0"><code class="language-aidl" data-lang="aidl">public String PostUserName(String key1, String key2) {
+        HttpURLConnection urlConnection = null;
+        InputStream inputStream = null;
+        String result = &#34;&#34;;
+        String str = &#34;&#34;;
+
+        try {
+            URL url = new URL(&#34;http://hpph;e.cp.jp&#34;&#34;);
+            // 接続先URLへのコネクションを開く．まだ接続されていない
+            urlConnection = (HttpURLConnection) url.openConnection();
+            // 接続タイムアウトを設定
+            urlConnection.setConnectTimeout(10000);
+            // レスポンスデータの読み取りタイムアウトを設定
+            urlConnection.setReadTimeout(10000);
+            // ヘッダーにUser-Agentを設定
+            urlConnection.addRequestProperty(&#34;User-Agent&#34;, &#34;Android&#34;);
+            // ヘッダーにAccept-Languageを設定
+            urlConnection.addRequestProperty(&#34;Accept-Language&#34;, Locale.getDefault().toString());
+            //ヘッダーにContent-Typeを設定する
+            urlConnection.addRequestProperty(&#34;Content-Type&#34;, &#34;application/x-www-form-urlencoded&#34;);
+            // HTTPメソッドを指定
+            urlConnection.setRequestMethod(&#34;POST&#34;);
+
+            urlConnection.setUseCaches(false);
+            //リクエストボディの送信を許可しない
+            urlConnection.setDoOutput(true);
+            //レスポンスボディの受信を許可する
+            urlConnection.setDoInput(true);
+            // 通信開始
+            urlConnection.connect();
+
+
+            //ステップ5:リクエストボディの書き出しを行う。
+            OutputStream outputStream = urlConnection.getOutputStream();
+            Map&lt;String, String&gt; keyValues = new HashMap&lt;&gt;();
+
+            keyValues.put(&#34;key1&#34;, key1);
+            keyValues.put(&#34;key2&#34;, key2);
+
+
+            if (keyValues.size() &gt; 0) {
+                Uri.Builder builder = new Uri.Builder();
+                //HashMapを[key=value]形式の文字列に変換する
+                for (String key : keyValues.keySet()) {
+                    //[key=value]形式の文字列に変換する。
+                    builder.appendQueryParameter(key, keyValues.get(key));
+                }
+                //[key=value&amp;key=value…]形式の文字列に変換する。
+                String join = builder.build().getEncodedQuery();
+                PrintStream ps = new PrintStream(outputStream);
+                ps.print(join);
+                ps.close();
+            }
+            outputStream.close();
+
+            // レスポンスコードを取得
+            int statusCode = urlConnection.getResponseCode();
+            // レスポンスコード200は通信に成功したことを表す
+            if (statusCode == 200) {
+                inputStream = urlConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+                // 1行ずつレスポンス結果を取得しstrに追記
+                result = bufferedReader.readLine();
+                while (result != null) {
+                    str += result;
+                    result = bufferedReader.readLine();
+                }
+                bufferedReader.close();
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // レスポンス結果のJSONをString型で返す
+        return str;
+    }
+</code></pre>
+              ]]></content:encoded></item><item><title>Wails v2のテンプレート</title><link>https://kodawari.info/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</link><pubDate>Thu, 21 Jul 2022 22:00:39 +0900</pubDate><guid>https://kodawari.info/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</guid><description>テンプレートの一覧どこにあるんやと思ったら ここにあった（；^ω^） https://wails.io/docs/community/templates/</description><content:encoded><![CDATA[
+              <p>テンプレートの一覧どこにあるんやと思ったら</p>
+<p>ここにあった（；^ω^）</p>
+<p><a href="https://wails.io/docs/community/templates/">https://wails.io/docs/community/templates/</a></p>
 
               ]]></content:encoded></item><item><title>pemファイルに含まれる証明書の確認方法</title><link>https://kodawari.info/posts/pem%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%90%AB%E3%81%BE%E3%82%8C%E3%82%8B%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 12 Jul 2022 14:07:34 +0900</pubDate><guid>https://kodawari.info/posts/pem%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%90%AB%E3%81%BE%E3%82%8C%E3%82%8B%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/</guid><description>以下で、内容が見られます。 openssl x509 -text -fingerprint -noout -in &amp;#34;ファイル名.pem&amp;#34; 実際には、こんな感じです。 $ openssl x509 -text -fingerprint -noout -in &amp;#39;*.xxxxxxxx.xxx.cer&amp;#39; Certificate: Data: Version: 3 (0x2) Serial Number: 26:8c:4f:db:b0:ba:d7:43:45:1b:43:f2:5d:84:9b:85 Signature Algorithm: sha384WithRSAEncryption</description><content:encoded><![CDATA[
               <p>以下で、内容が見られます。</p>
@@ -603,5 +867,26 @@ time.Parseを使用せずに、locationを設定できるtime.ParseInLocationを
               <p>たまたんです。久しぶりにブログ再開です。</p>
 <p>今回から、 <strong>Hugo</strong> で作成を挑戦してみます。</p>
 <p>よろしくお願いいたします。m(__)m</p>
+
+              ]]></content:encoded></item><item><title/><link>https://kodawari.info/posts/2022-07-12-17-12-30-pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kodawari.info/posts/2022-07-12-17-12-30-pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</guid><description>lsls&amp;mdash; title: &amp;ldquo;PC-8801のエミュレータ、「quasi88」のSDL2対応版&amp;rdquo; date: 2022-07-12T17:12:30+09:00 slug: &amp;ldquo;PC-8801のエミュレ</description><content:encoded><![CDATA[
+              <h2 id="draft-false">lsls&mdash;
+title: &ldquo;PC-8801のエミュレータ、「quasi88」のSDL2対応版&rdquo;
+date: 2022-07-12T17:12:30+09:00
+slug: &ldquo;PC-8801のエミュレータ、「quasi88」のSDL2対応版&rdquo;
+categories: [&ldquo;エミュレータ&rdquo;]
+tags: [&ldquo;PC88&rdquo;,&ldquo;quasi88&rdquo;]
+description: &quot;&quot;
+image: &quot;&quot;
+author: &ldquo;tama-tan&rdquo;
+draft: false</h2>
+<p>Mac用PC88のエミュレータが欲しいと思ってたら、
+こんなところに！！</p>
+<p>HomeBrewのインストーラーだと、SDL1なのでワーニングがでるけど、
+SDL2対応だから、これならでない！！</p>
+<p><a href="http://kameya-z.way-nifty.com/blog/2021/08/post-bf1e89.html">http://kameya-z.way-nifty.com/blog/2021/08/post-bf1e89.html</a></p>
+<p><img src="../img/icon20220712.png" alt="icon20220712">
+コンパイルしたら出てきた。</p>
+<p><img src="../img/JESUS-pic1.png" alt="icon20220712">
+JESUSを動かしてみたらこんな感じ♪</p>
 
               ]]></content:encoded></item></channel></rss>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Android on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/android/</link><description>Recent content in Android on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 21 Jul 2022 22:04:39 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>AndroidでgetとPOST</title><link>https://kodawari.info/posts/android%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:04:39 +0900</pubDate><guid>https://kodawari.info/posts/android%E3%81%A7get%E3%81%A8post/</guid><description>こんな感じ GET public String getHistoryData(String key1) { HttpURLConnection urlConnection = null; InputStream inputStream = null; String result = &amp;#34;&amp;#34;; String str = &amp;#34;&amp;#34;; try { URL url = new URL(&amp;#34;https://xxxxx.co.jp/test?key1=&amp;#34; + key1); // 接続先URLへのコネクションを開く．まだ接続されていない urlConnection = (HttpURLConnection) url.openConnection(); //</description><content:encoded><![CDATA[
+              <p>こんな感じ</p>
+<h2 id="get">GET</h2>
+<pre tabindex="0"><code class="language-aidl" data-lang="aidl"> public String getHistoryData(String key1) {
+        HttpURLConnection urlConnection = null;
+        InputStream inputStream = null;
+        String result = &#34;&#34;;
+        String str = &#34;&#34;;
+        try {
+            URL url = new URL(&#34;https://xxxxx.co.jp/test?key1=&#34; + key1);
+            // 接続先URLへのコネクションを開く．まだ接続されていない
+            urlConnection = (HttpURLConnection) url.openConnection();
+            // 接続タイムアウトを設定
+            urlConnection.setConnectTimeout(10000);
+            // レスポンスデータの読み取りタイムアウトを設定
+            urlConnection.setReadTimeout(10000);
+            // ヘッダーにUser-Agentを設定
+            urlConnection.addRequestProperty(&#34;User-Agent&#34;, &#34;Android&#34;);
+            // ヘッダーにAccept-Languageを設定
+            urlConnection.addRequestProperty(&#34;Accept-Language&#34;, Locale.getDefault().toString());
+            // HTTPメソッドを指定
+            urlConnection.setRequestMethod(&#34;GET&#34;);
+            //リクエストボディの送信を許可しない
+            urlConnection.setDoOutput(false);
+            //レスポンスボディの受信を許可する
+            urlConnection.setDoInput(true);
+            // 通信開始
+            urlConnection.connect();
+            // レスポンスコードを取得
+            int statusCode = urlConnection.getResponseCode();
+            // レスポンスコード200は通信に成功したことを表す
+            if (statusCode == 200) {
+                inputStream = urlConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, &#34;utf-8&#34;));
+                // 1行ずつレスポンス結果を取得しstrに追記
+                result = bufferedReader.readLine();
+                while (result != null) {
+                    str += result;
+                    result = bufferedReader.readLine();
+                }
+                bufferedReader.close();
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // レスポンス結果のJSONをString型で返す
+        return str;
+    }
+</code></pre><h2 id="post">POST</h2>
+<pre tabindex="0"><code class="language-aidl" data-lang="aidl">public String PostUserName(String key1, String key2) {
+        HttpURLConnection urlConnection = null;
+        InputStream inputStream = null;
+        String result = &#34;&#34;;
+        String str = &#34;&#34;;
+
+        try {
+            URL url = new URL(&#34;http://hpph;e.cp.jp&#34;&#34;);
+            // 接続先URLへのコネクションを開く．まだ接続されていない
+            urlConnection = (HttpURLConnection) url.openConnection();
+            // 接続タイムアウトを設定
+            urlConnection.setConnectTimeout(10000);
+            // レスポンスデータの読み取りタイムアウトを設定
+            urlConnection.setReadTimeout(10000);
+            // ヘッダーにUser-Agentを設定
+            urlConnection.addRequestProperty(&#34;User-Agent&#34;, &#34;Android&#34;);
+            // ヘッダーにAccept-Languageを設定
+            urlConnection.addRequestProperty(&#34;Accept-Language&#34;, Locale.getDefault().toString());
+            //ヘッダーにContent-Typeを設定する
+            urlConnection.addRequestProperty(&#34;Content-Type&#34;, &#34;application/x-www-form-urlencoded&#34;);
+            // HTTPメソッドを指定
+            urlConnection.setRequestMethod(&#34;POST&#34;);
+
+            urlConnection.setUseCaches(false);
+            //リクエストボディの送信を許可しない
+            urlConnection.setDoOutput(true);
+            //レスポンスボディの受信を許可する
+            urlConnection.setDoInput(true);
+            // 通信開始
+            urlConnection.connect();
+
+
+            //ステップ5:リクエストボディの書き出しを行う。
+            OutputStream outputStream = urlConnection.getOutputStream();
+            Map&lt;String, String&gt; keyValues = new HashMap&lt;&gt;();
+
+            keyValues.put(&#34;key1&#34;, key1);
+            keyValues.put(&#34;key2&#34;, key2);
+
+
+            if (keyValues.size() &gt; 0) {
+                Uri.Builder builder = new Uri.Builder();
+                //HashMapを[key=value]形式の文字列に変換する
+                for (String key : keyValues.keySet()) {
+                    //[key=value]形式の文字列に変換する。
+                    builder.appendQueryParameter(key, keyValues.get(key));
+                }
+                //[key=value&amp;key=value…]形式の文字列に変換する。
+                String join = builder.build().getEncodedQuery();
+                PrintStream ps = new PrintStream(outputStream);
+                ps.print(join);
+                ps.close();
+            }
+            outputStream.close();
+
+            // レスポンスコードを取得
+            int statusCode = urlConnection.getResponseCode();
+            // レスポンスコード200は通信に成功したことを表す
+            if (statusCode == 200) {
+                inputStream = urlConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+                // 1行ずつレスポンス結果を取得しstrに追記
+                result = bufferedReader.readLine();
+                while (result != null) {
+                    str += result;
+                    result = bufferedReader.readLine();
+                }
+                bufferedReader.close();
+            }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // レスポンス結果のJSONをString型で返す
+        return str;
+    }
+</code></pre>
+              ]]></content:encoded></item></channel></rss>
