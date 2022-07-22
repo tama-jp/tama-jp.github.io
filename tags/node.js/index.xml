@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>node.js on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/node.js/</link><description>Recent content in node.js on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 22 Jul 2022 11:14:09 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/node.js/index.xml" rel="self" type="application/rss+xml"/><item><title>Nodebrewのインストールと使い方</title><link>https://kodawari.info/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link><pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate><guid>https://kodawari.info/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid><description>Nodebrewをインストールする インストール brew install nodebrew 確認 nodebrew -v バージョンが表示されればOK。 .zshrcなどに環境変数を追加 vi ~/.zshrc export PATH=$HOME/.nodebrew/current/bin:$PATH 初期化 nodebrew setup</description><content:encoded><![CDATA[
+              <h2 id="nodebrewをインストールする">Nodebrewをインストールする</h2>
+<p>インストール</p>
+<pre tabindex="0"><code>brew install nodebrew
+</code></pre><p>確認</p>
+<pre tabindex="0"><code>nodebrew -v
+</code></pre><p>バージョンが表示されればOK。</p>
+<p>.zshrcなどに環境変数を追加
+vi ~/.zshrc</p>
+<pre tabindex="0"><code>export PATH=$HOME/.nodebrew/current/bin:$PATH
+</code></pre><p>初期化</p>
+<pre tabindex="0"><code>nodebrew setup
+</code></pre><p>バージョン指定してnodeをインストールする
+インストール可能なバージョンを確認</p>
+<pre tabindex="0"><code>nodebrew ls-remote
+</code></pre><h2 id="nodeのインストール">nodeのインストール</h2>
+<pre tabindex="0"><code>nodebrew install-binary &lt;version&gt;
+</code></pre><p>例：</p>
+<pre tabindex="0"><code>nodebrew install-binary v18.6.0
+</code></pre><h2 id="インストールしたバージョンを確認">インストールしたバージョンを確認</h2>
+<pre tabindex="0"><code>nodebrew ls
+</code></pre><h2 id="使いたいバージョンを指定">使いたいバージョンを指定</h2>
+<pre tabindex="0"><code>nodebrew use v18.6.0
+</code></pre><h2 id="アンインストール">アンインストール</h2>
+<pre tabindex="0"><code>nodebrew uninstall &lt;version&gt;
+</code></pre><p>例：</p>
+<pre tabindex="0"><code>nodebrew uninstall v18.6.0
+</code></pre><h2 id="最終確認">最終確認</h2>
+<p>もう一度nodebrew lsを叩いて、currentが指定されてればOK。
+最後に node -vでバージョンが表示されれば万事完了！</p>
+
+              ]]></content:encoded></item></channel></rss>
