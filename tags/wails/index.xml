@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>wails on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/wails/</link><description>Recent content in wails on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 21 Jul 2022 22:43:00 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/wails/index.xml" rel="self" type="application/rss+xml"/><item><title>Wails v2の初期設定</title><link>https://kodawari.info/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate><guid>https://kodawari.info/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>wailsインストール go install github.com/wailsapp/wails/v2/cmd/wails@latest ツールのcheck wails doctor 初期設定 wails init -n [プロジェクトディレクトリ名] -t [テンプレート名または、url] wails init -n tamatan -t svelte-ts</description><content:encoded><![CDATA[
+              <h2 id="wailsインストール">wailsインストール</h2>
+<pre tabindex="0"><code>go install github.com/wailsapp/wails/v2/cmd/wails@latest
+</code></pre><h2 id="ツールのcheck">ツールのcheck</h2>
+<pre tabindex="0"><code>wails doctor 
+</code></pre><h2 id="初期設定">初期設定</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wails init -n <span style="color:#f92672">[</span>プロジェクトディレクトリ名<span style="color:#f92672">]</span> -t <span style="color:#f92672">[</span>テンプレート名または、url<span style="color:#f92672">]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wails init -n tamatan -t svelte-ts 
+</span></span></code></pre></div><p>現在バグなのか、フロントエンドの初期化がうまく行かないので
+yarnまたは、npm installを実行する。
+(yarnの方がうまく行くような気がする。)</p>
+<pre tabindex="0"><code>cd tamatan/frontend
+yarn
+</code></pre><p>テンプレートは、 リリースのv2.0.0-beta.35に書いてあった</p>
+<table>
+<thead>
+<tr>
+<th>TEMPLATE</th>
+<th>SHORT NAME</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lit + Vite</td>
+<td>lit</td>
+<td>Lit + Vite development server</td>
+</tr>
+<tr>
+<td>Lit + Vite (Typescript)</td>
+<td>lit-ts</td>
+<td>Lit + TS + Vite development server</td>
+</tr>
+<tr>
+<td>Preact + Vite</td>
+<td>preact</td>
+<td>Preact + Vite development server</td>
+</tr>
+<tr>
+<td>Preact + Vite (Typescript)</td>
+<td>preact-ts</td>
+<td>Preact + Vite development server</td>
+</tr>
+<tr>
+<td>React + Vite</td>
+<td>react</td>
+<td>React + Vite development server</td>
+</tr>
+<tr>
+<td>React + Vite (Typescript)</td>
+<td>react-ts</td>
+<td>React + Vite development server</td>
+</tr>
+<tr>
+<td>Svelte + Vite</td>
+<td>svelte</td>
+<td>Svelte + Vite development server</td>
+</tr>
+<tr>
+<td>Svelte + Vite (Typescript)</td>
+<td>svelte-ts</td>
+<td>Svelte + TS + Vite development server</td>
+</tr>
+<tr>
+<td>Vanilla + Vite</td>
+<td>vanilla</td>
+<td>Vanilla + Vite development server</td>
+</tr>
+<tr>
+<td>Vanilla + Vite (Typescript)</td>
+<td>vanilla-ts</td>
+<td>Vanilla + Vite development server</td>
+</tr>
+<tr>
+<td>Vue + Vite</td>
+<td>vue</td>
+<td>Vue + Vite development server</td>
+</tr>
+<tr>
+<td>Vue + Vite (Typescript)</td>
+<td>vue-ts</td>
+<td>Vue + Vite development server</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vue">Vue</h3>
+<table>
+<thead>
+<tr>
+<th>SHORT NAME</th>
+<th>TEMPLATE</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>misitebao/wails-template-vue</td>
+<td><a href="https://github.com/misitebao/wails-template-vue">https://github.com/misitebao/wails-template-vue</a></td>
+<td>A template using Vite,Vue and Vue-Router(Support both JavaScript and TypeScript)</td>
+</tr>
+<tr>
+<td>wails-vite-vue-ts</td>
+<td><a href="https://github.com/codydbentley/wails-vite-vue-ts">https://github.com/codydbentley/wails-vite-vue-ts</a></td>
+<td>Vue 3 TypeScript with Vite (and instructions to add features)</td>
+</tr>
+<tr>
+<td>codydbentley/wails-vite-vue-the-works</td>
+<td><a href="https://github.com/codydbentley/wails-vite-vue-the-works">https://github.com/codydbentley/wails-vite-vue-the-works</a></td>
+<td>Vue 3 TypeScript with Vite, Vuex, Vue Router, Sass, and ESLint + Prettier</td>
+</tr>
+</tbody>
+</table>
+<h3 id="angular">Angular</h3>
+<table>
+<thead>
+<tr>
+<th>SHORT NAME</th>
+<th>TEMPLATE</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TAINCER / wails-angular-template</td>
+<td><a href="https://github.com/TAINCER/wails-angular-template">https://github.com/TAINCER/wails-angular-template</a></td>
+<td>Angular with TypeScript, Sass, Hot-Reload, Code-Splitting and i18n</td>
+</tr>
+</tbody>
+</table>
+<h3 id="react">React</h3>
+<table>
+<thead>
+<tr>
+<th>SHORT NAME</th>
+<th>TEMPLATE</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AlienRecall / wails-react-template</td>
+<td><a href="https://github.com/AlienRecall/wails-react-template">https://github.com/AlienRecall/wails-react-template</a></td>
+<td>A template using reactjs</td>
+</tr>
+<tr>
+<td>flin7 / wails-react-template</td>
+<td><a href="https://github.com/flin7/wails-react-template">https://github.com/flin7/wails-react-template</a></td>
+<td>A minimal template for React that supports live development</td>
+</tr>
+<tr>
+<td>LGiki / wails-template-nextjs</td>
+<td><a href="https://github.com/LGiki/wails-template-nextjs">https://github.com/LGiki/wails-template-nextjs</a></td>
+<td>A template using Next.js and TypeScript</td>
+</tr>
+</tbody>
+</table>
+<h3 id="svelte">Svelte</h3>
+<table>
+<thead>
+<tr>
+<th>SHORT NAME</th>
+<th>TEMPLATE</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raitonoberu / wails-svelte-template</td>
+<td><a href="https://github.com/raitonoberu/wails-svelte-template">https://github.com/raitonoberu/wails-svelte-template</a></td>
+<td>Svelteを使用したテンプレート</td>
+</tr>
+<tr>
+<td>BillBuilt / wails-vite-svelte-template</td>
+<td><a href="https://github.com/BillBuilt/wails-vite-svelte-template">https://github.com/BillBuilt/wails-vite-svelte-template</a></td>
+<td>A template using Svelte and Vite</td>
+</tr>
+<tr>
+<td>BillBuilt / wails-vite-svelte-tailwind-template</td>
+<td><a href="https://github.com/BillBuilt/wails-vite-svelte-tailwind-template">https://github.com/BillBuilt/wails-vite-svelte-tailwind-template</a></td>
+<td>A template using Svelte and Vite with TailwindCSS v3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="elm">Elm</h3>
+<table>
+<thead>
+<tr>
+<th>SHORT NAME</th>
+<th>TEMPLATE</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>benjamin-thomas / wails-elm-template</td>
+<td><a href="https://github.com/benjamin-thomas/wails-elm-template">https://github.com/benjamin-thomas/wails-elm-template</a></td>
+<td>Develop your GUI app with functional programming and a snappy hot-reload setup 🎉 🚀</td>
+</tr>
+</tbody>
+</table>
+<h2 id="テスト起動">テスト起動</h2>
+<p>うまく行かないときは、
+もう一度、yarn</p>
+<pre tabindex="0"><code>wails dev
+</code></pre><h2 id="ビルド">ビルド</h2>
+<pre tabindex="0"><code>wails build 
+</code></pre><pre tabindex="0"><code>wails build  -platform &lt;各プラットフォーム&gt;
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wails build -platform darwin/universal
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>wails build -platform windows
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>darwin</td>
+<td>MacOS + architecture of build machine</td>
+</tr>
+<tr>
+<td>darwin/amd64</td>
+<td>MacOS 10.13+ AMD64</td>
+</tr>
+<tr>
+<td>darwin/arm64</td>
+<td>MacOS 11.0+ ARM64</td>
+</tr>
+<tr>
+<td>darwin/universal</td>
+<td>MacOS AMD64+ARM64 universal application</td>
+</tr>
+<tr>
+<td>windows</td>
+<td>Windows 10/11 + architecture of build machine</td>
+</tr>
+<tr>
+<td>windows/amd64</td>
+<td>Windows 10/11 AMD64</td>
+</tr>
+<tr>
+<td>windows/arm64</td>
+<td>Windows 10/11 ARM64</td>
+</tr>
+<tr>
+<td>linux</td>
+<td>Linux + architecture of build machine</td>
+</tr>
+<tr>
+<td>linux/amd64</td>
+<td>Linux AMD64</td>
+</tr>
+<tr>
+<td>linux/arm64</td>
+<td>Linux ARM64</td>
+</tr>
+</tbody>
+</table>
+<p>こんな感じかな。</p>
+
+              ]]></content:encoded></item></channel></rss>
