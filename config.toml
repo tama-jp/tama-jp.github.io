@@ -11,7 +11,7 @@ theme = "mainroad"
 # 日本語の文字数を正しく数えて、短いサマリーを表示できるようにするには、設定ファイルで下記のように hasCJKLanguage を true に設定します。
 hasCJKLanguage = true
 
-rssLimit = 20
+rssLimit = 30
 
 [Author]
 name = "tama-tan"
