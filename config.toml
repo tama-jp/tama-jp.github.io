@@ -8,6 +8,9 @@ theme = "mainroad"
 # https://github.com/nanxiaobei/hugo-paper
 #theme = "paper"
 
+#googleAnalytics = "UA-92977166-1" # Enable Google Analytics by entering your tracking id
+googleAnalytics = "G-788BH2CZ5H"
+
 # 日本語の文字数を正しく数えて、短いサマリーを表示できるようにするには、設定ファイルで下記のように hasCJKLanguage を true に設定します。
 hasCJKLanguage = true
 
@@ -17,7 +20,6 @@ rssLimit = 30
 name = "tama-tan"
 bio = "いろいろプログラミングをやっています。今は、go言語にはまってます。"
 avatar = "img/avatar.png"
-
 [Params]
 #opengraph = true # Enable OpenGraph if true
 schema = true # Enable Schema
