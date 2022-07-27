@@ -711,6 +711,563 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>                    --- 省略 ----
 </span></span></code></pre></div><p>上記で、Validityの覧を見ると有効期限がわかります。</p>
 
+              ]]></content:encoded></item><item><title>Golangでホットリロードする方法</title><link>https://kodawari.info/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 05 Jul 2022 13:00:04 +0900</pubDate><guid>https://kodawari.info/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 今回、Go言語で開発を行うことがありました。 go言語は、PHPやRubyなどの言</description><content:encoded><![CDATA[
+              <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
+<p>今回、Go言語で開発を行うことがありました。</p>
+<p>go言語は、PHPやRubyなどの言語とは異なり、ビルドをしないとソースは反映されません。</p>
+<p>そのため、開発中は、毎回ソース変更してはコンパイルをして起動。。。。。。</p>
+<p>Vue.JSやDjangoようにホットリロードに対応していません。
+めんどくさいですよね。</p>
+<p>でも、goには、それを解消してくれるツールがあります。</p>
+<p>それが、<a href="https://github.com/cosmtrek/air">Air</a> です。</p>
+<p>今回は、標準ライブラリでWebを起動しJsonを返す簡単なサンプルを用意しました。</p>
+<h2 id="環境用意">環境用意</h2>
+<p>Macで作成しているのでWindowsでするときは、Bashは、適当に置き換えてください。</p>
+<p>用意するもの、</p>
+<ul>
+<li>エディタ</li>
+<li>Dockerデスクトップ</li>
+</ul>
+<p>これだけで動作します。</p>
+<h2 id="作成手順">作成手順</h2>
+<h3 id="1-フォルダを作成">1) フォルダを作成</h3>
+<pre tabindex="0"><code>mkdir -p air_sample &amp;&amp; cd air_sample
+</code></pre><h3 id="2--goのファイルを作成">2)  goのファイルを作成</h3>
+<p>go.mod</p>
+<pre tabindex="0"><code>module air_sample
+
+go 1.17
+</code></pre><p>main.go</p>
+<pre tabindex="0"><code>package main
+
+import (
+	&#34;bytes&#34;
+	&#34;encoding/json&#34;
+	&#34;fmt&#34;
+	&#34;log&#34;
+	&#34;net/http&#34;
+)
+
+type Response struct {
+	Status      int       `json:&#34;status&#34;`
+	Message   string    `json:&#34;message&#34;`
+}
+
+func rootHandler(w http.ResponseWriter, r *http.Request) {
+	var buf bytes.Buffer
+
+	response :=Response{
+		Status: 0,
+		Message: &#34;こんにちわ、世界&#34;,
+	}
+
+	enc := json.NewEncoder(&amp;buf)
+	if err := enc.Encode(&amp;response); err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(buf.String())
+
+	_, err := fmt.Fprint(w, buf.String())
+	if err != nil {
+		return
+	}
+}
+
+func main() {
+	http.HandleFunc(&#34;/&#34;, rootHandler)
+	log.Fatal(http.ListenAndServe(&#34;:8080&#34;, nil))
+}
+</code></pre><h3 id="3--airの設定ファイルの取得">3)  airの設定ファイルの取得</h3>
+<pre tabindex="0"><code>wget https://raw.githubusercontent.com/cosmtrek/air/master/air_example.toml
+mv air_example.toml .air.toml
+</code></pre><h3 id="4--docker関連のファイル作成">4)  Docker関連のファイル作成</h3>
+<p>Dockerfile</p>
+<pre tabindex="0"><code>FROM golang:1.17-buster
+
+# Time zone
+RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
+RUN apt-get update
+RUN apt-get -y install libonig-dev
+
+COPY . /go/src
+
+# Move to project root
+WORKDIR /go/src
+
+RUN go mod download
+
+# Install Air (For binary execution)
+RUN go get -u github.com/cosmtrek/air
+
+# Start golang app with livereload
+CMD [&#34;air&#34;, &#34;-c&#34;, &#34;.air.toml&#34;]
+
+EXPOSE 8080
+</code></pre><p>docker-compose.yml</p>
+<pre tabindex="0"><code>version: &#34;3&#34;
+
+services:
+# ---------------------------------------------------
+# gin
+# ---------------------------------------------------
+  web:
+    build:
+      context: .
+    container_name: web
+    volumes:
+      - .:/go/src
+    ports:
+      - 8080:8080
+    tty: true
+    environment:
+      TZ: Asia/Tokyo
+</code></pre><h3 id="5--起動用のバッチファイル作成">5)  起動用のバッチファイル作成</h3>
+<p>start.sh</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>docker-compose stop
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# !<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;refresh&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    docker-compose down
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker-compose up --build
+</span></span></code></pre></div><h2 id="実行">実行</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sh start.sh
+</span></span></code></pre></div><p>以下のようになります。</p>
+<p><img src="../img/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2021-12-13-%E5%8D%88%E5%BE%8C4.06.56.png" alt="スクリーンショット 2021-12-13 午後4.06.56.png"></p>
+<h2 id="テスト">テスト</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl <span style="color:#e6db74">&#34;http://localhost:8080&#34;</span>
+</span></span></code></pre></div><p>これで実行できます。</p>
+<p>実行結果</p>
+<p><img src="../img/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2021-12-13-%E5%8D%88%E5%BE%8C4.07.28.png" alt="スクリーンショット 2021-12-13 午後4.07.28.png"></p>
+<p>ちゃんと動いてます。
+そして、以下のように表示されてます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;status&#34;</span>:<span style="color:#ae81ff">0</span>,<span style="color:#f92672">&#34;message&#34;</span>:<span style="color:#e6db74">&#34;こんにちわ、世界&#34;</span>}
+</span></span></code></pre></div><p>ようやくここから本題。</p>
+<p>今回用意したファイルは、ややこしいことしてますが、フォルダ内の「main.go」をDockerComposeで見るように工夫しています。
+ですので、「main.go」を書き換えると勝手に再コンパイルがされ実行環境に反映されます。</p>
+<p>例えば、JSONの戻り値を</p>
+<pre tabindex="0"><code>	response :=Response{
+		Status: 0,
+		Message: &#34;こんにちわ、世界&#34;,
+	}
+</code></pre><p>から</p>
+<pre tabindex="0"><code>	response :=Response{
+		Status: 0,
+		Message: &#34;こんにちわ、世界,Hallo&#34;,
+	}
+</code></pre><p>と書き込んでみます。そうすると！！</p>
+<p><img src="../img/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2021-12-13-%E5%8D%88%E5%BE%8C4.08.25.png" alt="スクリーンショット 2021-12-13 午後4.08.25.png"></p>
+<p>となり再コンパイルされてます。</p>
+<p>本当に再コンパイルされているかどうか見て見ましょう。</p>
+<p>もう一度curlで実行。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl <span style="color:#e6db74">&#34;http://localhost:8080&#34;</span>
+</span></span></code></pre></div><p><img src="../img/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2021-12-13-%E5%8D%88%E5%BE%8C4.08.40.png" alt="スクリーンショット 2021-12-13 午後4.08.40.png"></p>
+<p>戻り値が変わってますね。
+本番環境では、Wireは使うとダメですが、開発環境では重宝しそうです。
+Goを使用することがあれば一度やってみませんか</p>
+<p>明日は @ya-yamamoto さん、よろしくお願いします！！</p>
+
+              ]]></content:encoded></item><item><title>APIの死活監視をRocketChatに送信する</title><link>https://kodawari.info/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link><pubDate>Tue, 05 Jul 2022 12:15:06 +0900</pubDate><guid>https://kodawari.info/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 サーバ監視ツールを作成しようというお話をします。 サーバが本当に動いているかどうか</description><content:encoded><![CDATA[
+              <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
+<p>サーバ監視ツールを作成しようというお話をします。</p>
+<p>サーバが本当に動いているかどうかを少し前までは、メールで送信が多かったのですが、
+最近は、Slack等のチャットに連絡するような方法が多くなってきているようです。</p>
+<p>そこで、RocketChatを使ってサーバが死んでいるときにメッセージを送るツールをGo言語で作ってみようと思います。</p>
+<p>Go言語には、サードパーティー製のパッケージ（Golangがあらかじめ用意していないソースのこと）などを
+使用せずともある程度組めるようにはなっております。
+ですので、1ファイルでコンパイルできプラットフォーム依存のないソースを作成します。
+今回もそういう感じで作ったので、WindowsでもMacでもLinuxでも動作すると思います。
+(すみません、プロクシは設定しておりません。。。。)</p>
+<p>基礎知識は、英語ですが、<a href="https://golang.org/">本家</a>を見て頂くか
+<a href="https://go-tour-jp.appspot.com/welcome/1">A Tour of Go</a>や<a href="https://qiita.com/tenntenn/items/0e33a4959250d1a55045">Go言語の初心者が見ると幸せになれる場所</a>を見ていくとわかりやすいです。</p>
+<p>※ 時間の関係上細かいところまで説明しておりませんご了承ください。</p>
+<h2 id="前準備サーバーの仕様">前準備（サーバーの仕様）</h2>
+<p>サーバは簡易的にGo言語で用意します。（解説は面倒なので抜き）</p>
+<p>HTTPステータスが正常(200)、異常(500)と、
+Jsonのステータスが正常(0),異常(1)を返すものを4種類のAPIを作成しておき、
+それによってどう動作するかを確認します。</p>
+<p>以下の仕様です</p>
+<ul>
+<li>http://localhost:3000</li>
+<li>引数なしのPOST</li>
+<li>response
+JSONで以下のように返す</li>
+</ul>
+<pre tabindex="0"><code>{
+  &#34;comment&#34;: コメント,
+  &#34;status&#34;: ステータス(0 or -1)
+}
+</code></pre><ul>
+<li>URLは、以下を用意</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>URI</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/test_status_ok_json_status_ok</td>
+<td>HTTPステータス 正常・Jsonステータス正常</td>
+</tr>
+<tr>
+<td>/test_status_ok_json_status_ng</td>
+<td>HTTPステータス 正常・Jsonステータス異常</td>
+</tr>
+<tr>
+<td>/test_status_ng_json_status_ng</td>
+<td>HTTPステータス 異常・Jsonステータス正常</td>
+</tr>
+<tr>
+<td>/test_status_ok_json_status_ok_long_time</td>
+<td>HTTPステータス 正常・Jsonステータス正常（responseが遅い）</td>
+</tr>
+</tbody>
+</table>
+<p>以下がサンプルソースです。</p>
+<pre tabindex="0"><code>package main
+
+import (
+	&#34;bytes&#34;
+	&#34;encoding/json&#34;
+	&#34;fmt&#34;
+	&#34;io&#34;
+	&#34;log&#34;
+	&#34;net/http&#34;
+	&#34;time&#34;
+)
+
+type ResponseJSON struct {
+	Comment string `json:&#34;comment&#34;`
+	Status  int    `json:&#34;status&#34;`
+}
+
+const rotationTime = 10 * time.Second
+
+const urlTestStatusOkJsonStatusOk = &#34;/test_status_ok_json_status_ok&#34;
+const testStatusOkJsonStatusNg = &#34;/test_status_ok_json_status_ng&#34;
+const testStatusNgJsonStatusNg = &#34;/test_status_ng_json_status_ng&#34;
+const urlTestStatusOkJsonStatusOkLongTime = &#34;/test_status_ok_json_status_ok_long_time&#34;
+
+func commonHandler(w http.ResponseWriter, r *http.Request, resJSON ResponseJSON) {
+	body := r.Body
+	defer body.Close()
+
+	buf := new(bytes.Buffer)
+	io.Copy(buf, body)
+
+	// jsonエンコード
+	outputJson, err := json.Marshal(resJSON)
+
+	if err != nil {
+		panic(err)
+	}
+
+	// jsonヘッダーを出力
+	w.Header().Set(&#34;Content-Type&#34;, &#34;application/json&#34;)
+	// jsonデータを出力
+	_, _ = fmt.Fprint(w, string(outputJson))
+}
+
+func urlTestStatusOkJsonStatusOkLongTimeHandler(w http.ResponseWriter, r *http.Request) {
+	time.Sleep(20 * time.Second)
+	w.WriteHeader(http.StatusOK)
+
+	resJSON := ResponseJSON{
+		Comment: &#34;Status Ok JsonStatus Ok LongTime&#34;,
+		Status:  0,
+	}
+	commonHandler(w, r, resJSON)
+}
+
+func testStatusOkJsonStatusOkHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+
+	resJSON := ResponseJSON{
+		Comment: &#34;Status Ok JsonStatus Ok&#34;,
+		Status:  0,
+	}
+
+	commonHandler(w, r, resJSON)
+}
+
+func testStatusOkJsonStatusNgHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+	resJSON := ResponseJSON{
+		Comment: &#34;Status Ok JsonStatus NG&#34;,
+		Status:  -1,
+	}
+
+	commonHandler(w, r, resJSON)
+
+}
+
+func testStatusNgJsonStatusNgHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusInternalServerError)
+	resJSON := ResponseJSON{
+		Comment: &#34;Status NG JsonStatus NG&#34;,
+		Status:  -1,
+	}
+	commonHandler(w, r, resJSON)
+}
+
+func serverSample() {
+	// curl -i http://localhost:3000/test_status_ng_json_status_ng
+	http.HandleFunc(urlTestStatusOkJsonStatusOk, testStatusOkJsonStatusOkHandler)
+
+	// curl -i http://localhost:3000/test_status_ok_json_status_ng
+	http.HandleFunc(testStatusOkJsonStatusNg, testStatusOkJsonStatusNgHandler)
+
+	// curl -i http://localhost:3000/test_status_ng_json_status_ng
+	http.HandleFunc(testStatusNgJsonStatusNg, testStatusNgJsonStatusNgHandler)
+
+	// curl -i http://localhost:3000/test_status_ok_json_status_ok_long_time
+	http.HandleFunc(urlTestStatusOkJsonStatusOkLongTime, urlTestStatusOkJsonStatusOkLongTimeHandler)
+
+	go func() {
+		log.Fatal(http.ListenAndServe(&#34;:3000&#34;, nil))
+	}()
+
+}
+
+func main() {
+	// サンプルサーバー
+	serverSample()
+
+	for range time.Tick(rotationTime) {
+	}
+
+}
+</code></pre><h2 id="ステータス監視">ステータス監視</h2>
+<p>前準備で、サーバーを用意しました。
+死活監視として何を見るかというと</p>
+<ol>
+<li>HTTPステータス異常ではないか</li>
+<li>レスポンスが異常ではないか</li>
+<li>レスポンス応答が遅くないか
+この3つを監視します。</li>
+</ol>
+<h3 id="httpステータスとレスポンスの取得">HTTPステータスとレスポンスの取得</h3>
+<p>今回はメッチャ簡単に「http」パッケージを用いて、HTTPステータスとレスポンスを取得します
+HTTPステータスが200以外の場合は、エラーを返します。
+また、通信で異常があった場合もエラーを返します。
+正常の場合のみ、レスポンスを返すようにします。</p>
+<p>レスポンス(JSON)の中身は、DataStoreとして構造体に入れてわかりやすく中身を管理します。
+「encoding/json」パッケージで簡単に構造体に入れてくれます。</p>
+<pre tabindex="0"><code>type ResponseJSON struct {
+	Comment string `json:&#34;comment&#34;`
+	Status  int    `json:&#34;status&#34;`
+}
+
+func validationAPI(urlAddress string, res *ResponseJSON) (int, error) {
+
+	req, err := http.NewRequest(
+		&#34;POST&#34;,
+		urlAddress,
+		nil,
+	)
+
+	if err != nil {
+		return -1, err
+	}
+
+	client := &amp;http.Client{}
+	resp, err := client.Do(req)
+
+	// ネットワークエラー
+	if err != nil {
+		return -1, err
+	}
+
+	statusCode := resp.StatusCode
+
+	// httpステータスが正常でなければエラーとする
+	if statusCode != 200 {
+		return statusCode, errors.New(&#34;ステータスエラー&#34;)
+	}
+
+	defer resp.Body.Close()
+
+	byteArray, _ := ioutil.ReadAll(resp.Body)
+	responseJsonStr := string(byteArray)
+
+	_ = json.Unmarshal([]byte(responseJsonStr), res)
+
+	return statusCode, nil
+}
+</code></pre><h3 id="各ステータスとレスポンス時間を取得">各ステータスとレスポンス時間を取得</h3>
+<p>上記で作成した「validationAPI」メソッドは、ステータスやサーバ異常は、エラーと返しますが、
+レスポンス中身は、確認していません。また、レスポンス時間なども確認してません。
+そういったものを確認するためのルーチンを以下で制御し、エラーであった場合RocketChatに投げます。</p>
+<pre tabindex="0"><code>// ステータスチェック
+func statusCheck(urlAddress string) {
+
+	responseJSONData := new(ResponseJSON)
+    
+	// 通信開始時刻取得
+	_now := time.Now()
+	// 通信開始
+	statusCode, err := validationAPI(urlAddress, responseJSONData)
+	// 通信終了
+
+	// 開始時刻からの時間を取得
+	_duration := (time.Now()).Sub(_now)
+		・・・ 省略・・・ 
+	_second := _millisecond / 1000
+
+	var message string
+	message = urlAddress + &#34;\n&#34;
+
+	if err != nil {
+		message = message + &#34;--- 問題あり ---&#34; + &#34;\n&#34;
+		・・・ 省略・・・ 
+		err = RocketChatMessagePush(message)
+	} else if _second &gt; responseTime {
+		message = message + &#34;--- 問題あり ---&#34; + &#34;\n&#34;
+		・・・ 省略・・・ 
+		err = RocketChatMessagePush(message)
+	} else if responseJSONData.Status !=0 {
+		message = message + &#34;--- 問題あり ---&#34; + &#34;\n&#34;
+		・・・ 省略・・・ 
+		err = RocketChatMessagePush(message)
+	} else {
+		message = message + &#34;--- 問題なし ---&#34; + &#34;\n&#34;
+		・・・ 省略・・・ 
+	}
+}
+</code></pre><p>ここまでをポーリングでまわせば死活監視できます。
+さて、エラーをRocketChatに送信する方法です。</p>
+<h2 id="rocketchatの送信">RocketChatの送信</h2>
+<p>ターゲットのチャットルーム（プライベートユーザー）送信するにはどうしたらいいのか
+RocketChatは、APIがきっちり用意されていてすごく簡単です。</p>
+<p>メッセージを送信するAPIの仕様 <a href="https://rocket.chat/docs/developer-guides/rest-api/chat/postmessage/">Post a chat message</a>
+を見ると
+最初の行に「URL」「Requires Auth」「HTTP Method」が表にのっています。
+「URL」把握背するところとわかり、「HTTP Method」は、POSTで送信しろと書いており、
+「Requires Auth」が必要というようなことが書いております。
+つまり、ログインしてる情報をひっつけてこのURLでPOSTすればいいことがわかります。</p>
+<p>どうやってポストをするのか。パラメータがいっぱい書いてますけど良くわかりませんよね？（；^ω^）
+こういうときはサンプルがどっかに書いてあることが多いです。
+「Example Call」と「Example Result」を見ます。
+前者は、POSTの仕方が書いてあり、後者はそのresponseですね。
+前者の「Example Call」を見ると、
+curlでのコマンドが書いてあり、「-H」と「-d」とURLが引数となっています。
+「-H」は、送信するヘッダのことで、「X-Auth-Token」と「X-User-Id」と、「Content-type:application/json」と言うのがあります。
+「Content-type:application/json」は、送信方法をJSONで送ると言う意味で、
+残りの、「X-Auth-Token」と「X-User-Id」は、たぶん、名前の通りで行くと認証の文字列でしょう。
+おそらく、どこかで取得したものをここに設定するのだと思います。</p>
+<p>っということは、もしかしたらログインの時にこのデータを作成しているのではないかなと推測します。
+なので、REST APIで、認証で、ログインで入れるAPIの仕様を見てみましょう。
+「<a href="https://rocket.chat/docs/developer-guides/rest-api/authentication/login/">rest-api/authentication/login/</a>」をこれを見ると「Result」の項目を見ると！！
+「authToken」というのと「userId」てのがありますね。そう、これが、先ほどの「X-Auth-Token」と「X-User-Id」に入ります。</p>
+<p>細かいことは端折りますが、</p>
+<ol>
+<li>ログインで、「ユーザー」「パスワード」を入れて、POSTする。</li>
+<li>レスポンスで、「authToken」と「userId」を取得</li>
+<li>Post a chat messageで先ほどの「authToken」と「userId」をヘッダに、書き込むチャンネルと文言を一緒に送信する</li>
+<li>メッセージが書き込まれる。</li>
+</ol>
+<p>てな具合です。簡単でしょ？</p>
+<p>「HTTPステータスとレスポンスの取得」で作成した「validationAPI」に、
+パラメータとヘッダーの設定し、送信するれば良いだけです。</p>
+<p>これで、大体の作り方がわかったはずです。</p>
+<pre tabindex="0"><code>
+/*
+	RocketChatログイン
+*/
+func RocketChatLogin(urlAddress string, userName string, password string, res *RocketChatLoginResponse) error {
+	jsonParam := RocketChatLoginParam{
+		User:     userName,
+		Password: password,
+	}
+
+	bytesData, err := json.Marshal(&amp;jsonParam)
+
+	if err != nil {
+		return err
+	}
+
+	jsonStr := string(bytesData)
+	req, err := http.NewRequest(
+		&#34;POST&#34;,
+		urlAddress+&#34;/api/v1/login&#34;,
+		bytes.NewBuffer([]byte(jsonStr)),
+	)
+	if err != nil {
+		return err
+	}
+
+	// Content-Type 設定
+	req.Header.Set(&#34;Content-Type&#34;, &#34;application/json&#34;)
+
+	client := &amp;http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	byteArray, _ := ioutil.ReadAll(resp.Body)
+
+	responseJsonStr := string(byteArray)
+
+	_ = json.Unmarshal([]byte(responseJsonStr), res)
+
+	return nil
+}
+
+/*
+	RocketChatログイン
+*/
+func RocketChatPostMessage(urlAddress string, authToken string, userId string, chatRoom string, message string) error {
+	jsonParam := RocketChatPostMessageParam{
+		Channel: chatRoom,
+		Message: message,
+	}
+
+	bytesData, err := json.Marshal(&amp;jsonParam)
+
+	if err != nil {
+		return err
+	}
+
+	jsonStr := string(bytesData)
+	req, err := http.NewRequest(
+		&#34;POST&#34;,
+		urlAddress+&#34;/api/v1/chat.postMessage&#34;,
+		bytes.NewBuffer([]byte(jsonStr)),
+	)
+	if err != nil {
+		return err
+	}
+
+	// Content-Type 設定
+	req.Header.Set(&#34;Content-Type&#34;, &#34;application/json&#34;)
+	req.Header.Set(&#34;X-User-Id&#34;, userId)
+	req.Header.Set(&#34;X-Auth-Token&#34;, authToken)
+
+	client := &amp;http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	return nil
+}
+</code></pre><h2 id="最後に">最後に</h2>
+<p>なんか説明してなく、ソースをあげているだけのような気がしていてしょうがないですが、(;￣ー￣A アセアセ・・・
+よしとしてください。。。。
+あと、Go言語好きな人集まりが出来たら良いなぁって最近は思ってます。。。。。</p>
+<p>※ 端折って書いたりしておりますので実際のサンプルサーバと監視ツールを合体したソースを<a href="https://gist.github.com/tama-jp/175aa45d0d129568329168504a9e228f">Gist</a>にあげておきます。</p>
+
               ]]></content:encoded></item><item><title>GORMでtime型をするときの注意</title><link>https://kodawari.info/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</link><pubDate>Thu, 30 Jun 2022 19:41:20 +0900</pubDate><guid>https://kodawari.info/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</guid><description>GORMでtime型をするときの注意 GORMで構造体をマイグレーションしたときに 以下のようにしてもtime型にはならなかった、、、 type test struct { BreakTime</description><content:encoded><![CDATA[
               <h1 id="gormでtime型をするときの注意">GORMでtime型をするときの注意</h1>
 <p>GORMで構造体をマイグレーションしたときに
