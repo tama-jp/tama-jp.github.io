@@ -2,15 +2,17 @@
 title: "iOSとAndroidの共通モジュールをgomobileで作ってみる"
 date: 2022-07-05T12:23:52+09:00
 slug: "iOSとAndroidの共通モジュールをgomobileで作ってみる"
-# categories : ["技術"]
-# tags: ["golang"]
-categories: ["ETC"]
-tags: ["ETC"]
+categories : ["技術"]
+tags: ["golang","gomobile"]
 description: ""
 image: ""
 author: "tama-tan"
 draft: true
 ---
+
+まだうごかない
+
+※ 過去に書いた記事を載せています。今動作するかは不明。。。。
 
 今回は、「 iOSとAndroidの共通モジュールをgomobileで作ってみる」をかーんたんに紹介します(^O^)
 
@@ -36,24 +38,24 @@ Unity、Xamarin、Flutter、gomobile等いろいろあります。
 ## ターゲットプラットフォーム
 ### 
 
-| 名称 | 内容 | 備考 |
-|--------|--------|--------|
-| Android | ndk/21.3.6528147 <br> sdk/30.0.2 | |
-| iOS| 14.0(Xcode 12.2) | |
+| 名称      | 内容                               | 備考  |
+|---------|----------------------------------|-----|
+| Android | ndk/24.0.8215888 <br> sdk/30.0.2 |     |
+| iOS     | 14.0(Xcode 12.2)                 |     |
 
 ## コンパイル言語 & パッケージ
 go言語については、書くと時間がかかると思いますので省略します。
 詳しいことは、[公式ドキュメント](https://xn--go-hh0g6u.com/doc/)が一番理解しやすいので参考にしてください。
 
 
-| 名称 | 内容 | 備考 |
-|--------|--------|--------|
-| go | 1.15.6  | |
+| 名称  | 内容     | 備考  |
+|-----|--------|-----|
+| go  | 1.18.3 |     |
 
-| 名称 | ソース | 備考 |
-|--------|--------|--------|
-| gobind | golang.org/x/mobile/cmd/gobind | ※1 |
-| gomobile | golang.org/x/mobile/cmd/gomobile | |
+| 名称       | ソース                              | 備考  |
+|----------|----------------------------------|-----|
+| gobind   | golang.org/x/mobile/cmd/gobind   | ※1  |
+| gomobile | golang.org/x/mobile/cmd/gomobile |     |
 
 ※1 現在,gobobileをインストールしても自動的に入らないため別でいれる
 
@@ -86,13 +88,13 @@ NDKのインストールは、Android Studioを起動し、
 Preferences > Appearance&Behavior > System Settings > Android SDK の SDK Toolsタブを選択します。そして、右下の 「Show Package Details」を選択し、「NDK」内の「21.3.6528147」を選択し、インストールします。
 （NDKは、現在、21.3.6528147以前しか対応していないみたいなのでこういうようにします）
 
-(![スクリーンショット 2020-12-12 22.34.32.png](/forum/assets/uploads/files/1608595576506-スクリーンショット-2020-12-12-22.34.32-resized.png) image url)
+(![スクリーンショット 2020-12-12 22.34.32.png](../img/スクリーンショット-2020-12-12-22.34.32-resized.png) image url)
 
 インストール後、パスを設定します。
 
 ```
-export ANDROID_NDK_ROOT=$HOME/Library/Android/sdk/ndk/21.3.6528147
-export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/ndk/21.3.6528147
+export ANDROID_NDK_ROOT=$HOME/Library/Android/sdk/ndk/24.0.8215888
+export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/ndk/24.0.8215888
 ```
 
 ### go言語
@@ -124,17 +126,19 @@ mkdir sample1
 cd sample1
 ```
 
+必要なパッケージをインストール
+
+```
+go install golang.org/x/mobile/cmd/gomobile@latest
+go install golang.org/x/mobile/cmd/gobind@latest
+```
+
+
 ```
 go mod init example.com/sample1 # <- これがAndroidのパッケージ名となります。
 gomobile init
 ```
 
-必要なパッケージをインストール
-
-```
-go get -u golang.org/x/mobile/cmd/gobind
-go get -u golang.org/x/mobile/cmd/gomobile
-```
 
 基本これで、gomobileのインストールは完了。パスが通っていれば使用出来ます。
 （※ ドキュメントには、gombileのみでいいように書いていますが、バージョン1.15だと
@@ -244,7 +248,7 @@ Android(サンプル抜粋)
 
 Androidの動作はこんな感じ
 
-![AndroidSample.gif](/forum/assets/uploads/files/1608595763362-androidsample.gif)
+![AndroidSample.gif](../img/androidsample-1.gif)
 
 iOS(サンプル抜粋)
 ```
@@ -265,8 +269,8 @@ iOS(サンプル抜粋)
 ```
 
 iOSの動作はこんな感じ
-![IOSSample.gif](/forum/assets/uploads/files/1608595800837-iossample.gif)
+![IOSSample.gif](../img/iossample.gif)
 
-今回、テストで作ったソースは、[こちら](https://compass.tgl.jp/gitbucket/git/pt.go-yamada/gomobileSample1.git)にあります。
+今回、テストで作ったソースは、[こちら]()にあります。
 Mac用ですが、コンパイラのインストールからコンパイルまでやってくれるようにしております。
 参考になればと。。。。。。
