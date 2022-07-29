@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>技術 on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/%E6%8A%80%E8%A1%93/</link><description>Recent content in 技術 on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 27 Jul 2022 10:47:45 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml"/><item><title>zshの初期設定</title><link>https://kodawari.info/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Wed, 27 Jul 2022 10:47:45 +0900</pubDate><guid>https://kodawari.info/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>ちょっとしたashの設定です。 Homebrewからインストール brew install zsh シェル一覧リストを追加 sudo sh -c &amp;#34;echo &amp;#39;/usr/local/bin/zsh&amp;#39; &amp;gt;&amp;gt; /etc/shells&amp;#34; インストールしたzshに設定 chsh -s /usr/local/bin/zsh Changing</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>技術 on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/%E6%8A%80%E8%A1%93/</link><description>Recent content in 技術 on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 29 Jul 2022 16:43:35 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml"/><item><title>Vite + Svelte + Tailwind CSS + daisyUI + TypeScript の環境設定</title><link>https://kodawari.info/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</link><pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate><guid>https://kodawari.info/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</guid><description>パパッとコマンドなどだけですが、こんな感じで。。。。。。 npm create vite@latest kodawari -- --template svelte-ts cd kodawari npm i -D tailwindcss npm i -D daisyui npm install npx tailwindcss init -p ./src/app.css に追加 @tailwind base; @tailwind components; @tailwind utilities; ./tailwind.config.cjs を更新 /** @type {import(&amp;#39;tailwindcss&amp;#39;).Config} */ module.exports</description><content:encoded><![CDATA[
+              <p>パパッとコマンドなどだけですが、こんな感じで。。。。。。</p>
+<pre tabindex="0"><code>npm create vite@latest kodawari -- --template svelte-ts
+</code></pre><pre tabindex="0"><code>cd kodawari
+</code></pre><pre tabindex="0"><code>npm i -D tailwindcss
+npm i -D daisyui
+</code></pre><pre tabindex="0"><code>npm install
+</code></pre><pre tabindex="0"><code>npx tailwindcss init -p
+</code></pre><p>./src/app.css に追加</p>
+<pre tabindex="0"><code>@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</code></pre><p>./tailwind.config.cjs を更新</p>
+<pre tabindex="0"><code>/** @type {import(&#39;tailwindcss&#39;).Config} */
+module.exports = {
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+</code></pre><p>↓</p>
+<pre tabindex="0"><code>/** @type {import(&#39;tailwindcss&#39;).Config} */
+module.exports = {
+  content: [&#39;./src/**/*.{svelte,js,ts}&#39;],
+  theme: {
+    extend: {},
+  },
+  plugins: [require(&#39;daisyui&#39;)],
+}
+</code></pre><p>./src/App.savelet を更新</p>
+<pre tabindex="0"><code>&lt;script lang=&#34;ts&#34;&gt;
+    import Counter from &#39;./lib/Counter.svelte&#39;
+    import Collapse from &#39;./lib/Collapse.svelte&#39;
+    import Modal from &#39;./lib/Modal.svelte&#39;
+&lt;/script&gt;
+
+&lt;main&gt;
+    &lt;button class=&#34;btn btn-secondary&#34;&gt;Hello daisyui&lt;/button&gt;
+    
+    &lt;button class=&#34;btn btn-ghost&#34;&gt;Button&lt;/button&gt;
+    &lt;button class=&#34;btn btn-link&#34;&gt;Button&lt;/button&gt;
+
+    &lt;div class=&#34;mockup-code&#34;&gt;
+        &lt;pre data-prefix=&#34;1&#34;&gt;&lt;code&gt;npm i daisyui&lt;/code&gt;&lt;/pre&gt;
+        &lt;pre data-prefix=&#34;2&#34;&gt;&lt;code&gt;installing...&lt;/code&gt;&lt;/pre&gt;
+        &lt;pre data-prefix=&#34;3&#34; class=&#34;bg-warning text-warning-content&#34;&gt;&lt;code&gt;Error!&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;card&#34;&gt;
+        &lt;Counter/&gt;
+    &lt;/div&gt;
+        &lt;Modal/&gt;
+    &lt;Collapse/&gt;
+
+&lt;/main&gt;
+</code></pre><p>./lib/Collapse.svelte を追加</p>
+<pre tabindex="0"><code>&lt;div class=&#34;collapse&#34;&gt;
+    &lt;input type=&#34;checkbox&#34; /&gt;
+    &lt;div class=&#34;collapse-title text-xl font-medium&#34;&gt;
+        Click me to show/hide content
+    &lt;/div&gt;
+    &lt;div class=&#34;collapse-content&#34;&gt;
+        &lt;p&gt;hello&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>./lib/Modal.svelte を追加</p>
+<pre tabindex="0"><code>
+&lt;!-- The button to open modal --&gt;
+&lt;label for=&#34;my-modal&#34; class=&#34;btn modal-button&#34;&gt;open modal&lt;/label&gt;
+
+&lt;!-- Put this part before &lt;/body&gt; tag --&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;my-modal&#34; class=&#34;modal-toggle&#34; /&gt;
+&lt;div class=&#34;modal&#34;&gt;
+    &lt;div class=&#34;modal-box&#34;&gt;
+        &lt;h3 class=&#34;font-bold text-lg&#34;&gt;Congratulations random Internet user!&lt;/h3&gt;
+        &lt;p class=&#34;py-4&#34;&gt;You&#39;ve been selected for a chance to get one year of subscription to use Wikipedia for free!&lt;/p&gt;
+        &lt;div class=&#34;modal-action&#34;&gt;
+            &lt;label for=&#34;my-modal&#34; class=&#34;btn&#34;&gt;Yay!&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>これで、テストしてみる。</p>
+<pre tabindex="0"><code>npm run dev
+</code></pre><p>こんな感じで表示されます。(^O^)</p>
+<p><img src="../img/ViteSvelteTSlocalhost.png" alt="画面"></p>
+<p>参考：</p>
+<p><a href="https://tailwindcss.com/docs/installation">https://tailwindcss.com/docs/installation</a>
+<a href="https://daisyui.com/">https://daisyui.com/</a>
+<a href="https://ja.vitejs.dev/guide/#%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88">https://ja.vitejs.dev/guide/#%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88</a></p>
+
+              ]]></content:encoded></item><item><title>zshの初期設定</title><link>https://kodawari.info/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Wed, 27 Jul 2022 10:47:45 +0900</pubDate><guid>https://kodawari.info/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>ちょっとしたashの設定です。 Homebrewからインストール brew install zsh シェル一覧リストを追加 sudo sh -c &amp;#34;echo &amp;#39;/usr/local/bin/zsh&amp;#39; &amp;gt;&amp;gt; /etc/shells&amp;#34; インストールしたzshに設定 chsh -s /usr/local/bin/zsh Changing</description><content:encoded><![CDATA[
               <p>ちょっとしたashの設定です。</p>
 <h2 id="homebrewからインストール">Homebrewからインストール</h2>
 <pre tabindex="0"><code>brew install zsh
