@@ -41,7 +41,7 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
               <h2 id="get">GET</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>NSString <span style="color:#f92672">*</span>urlString <span style="color:#f92672">=</span> [NSString stringWithFormat:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;https://xxxxx.co.jp/test?key1=%@&#34;</span>,key1];
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;urlString:%@&#34;</span>, urlString)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">DLog</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;urlString:%@&#34;</span>, urlString)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    NSURLSession <span style="color:#f92672">*</span>urlSession;
 </span></span><span style="display:flex;"><span>    NSURLSessionConfiguration <span style="color:#f92672">*</span>sessionConfig <span style="color:#f92672">=</span> [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -54,7 +54,7 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>                                               delegate:nil
 </span></span><span style="display:flex;"><span>                                          delegateQueue:nil];
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    NSLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;get start&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">NSLog</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;get start&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    NSMutableURLRequest <span style="color:#f92672">*</span>request <span style="color:#f92672">=</span> [NSMutableURLRequest new];
 </span></span><span style="display:flex;"><span>    [request setURL:[NSURL URLWithString:urlString]];
@@ -67,15 +67,15 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">=</span> [urlSession dataTaskWithRequest:request
 </span></span><span style="display:flex;"><span>                            completionHandler:<span style="color:#f92672">^</span>(NSData <span style="color:#f92672">*</span>data, NSURLResponse <span style="color:#f92672">*</span>response, NSError <span style="color:#f92672">*</span>error) {
 </span></span><span style="display:flex;"><span>                                NSHTTPURLResponse <span style="color:#f92672">*</span>httpUrlResponse <span style="color:#f92672">=</span> (NSHTTPURLResponse <span style="color:#f92672">*</span>) response;
-</span></span><span style="display:flex;"><span>                                DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Status code: %ld&#34;</span>, httpUrlResponse.statusCode);
+</span></span><span style="display:flex;"><span>                                <span style="color:#a6e22e">DLog</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Status code: %ld&#34;</span>, httpUrlResponse.statusCode);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                                CFStringEncoding encoding <span style="color:#f92672">=</span> CFStringConvertIANACharSetNameToEncoding((CFStringRef) [response textEncodingName]);
-</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>body <span style="color:#f92672">=</span> [[NSString alloc] initWithData:data encoding:CFStringConvertEncodingToNSStringEncoding(encoding)];
+</span></span><span style="display:flex;"><span>                                CFStringEncoding encoding <span style="color:#f92672">=</span> <span style="color:#a6e22e">CFStringConvertIANACharSetNameToEncoding</span>((CFStringRef) [response textEncodingName]);
+</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>body <span style="color:#f92672">=</span> [[NSString alloc] initWithData:data encoding:<span style="color:#a6e22e">CFStringConvertEncodingToNSStringEncoding</span>(encoding)];
 </span></span><span style="display:flex;"><span>                                NSData <span style="color:#f92672">*</span>restoreData <span style="color:#f92672">=</span> [[NSData alloc] initWithBase64EncodedString:body options:<span style="color:#ae81ff">0</span>];
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>restoreString <span style="color:#f92672">=</span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
-</span></span><span style="display:flex;"><span>                                dispatch_async(
-</span></span><span style="display:flex;"><span>                                        dispatch_get_main_queue(),
+</span></span><span style="display:flex;"><span>                                <span style="color:#a6e22e">dispatch_async</span>(
+</span></span><span style="display:flex;"><span>                                        <span style="color:#a6e22e">dispatch_get_main_queue</span>(),
 </span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">^</span>{
 </span></span><span style="display:flex;"><span>                                            self.textView.text <span style="color:#f92672">=</span> restoreString;
 </span></span><span style="display:flex;"><span>                                        }
@@ -90,7 +90,7 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> name,
 </span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;uuid&#34;</span><span style="color:#f92672">:</span> uuid,
 </span></span><span style="display:flex;"><span>        };
-</span></span><span style="display:flex;"><span>    DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;urlString:%@&#34;</span>, urlString)
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">DLog</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;urlString:%@&#34;</span>, urlString)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 連想配列として与えられたパラメータをクエリ文字列に変換する
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    NSData <span style="color:#f92672">*</span>query <span style="color:#f92672">=</span> [self buildQueryWithDictionary: params];
@@ -107,7 +107,7 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>                                               delegate:nil
 </span></span><span style="display:flex;"><span>                                          delegateQueue:nil];
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    NSLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;get start&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">NSLog</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;get start&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    NSMutableURLRequest <span style="color:#f92672">*</span>request <span style="color:#f92672">=</span> [NSMutableURLRequest new];
 </span></span><span style="display:flex;"><span>    [request setURL:[NSURL URLWithString:urlString]];
@@ -123,15 +123,15 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">=</span> [urlSession dataTaskWithRequest:request
 </span></span><span style="display:flex;"><span>                            completionHandler:<span style="color:#f92672">^</span>(NSData <span style="color:#f92672">*</span>data, NSURLResponse <span style="color:#f92672">*</span>response, NSError <span style="color:#f92672">*</span>error) {
 </span></span><span style="display:flex;"><span>                                NSHTTPURLResponse <span style="color:#f92672">*</span>httpUrlResponse <span style="color:#f92672">=</span> (NSHTTPURLResponse <span style="color:#f92672">*</span>) response;
-</span></span><span style="display:flex;"><span>                                DLog(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Status code: %ld&#34;</span>, httpUrlResponse.statusCode);
+</span></span><span style="display:flex;"><span>                                <span style="color:#a6e22e">DLog</span>(<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;Status code: %ld&#34;</span>, httpUrlResponse.statusCode);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>                                CFStringEncoding encoding <span style="color:#f92672">=</span> CFStringConvertIANACharSetNameToEncoding((CFStringRef) [response textEncodingName]);
-</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>body <span style="color:#f92672">=</span> [[NSString alloc] initWithData:data encoding:CFStringConvertEncodingToNSStringEncoding(encoding)];
+</span></span><span style="display:flex;"><span>                                CFStringEncoding encoding <span style="color:#f92672">=</span> <span style="color:#a6e22e">CFStringConvertIANACharSetNameToEncoding</span>((CFStringRef) [response textEncodingName]);
+</span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>body <span style="color:#f92672">=</span> [[NSString alloc] initWithData:data encoding:<span style="color:#a6e22e">CFStringConvertEncodingToNSStringEncoding</span>(encoding)];
 </span></span><span style="display:flex;"><span>                                NSData <span style="color:#f92672">*</span>restoreData <span style="color:#f92672">=</span> [[NSData alloc] initWithBase64EncodedString:body options:<span style="color:#ae81ff">0</span>];
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                                NSString <span style="color:#f92672">*</span>restoreString <span style="color:#f92672">=</span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
-</span></span><span style="display:flex;"><span>                                dispatch_async(
-</span></span><span style="display:flex;"><span>                                        dispatch_get_main_queue(),
+</span></span><span style="display:flex;"><span>                                <span style="color:#a6e22e">dispatch_async</span>(
+</span></span><span style="display:flex;"><span>                                        <span style="color:#a6e22e">dispatch_get_main_queue</span>(),
 </span></span><span style="display:flex;"><span>                                        <span style="color:#f92672">^</span>{
 </span></span><span style="display:flex;"><span>                                        }
 </span></span><span style="display:flex;"><span>                                );
