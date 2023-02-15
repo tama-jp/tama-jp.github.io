@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mac on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/mac/</link><description>Recent content in Mac on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 16 Feb 2023 00:40:43 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title><link>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link><pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate><guid>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid><description>Docker Desktopを使用してもいいけど、 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。 ただ、limaは、docker</description><content:encoded><![CDATA[
+              <p>Docker Desktopを使用してもいいけど、
+Limaっていうのを使用してDockerを使おうかなと思ったので、めも。
+ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。</p>
+<p>github<a href="https://github.com/lima-vm/lima">lima-vm/lima</a></p>
+<h2 id="インストール">インストール</h2>
+<p>HomeBrewでインストールします。</p>
+<p>limaだけでなく、Dockerコマンドを使用したいので、Dockerおよびdocker-composeもインストール。</p>
+<pre tabindex="0"><code>brew install lima
+</code></pre><pre tabindex="0"><code>brew install docker
+</code></pre><pre tabindex="0"><code>brew install docker-compose
+</code></pre><h2 id="docker用のイメージを構築">Docker用のイメージを構築</h2>
+<p>limaのサイトからdocker.yamlを取得する</p>
+<blockquote>
+<p>github /lima-vm/lima/examples/docker.yaml
+<a href="https://github.com/lima-vm/lima/blob/master/examples/docker.yaml">https://github.com/lima-vm/lima/blob/master/examples/docker.yaml</a></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://github.com/lima-vm/lima/raw/master/examples/docker.yaml
+</span></span></code></pre></div><h2 id="dockeryamlを修正">docker.yamlを修正</h2>
+<h3 id="イメージを変更">イメージを変更</h3>
+<p>Dockerしか使わないので、容量を少なくするためにubuntuからDebianに変更</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">images</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">location</span>: <span style="color:#e6db74">&#34;https://cloud.debian.org/images/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.qcow2&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">arch</span>: <span style="color:#e6db74">&#34;x86_64&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">digest</span>: <span style="color:#e6db74">&#34;sha512:fa152c6159dcb73adb1b573da3631937068c6a465ce7565a16dcce7aebd27c9a62ad783296d408300b99616cad89b8c0092e11df0fc2aa423334d741ac83b1a2&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">location</span>: <span style="color:#e6db74">&#34;https://cloud.debian.org/images/cloud/bullseye/20230124-1270/debian-11-generic-arm64-20230124-1270.qcow2&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">arch</span>: <span style="color:#e6db74">&#34;aarch64&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">digest</span>: <span style="color:#e6db74">&#34;sha512:d714ed2b70322bb2c4adc588f96671192a5ca67f70e20c3fb51c89d55b6a9646f00a6e6f0e5da241b7017916bb19b65a5703a1e3b3869a89c0da7047ac6c4e53&#34;</span>
+</span></span></code></pre></div><h3 id="リソースを変更">リソースを変更</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">cpus</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">memory</span>: <span style="color:#e6db74">&#34;8GiB&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">disk</span>: <span style="color:#e6db74">&#34;100GiB&#34;</span>
+</span></span></code></pre></div><h3 id="書き込み権限">書き込み権限</h3>
+<p>ドキュメントフォルダだけ書き込めるようにしてます</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">mounts</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">location</span>: <span style="color:#e6db74">&#34;~&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mountPoint</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">writable</span>: <span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">location</span>: <span style="color:#e6db74">&#34;~/Documents&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">writable</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p>個人で使う時は、ユーザー全て書き込める様にしてます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#f92672">location</span>: <span style="color:#e6db74">&#34;~&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">writable</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p>実際に使用するyamlは、<a href="https://gist.github.com/tama-jp/5759372d725a03bb79deb33d7d285bbd">こちら</a>。</p>
+<h2 id="実行">実行</h2>
+<p>以下を実行して構築。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>limactl start ./docker.yaml
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --debugをつけると、エラーが発生した際に原因がわかりやすくなる</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># limactl start ./docker.yaml --debug</span>
+</span></span></code></pre></div><h3 id="確認">確認</h3>
+<p>構築出来ているか確認する</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>limactl ls
+</span></span></code></pre></div><pre tabindex="0"><code>❯ limactl ls         
+NAME      STATUS     SSH                VMTYPE    ARCH      CPUS    MEMORY    DISK      DIR
+docker    Running    127.0.0.1:60006    qemu      x86_64    4       8GiB      100GiB    ~/.lima/docker
+</code></pre><h3 id="仮想マシンに入る">仮想マシンに入る</h3>
+<h4 id="limactl">limactl</h4>
+<p>Dockerが構築されている仮想マシンに直接入るには、以下のコマンドを実行する。</p>
+<p>入ったあとは<code>exit</code>で仮想マシンから出る。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>limactl shell docker
+</span></span></code></pre></div><h2 id="docker_host-環境変数">DOCKER_HOST 環境変数</h2>
+<p><code>.zshrc</code>や<code>.zprofile</code>（MacOSのバージョンによっては<code>.bash_profile</code>）に <code>DOCKER_HOST</code>環境変数を追記して、Dockerのベースをlimaの仮想マシンで使用するように変更する。（Limaのバージョンによっては内容が少々変わる可能性がある）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export DOCKER_HOST<span style="color:#f92672">=</span>unix:///<span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span>/.lima/docker/sock/docker.sock
+</span></span></code></pre></div><h3 id="シェル起動時にvm起動">シェル起動時にVM起動</h3>
+<p>システムを再起動すると、作成した仮想環境はstopの状態になるので、先程の<code>.zshrc</code>に仮想環境を立ち上げるように追記する。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>limactl start docker
+</span></span></code></pre></div>
+              ]]></content:encoded></item></channel></rss>

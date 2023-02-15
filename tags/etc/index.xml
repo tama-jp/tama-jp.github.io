@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 27 Jul 2022 14:54:26 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>cuiをMacでアプリ化する為のファイル構成</title><link>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</link><pubDate>Wed, 27 Jul 2022 14:54:26 +0900</pubDate><guid>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</guid><description>亀屋BLOGさんのPC-98えみゅでCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！ それで、これいちいち動かすの</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Wed, 15 Feb 2023 09:47:32 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>HUGOでgistなどの埋め込みを実現させる</title><link>https://kodawari.info/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</link><pubDate>Wed, 15 Feb 2023 09:47:32 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</guid><description>大分久しぶりの更新 ドキュメントのここに載ってますね。 gist {{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}} 例 https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9 であれば、 {{&amp;lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &amp;gt;}} 表示 Tweet {{&amp;lt; gist [[ユーザー名</description><content:encoded><![CDATA[
+              <p>大分久しぶりの更新</p>
+<p>ドキュメントの<a href="https://gohugo.io/content-management/shortcodes/">ここ</a>に載ってますね。</p>
+<h3 id="gist">gist</h3>
+<pre tabindex="0"><code>{{&lt; gist [[ユーザー名]] [[コード]] &gt;}}
+</code></pre><h4 id="例">例</h4>
+<p><a href="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9">https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9</a></p>
+<p>であれば、</p>
+<pre tabindex="0"><code>{{&lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &gt;}}
+</code></pre><p>表示</p>
+<script type="application/javascript" src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js"></script>
+
+<h3 id="tweet">Tweet</h3>
+<pre tabindex="0"><code>{{&lt; gist [[ユーザー名]] [[コード]] &gt;}}
+</code></pre><h4 id="例-1">例</h4>
+<p><a href="https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;t=GHSkw_zCyhNgjm1zBytAiw">https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;t=GHSkw_zCyhNgjm1zBytAiw</a></p>
+<p>であれば、</p>
+<pre tabindex="0"><code>{{&lt; tweet user=&#34;pain_ame&#34; id=&#34;1453110110599868418&#34; &gt;}}
+</code></pre><p>表示</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">みなさーん、おパよーございまーっす( ´▽｀)ﾉｼ</p>&mdash; パインアメの【パイン株式会社】 (@pain_ame) <a href="https://twitter.com/pain_ame/status/1625641271137292288?ref_src=twsrc%5Etfw">February 14, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h3 id="youtube動画">YouTube動画</h3>
+<pre tabindex="0"><code>{{&lt; youtube [[コード]] &gt;}}
+</code></pre><h4 id="例-2">例</h4>
+<p><a href="https://www.youtube.com/watch?v=mXwUKQh8SbU">https://www.youtube.com/watch?v=mXwUKQh8SbU</a></p>
+<p>であれば、</p>
+<pre tabindex="0"><code>{{&lt; youtube id=&#34;mXwUKQh8SbU&#34; autoplay=&#34;true&#34; &gt;}}
+</code></pre><p>表示</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mXwUKQh8SbU?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+              ]]></content:encoded></item><item><title>cuiをMacでアプリ化する為のファイル構成</title><link>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</link><pubDate>Wed, 27 Jul 2022 14:54:26 +0900</pubDate><guid>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</guid><description>亀屋BLOGさんのPC-98えみゅでCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！ それで、これいちいち動かすの</description><content:encoded><![CDATA[
               <p><a href="http://kameya-z.way-nifty.com/blog/">亀屋BLOG</a>さんの<a href="http://kameya-z.way-nifty.com/blog/2021/10/post-1bd017.html">PC-98えみゅ</a>でCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！</p>
 <p>それで、これいちいち動かすのにコマンドラインからたたくのも面倒だと思い、アプリ化する方法を調べてたのでまとめておく。</p>
 <h2 id="フォルダ構成">フォルダ構成</h2>
