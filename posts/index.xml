@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ko-Da-Wa-Ri</title><link>https://kodawari.info/posts/</link><description>Recent content in Posts on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 16 Feb 2023 00:40:43 +0900</lastBuildDate><atom:link href="https://kodawari.info/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title><link>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link><pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate><guid>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid><description>Docker Desktopを使用してもいいけど、 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。 ただ、limaは、docker</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Ko-Da-Wa-Ri</title><link>https://kodawari.info/posts/</link><description>Recent content in Posts on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 19 Apr 2024 17:43:50 +0900</lastBuildDate><atom:link href="https://kodawari.info/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2024 04 19 17 43 50 最近</title><link>https://kodawari.info/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</link><pubDate>Fri, 19 Apr 2024 17:43:50 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</guid><description>最近全然ブログが更新できていない。（；^ω^） hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、 git</description><content:encoded><![CDATA[
+              <p>最近全然ブログが更新できていない。（；^ω^）</p>
+<p>hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、
+gitに上げるのもPCでしかできないから面倒、で全然更新がおろそかになってる。</p>
+<p>まぁ、それだけじゃないのかもしれないけど。</p>
+<p>そこで、code-serverを入れて、Web上のエディタでどこでも書けるようにして、それをgitであげようと考えました。(⌒〜⌒)ニンマリ</p>
+<p>さぁ、うまく行くのやら。。。。</p>
+<p>これからなんとかいろいろなものを書くぞー</p>
+
+              ]]></content:encoded></item><item><title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title><link>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link><pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate><guid>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid><description>Docker Desktopを使用してもいいけど、 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。 ただ、limaは、docker</description><content:encoded><![CDATA[
               <p>Docker Desktopを使用してもいいけど、
 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。
 ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。</p>
@@ -84,8 +93,9 @@ docker    Running    127.0.0.1:60006    qemu      x86_64    4       8GiB      10
 <p>であれば、</p>
 <pre tabindex="0"><code>{{&lt; tweet user=&#34;pain_ame&#34; id=&#34;1453110110599868418&#34; &gt;}}
 </code></pre><p>表示</p>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">みなさーん、おパよーございまーっす( ´▽｀)ﾉｼ</p>&mdash; パインアメの【パイン株式会社】🍍 (@pain_ame) <a href="https://twitter.com/pain_ame/status/1625641271137292288?ref_src=twsrc%5Etfw">February 14, 2023</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">みなさーん、おパよーございまーっす( ´▽｀)ﾉｼ</p>&mdash; パインアメの【パイン株式会社】（公式）🍍 (@pain_ame) <a href="https://twitter.com/pain_ame/status/1625641271137292288?ref_src=twsrc%5Etfw">February 14, 2023</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 <h3 id="youtube動画">YouTube動画</h3>
 <pre tabindex="0"><code>{{&lt; youtube [[コード]] &gt;}}
@@ -2315,8 +2325,4 @@ time.Parseを使用せずに、locationを設定できるtime.ParseInLocationを
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>main <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>HUGOのインストール</title><link>https://kodawari.info/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link><pubDate>Mon, 06 Jun 2022 14:28:23 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid><description>ほぼここを見ればすぐできます。 これに、私は、テーマをMainroadにしました。</description><content:encoded><![CDATA[
-              <p>ほぼ<a href="https://gohugo.io/getting-started/quick-start/">ここ</a>を見ればすぐできます。</p>
-<p>これに、私は、テーマを<a href="https://github.com/Vimux/Mainroad">Mainroad</a>にしました。</p>
-
               ]]></content:encoded></item></channel></rss>
