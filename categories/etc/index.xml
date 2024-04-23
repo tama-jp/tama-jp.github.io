@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 21 Apr 2024 08:47:15 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>ハード作成の面白いサイト</title><link>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</link><pubDate>Sun, 21 Apr 2024 08:47:15 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</guid><description>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。 今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ って思いました。</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 23 Apr 2024 15:35:49 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>2024 04 23 15 35 49 CentOS6でのリポジトリを取得する方法</title><link>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>mirrorlist定数をコメントアウトして、 baseurl=https://archive.kernel.org/centos-vault</description><content:encoded><![CDATA[
+              <p>mirrorlist定数をコメントアウトして、</p>
+<pre tabindex="0"><code>baseurl=https://archive.kernel.org/centos-vault/[OSのバージョン]/xxxx/$basearch/
+</code></pre><p>に置き換え。xxxは、各自のディレクトリにあわせます。</p>
+<p>DockerのCentOS6.9では、以下のようになります。</p>
+<pre tabindex="0"><code>[base]
+name=CentOS-$releasever - Base
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=os&amp;infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
+#baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
+baseurl=https://archive.kernel.org/centos-vault/6.9/os/$basearch/
+
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+#released updates 
+[updates]
+name=CentOS-$releasever - Updates
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=updates&amp;infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
+baseurl=https://archive.kernel.org/centos-vault/6.9/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=extras&amp;infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/
+baseurl=https://archive.kernel.org/centos-vault/6.9/extras/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=centosplus&amp;infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
+baseurl=https://archive.kernel.org/centos-vault/6.9/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+
+#contrib - packages by Centos Users
+[contrib]
+name=CentOS-$releasever - Contrib
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&amp;arch=$basearch&amp;repo=contrib&amp;infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/contrib/$basearch/
+baseurl=https://archive.kernel.org/centos-vault/6.9/contrib/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+</code></pre><p>早く、別OSにしなければならないけど、とりあえずならこれで延命処置が出来て助かります。ε-(´∀｀*)ﾎｯ</p>
+
+              ]]></content:encoded></item><item><title>ハード作成の面白いサイト</title><link>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</link><pubDate>Sun, 21 Apr 2024 08:47:15 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</guid><description>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。 今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ って思いました。</description><content:encoded><![CDATA[
               <p>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。
 今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ
 って思いました。</p>
