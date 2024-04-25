@@ -1,5 +1,5 @@
 ---
-title: "2024 04 25 23 37 23 Docker Composeで「project Name Must Not Be Empty」がでた"
+title: "Docker Composeで「project Name Must Not Be Empty」がでた"
 date: 2024-04-25T23:37:23+09:00
 slug: ""
 # categories : ["技術"]
