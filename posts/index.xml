@@ -2,10 +2,10 @@
               <p>Macでdocker composeファイルを起動したら</p>
 <pre tabindex="0"><code>project name must not be empty
 </code></pre><p>とでた。</p>
-<p>文法も間違えてないのになんだろうと思ったら、
-ルートのディレクトリが日本語を使用していただけでエラーが出た。
-どうも、フルパスを確認してるようだ。
-だたし、Dockerfilesは、日本語のパスが入っていてても問題なく動作する。</p>
+<p>文法も間違えてないのになんだろうと思ったら、</p>
+<p>ルートのディレクトリが日本語を使用していただけでエラーが出た。</p>
+<p>どうも、フルパスを確認してるようだ。</p>
+<p>だたし、Dockerfilesは、日本語のパスが入っていてても問題なく動作する。</p>
 
               ]]></content:encoded></item><item><title>CentOS6でのリポジトリを取得する方法</title><link>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>基本的には、 http://mirrorlist.centos.org/ を https://archive.kernel.org/ に接続先を変えます、 どうするかというと、 mirrorlist定数をコメントアウトして、 baseurl=https://ar</description><content:encoded><![CDATA[
               <p>基本的には、</p>
