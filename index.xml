@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://kodawari.info/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 25 Apr 2024 23:37:23 +0900</lastBuildDate><atom:link href="https://kodawari.info/index.xml" rel="self" type="application/rss+xml"/><item><title>2024 04 25 23 37 23 Docker Composeで「project Name Must Not Be Empty」がでた</title><link>https://kodawari.info/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</link><pubDate>Thu, 25 Apr 2024 23:37:23 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</guid><description>Macでdocker composeファイルを起動したら project name must not be empty とでた。 文法も間違えてないのになんだろうと思ったら、 ルートのディレクトリが</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://kodawari.info/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 16 May 2024 07:55:58 +0900</lastBuildDate><atom:link href="https://kodawari.info/index.xml" rel="self" type="application/rss+xml"/><item><title>2024 05 16 07 55 58 遅延処理</title><link>https://kodawari.info/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</link><pubDate>Thu, 16 May 2024 07:55:58 +0900</pubDate><guid>https://kodawari.info/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</guid><description>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{ // 処理内容 }); - (void)doAfterDelay{ // 処理内容 } [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];</description><content:encoded><![CDATA[
+              <pre tabindex="0"><code class="language-objective_c" data-lang="objective_c">dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+    // 処理内容
+});
+</code></pre><pre tabindex="0"><code class="language-objective_c" data-lang="objective_c"> - (void)doAfterDelay{
+   // 処理内容
+ }
+ [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];
+</code></pre>
+              ]]></content:encoded></item><item><title>Docker Composeで「project Name Must Not Be Empty」がでた</title><link>https://kodawari.info/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</link><pubDate>Thu, 25 Apr 2024 23:37:23 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</guid><description>Macでdocker composeファイルを起動したら project name must not be empty とでた。 文法も間違えてないのになんだろうと思ったら、 ルートのディレクトリが</description><content:encoded><![CDATA[
               <p>Macでdocker composeファイルを起動したら</p>
 <pre tabindex="0"><code>project name must not be empty
 </code></pre><p>とでた。</p>
@@ -2231,65 +2240,4 @@ fmt.Println(t)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">d</span>) <span style="color:#75715e">// 72h0m0s (Go Playgroundで実行した場合)
 </span></span></span></code></pre></div><p><code>time.Since(t)</code>は<code>time.Now().Sub(t)</code>の省略形。</p>
 
-              ]]></content:encoded></item><item><title>UIButtonの文字の設定</title><link>https://kodawari.info/posts/uibutton%E3%81%AE%E6%96%87%E5%AD%97%E3%81%AE%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 30 Jun 2022 09:54:44 +0900</pubDate><guid>https://kodawari.info/posts/uibutton%E3%81%AE%E6%96%87%E5%AD%97%E3%81%AE%E8%A8%AD%E5%AE%9A/</guid><description>UIButtonの文字の設定 ボタンの設定 UIButton をコード上で使用することで、ボタンを追加することができます。 追加する時に、各状態になった場合のボタ</description><content:encoded><![CDATA[
-              <h1 id="uibuttonの文字の設定">UIButtonの文字の設定</h1>
-<h2 id="ボタンの設定">ボタンの設定</h2>
-<p>UIButton をコード上で使用することで、ボタンを追加することができます。
-追加する時に、各状態になった場合のボタンのタイトル、色などを指定することができます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//ボタンの宣言
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>UIButton <span style="color:#f92672">*</span>button <span style="color:#f92672">=</span> [[UIButton alloc]init];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　通常
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;ボタン&#34;</span> forState:UIControlStateNormal];
-</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateNormal];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　押下中
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;押下中&#34;</span> forState:UIControlStateHighlighted];
-</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateHighlighted];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　選択中
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;選択中&#34;</span> forState:UIControlStateSelected];
-</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
-</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateSelected];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　無効中
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;無効&#34;</span> forState:UIControlStateDisabled];
-</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateDisabled];
-</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateDisabled];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//フォントサイズ
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.titleLabel setFont:[UIFont systemFontOfSize:<span style="color:#ae81ff">30</span>]];
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//背景色
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setBackgroundColor:[UIColor redColor]];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//画面に追加
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[self.view addSubview:button];
-</span></span></code></pre></div><h2 id="枠線の設定">枠線の設定</h2>
-<p>枠線の色は setBorderColor 、枠線の太さは setBorderWidth 、角丸の丸みは setCornerRadius 、
-で指定するができます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//枠線の色
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.layer setBorderColor:[UIColor blackColor].CGColor];
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//枠線の太さ
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.layer setBorderWidth:<span style="color:#ae81ff">2.0</span>];
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//角丸の指定
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.layer setCornerRadius:<span style="color:#ae81ff">5.0</span>];
-</span></span></code></pre></div><h2 id="押下時の動作">押下時の動作</h2>
-<p>ボタンを選択した時の動作を追加する場合、 -(void)関数名:(UIButton *)button で動作を指定して、
-ボタン追加時に addTarget で関数を指定する必要あります。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//押下時の動作
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button addTarget:self action:<span style="color:#960050;background-color:#1e0010">@</span>selector(button_select:) forControlEvents:UIControlEventTouchUpInside];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span>(<span style="color:#66d9ef">void</span>)button_select:(UIButton <span style="color:#f92672">*</span>)button {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//ボタンを選択中に変更する。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    button.selected <span style="color:#f92672">=</span> true;
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//ボタンを無効中に変更する
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    button.enabled <span style="color:#f92672">=</span> false;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="大きさなどの変更">大きさなどの変更</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>    CGRect frame2 <span style="color:#f92672">=</span> CGRectMake(_overlayView.frame.size.width <span style="color:#f92672">-</span> <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">40</span>);
-</span></span><span style="display:flex;"><span>    self.closeButton.frame <span style="color:#f92672">=</span> frame2;
-</span></span></code></pre></div>
               ]]></content:encoded></item></channel></rss>
