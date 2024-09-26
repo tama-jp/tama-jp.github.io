@@ -1,7 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://kodawari.info/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Sep 2024 19:38:11 +0900</lastBuildDate><atom:link href="https://kodawari.info/index.xml" rel="self" type="application/rss+xml"/><item><title>ITerm2で起動時にTip of the Dayを出さない</title><link>https://kodawari.info/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</link><pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate><guid>https://kodawari.info/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</guid><description>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法 Term2の環境設定の［Advanced］タブ内</description><content:encoded>
-&lt;p>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ko-Da-Wa-Ri</title><link>https://example.org/</link><description>Recent content on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Sep 2024 19:38:11 +0900</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>ITerm2で起動時にTip of the Dayを出さない</title><link>https://example.org/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</link><pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate><guid>https://example.org/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</guid><description>&lt;p>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法&lt;/p>
 &lt;p>Term2の環境設定の［Advanced］タブ内に「Tip of the Day」セクションがあるので、
-「Disable the Tip of the Day?」項目がデフォルトだと「No」になっているので「Yes」に変更する。&lt;/p></content:encoded></item><item><title>iPhone等のアイコンを作る</title><link>https://kodawari.info/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</link><pubDate>Tue, 21 May 2024 00:08:05 +0900</pubDate><guid>https://kodawari.info/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</guid><description>1024x1024 の画像をもとに、iPhone等のiconを作るるのに、ImageMgicを使います。 !/usr/bin/env bash convert $1 -geometry 20x20 Icon-20@1x.png convert $1 -geometry 40x40 Icon-20@2x.png convert $1 -geometry 60x60 Icon-20@3x.png convert $1 -geometry 29x29 Icon-29@1x.png convert $1 -geometry 58x58 Icon-29@2x.png</description><content:encoded><![CDATA[
+「Disable the Tip of the Day?」項目がデフォルトだと「No」になっているので「Yes」に変更する。&lt;/p></description><content:encoded>
+              &lt;p>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法&lt;/p>
+&lt;p>Term2の環境設定の［Advanced］タブ内に「Tip of the Day」セクションがあるので、
+「Disable the Tip of the Day?」項目がデフォルトだと「No」になっているので「Yes」に変更する。&lt;/p>
+
+              </content:encoded></item><item><title>iPhone等のアイコンを作る</title><link>https://example.org/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</link><pubDate>Tue, 21 May 2024 00:08:05 +0900</pubDate><guid>https://example.org/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</guid><description>&lt;p>1024x1024 の画像をもとに、iPhone等のiconを作るるのに、ImageMgicを使います。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 20x20 Icon-20@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 40x40 Icon-20@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 60x60 Icon-20@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 29x29 Icon-29@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 58x58 Icon-29@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 87x87 Icon-29@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 40x40 Icon-40@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 80x80 Icon-40@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 120x120 Icon-40@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 120x120 Icon-60@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 180x180 Icon-60@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 76x76 Icon-76@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 152x152 Icon--76@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 167x167 Icon-83.5@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 512x512 iTunesArtwork.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 1024x1024 iTunesArtwork@2x.png
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[
               <p>1024x1024 の画像をもとに、iPhone等のiconを作るるのに、ImageMgicを使います。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>!/usr/bin/env bash
 </span></span><span style="display:flex;"><span>convert $1 -geometry 20x20 Icon-20@1x.png
@@ -22,7 +45,16 @@
 </span></span><span style="display:flex;"><span>convert $1 -geometry 512x512 iTunesArtwork.png
 </span></span><span style="display:flex;"><span>convert $1 -geometry 1024x1024 iTunesArtwork@2x.png
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>Dispatch</title><link>https://kodawari.info/posts/2024-05-16-08-15-33-dispatch/</link><pubDate>Thu, 16 May 2024 08:15:34 +0900</pubDate><guid>https://kodawari.info/posts/2024-05-16-08-15-33-dispatch/</guid><description>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{ // バックグランドでAPIなどを実行 }); dispatch_async(dispatch_get_main_queue(), ^{ // メインスレッドで処理をしたい内容、UIを変更など。 }); dispatch_sync(dispatch_queue_create(&amp;#34;test_sample&amp;#34;, DISPATCH_QUEUE_SERIAL), ^{ // 同期処理 });</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Dispatch</title><link>https://example.org/posts/2024-05-16-08-15-33-dispatch/</link><pubDate>Thu, 16 May 2024 08:15:34 +0900</pubDate><guid>https://example.org/posts/2024-05-16-08-15-33-dispatch/</guid><description>&lt;pre tabindex="0">&lt;code class="language-objective_c" data-lang="objective_c">dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+// バックグランドでAPIなどを実行
+});
+dispatch_async(dispatch_get_main_queue(), ^{
+// メインスレッドで処理をしたい内容、UIを変更など。
+});
+dispatch_sync(dispatch_queue_create(&amp;#34;test_sample&amp;#34;, DISPATCH_QUEUE_SERIAL), ^{
+// 同期処理
+});
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <pre tabindex="0"><code class="language-objective_c" data-lang="objective_c">dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     // バックグランドでAPIなどを実行
 });
@@ -36,7 +68,14 @@ dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL
     // 同期処理
 });
 </code></pre>
-              ]]></content:encoded></item><item><title>遅延処理</title><link>https://kodawari.info/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</link><pubDate>Thu, 16 May 2024 07:55:58 +0900</pubDate><guid>https://kodawari.info/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</guid><description>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{ // 処理内容 }); - (void)doAfterDelay{ // 処理内容 } [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>遅延処理</title><link>https://example.org/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</link><pubDate>Thu, 16 May 2024 07:55:58 +0900</pubDate><guid>https://example.org/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</guid><description>&lt;pre tabindex="0">&lt;code class="language-objective_c" data-lang="objective_c">dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+// 処理内容
+});
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code class="language-objective_c" data-lang="objective_c"> - (void)doAfterDelay{
+// 処理内容
+}
+[self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <pre tabindex="0"><code class="language-objective_c" data-lang="objective_c">dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
     // 処理内容
 });
@@ -45,7 +84,11 @@ dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL
  }
  [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];
 </code></pre>
-              ]]></content:encoded></item><item><title>Docker Composeで「project Name Must Not Be Empty」がでた</title><link>https://kodawari.info/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</link><pubDate>Thu, 25 Apr 2024 23:37:23 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</guid><description>Macでdocker composeファイルを起動したら project name must not be empty とでた。 文法も間違えてないのになんだろうと思ったら、 ルートのディレクトリが</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Docker Composeで「project Name Must Not Be Empty」がでた</title><link>https://example.org/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</link><pubDate>Thu, 25 Apr 2024 23:37:23 +0900</pubDate><guid>https://example.org/posts/2024-04-25-23-37-23-docker-compose%E3%81%A7project-name-must-not-be-empty%E3%81%8C%E3%81%A7%E3%81%9F/</guid><description>&lt;p>Macでdocker composeファイルを起動したら&lt;/p>
+&lt;pre tabindex="0">&lt;code>project name must not be empty
+&lt;/code>&lt;/pre>&lt;p>とでた。&lt;/p>
+&lt;p>文法も間違えてないのになんだろうと思ったら、&lt;/p>
+&lt;p>ルートのディレクトリが日本語を使用していただけでエラーが出た。&lt;/p></description><content:encoded><![CDATA[
               <p>Macでdocker composeファイルを起動したら</p>
 <pre tabindex="0"><code>project name must not be empty
 </code></pre><p>とでた。</p>
@@ -54,7 +97,15 @@ dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL
 <p>どうも、フルパスを確認してるようだ。</p>
 <p>だたし、Dockerfilesは、日本語のパスが入っていてても問題なく動作する。</p>
 
-              ]]></content:encoded></item><item><title>CentOS6でのリポジトリを取得する方法</title><link>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>基本的には、 http://mirrorlist.centos.org/ を https://archive.kernel.org/ に接続先を変えます、 どうするかというと、 mirrorlist定数をコメントアウトして、 baseurl=https://ar</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>CentOS6でのリポジトリを取得する方法</title><link>https://example.org/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate><guid>https://example.org/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>&lt;p>基本的には、&lt;/p>
+&lt;p>&lt;a href="http://mirrorlist.centos.org/">http://mirrorlist.centos.org/&lt;/a>&lt;/p>
+&lt;p>を&lt;/p>
+&lt;p>&lt;a href="https://archive.kernel.org/">https://archive.kernel.org/&lt;/a>&lt;/p>
+&lt;p>に接続先を変えます、&lt;/p>
+&lt;p>どうするかというと、&lt;/p>
+&lt;p>mirrorlist定数をコメントアウトして、&lt;/p>
+&lt;pre tabindex="0">&lt;code>baseurl=https://archive.kernel.org/centos-vault/[OSのバージョン]/xxxx/$basearch/
+&lt;/code>&lt;/pre>&lt;p>に置き換え。xxxは、各自のディレクトリにあわせます。&lt;/p></description><content:encoded><![CDATA[
               <p>基本的には、</p>
 <p><a href="http://mirrorlist.centos.org/">http://mirrorlist.centos.org/</a></p>
 <p>を</p>
@@ -114,7 +165,10 @@ enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 </code></pre><p>早く、別OSにしなければならないけど、とりあえずならこれで延命処置が出来て助かります。ε-(´∀｀*)ﾎｯ</p>
 
-              ]]></content:encoded></item><item><title>ハード作成の面白いサイト</title><link>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</link><pubDate>Sun, 21 Apr 2024 08:47:15 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</guid><description>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。 今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ って思いました。</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>ハード作成の面白いサイト</title><link>https://example.org/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</link><pubDate>Sun, 21 Apr 2024 08:47:15 +0900</pubDate><guid>https://example.org/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</guid><description>&lt;p>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。
+今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ
+って思いました。&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=qMYM1qFy8eA">https://www.youtube.com/watch?v=qMYM1qFy8eA&lt;/a>&lt;/p></description><content:encoded><![CDATA[
               <p>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。
 今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ
 って思いました。</p>
@@ -126,7 +180,10 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 <p><a href="https://elchika.com/">https://elchika.com/</a></p>
 <p>難しいのや高いものはあるんですけど、これをヒントに何か作れたらなぁと。</p>
 
-              ]]></content:encoded></item><item><title>AwscliでEC2の強制再起動</title><link>https://kodawari.info/posts/2024-04-19-22-05-17-awscli%E3%81%A7ec2%E3%81%AE%E5%BC%B7%E5%88%B6%E5%86%8D%E8%B5%B7%E5%8B%95/</link><pubDate>Fri, 19 Apr 2024 22:05:17 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-19-22-05-17-awscli%E3%81%A7ec2%E3%81%AE%E5%BC%B7%E5%88%B6%E5%86%8D%E8%B5%B7%E5%8B%95/</guid><description>強制停止 -&amp;gt; 起動 最近しょっちゅう、CPUが上がりすぎて再起動しなけりゃならないのが 頻繁にあったので、こんな感じでASW CLIでコマンドをたたい</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>AwscliでEC2の強制再起動</title><link>https://example.org/posts/2024-04-19-22-05-17-awscli%E3%81%A7ec2%E3%81%AE%E5%BC%B7%E5%88%B6%E5%86%8D%E8%B5%B7%E5%8B%95/</link><pubDate>Fri, 19 Apr 2024 22:05:17 +0900</pubDate><guid>https://example.org/posts/2024-04-19-22-05-17-awscli%E3%81%A7ec2%E3%81%AE%E5%BC%B7%E5%88%B6%E5%86%8D%E8%B5%B7%E5%8B%95/</guid><description>&lt;h1 id="強制停止---起動">強制停止 -&amp;gt; 起動&lt;/h1>
+&lt;p>最近しょっちゅう、CPUが上がりすぎて再起動しなけりゃならないのが
+頻繁にあったので、こんな感じでASW CLIでコマンドをたたいてます。
+こんなコマンドたたかなくても、ちゃんと動けばいいのだが。。。。&lt;/p></description><content:encoded><![CDATA[
               <h1 id="強制停止---起動">強制停止 -&gt; 起動</h1>
 <p>最近しょっちゅう、CPUが上がりすぎて再起動しなけりゃならないのが
 頻繁にあったので、こんな感じでASW CLIでコマンドをたたいてます。
@@ -135,7 +192,9 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 aws ec2 stop-instances --instance-ids ${instance} --force &amp;&amp; aws ec2 wait instance-stopped --instance-ids ${instance} &amp;&amp; \
 aws ec2 start-instances --instance-ids ${instance}  &amp;&amp; aws ec2 wait instance-running --instance-ids ${instance} 
 </code></pre>
-              ]]></content:encoded></item><item><title>最近更新できてないなぁ。。。。</title><link>https://kodawari.info/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</link><pubDate>Fri, 19 Apr 2024 17:43:50 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</guid><description>最近全然ブログが更新できていない。（；^ω^） hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、 git</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>最近更新できてないなぁ。。。。</title><link>https://example.org/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</link><pubDate>Fri, 19 Apr 2024 17:43:50 +0900</pubDate><guid>https://example.org/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</guid><description>&lt;p>最近全然ブログが更新できていない。（；^ω^）&lt;/p>
+&lt;p>hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、
+gitに上げるのもPCでしかできないから面倒、で全然更新がおろそかになってる。&lt;/p></description><content:encoded><![CDATA[
               <p>最近全然ブログが更新できていない。（；^ω^）</p>
 <p>hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、
 gitに上げるのもPCでしかできないから面倒、で全然更新がおろそかになってる。</p>
@@ -144,7 +203,9 @@ gitに上げるのもPCでしかできないから面倒、で全然更新がお
 <p>さぁ、うまく行くのやら。。。。</p>
 <p>これからなんとかいろいろなものを書くぞー</p>
 
-              ]]></content:encoded></item><item><title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title><link>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link><pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate><guid>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid><description>Docker Desktopを使用してもいいけど、 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。 ただ、limaは、docker</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title><link>https://example.org/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link><pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate><guid>https://example.org/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid><description>&lt;p>Docker Desktopを使用してもいいけど、
+Limaっていうのを使用してDockerを使おうかなと思ったので、めも。
+ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。&lt;/p></description><content:encoded><![CDATA[
               <p>Docker Desktopを使用してもいいけど、
 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。
 ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。</p>
@@ -211,7 +272,21 @@ docker    Running    127.0.0.1:60006    qemu      x86_64    4       8GiB      10
 <p>システムを再起動すると、作成した仮想環境はstopの状態になるので、先程の<code>.zshrc</code>に仮想環境を立ち上げるように追記する。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>limactl start docker
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>HUGOでgistなどの埋め込みを実現させる</title><link>https://kodawari.info/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</link><pubDate>Wed, 15 Feb 2023 09:47:32 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</guid><description>大分久しぶりの更新 ドキュメントのここに載ってますね。 gist {{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}} 例 https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9 であれば、 {{&amp;lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &amp;gt;}} 表示 Tweet {{&amp;lt; gist [[ユーザー名</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>HUGOでgistなどの埋め込みを実現させる</title><link>https://example.org/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</link><pubDate>Wed, 15 Feb 2023 09:47:32 +0900</pubDate><guid>https://example.org/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</guid><description>&lt;p>大分久しぶりの更新&lt;/p>
+&lt;p>ドキュメントの&lt;a href="https://gohugo.io/content-management/shortcodes/">ここ&lt;/a>に載ってますね。&lt;/p>
+&lt;h3 id="gist">gist&lt;/h3>
+&lt;pre tabindex="0">&lt;code>{{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;h4 id="例">例&lt;/h4>
+&lt;p>&lt;a href="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9">https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9&lt;/a>&lt;/p>
+&lt;p>であれば、&lt;/p>
+&lt;pre tabindex="0">&lt;code>{{&amp;lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>表示&lt;/p>
+&lt;script src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js">&lt;/script>
+&lt;h3 id="tweet">Tweet&lt;/h3>
+&lt;pre tabindex="0">&lt;code>{{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;h4 id="例-1">例&lt;/h4>
+&lt;p>&lt;a href="https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;amp;t=GHSkw_zCyhNgjm1zBytAiw">https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;amp;t=GHSkw_zCyhNgjm1zBytAiw&lt;/a>&lt;/p>
+&lt;p>であれば、&lt;/p></description><content:encoded><![CDATA[
               <p>大分久しぶりの更新</p>
 <p>ドキュメントの<a href="https://gohugo.io/content-management/shortcodes/">ここ</a>に載ってますね。</p>
 <h3 id="gist">gist</h3>
@@ -221,7 +296,7 @@ docker    Running    127.0.0.1:60006    qemu      x86_64    4       8GiB      10
 <p>であれば、</p>
 <pre tabindex="0"><code>{{&lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &gt;}}
 </code></pre><p>表示</p>
-<script type="application/javascript" src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js"></script>
+<script src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js"></script>
 
 <h3 id="tweet">Tweet</h3>
 <pre tabindex="0"><code>{{&lt; gist [[ユーザー名]] [[コード]] &gt;}}
@@ -242,18 +317,33 @@ docker    Running    127.0.0.1:60006    qemu      x86_64    4       8GiB      10
 <pre tabindex="0"><code>{{&lt; youtube id=&#34;mXwUKQh8SbU&#34; autoplay=&#34;true&#34; &gt;}}
 </code></pre><p>表示</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/mXwUKQh8SbU?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mXwUKQh8SbU?autoplay=1&controls=1&end=0&loop=0&mute=1&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 
-              ]]></content:encoded></item><item><title>CakePHPの規約ワードメーカー</title><link>https://kodawari.info/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</link><pubDate>Thu, 01 Dec 2022 20:39:35 +0900</pubDate><guid>https://kodawari.info/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</guid><description>CakePHP 規約ワードメーカーがサイトなくなったと思ってたら、 本家がそのままやっとるじゃん。。。。 ここ。 https://inflector.cakephp.org/</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>CakePHPの規約ワードメーカー</title><link>https://example.org/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</link><pubDate>Thu, 01 Dec 2022 20:39:35 +0900</pubDate><guid>https://example.org/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</guid><description>&lt;p>CakePHP 規約ワードメーカーがサイトなくなったと思ってたら、
+本家がそのままやっとるじゃん。。。。&lt;/p>
+&lt;p>ここ。&lt;/p>
+&lt;p>&lt;a href="https://inflector.cakephp.org/">https://inflector.cakephp.org/&lt;/a>&lt;/p></description><content:encoded><![CDATA[
               <p>CakePHP 規約ワードメーカーがサイトなくなったと思ってたら、
 本家がそのままやっとるじゃん。。。。</p>
 <p>ここ。</p>
 <p><a href="https://inflector.cakephp.org/">https://inflector.cakephp.org/</a></p>
 
-              ]]></content:encoded></item><item><title>xcodeインストールのxcodebuildの確認でエラーがでたときの対処法</title><link>https://kodawari.info/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</link><pubDate>Thu, 04 Aug 2022 00:29:09 +0900</pubDate><guid>https://kodawari.info/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</guid><description>こう言うのがでた場合。。。。。 $ xcodebuild -version error: tool &amp;#39;xcodebuild&amp;#39; requires Xcode, but active developer directory &amp;#39;/Library/Developer/CommandLineTools&amp;#39; is a command line tools instance これたたいてみたら、、、、、 $ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer なおった。。。。 $ xcodebuild -version Xcode 13.4.1 Build version 13F100</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>xcodeインストールのxcodebuildの確認でエラーがでたときの対処法</title><link>https://example.org/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</link><pubDate>Thu, 04 Aug 2022 00:29:09 +0900</pubDate><guid>https://example.org/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</guid><description>&lt;p>こう言うのがでた場合。。。。。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ xcodebuild -version
+error: tool &amp;#39;xcodebuild&amp;#39; requires Xcode, but active developer directory &amp;#39;/Library/Developer/CommandLineTools&amp;#39; is a command line tools instance
+&lt;/code>&lt;/pre>&lt;p>これたたいてみたら、、、、、&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+&lt;/code>&lt;/pre>&lt;p>なおった。。。。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ xcodebuild -version
+Xcode 13.4.1
+Build version 13F100
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <p>こう言うのがでた場合。。。。。</p>
 <pre tabindex="0"><code>$ xcodebuild -version
 error: tool &#39;xcodebuild&#39; requires Xcode, but active developer directory &#39;/Library/Developer/CommandLineTools&#39; is a command line tools instance
@@ -264,7 +354,27 @@ error: tool &#39;xcodebuild&#39; requires Xcode, but active developer directory 
 Xcode 13.4.1
 Build version 13F100
 </code></pre>
-              ]]></content:encoded></item><item><title>Vite + Svelte + Tailwind CSS + daisyUI + TypeScript の環境設定</title><link>https://kodawari.info/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</link><pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate><guid>https://kodawari.info/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</guid><description>パパッとコマンドなどだけですが、こんな感じで。。。。。。 npm create vite@latest kodawari -- --template svelte-ts cd kodawari npm i -D tailwindcss npm i -D daisyui npm install npx tailwindcss init -p ./src/app.css に追加 @tailwind base; @tailwind components; @tailwind utilities; ./tailwind.config.cjs を更新 /** @type {import(&amp;#39;tailwindcss&amp;#39;).Config} */ module.exports</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Vite + Svelte + Tailwind CSS + daisyUI + TypeScript の環境設定</title><link>https://example.org/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</link><pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate><guid>https://example.org/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</guid><description>&lt;p>パパッとコマンドなどだけですが、こんな感じで。。。。。。&lt;/p>
+&lt;pre tabindex="0">&lt;code>npm create vite@latest kodawari -- --template svelte-ts
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>cd kodawari
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>npm i -D tailwindcss
+npm i -D daisyui
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>npm install
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>npx tailwindcss init -p
+&lt;/code>&lt;/pre>&lt;p>./src/app.css に追加&lt;/p>
+&lt;pre tabindex="0">&lt;code>@tailwind base;
+@tailwind components;
+@tailwind utilities;
+&lt;/code>&lt;/pre>&lt;p>./tailwind.config.cjs を更新&lt;/p>
+&lt;pre tabindex="0">&lt;code>/** @type {import(&amp;#39;tailwindcss&amp;#39;).Config} */
+module.exports = {
+content: [],
+theme: {
+extend: {},
+},
+plugins: [],
+}
+&lt;/code>&lt;/pre>&lt;p>↓&lt;/p></description><content:encoded><![CDATA[
               <p>パパッとコマンドなどだけですが、こんな感じで。。。。。。</p>
 <pre tabindex="0"><code>npm create vite@latest kodawari -- --template svelte-ts
 </code></pre><pre tabindex="0"><code>cd kodawari
@@ -355,7 +465,10 @@ module.exports = {
 <a href="https://daisyui.com/">https://daisyui.com/</a>
 <a href="https://ja.vitejs.dev/guide/#%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88">https://ja.vitejs.dev/guide/#%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88</a></p>
 
-              ]]></content:encoded></item><item><title>cuiをMacでアプリ化する為のファイル構成</title><link>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</link><pubDate>Wed, 27 Jul 2022 14:54:26 +0900</pubDate><guid>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</guid><description>亀屋BLOGさんのPC-98えみゅでCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！ それで、これいちいち動かすの</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>cuiをMacでアプリ化する為のファイル構成</title><link>https://example.org/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</link><pubDate>Wed, 27 Jul 2022 14:54:26 +0900</pubDate><guid>https://example.org/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</guid><description>&lt;p>&lt;a href="http://kameya-z.way-nifty.com/blog/">亀屋BLOG&lt;/a>さんの&lt;a href="http://kameya-z.way-nifty.com/blog/2021/10/post-1bd017.html">PC-98えみゅ&lt;/a>でCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！&lt;/p>
+&lt;p>それで、これいちいち動かすのにコマンドラインからたたくのも面倒だと思い、アプリ化する方法を調べてたのでまとめておく。&lt;/p>
+&lt;h2 id="フォルダ構成">フォルダ構成&lt;/h2>
+&lt;p>フォルダ構成はこんな感じ&lt;/p></description><content:encoded><![CDATA[
               <p><a href="http://kameya-z.way-nifty.com/blog/">亀屋BLOG</a>さんの<a href="http://kameya-z.way-nifty.com/blog/2021/10/post-1bd017.html">PC-98えみゅ</a>でCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！</p>
 <p>それで、これいちいち動かすのにコマンドラインからたたくのも面倒だと思い、アプリ化する方法を調べてたのでまとめておく。</p>
 <h2 id="フォルダ構成">フォルダ構成</h2>
@@ -389,45 +502,45 @@ module.exports = {
 &lt;/plist&gt;
 </code></pre><h4 id="一覧">一覧</h4>
 <table>
-<thead>
-<tr>
-<th>キー</th>
-<th>型</th>
-<th>概要</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CFBundleSignature</td>
-<td>String</td>
-<td>バンドルのクリエータを識別する四文字コードです</td>
-</tr>
-<tr>
-<td>CFBundlePackageType</td>
-<td>String</td>
-<td>バンドルのタイプを識別する、四文字のコードです。</td>
-</tr>
-<tr>
-<td>CFBundleVersion</td>
-<td>String</td>
-<td>バンドルのためのビルドバージョン番号です。</td>
-</tr>
-<tr>
-<td>CFBundleExecutable</td>
-<td>String</td>
-<td>バンドル実行可能ファイルの名前です。</td>
-</tr>
-<tr>
-<td>CFBundleDisplayName</td>
-<td>String</td>
-<td>バンドルの実際の名前です。</td>
-</tr>
-<tr>
-<td>CFBundleName</td>
-<td>String</td>
-<td>バンドルの短縮表示名です。</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">キー</th>
+          <th style="text-align: left">型</th>
+          <th style="text-align: left">概要</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">CFBundleSignature</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルのクリエータを識別する四文字コードです</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundlePackageType</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルのタイプを識別する、四文字のコードです。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleVersion</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルのためのビルドバージョン番号です。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleExecutable</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドル実行可能ファイルの名前です。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleDisplayName</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルの実際の名前です。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleName</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルの短縮表示名です。</td>
+      </tr>
+  </tbody>
 </table>
 <h4 id="詳細">詳細</h4>
 <h5 id="cfbundlesignature">CFBundleSignature</h5>
@@ -460,7 +573,17 @@ module.exports = {
 <p>参考：
 <a href="http://potting.syuriken.jp/potting_conv/BPRuntimeConfig_J/chapter1.html">http://potting.syuriken.jp/potting_conv/BPRuntimeConfig_J/chapter1.html</a></p>
 
-              ]]></content:encoded></item><item><title>zshの初期設定</title><link>https://kodawari.info/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Wed, 27 Jul 2022 10:47:45 +0900</pubDate><guid>https://kodawari.info/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>ちょっとしたashの設定です。 Homebrewからインストール brew install zsh シェル一覧リストを追加 sudo sh -c &amp;#34;echo &amp;#39;/usr/local/bin/zsh&amp;#39; &amp;gt;&amp;gt; /etc/shells&amp;#34; インストールしたzshに設定 chsh -s /usr/local/bin/zsh Changing</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>zshの初期設定</title><link>https://example.org/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Wed, 27 Jul 2022 10:47:45 +0900</pubDate><guid>https://example.org/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>&lt;p>ちょっとしたashの設定です。&lt;/p>
+&lt;h2 id="homebrewからインストール">Homebrewからインストール&lt;/h2>
+&lt;pre tabindex="0">&lt;code>brew install zsh
+&lt;/code>&lt;/pre>&lt;p>シェル一覧リストを追加&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo sh -c &amp;#34;echo &amp;#39;/usr/local/bin/zsh&amp;#39; &amp;gt;&amp;gt; /etc/shells&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>インストールしたzshに設定&lt;/p>
+&lt;pre tabindex="0">&lt;code>chsh -s /usr/local/bin/zsh
+Changing shell for ruedap.
+Password for ruedap: パスワードを入力する
+&lt;/code>&lt;/pre>&lt;h2 id="zsh-completionsのインストール">zsh-completionsのインストール&lt;/h2>
+&lt;p>補完機能の強化&lt;/p></description><content:encoded><![CDATA[
               <p>ちょっとしたashの設定です。</p>
 <h2 id="homebrewからインストール">Homebrewからインストール</h2>
 <pre tabindex="0"><code>brew install zsh
@@ -573,13 +696,29 @@ glob: パス名にマッチするワイルドカードパターンのこと
 }
 precmd() { add_newline }
 </code></pre>
-              ]]></content:encoded></item><item><title>PostgreSQLの自動採番をなおす</title><link>https://kodawari.info/posts/postgresql%E3%81%AE%E8%87%AA%E5%8B%95%E6%8E%A1%E7%95%AA%E3%82%92%E3%81%AA%E3%81%8A%E3%81%99/</link><pubDate>Fri, 22 Jul 2022 19:01:53 +0900</pubDate><guid>https://kodawari.info/posts/postgresql%E3%81%AE%E8%87%AA%E5%8B%95%E6%8E%A1%E7%95%AA%E3%82%92%E3%81%AA%E3%81%8A%E3%81%99/</guid><description>シーケンスオブジェクトの値の更新 SELECT MAX(id) FROM table; SELECT nextval(&amp;#39;table_id_seq&amp;#39;); SELECT setval(&amp;#39;table_id_seq&amp;#39;, (SELECT MAX(id) FROM table));</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>PostgreSQLの自動採番をなおす</title><link>https://example.org/posts/postgresql%E3%81%AE%E8%87%AA%E5%8B%95%E6%8E%A1%E7%95%AA%E3%82%92%E3%81%AA%E3%81%8A%E3%81%99/</link><pubDate>Fri, 22 Jul 2022 19:01:53 +0900</pubDate><guid>https://example.org/posts/postgresql%E3%81%AE%E8%87%AA%E5%8B%95%E6%8E%A1%E7%95%AA%E3%82%92%E3%81%AA%E3%81%8A%E3%81%99/</guid><description>&lt;h2 id="シーケンスオブジェクトの値の更新">シーケンスオブジェクトの値の更新&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-postgresql" data-lang="postgresql">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">SELECT&lt;/span> MAX(id) &lt;span style="color:#66d9ef">FROM&lt;/span> &lt;span style="color:#66d9ef">table&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">SELECT&lt;/span> nextval(&lt;span style="color:#e6db74">&amp;#39;table_id_seq&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">SELECT&lt;/span> setval(&lt;span style="color:#e6db74">&amp;#39;table_id_seq&amp;#39;&lt;/span>, (&lt;span style="color:#66d9ef">SELECT&lt;/span> MAX(id) &lt;span style="color:#66d9ef">FROM&lt;/span> &lt;span style="color:#66d9ef">table&lt;/span>));
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[
               <h2 id="シーケンスオブジェクトの値の更新">シーケンスオブジェクトの値の更新</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-postgresql" data-lang="postgresql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> MAX(id) <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">table</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> nextval(<span style="color:#e6db74">&#39;table_id_seq&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> setval(<span style="color:#e6db74">&#39;table_id_seq&#39;</span>, (<span style="color:#66d9ef">SELECT</span> MAX(id) <span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">table</span>));
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>Nodebrewのインストールと使い方</title><link>https://kodawari.info/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link><pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate><guid>https://kodawari.info/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid><description>Nodebrewをインストールする インストール brew install nodebrew 確認 nodebrew -v バージョンが表示されればOK。 .zshrcなどに環境変数を追加 vi ~/.zshrc export PATH=$HOME/.nodebrew/current/bin:$PATH 初期化 nodebrew setup</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Nodebrewのインストールと使い方</title><link>https://example.org/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link><pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate><guid>https://example.org/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid><description>&lt;h2 id="nodebrewをインストールする">Nodebrewをインストールする&lt;/h2>
+&lt;p>インストール&lt;/p>
+&lt;pre tabindex="0">&lt;code>brew install nodebrew
+&lt;/code>&lt;/pre>&lt;p>確認&lt;/p>
+&lt;pre tabindex="0">&lt;code>nodebrew -v
+&lt;/code>&lt;/pre>&lt;p>バージョンが表示されればOK。&lt;/p>
+&lt;p>.zshrcなどに環境変数を追加
+vi ~/.zshrc&lt;/p>
+&lt;pre tabindex="0">&lt;code>export PATH=$HOME/.nodebrew/current/bin:$PATH
+&lt;/code>&lt;/pre>&lt;p>初期化&lt;/p>
+&lt;pre tabindex="0">&lt;code>nodebrew setup
+&lt;/code>&lt;/pre>&lt;p>バージョン指定してnodeをインストールする
+インストール可能なバージョンを確認&lt;/p></description><content:encoded><![CDATA[
               <h2 id="nodebrewをインストールする">Nodebrewをインストールする</h2>
 <p>インストール</p>
 <pre tabindex="0"><code>brew install nodebrew
@@ -610,7 +749,17 @@ vi ~/.zshrc</p>
 <p>もう一度nodebrew lsを叩いて、currentが指定されてればOK。
 最後に node -vでバージョンが表示されれば万事完了！</p>
 
-              ]]></content:encoded></item><item><title>Wails v2の初期設定</title><link>https://kodawari.info/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate><guid>https://kodawari.info/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>wailsインストール go install github.com/wailsapp/wails/v2/cmd/wails@latest ツールのcheck wails doctor 初期設定 wails init -n [プロジェクトディレクトリ名] -t [テンプレート名または、url] wails init -n tamatan -t svelte-ts</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Wails v2の初期設定</title><link>https://example.org/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate><guid>https://example.org/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>&lt;h2 id="wailsインストール">wailsインストール&lt;/h2>
+&lt;pre tabindex="0">&lt;code>go install github.com/wailsapp/wails/v2/cmd/wails@latest
+&lt;/code>&lt;/pre>&lt;h2 id="ツールのcheck">ツールのcheck&lt;/h2>
+&lt;pre tabindex="0">&lt;code>wails doctor
+&lt;/code>&lt;/pre>&lt;h2 id="初期設定">初期設定&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>wails init -n &lt;span style="color:#f92672">[&lt;/span>プロジェクトディレクトリ名&lt;span style="color:#f92672">]&lt;/span> -t &lt;span style="color:#f92672">[&lt;/span>テンプレート名または、url&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wails init -n tamatan -t svelte-ts
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>現在バグなのか、フロントエンドの初期化がうまく行かないので
+yarnまたは、npm installを実行する。
+(yarnの方がうまく行くような気がする。)&lt;/p></description><content:encoded><![CDATA[
               <h2 id="wailsインストール">wailsインストール</h2>
 <pre tabindex="0"><code>go install github.com/wailsapp/wails/v2/cmd/wails@latest
 </code></pre><h2 id="ツールのcheck">ツールのcheck</h2>
@@ -626,190 +775,190 @@ yarnまたは、npm installを実行する。
 yarn
 </code></pre><p>テンプレートは、 リリースのv2.0.0-beta.35に書いてあった</p>
 <table>
-<thead>
-<tr>
-<th>TEMPLATE</th>
-<th>SHORT NAME</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lit + Vite</td>
-<td>lit</td>
-<td>Lit + Vite development server</td>
-</tr>
-<tr>
-<td>Lit + Vite (Typescript)</td>
-<td>lit-ts</td>
-<td>Lit + TS + Vite development server</td>
-</tr>
-<tr>
-<td>Preact + Vite</td>
-<td>preact</td>
-<td>Preact + Vite development server</td>
-</tr>
-<tr>
-<td>Preact + Vite (Typescript)</td>
-<td>preact-ts</td>
-<td>Preact + Vite development server</td>
-</tr>
-<tr>
-<td>React + Vite</td>
-<td>react</td>
-<td>React + Vite development server</td>
-</tr>
-<tr>
-<td>React + Vite (Typescript)</td>
-<td>react-ts</td>
-<td>React + Vite development server</td>
-</tr>
-<tr>
-<td>Svelte + Vite</td>
-<td>svelte</td>
-<td>Svelte + Vite development server</td>
-</tr>
-<tr>
-<td>Svelte + Vite (Typescript)</td>
-<td>svelte-ts</td>
-<td>Svelte + TS + Vite development server</td>
-</tr>
-<tr>
-<td>Vanilla + Vite</td>
-<td>vanilla</td>
-<td>Vanilla + Vite development server</td>
-</tr>
-<tr>
-<td>Vanilla + Vite (Typescript)</td>
-<td>vanilla-ts</td>
-<td>Vanilla + Vite development server</td>
-</tr>
-<tr>
-<td>Vue + Vite</td>
-<td>vue</td>
-<td>Vue + Vite development server</td>
-</tr>
-<tr>
-<td>Vue + Vite (Typescript)</td>
-<td>vue-ts</td>
-<td>Vue + Vite development server</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Lit + Vite</td>
+          <td style="text-align: left">lit</td>
+          <td style="text-align: left">Lit + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Lit + Vite (Typescript)</td>
+          <td style="text-align: left">lit-ts</td>
+          <td style="text-align: left">Lit + TS + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Preact + Vite</td>
+          <td style="text-align: left">preact</td>
+          <td style="text-align: left">Preact + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Preact + Vite (Typescript)</td>
+          <td style="text-align: left">preact-ts</td>
+          <td style="text-align: left">Preact + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">React + Vite</td>
+          <td style="text-align: left">react</td>
+          <td style="text-align: left">React + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">React + Vite (Typescript)</td>
+          <td style="text-align: left">react-ts</td>
+          <td style="text-align: left">React + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Svelte + Vite</td>
+          <td style="text-align: left">svelte</td>
+          <td style="text-align: left">Svelte + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Svelte + Vite (Typescript)</td>
+          <td style="text-align: left">svelte-ts</td>
+          <td style="text-align: left">Svelte + TS + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vanilla + Vite</td>
+          <td style="text-align: left">vanilla</td>
+          <td style="text-align: left">Vanilla + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vanilla + Vite (Typescript)</td>
+          <td style="text-align: left">vanilla-ts</td>
+          <td style="text-align: left">Vanilla + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vue + Vite</td>
+          <td style="text-align: left">vue</td>
+          <td style="text-align: left">Vue + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vue + Vite (Typescript)</td>
+          <td style="text-align: left">vue-ts</td>
+          <td style="text-align: left">Vue + Vite development server</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="vue">Vue</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>misitebao/wails-template-vue</td>
-<td><a href="https://github.com/misitebao/wails-template-vue">https://github.com/misitebao/wails-template-vue</a></td>
-<td>A template using Vite,Vue and Vue-Router(Support both JavaScript and TypeScript)</td>
-</tr>
-<tr>
-<td>wails-vite-vue-ts</td>
-<td><a href="https://github.com/codydbentley/wails-vite-vue-ts">https://github.com/codydbentley/wails-vite-vue-ts</a></td>
-<td>Vue 3 TypeScript with Vite (and instructions to add features)</td>
-</tr>
-<tr>
-<td>codydbentley/wails-vite-vue-the-works</td>
-<td><a href="https://github.com/codydbentley/wails-vite-vue-the-works">https://github.com/codydbentley/wails-vite-vue-the-works</a></td>
-<td>Vue 3 TypeScript with Vite, Vuex, Vue Router, Sass, and ESLint + Prettier</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">misitebao/wails-template-vue</td>
+          <td style="text-align: left"><a href="https://github.com/misitebao/wails-template-vue">https://github.com/misitebao/wails-template-vue</a></td>
+          <td style="text-align: left">A template using Vite,Vue and Vue-Router(Support both JavaScript and TypeScript)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">wails-vite-vue-ts</td>
+          <td style="text-align: left"><a href="https://github.com/codydbentley/wails-vite-vue-ts">https://github.com/codydbentley/wails-vite-vue-ts</a></td>
+          <td style="text-align: left">Vue 3 TypeScript with Vite (and instructions to add features)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">codydbentley/wails-vite-vue-the-works</td>
+          <td style="text-align: left"><a href="https://github.com/codydbentley/wails-vite-vue-the-works">https://github.com/codydbentley/wails-vite-vue-the-works</a></td>
+          <td style="text-align: left">Vue 3 TypeScript with Vite, Vuex, Vue Router, Sass, and ESLint + Prettier</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="angular">Angular</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TAINCER / wails-angular-template</td>
-<td><a href="https://github.com/TAINCER/wails-angular-template">https://github.com/TAINCER/wails-angular-template</a></td>
-<td>Angular with TypeScript, Sass, Hot-Reload, Code-Splitting and i18n</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">TAINCER / wails-angular-template</td>
+          <td style="text-align: left"><a href="https://github.com/TAINCER/wails-angular-template">https://github.com/TAINCER/wails-angular-template</a></td>
+          <td style="text-align: left">Angular with TypeScript, Sass, Hot-Reload, Code-Splitting and i18n</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="react">React</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AlienRecall / wails-react-template</td>
-<td><a href="https://github.com/AlienRecall/wails-react-template">https://github.com/AlienRecall/wails-react-template</a></td>
-<td>A template using reactjs</td>
-</tr>
-<tr>
-<td>flin7 / wails-react-template</td>
-<td><a href="https://github.com/flin7/wails-react-template">https://github.com/flin7/wails-react-template</a></td>
-<td>A minimal template for React that supports live development</td>
-</tr>
-<tr>
-<td>LGiki / wails-template-nextjs</td>
-<td><a href="https://github.com/LGiki/wails-template-nextjs">https://github.com/LGiki/wails-template-nextjs</a></td>
-<td>A template using Next.js and TypeScript</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">AlienRecall / wails-react-template</td>
+          <td style="text-align: left"><a href="https://github.com/AlienRecall/wails-react-template">https://github.com/AlienRecall/wails-react-template</a></td>
+          <td style="text-align: left">A template using reactjs</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">flin7 / wails-react-template</td>
+          <td style="text-align: left"><a href="https://github.com/flin7/wails-react-template">https://github.com/flin7/wails-react-template</a></td>
+          <td style="text-align: left">A minimal template for React that supports live development</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">LGiki / wails-template-nextjs</td>
+          <td style="text-align: left"><a href="https://github.com/LGiki/wails-template-nextjs">https://github.com/LGiki/wails-template-nextjs</a></td>
+          <td style="text-align: left">A template using Next.js and TypeScript</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="svelte">Svelte</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>raitonoberu / wails-svelte-template</td>
-<td><a href="https://github.com/raitonoberu/wails-svelte-template">https://github.com/raitonoberu/wails-svelte-template</a></td>
-<td>Svelteを使用したテンプレート</td>
-</tr>
-<tr>
-<td>BillBuilt / wails-vite-svelte-template</td>
-<td><a href="https://github.com/BillBuilt/wails-vite-svelte-template">https://github.com/BillBuilt/wails-vite-svelte-template</a></td>
-<td>A template using Svelte and Vite</td>
-</tr>
-<tr>
-<td>BillBuilt / wails-vite-svelte-tailwind-template</td>
-<td><a href="https://github.com/BillBuilt/wails-vite-svelte-tailwind-template">https://github.com/BillBuilt/wails-vite-svelte-tailwind-template</a></td>
-<td>A template using Svelte and Vite with TailwindCSS v3</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">raitonoberu / wails-svelte-template</td>
+          <td style="text-align: left"><a href="https://github.com/raitonoberu/wails-svelte-template">https://github.com/raitonoberu/wails-svelte-template</a></td>
+          <td style="text-align: left">Svelteを使用したテンプレート</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">BillBuilt / wails-vite-svelte-template</td>
+          <td style="text-align: left"><a href="https://github.com/BillBuilt/wails-vite-svelte-template">https://github.com/BillBuilt/wails-vite-svelte-template</a></td>
+          <td style="text-align: left">A template using Svelte and Vite</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">BillBuilt / wails-vite-svelte-tailwind-template</td>
+          <td style="text-align: left"><a href="https://github.com/BillBuilt/wails-vite-svelte-tailwind-template">https://github.com/BillBuilt/wails-vite-svelte-tailwind-template</a></td>
+          <td style="text-align: left">A template using Svelte and Vite with TailwindCSS v3</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="elm">Elm</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>benjamin-thomas / wails-elm-template</td>
-<td><a href="https://github.com/benjamin-thomas/wails-elm-template">https://github.com/benjamin-thomas/wails-elm-template</a></td>
-<td>Develop your GUI app with functional programming and a snappy hot-reload setup 🎉 🚀</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">benjamin-thomas / wails-elm-template</td>
+          <td style="text-align: left"><a href="https://github.com/benjamin-thomas/wails-elm-template">https://github.com/benjamin-thomas/wails-elm-template</a></td>
+          <td style="text-align: left">Develop your GUI app with functional programming and a snappy hot-reload setup 🎉 🚀</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="テスト起動">テスト起動</h2>
 <p>うまく行かないときは、
@@ -822,58 +971,76 @@ yarn
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>wails build -platform windows
 </span></span></code></pre></div><table>
-<thead>
-<tr>
-<th>Platform</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>darwin</td>
-<td>MacOS + architecture of build machine</td>
-</tr>
-<tr>
-<td>darwin/amd64</td>
-<td>MacOS 10.13+ AMD64</td>
-</tr>
-<tr>
-<td>darwin/arm64</td>
-<td>MacOS 11.0+ ARM64</td>
-</tr>
-<tr>
-<td>darwin/universal</td>
-<td>MacOS AMD64+ARM64 universal application</td>
-</tr>
-<tr>
-<td>windows</td>
-<td>Windows 10/11 + architecture of build machine</td>
-</tr>
-<tr>
-<td>windows/amd64</td>
-<td>Windows 10/11 AMD64</td>
-</tr>
-<tr>
-<td>windows/arm64</td>
-<td>Windows 10/11 ARM64</td>
-</tr>
-<tr>
-<td>linux</td>
-<td>Linux + architecture of build machine</td>
-</tr>
-<tr>
-<td>linux/amd64</td>
-<td>Linux AMD64</td>
-</tr>
-<tr>
-<td>linux/arm64</td>
-<td>Linux ARM64</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Platform</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">darwin</td>
+          <td style="text-align: left">MacOS + architecture of build machine</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">darwin/amd64</td>
+          <td style="text-align: left">MacOS 10.13+ AMD64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">darwin/arm64</td>
+          <td style="text-align: left">MacOS 11.0+ ARM64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">darwin/universal</td>
+          <td style="text-align: left">MacOS AMD64+ARM64 universal application</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">windows</td>
+          <td style="text-align: left">Windows 10/11 + architecture of build machine</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">windows/amd64</td>
+          <td style="text-align: left">Windows 10/11 AMD64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">windows/arm64</td>
+          <td style="text-align: left">Windows 10/11 ARM64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">linux</td>
+          <td style="text-align: left">Linux + architecture of build machine</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">linux/amd64</td>
+          <td style="text-align: left">Linux AMD64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">linux/arm64</td>
+          <td style="text-align: left">Linux ARM64</td>
+      </tr>
+  </tbody>
 </table>
 <p>こんな感じかな。</p>
 
-              ]]></content:encoded></item><item><title>iOS(obj-c)の画面遷移</title><link>https://kodawari.info/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</link><pubDate>Thu, 21 Jul 2022 22:16:58 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</guid><description>・コードでの遷移 ・StoryBoardのsegueを使った遷移 ・NavigationControllerを使った遷移 Present [self presentVie</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)の画面遷移</title><link>https://example.org/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</link><pubDate>Thu, 21 Jul 2022 22:16:58 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</guid><description>&lt;p>・コードでの遷移
+・StoryBoardのsegueを使った遷移
+・NavigationControllerを使った遷移&lt;/p>
+&lt;h2 id="present">Present&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[self presentViewController:移動先ViewController animated:YES completion:nil];
+&lt;/code>&lt;/pre>&lt;h2 id="segue">segue&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[self performSegueWithIdentifier:@&amp;#34;セグエのID&amp;#34; sender:self];
+&lt;/code>&lt;/pre>&lt;h2 id="push">Push&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[self.navigationController pushViewController:移動先ViewController animated:YES];
+&lt;/code>&lt;/pre>&lt;h2 id="pop">Pop&lt;/h2>
+&lt;h3 id="指定ビューコントローラーへ">指定ビューコントローラーへ&lt;/h3>
+&lt;pre tabindex="0">&lt;code>[self.navigationController popToViewController:viewController animated:YES];
+&lt;/code>&lt;/pre>&lt;h3 id="前の画面に戻る">前の画面に戻る&lt;/h3>
+&lt;pre tabindex="0">&lt;code>[self.navigationController popViewControllerAnimated:YES];
+&lt;/code>&lt;/pre>&lt;h3 id="navigationcontrollerの１番目の画面に戻る">NavigationControllerの１番目の画面に戻る&lt;/h3>
+&lt;pre tabindex="0">&lt;code>[self.navigationController popToRootViewControllerAnimated:YES];
+&lt;/code>&lt;/pre>&lt;h2 id="storyboard">StoryBoard&lt;/h2>
+&lt;h4 id="storyboard-id">・StoryBoard ID&lt;/h4>
+&lt;p>※storyboardファイルで &amp;lsquo;identify → StoryBoard ID&amp;rsquo;の入力が必要&lt;/p></description><content:encoded><![CDATA[
               <p>・コードでの遷移
 ・StoryBoardのsegueを使った遷移
 ・NavigationControllerを使った遷移</p>
@@ -900,7 +1067,14 @@ UIViewController* viewController = [storyboard instantiateInitialViewController]
 <pre tabindex="0"><code>UINavigationController* rootNavigationController = [storyboard instantiateInitialViewController];
 UIViewController* viewController = [[rootNavigationController viewControllers] lastObject];
 </code></pre>
-              ]]></content:encoded></item><item><title>iOS(obj-c)のセグエの戻り(push)</title><link>https://kodawari.info/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</link><pubDate>Thu, 21 Jul 2022 22:14:45 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</guid><description>１つ前の画面に戻る [self.navigationController popViewControllerAnimated:YES]; ルート画面まで一気に戻る [self.navigationController popToRootViewControllerAnimated:YES]; 任意の画面（UIViewController）まで戻る [self.navigationController popToViewController:UIViewController animated:YES];</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)のセグエの戻り(push)</title><link>https://example.org/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</link><pubDate>Thu, 21 Jul 2022 22:14:45 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</guid><description>&lt;h2 id="１つ前の画面に戻る">１つ前の画面に戻る&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[self.navigationController popViewControllerAnimated:YES];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ルート画面まで一気に戻る">ルート画面まで一気に戻る&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>[self.navigationController popToRootViewControllerAnimated:YES];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>[self.navigationController popToViewController:UIViewController animated:YES];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[
               <h2 id="１つ前の画面に戻る">１つ前の画面に戻る</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>[self.navigationController popViewControllerAnimated:YES];
@@ -909,10 +1083,111 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span></code></pre></div><h2 id="任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[self.navigationController popToViewController:UIViewController animated:YES];
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>iOS(obj-c)で文字列結合</title><link>https://kodawari.info/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</link><pubDate>Thu, 21 Jul 2022 22:12:09 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</guid><description>NSString *urlString =[NSString stringWithFormat:@&amp;#34;%@/test.php&amp;#34;,dns];</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)で文字列結合</title><link>https://example.org/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</link><pubDate>Thu, 21 Jul 2022 22:12:09 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</guid><description>&lt;pre tabindex="0">&lt;code class="language-ca" data-lang="ca"> NSString *urlString =[NSString stringWithFormat:@&amp;#34;%@/test.php&amp;#34;,dns];
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <pre tabindex="0"><code class="language-ca" data-lang="ca">    NSString *urlString =[NSString stringWithFormat:@&#34;%@/test.php&#34;,dns];
 </code></pre>
-              ]]></content:encoded></item><item><title>iOS(obj-c)でgetとPOST</title><link>https://kodawari.info/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:09:00 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</guid><description>GET NSString *urlString = [NSString stringWithFormat:@&amp;#34;https://xxxxx.co.jp/test?key1=%@&amp;#34;,key1]; DLog(@&amp;#34;urlString:%@&amp;#34;, urlString) NSURLSession *urlSession; NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration]; sessionConfig.timeoutIntervalForRequest = 5; sessionConfig.timeoutIntervalForResource = 20; // 処理を単純化させるためにdelegateは使用しませんでした。 // UI関連の処理を想定していないた</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)でgetとPOST</title><link>https://example.org/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:09:00 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</guid><description>&lt;h2 id="get">GET&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-C" data-lang="C">&lt;span style="display:flex;">&lt;span>NSString &lt;span style="color:#f92672">*&lt;/span>urlString &lt;span style="color:#f92672">=&lt;/span> [NSString stringWithFormat:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://xxxxx.co.jp/test?key1=%@&amp;#34;&lt;/span>,key1];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;urlString:%@&amp;#34;&lt;/span>, urlString)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSession &lt;span style="color:#f92672">*&lt;/span>urlSession;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSessionConfiguration &lt;span style="color:#f92672">*&lt;/span>sessionConfig &lt;span style="color:#f92672">=&lt;/span> [NSURLSessionConfiguration defaultSessionConfiguration];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForRequest &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForResource &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">20&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 処理を単純化させるためにdelegateは使用しませんでした。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> urlSession &lt;span style="color:#f92672">=&lt;/span> [NSURLSession sessionWithConfiguration:sessionConfig
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegate:nil
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegateQueue:nil];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">NSLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;get start&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSMutableURLRequest &lt;span style="color:#f92672">*&lt;/span>request &lt;span style="color:#f92672">=&lt;/span> [NSMutableURLRequest new];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setURL:[NSURL URLWithString:urlString]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;YKTHttpClient&amp;#34;&lt;/span> forHTTPHeaderField:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;User-Agent&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setHTTPMethod:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;GET&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> NSURLSessionDataTask &lt;span style="color:#f92672">*&lt;/span>dataTask
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">=&lt;/span> [urlSession dataTaskWithRequest:request
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> completionHandler:&lt;span style="color:#f92672">^&lt;/span>(NSData &lt;span style="color:#f92672">*&lt;/span>data, NSURLResponse &lt;span style="color:#f92672">*&lt;/span>response, NSError &lt;span style="color:#f92672">*&lt;/span>error) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>httpUrlResponse &lt;span style="color:#f92672">=&lt;/span> (NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>) response;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Status code: %ld&amp;#34;&lt;/span>, httpUrlResponse.statusCode);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> CFStringEncoding encoding &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">CFStringConvertIANACharSetNameToEncoding&lt;/span>((CFStringRef) [response textEncodingName]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>body &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:data encoding:&lt;span style="color:#a6e22e">CFStringConvertEncodingToNSStringEncoding&lt;/span>(encoding)];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSData &lt;span style="color:#f92672">*&lt;/span>restoreData &lt;span style="color:#f92672">=&lt;/span> [[NSData alloc] initWithBase64EncodedString:body options:&lt;span style="color:#ae81ff">0&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>restoreString &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_async&lt;/span>(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_get_main_queue&lt;/span>(),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">^&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self.textView.text &lt;span style="color:#f92672">=&lt;/span> restoreString;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [dataTask resume];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="post">POST&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-C" data-lang="C">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NSString &lt;span style="color:#f92672">*&lt;/span>urlString &lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://xxxx.co.jp/test&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSDictionary &lt;span style="color:#f92672">*&lt;/span>params &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> name,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;uuid&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> uuid,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> };
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;urlString:%@&amp;#34;&lt;/span>, urlString)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 連想配列として与えられたパラメータをクエリ文字列に変換する
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> NSData &lt;span style="color:#f92672">*&lt;/span>query &lt;span style="color:#f92672">=&lt;/span> [self buildQueryWithDictionary: params];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSession &lt;span style="color:#f92672">*&lt;/span>urlSession;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSessionConfiguration &lt;span style="color:#f92672">*&lt;/span>sessionConfig &lt;span style="color:#f92672">=&lt;/span> [NSURLSessionConfiguration defaultSessionConfiguration];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForRequest &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForResource &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">20&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 処理を単純化させるためにdelegateは使用しませんでした。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> urlSession &lt;span style="color:#f92672">=&lt;/span> [NSURLSession sessionWithConfiguration:sessionConfig
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegate:nil
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegateQueue:nil];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">NSLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;get start&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSMutableURLRequest &lt;span style="color:#f92672">*&lt;/span>request &lt;span style="color:#f92672">=&lt;/span> [NSMutableURLRequest new];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setURL:[NSURL URLWithString:urlString]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;iOS&amp;#34;&lt;/span> forHTTPHeaderField:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;User-Agent&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setHTTPMethod:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;POST&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;application/x-www-form-urlencoded&amp;#34;&lt;/span> forHTTPHeaderField: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Content-Type&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue: [NSString stringWithFormat: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;%lu&amp;#34;&lt;/span>, (&lt;span style="color:#66d9ef">unsigned&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span>)[query length]] forHTTPHeaderField: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Content-Length&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setHTTPBody: query];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> NSURLSessionDataTask &lt;span style="color:#f92672">*&lt;/span>dataTask
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">=&lt;/span> [urlSession dataTaskWithRequest:request
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> completionHandler:&lt;span style="color:#f92672">^&lt;/span>(NSData &lt;span style="color:#f92672">*&lt;/span>data, NSURLResponse &lt;span style="color:#f92672">*&lt;/span>response, NSError &lt;span style="color:#f92672">*&lt;/span>error) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>httpUrlResponse &lt;span style="color:#f92672">=&lt;/span> (NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>) response;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Status code: %ld&amp;#34;&lt;/span>, httpUrlResponse.statusCode);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> CFStringEncoding encoding &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">CFStringConvertIANACharSetNameToEncoding&lt;/span>((CFStringRef) [response textEncodingName]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>body &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:data encoding:&lt;span style="color:#a6e22e">CFStringConvertEncodingToNSStringEncoding&lt;/span>(encoding)];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSData &lt;span style="color:#f92672">*&lt;/span>restoreData &lt;span style="color:#f92672">=&lt;/span> [[NSData alloc] initWithBase64EncodedString:body options:&lt;span style="color:#ae81ff">0&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>restoreString &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_async&lt;/span>(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_get_main_queue&lt;/span>(),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">^&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [dataTask resume];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[
               <h2 id="get">GET</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>NSString <span style="color:#f92672">*</span>urlString <span style="color:#f92672">=</span> [NSString stringWithFormat:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;https://xxxxx.co.jp/test?key1=%@&#34;</span>,key1];
 </span></span><span style="display:flex;"><span>
@@ -1014,7 +1289,126 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    [dataTask resume];
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>AndroidでgetとPOST</title><link>https://kodawari.info/posts/android%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:04:39 +0900</pubDate><guid>https://kodawari.info/posts/android%E3%81%A7get%E3%81%A8post/</guid><description>こんな感じ GET public String getHistoryData(String key1) { HttpURLConnection urlConnection = null; InputStream inputStream = null; String result = &amp;#34;&amp;#34;; String str = &amp;#34;&amp;#34;; try { URL url = new URL(&amp;#34;https://xxxxx.co.jp/test?key1=&amp;#34; + key1); // 接続先URLへのコネクションを開く．まだ接続されていない urlConnection = (HttpURLConnection) url.openConnection(); //</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>AndroidでgetとPOST</title><link>https://example.org/posts/android%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:04:39 +0900</pubDate><guid>https://example.org/posts/android%E3%81%A7get%E3%81%A8post/</guid><description>&lt;p>こんな感じ&lt;/p>
+&lt;h2 id="get">GET&lt;/h2>
+&lt;pre tabindex="0">&lt;code class="language-aidl" data-lang="aidl"> public String getHistoryData(String key1) {
+HttpURLConnection urlConnection = null;
+InputStream inputStream = null;
+String result = &amp;#34;&amp;#34;;
+String str = &amp;#34;&amp;#34;;
+try {
+URL url = new URL(&amp;#34;https://xxxxx.co.jp/test?key1=&amp;#34; + key1);
+// 接続先URLへのコネクションを開く．まだ接続されていない
+urlConnection = (HttpURLConnection) url.openConnection();
+// 接続タイムアウトを設定
+urlConnection.setConnectTimeout(10000);
+// レスポンスデータの読み取りタイムアウトを設定
+urlConnection.setReadTimeout(10000);
+// ヘッダーにUser-Agentを設定
+urlConnection.addRequestProperty(&amp;#34;User-Agent&amp;#34;, &amp;#34;Android&amp;#34;);
+// ヘッダーにAccept-Languageを設定
+urlConnection.addRequestProperty(&amp;#34;Accept-Language&amp;#34;, Locale.getDefault().toString());
+// HTTPメソッドを指定
+urlConnection.setRequestMethod(&amp;#34;GET&amp;#34;);
+//リクエストボディの送信を許可しない
+urlConnection.setDoOutput(false);
+//レスポンスボディの受信を許可する
+urlConnection.setDoInput(true);
+// 通信開始
+urlConnection.connect();
+// レスポンスコードを取得
+int statusCode = urlConnection.getResponseCode();
+// レスポンスコード200は通信に成功したことを表す
+if (statusCode == 200) {
+inputStream = urlConnection.getInputStream();
+BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, &amp;#34;utf-8&amp;#34;));
+// 1行ずつレスポンス結果を取得しstrに追記
+result = bufferedReader.readLine();
+while (result != null) {
+str += result;
+result = bufferedReader.readLine();
+}
+bufferedReader.close();
+}
+} catch (MalformedURLException e) {
+e.printStackTrace();
+} catch (IOException e) {
+e.printStackTrace();
+}
+// レスポンス結果のJSONをString型で返す
+return str;
+}
+&lt;/code>&lt;/pre>&lt;h2 id="post">POST&lt;/h2>
+&lt;pre tabindex="0">&lt;code class="language-aidl" data-lang="aidl">public String PostUserName(String key1, String key2) {
+HttpURLConnection urlConnection = null;
+InputStream inputStream = null;
+String result = &amp;#34;&amp;#34;;
+String str = &amp;#34;&amp;#34;;
+try {
+URL url = new URL(&amp;#34;http://hpph;e.cp.jp&amp;#34;&amp;#34;);
+// 接続先URLへのコネクションを開く．まだ接続されていない
+urlConnection = (HttpURLConnection) url.openConnection();
+// 接続タイムアウトを設定
+urlConnection.setConnectTimeout(10000);
+// レスポンスデータの読み取りタイムアウトを設定
+urlConnection.setReadTimeout(10000);
+// ヘッダーにUser-Agentを設定
+urlConnection.addRequestProperty(&amp;#34;User-Agent&amp;#34;, &amp;#34;Android&amp;#34;);
+// ヘッダーにAccept-Languageを設定
+urlConnection.addRequestProperty(&amp;#34;Accept-Language&amp;#34;, Locale.getDefault().toString());
+//ヘッダーにContent-Typeを設定する
+urlConnection.addRequestProperty(&amp;#34;Content-Type&amp;#34;, &amp;#34;application/x-www-form-urlencoded&amp;#34;);
+// HTTPメソッドを指定
+urlConnection.setRequestMethod(&amp;#34;POST&amp;#34;);
+urlConnection.setUseCaches(false);
+//リクエストボディの送信を許可しない
+urlConnection.setDoOutput(true);
+//レスポンスボディの受信を許可する
+urlConnection.setDoInput(true);
+// 通信開始
+urlConnection.connect();
+//ステップ5:リクエストボディの書き出しを行う。
+OutputStream outputStream = urlConnection.getOutputStream();
+Map&amp;lt;String, String&amp;gt; keyValues = new HashMap&amp;lt;&amp;gt;();
+keyValues.put(&amp;#34;key1&amp;#34;, key1);
+keyValues.put(&amp;#34;key2&amp;#34;, key2);
+if (keyValues.size() &amp;gt; 0) {
+Uri.Builder builder = new Uri.Builder();
+//HashMapを[key=value]形式の文字列に変換する
+for (String key : keyValues.keySet()) {
+//[key=value]形式の文字列に変換する。
+builder.appendQueryParameter(key, keyValues.get(key));
+}
+//[key=value&amp;amp;key=value…]形式の文字列に変換する。
+String join = builder.build().getEncodedQuery();
+PrintStream ps = new PrintStream(outputStream);
+ps.print(join);
+ps.close();
+}
+outputStream.close();
+// レスポンスコードを取得
+int statusCode = urlConnection.getResponseCode();
+// レスポンスコード200は通信に成功したことを表す
+if (statusCode == 200) {
+inputStream = urlConnection.getInputStream();
+BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+// 1行ずつレスポンス結果を取得しstrに追記
+result = bufferedReader.readLine();
+while (result != null) {
+str += result;
+result = bufferedReader.readLine();
+}
+bufferedReader.close();
+}
+} catch (MalformedURLException e) {
+e.printStackTrace();
+} catch (IOException e) {
+e.printStackTrace();
+}
+// レスポンス結果のJSONをString型で返す
+return str;
+}
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <p>こんな感じ</p>
 <h2 id="get">GET</h2>
 <pre tabindex="0"><code class="language-aidl" data-lang="aidl"> public String getHistoryData(String key1) {
@@ -1143,12 +1537,17 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
         return str;
     }
 </code></pre>
-              ]]></content:encoded></item><item><title>Wails v2のテンプレート</title><link>https://kodawari.info/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</link><pubDate>Thu, 21 Jul 2022 22:00:39 +0900</pubDate><guid>https://kodawari.info/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</guid><description>テンプレートの一覧どこにあるんやと思ったら ここにあった（；^ω^） https://wails.io/docs/community/templates/</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Wails v2のテンプレート</title><link>https://example.org/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</link><pubDate>Thu, 21 Jul 2022 22:00:39 +0900</pubDate><guid>https://example.org/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</guid><description>&lt;p>テンプレートの一覧どこにあるんやと思ったら&lt;/p>
+&lt;p>ここにあった（；^ω^）&lt;/p>
+&lt;p>&lt;a href="https://wails.io/docs/community/templates/">https://wails.io/docs/community/templates/&lt;/a>&lt;/p></description><content:encoded><![CDATA[
               <p>テンプレートの一覧どこにあるんやと思ったら</p>
 <p>ここにあった（；^ω^）</p>
 <p><a href="https://wails.io/docs/community/templates/">https://wails.io/docs/community/templates/</a></p>
 
-              ]]></content:encoded></item><item><title>PC-8801のエミュレータ、「quasi88」のSDL2対応版</title><link>https://kodawari.info/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</link><pubDate>Tue, 12 Jul 2022 17:12:30 +0900</pubDate><guid>https://kodawari.info/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</guid><description>Mac用PC88のエミュレータが欲しいと思ってたら、 こんなところに！！ HomeBrewのインストーラーだと、SDL1なのでワーニングがでるけ</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>PC-8801のエミュレータ、「quasi88」のSDL2対応版</title><link>https://example.org/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</link><pubDate>Tue, 12 Jul 2022 17:12:30 +0900</pubDate><guid>https://example.org/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</guid><description>&lt;p>Mac用PC88のエミュレータが欲しいと思ってたら、
+こんなところに！！&lt;/p>
+&lt;p>HomeBrewのインストーラーだと、SDL1なのでワーニングがでるけど、
+SDL2対応だから、これならでない！！&lt;/p></description><content:encoded><![CDATA[
               <p>Mac用PC88のエミュレータが欲しいと思ってたら、
 こんなところに！！</p>
 <p>HomeBrewのインストーラーだと、SDL1なのでワーニングがでるけど、
@@ -1159,7 +1558,29 @@ SDL2対応だから、これならでない！！</p>
 <p><img src="../img/JESUS-pic1.png" alt="icon20220712">
 JESUSを動かしてみたらこんな感じ♪</p>
 
-              ]]></content:encoded></item><item><title>pemファイルに含まれる証明書の確認方法</title><link>https://kodawari.info/posts/pem%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%90%AB%E3%81%BE%E3%82%8C%E3%82%8B%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 12 Jul 2022 14:07:34 +0900</pubDate><guid>https://kodawari.info/posts/pem%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%90%AB%E3%81%BE%E3%82%8C%E3%82%8B%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/</guid><description>以下で、内容が見られます。 openssl x509 -text -fingerprint -noout -in &amp;#34;ファイル名.pem&amp;#34; 実際には、こんな感じです。 $ openssl x509 -text -fingerprint -noout -in &amp;#39;*.xxxxxxxx.xxx.cer&amp;#39; Certificate: Data: Version: 3 (0x2) Serial Number: 26:8c:4f:db:b0:ba:d7:43:45:1b:43:f2:5d:84:9b:85 Signature Algorithm: sha384WithRSAEncryption</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>pemファイルに含まれる証明書の確認方法</title><link>https://example.org/posts/pem%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%90%AB%E3%81%BE%E3%82%8C%E3%82%8B%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 12 Jul 2022 14:07:34 +0900</pubDate><guid>https://example.org/posts/pem%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%90%AB%E3%81%BE%E3%82%8C%E3%82%8B%E8%A8%BC%E6%98%8E%E6%9B%B8%E3%81%AE%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95/</guid><description>&lt;p>以下で、内容が見られます。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>openssl x509 -text -fingerprint -noout -in &lt;span style="color:#e6db74">&amp;#34;ファイル名.pem&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>実際には、こんな感じです。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ openssl x509 -text -fingerprint -noout -in &lt;span style="color:#e6db74">&amp;#39;*.xxxxxxxx.xxx.cer&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Certificate:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Data:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Version: &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#f92672">(&lt;/span>0x2&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Serial Number:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 26:8c:4f:db:b0:ba:d7:43:45:1b:43:f2:5d:84:9b:85
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Signature Algorithm: sha384WithRSAEncryption
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Issuer: C &lt;span style="color:#f92672">=&lt;/span> AT, O &lt;span style="color:#f92672">=&lt;/span> ZeroSSL, CN &lt;span style="color:#f92672">=&lt;/span> ZeroSSL RSA Domain Secure Site CA
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Validity
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Not Before: May &lt;span style="color:#ae81ff">5&lt;/span> 00:00:00 &lt;span style="color:#ae81ff">2022&lt;/span> GMT
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Not After : Aug &lt;span style="color:#ae81ff">3&lt;/span> 23:59:59 &lt;span style="color:#ae81ff">2022&lt;/span> GMT
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Subject: CN &lt;span style="color:#f92672">=&lt;/span> *.tama-tan.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Subject Public Key Info:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Public Key Algorithm: rsaEncryption
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> RSA Public-Key: &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#ae81ff">2048&lt;/span> bit&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Modulus:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 00:c5:bb:31:b4:41:96:66:e6:ed:47:9e:74:2f:58:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 7a:af:fe:a0:d8:09:06:25:36:99:4f:69:79:71:55:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --- 省略 ----
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>上記で、Validityの覧を見ると有効期限がわかります。&lt;/p></description><content:encoded><![CDATA[
               <p>以下で、内容が見られます。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>openssl x509 -text -fingerprint -noout -in <span style="color:#e6db74">&#34;ファイル名.pem&#34;</span>
 </span></span></code></pre></div><p>実際には、こんな感じです。</p>
@@ -1184,7 +1605,9 @@ JESUSを動かしてみたらこんな感じ♪</p>
 </span></span><span style="display:flex;"><span>                    --- 省略 ----
 </span></span></code></pre></div><p>上記で、Validityの覧を見ると有効期限がわかります。</p>
 
-              ]]></content:encoded></item><item><title>Golangでホットリロードする方法</title><link>https://kodawari.info/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 05 Jul 2022 13:00:04 +0900</pubDate><guid>https://kodawari.info/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 今回、Go言語で開発を行うことがありました。 go言語は、PHPやRubyなどの言</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Golangでホットリロードする方法</title><link>https://example.org/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 05 Jul 2022 13:00:04 +0900</pubDate><guid>https://example.org/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>&lt;p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p>
+&lt;p>今回、Go言語で開発を行うことがありました。&lt;/p>
+&lt;p>go言語は、PHPやRubyなどの言語とは異なり、ビルドをしないとソースは反映されません。&lt;/p></description><content:encoded><![CDATA[
               <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
 <p>今回、Go言語で開発を行うことがありました。</p>
 <p>go言語は、PHPやRubyなどの言語とは異なり、ビルドをしないとソースは反映されません。</p>
@@ -1345,7 +1768,10 @@ services:
 Goを使用することがあれば一度やってみませんか</p>
 <p>明日は @ya-yamamoto さん、よろしくお願いします！！</p>
 
-              ]]></content:encoded></item><item><title>APIの死活監視をRocketChatに送信する</title><link>https://kodawari.info/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link><pubDate>Tue, 05 Jul 2022 12:15:06 +0900</pubDate><guid>https://kodawari.info/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 サーバ監視ツールを作成しようというお話をします。 サーバが本当に動いているかどうか</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>APIの死活監視をRocketChatに送信する</title><link>https://example.org/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link><pubDate>Tue, 05 Jul 2022 12:15:06 +0900</pubDate><guid>https://example.org/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid><description>&lt;p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p>
+&lt;p>サーバ監視ツールを作成しようというお話をします。&lt;/p>
+&lt;p>サーバが本当に動いているかどうかを少し前までは、メールで送信が多かったのですが、
+最近は、Slack等のチャットに連絡するような方法が多くなってきているようです。&lt;/p></description><content:encoded><![CDATA[
               <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
 <p>サーバ監視ツールを作成しようというお話をします。</p>
 <p>サーバが本当に動いているかどうかを少し前までは、メールで送信が多かったのですが、
@@ -1379,30 +1805,30 @@ JSONで以下のように返す</li>
 <li>URLは、以下を用意</li>
 </ul>
 <table>
-<thead>
-<tr>
-<th>URI</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/test_status_ok_json_status_ok</td>
-<td>HTTPステータス 正常・Jsonステータス正常</td>
-</tr>
-<tr>
-<td>/test_status_ok_json_status_ng</td>
-<td>HTTPステータス 正常・Jsonステータス異常</td>
-</tr>
-<tr>
-<td>/test_status_ng_json_status_ng</td>
-<td>HTTPステータス 異常・Jsonステータス正常</td>
-</tr>
-<tr>
-<td>/test_status_ok_json_status_ok_long_time</td>
-<td>HTTPステータス 正常・Jsonステータス正常（responseが遅い）</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">URI</th>
+          <th style="text-align: left">内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">/test_status_ok_json_status_ok</td>
+          <td style="text-align: left">HTTPステータス 正常・Jsonステータス正常</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">/test_status_ok_json_status_ng</td>
+          <td style="text-align: left">HTTPステータス 正常・Jsonステータス異常</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">/test_status_ng_json_status_ng</td>
+          <td style="text-align: left">HTTPステータス 異常・Jsonステータス正常</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">/test_status_ok_json_status_ok_long_time</td>
+          <td style="text-align: left">HTTPステータス 正常・Jsonステータス正常（responseが遅い）</td>
+      </tr>
+  </tbody>
 </table>
 <p>以下がサンプルソースです。</p>
 <pre tabindex="0"><code>package main
@@ -1741,7 +2167,9 @@ func RocketChatPostMessage(urlAddress string, authToken string, userId string, c
 あと、Go言語好きな人集まりが出来たら良いなぁって最近は思ってます。。。。。</p>
 <p>※ 端折って書いたりしておりますので実際のサンプルサーバと監視ツールを合体したソースを<a href="https://gist.github.com/tama-jp/175aa45d0d129568329168504a9e228f">Gist</a>にあげておきます。</p>
 
-              ]]></content:encoded></item><item><title>Google画像をスクレイピングしてみよう！！</title><link>https://kodawari.info/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link><pubDate>Tue, 05 Jul 2022 12:07:08 +0900</pubDate><guid>https://kodawari.info/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 すみっコぐらしをめっちゃ好きでLineスタンプはすべてコンプリートしています*.</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Google画像をスクレイピングしてみよう！！</title><link>https://example.org/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link><pubDate>Tue, 05 Jul 2022 12:07:08 +0900</pubDate><guid>https://example.org/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid><description>&lt;p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p>
+&lt;p>すみっコぐらしをめっちゃ好きでLineスタンプはすべてコンプリートしています*.⋆( ˘̴͈́ ॢ꒵ॢ ˘̴͈̀ )⋆.*
+それは置いといて。。。。 ＼(･&lt;em>＼)ｿﾉﾊﾅｼﾊ (／&lt;/em>･)／ｺｯﾁﾆｵｲﾄｲﾃ&lt;/p></description><content:encoded><![CDATA[
               <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
 <p>すみっコぐらしをめっちゃ好きでLineスタンプはすべてコンプリートしています*.⋆( ˘̴͈́ ॢ꒵ॢ ˘̴͈̀ )⋆.*
 それは置いといて。。。。 ＼(･<em>＼)ｿﾉﾊﾅｼﾊ (／</em>･)／ｺｯﾁﾆｵｲﾄｲﾃ</p>

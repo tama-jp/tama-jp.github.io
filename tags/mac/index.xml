@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>mac on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/mac/</link><description>Recent content in mac on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Sep 2024 19:38:11 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>ITerm2で起動時にTip of the Dayを出さない</title><link>https://kodawari.info/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</link><pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate><guid>https://kodawari.info/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</guid><description>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法 Term2の環境設定の［Advanced］タブ内</description><content:encoded>
-&lt;p>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mac on Ko-Da-Wa-Ri</title><link>https://example.org/tags/mac/</link><description>Recent content in Mac on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 26 Sep 2024 19:38:11 +0900</lastBuildDate><atom:link href="https://example.org/tags/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>ITerm2で起動時にTip of the Dayを出さない</title><link>https://example.org/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</link><pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate><guid>https://example.org/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</guid><description>&lt;p>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法&lt;/p>
 &lt;p>Term2の環境設定の［Advanced］タブ内に「Tip of the Day」セクションがあるので、
-「Disable the Tip of the Day?」項目がデフォルトだと「No」になっているので「Yes」に変更する。&lt;/p></content:encoded></item><item><title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title><link>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link><pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate><guid>https://kodawari.info/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid><description>Docker Desktopを使用してもいいけど、 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。 ただ、limaは、docker</description><content:encoded><![CDATA[
+「Disable the Tip of the Day?」項目がデフォルトだと「No」になっているので「Yes」に変更する。&lt;/p></description><content:encoded>
+              &lt;p>iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法&lt;/p>
+&lt;p>Term2の環境設定の［Advanced］タブ内に「Tip of the Day」セクションがあるので、
+「Disable the Tip of the Day?」項目がデフォルトだと「No」になっているので「Yes」に変更する。&lt;/p>
+
+              </content:encoded></item><item><title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title><link>https://example.org/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link><pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate><guid>https://example.org/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid><description>&lt;p>Docker Desktopを使用してもいいけど、
+Limaっていうのを使用してDockerを使おうかなと思ったので、めも。
+ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。&lt;/p></description><content:encoded><![CDATA[
               <p>Docker Desktopを使用してもいいけど、
 Limaっていうのを使用してDockerを使おうかなと思ったので、めも。
 ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。</p>
@@ -68,7 +74,19 @@ docker    Running    127.0.0.1:60006    qemu      x86_64    4       8GiB      10
 <p>システムを再起動すると、作成した仮想環境はstopの状態になるので、先程の<code>.zshrc</code>に仮想環境を立ち上げるように追記する。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>limactl start docker
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>Nodebrewのインストールと使い方</title><link>https://kodawari.info/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link><pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate><guid>https://kodawari.info/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid><description>Nodebrewをインストールする インストール brew install nodebrew 確認 nodebrew -v バージョンが表示されればOK。 .zshrcなどに環境変数を追加 vi ~/.zshrc export PATH=$HOME/.nodebrew/current/bin:$PATH 初期化 nodebrew setup</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Nodebrewのインストールと使い方</title><link>https://example.org/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link><pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate><guid>https://example.org/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid><description>&lt;h2 id="nodebrewをインストールする">Nodebrewをインストールする&lt;/h2>
+&lt;p>インストール&lt;/p>
+&lt;pre tabindex="0">&lt;code>brew install nodebrew
+&lt;/code>&lt;/pre>&lt;p>確認&lt;/p>
+&lt;pre tabindex="0">&lt;code>nodebrew -v
+&lt;/code>&lt;/pre>&lt;p>バージョンが表示されればOK。&lt;/p>
+&lt;p>.zshrcなどに環境変数を追加
+vi ~/.zshrc&lt;/p>
+&lt;pre tabindex="0">&lt;code>export PATH=$HOME/.nodebrew/current/bin:$PATH
+&lt;/code>&lt;/pre>&lt;p>初期化&lt;/p>
+&lt;pre tabindex="0">&lt;code>nodebrew setup
+&lt;/code>&lt;/pre>&lt;p>バージョン指定してnodeをインストールする
+インストール可能なバージョンを確認&lt;/p></description><content:encoded><![CDATA[
               <h2 id="nodebrewをインストールする">Nodebrewをインストールする</h2>
 <p>インストール</p>
 <pre tabindex="0"><code>brew install nodebrew

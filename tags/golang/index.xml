@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>golang on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/golang/</link><description>Recent content in golang on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 21 Jul 2022 22:43:00 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Wails v2の初期設定</title><link>https://kodawari.info/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate><guid>https://kodawari.info/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>wailsインストール go install github.com/wailsapp/wails/v2/cmd/wails@latest ツールのcheck wails doctor 初期設定 wails init -n [プロジェクトディレクトリ名] -t [テンプレート名または、url] wails init -n tamatan -t svelte-ts</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Golang on Ko-Da-Wa-Ri</title><link>https://example.org/tags/golang/</link><description>Recent content in Golang on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 21 Jul 2022 22:43:00 +0900</lastBuildDate><atom:link href="https://example.org/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Wails v2の初期設定</title><link>https://example.org/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate><guid>https://example.org/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid><description>&lt;h2 id="wailsインストール">wailsインストール&lt;/h2>
+&lt;pre tabindex="0">&lt;code>go install github.com/wailsapp/wails/v2/cmd/wails@latest
+&lt;/code>&lt;/pre>&lt;h2 id="ツールのcheck">ツールのcheck&lt;/h2>
+&lt;pre tabindex="0">&lt;code>wails doctor
+&lt;/code>&lt;/pre>&lt;h2 id="初期設定">初期設定&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>wails init -n &lt;span style="color:#f92672">[&lt;/span>プロジェクトディレクトリ名&lt;span style="color:#f92672">]&lt;/span> -t &lt;span style="color:#f92672">[&lt;/span>テンプレート名または、url&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wails init -n tamatan -t svelte-ts
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>現在バグなのか、フロントエンドの初期化がうまく行かないので
+yarnまたは、npm installを実行する。
+(yarnの方がうまく行くような気がする。)&lt;/p></description><content:encoded><![CDATA[
               <h2 id="wailsインストール">wailsインストール</h2>
 <pre tabindex="0"><code>go install github.com/wailsapp/wails/v2/cmd/wails@latest
 </code></pre><h2 id="ツールのcheck">ツールのcheck</h2>
@@ -14,190 +24,190 @@ yarnまたは、npm installを実行する。
 yarn
 </code></pre><p>テンプレートは、 リリースのv2.0.0-beta.35に書いてあった</p>
 <table>
-<thead>
-<tr>
-<th>TEMPLATE</th>
-<th>SHORT NAME</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lit + Vite</td>
-<td>lit</td>
-<td>Lit + Vite development server</td>
-</tr>
-<tr>
-<td>Lit + Vite (Typescript)</td>
-<td>lit-ts</td>
-<td>Lit + TS + Vite development server</td>
-</tr>
-<tr>
-<td>Preact + Vite</td>
-<td>preact</td>
-<td>Preact + Vite development server</td>
-</tr>
-<tr>
-<td>Preact + Vite (Typescript)</td>
-<td>preact-ts</td>
-<td>Preact + Vite development server</td>
-</tr>
-<tr>
-<td>React + Vite</td>
-<td>react</td>
-<td>React + Vite development server</td>
-</tr>
-<tr>
-<td>React + Vite (Typescript)</td>
-<td>react-ts</td>
-<td>React + Vite development server</td>
-</tr>
-<tr>
-<td>Svelte + Vite</td>
-<td>svelte</td>
-<td>Svelte + Vite development server</td>
-</tr>
-<tr>
-<td>Svelte + Vite (Typescript)</td>
-<td>svelte-ts</td>
-<td>Svelte + TS + Vite development server</td>
-</tr>
-<tr>
-<td>Vanilla + Vite</td>
-<td>vanilla</td>
-<td>Vanilla + Vite development server</td>
-</tr>
-<tr>
-<td>Vanilla + Vite (Typescript)</td>
-<td>vanilla-ts</td>
-<td>Vanilla + Vite development server</td>
-</tr>
-<tr>
-<td>Vue + Vite</td>
-<td>vue</td>
-<td>Vue + Vite development server</td>
-</tr>
-<tr>
-<td>Vue + Vite (Typescript)</td>
-<td>vue-ts</td>
-<td>Vue + Vite development server</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Lit + Vite</td>
+          <td style="text-align: left">lit</td>
+          <td style="text-align: left">Lit + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Lit + Vite (Typescript)</td>
+          <td style="text-align: left">lit-ts</td>
+          <td style="text-align: left">Lit + TS + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Preact + Vite</td>
+          <td style="text-align: left">preact</td>
+          <td style="text-align: left">Preact + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Preact + Vite (Typescript)</td>
+          <td style="text-align: left">preact-ts</td>
+          <td style="text-align: left">Preact + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">React + Vite</td>
+          <td style="text-align: left">react</td>
+          <td style="text-align: left">React + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">React + Vite (Typescript)</td>
+          <td style="text-align: left">react-ts</td>
+          <td style="text-align: left">React + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Svelte + Vite</td>
+          <td style="text-align: left">svelte</td>
+          <td style="text-align: left">Svelte + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Svelte + Vite (Typescript)</td>
+          <td style="text-align: left">svelte-ts</td>
+          <td style="text-align: left">Svelte + TS + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vanilla + Vite</td>
+          <td style="text-align: left">vanilla</td>
+          <td style="text-align: left">Vanilla + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vanilla + Vite (Typescript)</td>
+          <td style="text-align: left">vanilla-ts</td>
+          <td style="text-align: left">Vanilla + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vue + Vite</td>
+          <td style="text-align: left">vue</td>
+          <td style="text-align: left">Vue + Vite development server</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vue + Vite (Typescript)</td>
+          <td style="text-align: left">vue-ts</td>
+          <td style="text-align: left">Vue + Vite development server</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="vue">Vue</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>misitebao/wails-template-vue</td>
-<td><a href="https://github.com/misitebao/wails-template-vue">https://github.com/misitebao/wails-template-vue</a></td>
-<td>A template using Vite,Vue and Vue-Router(Support both JavaScript and TypeScript)</td>
-</tr>
-<tr>
-<td>wails-vite-vue-ts</td>
-<td><a href="https://github.com/codydbentley/wails-vite-vue-ts">https://github.com/codydbentley/wails-vite-vue-ts</a></td>
-<td>Vue 3 TypeScript with Vite (and instructions to add features)</td>
-</tr>
-<tr>
-<td>codydbentley/wails-vite-vue-the-works</td>
-<td><a href="https://github.com/codydbentley/wails-vite-vue-the-works">https://github.com/codydbentley/wails-vite-vue-the-works</a></td>
-<td>Vue 3 TypeScript with Vite, Vuex, Vue Router, Sass, and ESLint + Prettier</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">misitebao/wails-template-vue</td>
+          <td style="text-align: left"><a href="https://github.com/misitebao/wails-template-vue">https://github.com/misitebao/wails-template-vue</a></td>
+          <td style="text-align: left">A template using Vite,Vue and Vue-Router(Support both JavaScript and TypeScript)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">wails-vite-vue-ts</td>
+          <td style="text-align: left"><a href="https://github.com/codydbentley/wails-vite-vue-ts">https://github.com/codydbentley/wails-vite-vue-ts</a></td>
+          <td style="text-align: left">Vue 3 TypeScript with Vite (and instructions to add features)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">codydbentley/wails-vite-vue-the-works</td>
+          <td style="text-align: left"><a href="https://github.com/codydbentley/wails-vite-vue-the-works">https://github.com/codydbentley/wails-vite-vue-the-works</a></td>
+          <td style="text-align: left">Vue 3 TypeScript with Vite, Vuex, Vue Router, Sass, and ESLint + Prettier</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="angular">Angular</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TAINCER / wails-angular-template</td>
-<td><a href="https://github.com/TAINCER/wails-angular-template">https://github.com/TAINCER/wails-angular-template</a></td>
-<td>Angular with TypeScript, Sass, Hot-Reload, Code-Splitting and i18n</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">TAINCER / wails-angular-template</td>
+          <td style="text-align: left"><a href="https://github.com/TAINCER/wails-angular-template">https://github.com/TAINCER/wails-angular-template</a></td>
+          <td style="text-align: left">Angular with TypeScript, Sass, Hot-Reload, Code-Splitting and i18n</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="react">React</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AlienRecall / wails-react-template</td>
-<td><a href="https://github.com/AlienRecall/wails-react-template">https://github.com/AlienRecall/wails-react-template</a></td>
-<td>A template using reactjs</td>
-</tr>
-<tr>
-<td>flin7 / wails-react-template</td>
-<td><a href="https://github.com/flin7/wails-react-template">https://github.com/flin7/wails-react-template</a></td>
-<td>A minimal template for React that supports live development</td>
-</tr>
-<tr>
-<td>LGiki / wails-template-nextjs</td>
-<td><a href="https://github.com/LGiki/wails-template-nextjs">https://github.com/LGiki/wails-template-nextjs</a></td>
-<td>A template using Next.js and TypeScript</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">AlienRecall / wails-react-template</td>
+          <td style="text-align: left"><a href="https://github.com/AlienRecall/wails-react-template">https://github.com/AlienRecall/wails-react-template</a></td>
+          <td style="text-align: left">A template using reactjs</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">flin7 / wails-react-template</td>
+          <td style="text-align: left"><a href="https://github.com/flin7/wails-react-template">https://github.com/flin7/wails-react-template</a></td>
+          <td style="text-align: left">A minimal template for React that supports live development</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">LGiki / wails-template-nextjs</td>
+          <td style="text-align: left"><a href="https://github.com/LGiki/wails-template-nextjs">https://github.com/LGiki/wails-template-nextjs</a></td>
+          <td style="text-align: left">A template using Next.js and TypeScript</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="svelte">Svelte</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>raitonoberu / wails-svelte-template</td>
-<td><a href="https://github.com/raitonoberu/wails-svelte-template">https://github.com/raitonoberu/wails-svelte-template</a></td>
-<td>Svelteを使用したテンプレート</td>
-</tr>
-<tr>
-<td>BillBuilt / wails-vite-svelte-template</td>
-<td><a href="https://github.com/BillBuilt/wails-vite-svelte-template">https://github.com/BillBuilt/wails-vite-svelte-template</a></td>
-<td>A template using Svelte and Vite</td>
-</tr>
-<tr>
-<td>BillBuilt / wails-vite-svelte-tailwind-template</td>
-<td><a href="https://github.com/BillBuilt/wails-vite-svelte-tailwind-template">https://github.com/BillBuilt/wails-vite-svelte-tailwind-template</a></td>
-<td>A template using Svelte and Vite with TailwindCSS v3</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">raitonoberu / wails-svelte-template</td>
+          <td style="text-align: left"><a href="https://github.com/raitonoberu/wails-svelte-template">https://github.com/raitonoberu/wails-svelte-template</a></td>
+          <td style="text-align: left">Svelteを使用したテンプレート</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">BillBuilt / wails-vite-svelte-template</td>
+          <td style="text-align: left"><a href="https://github.com/BillBuilt/wails-vite-svelte-template">https://github.com/BillBuilt/wails-vite-svelte-template</a></td>
+          <td style="text-align: left">A template using Svelte and Vite</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">BillBuilt / wails-vite-svelte-tailwind-template</td>
+          <td style="text-align: left"><a href="https://github.com/BillBuilt/wails-vite-svelte-tailwind-template">https://github.com/BillBuilt/wails-vite-svelte-tailwind-template</a></td>
+          <td style="text-align: left">A template using Svelte and Vite with TailwindCSS v3</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="elm">Elm</h3>
 <table>
-<thead>
-<tr>
-<th>SHORT NAME</th>
-<th>TEMPLATE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>benjamin-thomas / wails-elm-template</td>
-<td><a href="https://github.com/benjamin-thomas/wails-elm-template">https://github.com/benjamin-thomas/wails-elm-template</a></td>
-<td>Develop your GUI app with functional programming and a snappy hot-reload setup 🎉 🚀</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">SHORT NAME</th>
+          <th style="text-align: left">TEMPLATE</th>
+          <th style="text-align: left">DESCRIPTION</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">benjamin-thomas / wails-elm-template</td>
+          <td style="text-align: left"><a href="https://github.com/benjamin-thomas/wails-elm-template">https://github.com/benjamin-thomas/wails-elm-template</a></td>
+          <td style="text-align: left">Develop your GUI app with functional programming and a snappy hot-reload setup 🎉 🚀</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="テスト起動">テスト起動</h2>
 <p>うまく行かないときは、
@@ -210,63 +220,67 @@ yarn
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>wails build -platform windows
 </span></span></code></pre></div><table>
-<thead>
-<tr>
-<th>Platform</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>darwin</td>
-<td>MacOS + architecture of build machine</td>
-</tr>
-<tr>
-<td>darwin/amd64</td>
-<td>MacOS 10.13+ AMD64</td>
-</tr>
-<tr>
-<td>darwin/arm64</td>
-<td>MacOS 11.0+ ARM64</td>
-</tr>
-<tr>
-<td>darwin/universal</td>
-<td>MacOS AMD64+ARM64 universal application</td>
-</tr>
-<tr>
-<td>windows</td>
-<td>Windows 10/11 + architecture of build machine</td>
-</tr>
-<tr>
-<td>windows/amd64</td>
-<td>Windows 10/11 AMD64</td>
-</tr>
-<tr>
-<td>windows/arm64</td>
-<td>Windows 10/11 ARM64</td>
-</tr>
-<tr>
-<td>linux</td>
-<td>Linux + architecture of build machine</td>
-</tr>
-<tr>
-<td>linux/amd64</td>
-<td>Linux AMD64</td>
-</tr>
-<tr>
-<td>linux/arm64</td>
-<td>Linux ARM64</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Platform</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">darwin</td>
+          <td style="text-align: left">MacOS + architecture of build machine</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">darwin/amd64</td>
+          <td style="text-align: left">MacOS 10.13+ AMD64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">darwin/arm64</td>
+          <td style="text-align: left">MacOS 11.0+ ARM64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">darwin/universal</td>
+          <td style="text-align: left">MacOS AMD64+ARM64 universal application</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">windows</td>
+          <td style="text-align: left">Windows 10/11 + architecture of build machine</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">windows/amd64</td>
+          <td style="text-align: left">Windows 10/11 AMD64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">windows/arm64</td>
+          <td style="text-align: left">Windows 10/11 ARM64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">linux</td>
+          <td style="text-align: left">Linux + architecture of build machine</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">linux/amd64</td>
+          <td style="text-align: left">Linux AMD64</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">linux/arm64</td>
+          <td style="text-align: left">Linux ARM64</td>
+      </tr>
+  </tbody>
 </table>
 <p>こんな感じかな。</p>
 
-              ]]></content:encoded></item><item><title>Wails v2のテンプレート</title><link>https://kodawari.info/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</link><pubDate>Thu, 21 Jul 2022 22:00:39 +0900</pubDate><guid>https://kodawari.info/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</guid><description>テンプレートの一覧どこにあるんやと思ったら ここにあった（；^ω^） https://wails.io/docs/community/templates/</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Wails v2のテンプレート</title><link>https://example.org/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</link><pubDate>Thu, 21 Jul 2022 22:00:39 +0900</pubDate><guid>https://example.org/posts/wails-v2%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</guid><description>&lt;p>テンプレートの一覧どこにあるんやと思ったら&lt;/p>
+&lt;p>ここにあった（；^ω^）&lt;/p>
+&lt;p>&lt;a href="https://wails.io/docs/community/templates/">https://wails.io/docs/community/templates/&lt;/a>&lt;/p></description><content:encoded><![CDATA[
               <p>テンプレートの一覧どこにあるんやと思ったら</p>
 <p>ここにあった（；^ω^）</p>
 <p><a href="https://wails.io/docs/community/templates/">https://wails.io/docs/community/templates/</a></p>
 
-              ]]></content:encoded></item><item><title>Golangでホットリロードする方法</title><link>https://kodawari.info/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 05 Jul 2022 13:00:04 +0900</pubDate><guid>https://kodawari.info/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 今回、Go言語で開発を行うことがありました。 go言語は、PHPやRubyなどの言</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Golangでホットリロードする方法</title><link>https://example.org/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 05 Jul 2022 13:00:04 +0900</pubDate><guid>https://example.org/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>&lt;p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p>
+&lt;p>今回、Go言語で開発を行うことがありました。&lt;/p>
+&lt;p>go言語は、PHPやRubyなどの言語とは異なり、ビルドをしないとソースは反映されません。&lt;/p></description><content:encoded><![CDATA[
               <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
 <p>今回、Go言語で開発を行うことがありました。</p>
 <p>go言語は、PHPやRubyなどの言語とは異なり、ビルドをしないとソースは反映されません。</p>
@@ -427,7 +441,10 @@ services:
 Goを使用することがあれば一度やってみませんか</p>
 <p>明日は @ya-yamamoto さん、よろしくお願いします！！</p>
 
-              ]]></content:encoded></item><item><title>APIの死活監視をRocketChatに送信する</title><link>https://kodawari.info/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link><pubDate>Tue, 05 Jul 2022 12:15:06 +0900</pubDate><guid>https://kodawari.info/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 サーバ監視ツールを作成しようというお話をします。 サーバが本当に動いているかどうか</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>APIの死活監視をRocketChatに送信する</title><link>https://example.org/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link><pubDate>Tue, 05 Jul 2022 12:15:06 +0900</pubDate><guid>https://example.org/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid><description>&lt;p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p>
+&lt;p>サーバ監視ツールを作成しようというお話をします。&lt;/p>
+&lt;p>サーバが本当に動いているかどうかを少し前までは、メールで送信が多かったのですが、
+最近は、Slack等のチャットに連絡するような方法が多くなってきているようです。&lt;/p></description><content:encoded><![CDATA[
               <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
 <p>サーバ監視ツールを作成しようというお話をします。</p>
 <p>サーバが本当に動いているかどうかを少し前までは、メールで送信が多かったのですが、
@@ -461,30 +478,30 @@ JSONで以下のように返す</li>
 <li>URLは、以下を用意</li>
 </ul>
 <table>
-<thead>
-<tr>
-<th>URI</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/test_status_ok_json_status_ok</td>
-<td>HTTPステータス 正常・Jsonステータス正常</td>
-</tr>
-<tr>
-<td>/test_status_ok_json_status_ng</td>
-<td>HTTPステータス 正常・Jsonステータス異常</td>
-</tr>
-<tr>
-<td>/test_status_ng_json_status_ng</td>
-<td>HTTPステータス 異常・Jsonステータス正常</td>
-</tr>
-<tr>
-<td>/test_status_ok_json_status_ok_long_time</td>
-<td>HTTPステータス 正常・Jsonステータス正常（responseが遅い）</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">URI</th>
+          <th style="text-align: left">内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">/test_status_ok_json_status_ok</td>
+          <td style="text-align: left">HTTPステータス 正常・Jsonステータス正常</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">/test_status_ok_json_status_ng</td>
+          <td style="text-align: left">HTTPステータス 正常・Jsonステータス異常</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">/test_status_ng_json_status_ng</td>
+          <td style="text-align: left">HTTPステータス 異常・Jsonステータス正常</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">/test_status_ok_json_status_ok_long_time</td>
+          <td style="text-align: left">HTTPステータス 正常・Jsonステータス正常（responseが遅い）</td>
+      </tr>
+  </tbody>
 </table>
 <p>以下がサンプルソースです。</p>
 <pre tabindex="0"><code>package main
@@ -823,7 +840,19 @@ func RocketChatPostMessage(urlAddress string, authToken string, userId string, c
 あと、Go言語好きな人集まりが出来たら良いなぁって最近は思ってます。。。。。</p>
 <p>※ 端折って書いたりしておりますので実際のサンプルサーバと監視ツールを合体したソースを<a href="https://gist.github.com/tama-jp/175aa45d0d129568329168504a9e228f">Gist</a>にあげておきます。</p>
 
-              ]]></content:encoded></item><item><title>GORMでtime型をするときの注意</title><link>https://kodawari.info/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</link><pubDate>Thu, 30 Jun 2022 19:41:20 +0900</pubDate><guid>https://kodawari.info/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</guid><description>GORMでtime型をするときの注意 GORMで構造体をマイグレーションしたときに 以下のようにしてもtime型にはならなかった、、、 type test struct { BreakTime</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>GORMでtime型をするときの注意</title><link>https://example.org/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</link><pubDate>Thu, 30 Jun 2022 19:41:20 +0900</pubDate><guid>https://example.org/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/</guid><description>&lt;h1 id="gormでtime型をするときの注意">GORMでtime型をするときの注意&lt;/h1>
+&lt;p>GORMで構造体をマイグレーションしたときに
+以下のようにしてもtime型にはならなかった、、、&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">type&lt;/span> &lt;span style="color:#a6e22e">test&lt;/span> &lt;span style="color:#66d9ef">struct&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">BreakTime&lt;/span> &lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">Time&lt;/span> &lt;span style="color:#e6db74">`gorm:&amp;#34;type:time;comment:休憩時間&amp;#34;`&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>↓ マイグレすると&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sql" data-lang="sql">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">create&lt;/span> &lt;span style="color:#66d9ef">table&lt;/span> test
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> break_time &lt;span style="color:#66d9ef">timestamp&lt;/span> &lt;span style="color:#66d9ef">with&lt;/span> time &lt;span style="color:#66d9ef">zone&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>となった、&lt;/p>
+&lt;p>どうも、「time」のあとにスペースを入れれば解決するみたい。&lt;/p></description><content:encoded><![CDATA[
               <h1 id="gormでtime型をするときの注意">GORMでtime型をするときの注意</h1>
 <p>GORMで構造体をマイグレーションしたときに
 以下のようにしてもtime型にはならなかった、、、</p>
@@ -847,7 +876,34 @@ func RocketChatPostMessage(urlAddress string, authToken string, userId string, c
 </span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><p>時間がかかったけどこんな事があるのだと。。。。。</p>
 
-              ]]></content:encoded></item><item><title>時間の取り扱い方</title><link>https://kodawari.info/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</link><pubDate>Thu, 30 Jun 2022 11:56:12 +0900</pubDate><guid>https://kodawari.info/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</guid><description>time型を取得する time.Time型の変数を取得する方法。 現在時刻から取得する fmt.Println(time.Now()) // Output: // 2009-11-10 23:00:00 +0000 UTC 日付から取得する fmt.Println(time.Date(2014, time.December, 31, 12, 13, 24, 0, time.UTC)) // Output: // 2014-12-31 12:13:24</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>時間の取り扱い方</title><link>https://example.org/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</link><pubDate>Thu, 30 Jun 2022 11:56:12 +0900</pubDate><guid>https://example.org/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/</guid><description>&lt;h1 id="time型を取得する">time型を取得する&lt;/h1>
+&lt;p>&lt;code>time.Time型&lt;/code>の変数を取得する方法。&lt;/p>
+&lt;h2 id="現在時刻から取得する">現在時刻から取得する&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">Now&lt;/span>())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Output:
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 2009-11-10 23:00:00 +0000 UTC
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="日付から取得する">日付から取得する&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">Date&lt;/span>(&lt;span style="color:#ae81ff">2014&lt;/span>, &lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">December&lt;/span>, &lt;span style="color:#ae81ff">31&lt;/span>, &lt;span style="color:#ae81ff">12&lt;/span>, &lt;span style="color:#ae81ff">13&lt;/span>, &lt;span style="color:#ae81ff">24&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">UTC&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Output:
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 2014-12-31 12:13:24 +0000 UTC
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">loc&lt;/span>, &lt;span style="color:#a6e22e">_&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">LoadLocation&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Asia/Tokyo&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">Date&lt;/span>(&lt;span style="color:#ae81ff">2014&lt;/span>, &lt;span style="color:#ae81ff">12&lt;/span>, &lt;span style="color:#ae81ff">31&lt;/span>, &lt;span style="color:#ae81ff">8&lt;/span>, &lt;span style="color:#ae81ff">4&lt;/span>, &lt;span style="color:#ae81ff">18&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#a6e22e">loc&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Output:
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 2014-12-31 08:04:18 +0900 JST
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="文字列から取得する">文字列から取得する&lt;/h2>
+&lt;pre tabindex="0">&lt;code>t, _ := time.Parse(&amp;#34;2006-01-02&amp;#34;, &amp;#34;2014-12-31&amp;#34;)
+fmt.Println(t)
+// Output:
+// 2014-12-31 00:00:00 +0000 UTC
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>t, _ := time.Parse(&amp;#34;2006-01-02 15:04:05 MST&amp;#34;, &amp;#34;2014-12-31 12:31:24 JST&amp;#34;)
+fmt.Println(t)
+// Output:
+// 2014-12-31 12:31:24 +0900 JST
+&lt;/code>&lt;/pre>&lt;h2 id="unix-timestampから変換">Unix TimeStampから変換&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">Unix&lt;/span>(&lt;span style="color:#ae81ff">1419933529&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Output:
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 2014-12-30 09:58:49 +0000 UTC
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第2引数でナノ秒を指定できる。&lt;/p></description><content:encoded><![CDATA[
               <h1 id="time型を取得する">time型を取得する</h1>
 <p><code>time.Time型</code>の変数を取得する方法。</p>
 <h2 id="現在時刻から取得する">現在時刻から取得する</h2>
@@ -944,7 +1000,11 @@ fmt.Println(t)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">d</span>) <span style="color:#75715e">// 72h0m0s (Go Playgroundで実行した場合)
 </span></span></span></code></pre></div><p><code>time.Since(t)</code>は<code>time.Now().Sub(t)</code>の省略形。</p>
 
-              ]]></content:encoded></item><item><title>goプロジェクトを自動でUML図に出力するツール</title><link>https://kodawari.info/posts/go%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7uml%E5%9B%B3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB/</link><pubDate>Tue, 21 Jun 2022 18:20:23 +0900</pubDate><guid>https://kodawari.info/posts/go%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7uml%E5%9B%B3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB/</guid><description>go言語のプロジェクトを可視化したいと思いPlantUMLで自動で出来たらなと。 2つ見つけました。 goplantumlとgoumlです。 前者</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>goプロジェクトを自動でUML図に出力するツール</title><link>https://example.org/posts/go%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7uml%E5%9B%B3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB/</link><pubDate>Tue, 21 Jun 2022 18:20:23 +0900</pubDate><guid>https://example.org/posts/go%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7uml%E5%9B%B3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB/</guid><description>&lt;p>go言語のプロジェクトを可視化したいと思いPlantUMLで自動で出来たらなと。&lt;/p>
+&lt;p>2つ見つけました。&lt;/p>
+&lt;p>&lt;a href="https://github.com/jfeliu007/goplantuml">goplantuml&lt;/a>と&lt;a href="https://github.com/kazukousen/gouml">gouml&lt;/a>です。&lt;/p>
+&lt;p>前者の&lt;a href="https://github.com/jfeliu007/goplantuml">goplantuml&lt;/a>は、
+結構有名でよく紹介されており、メンテが数ヶ月前にされているようです。&lt;/p></description><content:encoded><![CDATA[
               <p>go言語のプロジェクトを可視化したいと思いPlantUMLで自動で出来たらなと。</p>
 <p>2つ見つけました。</p>
 <p><a href="https://github.com/jfeliu007/goplantuml">goplantuml</a>と<a href="https://github.com/kazukousen/gouml">gouml</a>です。</p>
@@ -968,7 +1028,14 @@ fmt.Println(t)
 <p>ただ、goumlは、戻り値にメソッドが使われたときの軌跡はわかるので、個人的にはこっちがいいと感じますが。。。。</p>
 <p>皆さんどうしてるんだろ。。。。．</p>
 
-              ]]></content:encoded></item><item><title>時刻ではまった</title><link>https://kodawari.info/posts/2022-06-07-00-19-49-time/</link><pubDate>Tue, 07 Jun 2022 00:19:50 +0000</pubDate><guid>https://kodawari.info/posts/2022-06-07-00-19-49-time/</guid><description>時刻ではまった。。。。 文字列をtime型にしてからunixtimeに入れようとしたら、 timeStr := &amp;#34;2022-06-07 09:00:00&amp;#34; layout := &amp;#34;2006-01-02 15:04:05&amp;#34; timeData, _ = time.Parse(layout, timeStr) fmt.Println(timeData.Unix()) # =&amp;gt; 1654592400 タイムゾーンが、日本</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>時刻ではまった</title><link>https://example.org/posts/2022-06-07-00-19-49-time/</link><pubDate>Tue, 07 Jun 2022 00:19:50 +0000</pubDate><guid>https://example.org/posts/2022-06-07-00-19-49-time/</guid><description>&lt;p>時刻ではまった。。。。
+文字列をtime型にしてからunixtimeに入れようとしたら、&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-golang" data-lang="golang">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">timeStr&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;2022-06-07 09:00:00&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">layout&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;2006-01-02 15:04:05&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">timeData&lt;/span>, &lt;span style="color:#a6e22e">_&lt;/span> = &lt;span style="color:#a6e22e">time&lt;/span>.&lt;span style="color:#a6e22e">Parse&lt;/span>(&lt;span style="color:#a6e22e">layout&lt;/span>, &lt;span style="color:#a6e22e">timeStr&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#a6e22e">timeData&lt;/span>.&lt;span style="color:#a6e22e">Unix&lt;/span>()) &lt;span style="color:#960050;background-color:#1e0010">#&lt;/span> =&amp;gt; &lt;span style="color:#ae81ff">1654592400&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>タイムゾーンが、日本に設定してないので、UTCになっているみたい。
+time.Parseを使用せずに、locationを設定できるtime.ParseInLocationを使用するとうまく行く。&lt;/p></description><content:encoded><![CDATA[
               <p>時刻ではまった。。。。
 文字列をtime型にしてからunixtimeに入れようとしたら、</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#a6e22e">timeStr</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;2022-06-07 09:00:00&#34;</span>
@@ -994,7 +1061,11 @@ time.Parseを使用せずに、locationを設定できるtime.ParseInLocationを
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">timeData</span>.<span style="color:#a6e22e">Unix</span>()) <span style="color:#960050;background-color:#1e0010">#</span> =&gt; <span style="color:#ae81ff">1654562457</span>
 </span></span></code></pre></div><p>適当に作った関数のおかげで悩んでもうた。。。。。(・∀・)</p>
 
-              ]]></content:encoded></item><item><title>HUGO便利スクリプト</title><link>https://kodawari.info/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link><pubDate>Mon, 06 Jun 2022 14:28:28 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</guid><description>HUGOの使い方がようやくわかってきて、今必死ですw コンテントを作成する時 hugo new post/なんたらー.md って、書かなきゃならなく、中身もちょ</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>HUGO便利スクリプト</title><link>https://example.org/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link><pubDate>Mon, 06 Jun 2022 14:28:28 +0900</pubDate><guid>https://example.org/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</guid><description>&lt;p>HUGOの使い方がようやくわかってきて、今必死ですw&lt;/p>
+&lt;p>コンテントを作成する時&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo new post/なんたらー.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>って、書かなきゃならなく、中身もちょびちょび書き直さなければならない。
+これって面倒ですね。&lt;/p></description><content:encoded><![CDATA[
               <p>HUGOの使い方がようやくわかってきて、今必死ですw</p>
 <p>コンテントを作成する時</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new post/なんたらー.md
@@ -1055,7 +1126,8 @@ time.Parseを使用せずに、locationを設定できるtime.ParseInLocationを
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>main <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>HUGOのインストール</title><link>https://kodawari.info/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link><pubDate>Mon, 06 Jun 2022 14:28:23 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid><description>ほぼここを見ればすぐできます。 これに、私は、テーマをMainroadにしました。</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>HUGOのインストール</title><link>https://example.org/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link><pubDate>Mon, 06 Jun 2022 14:28:23 +0900</pubDate><guid>https://example.org/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid><description>&lt;p>ほぼ&lt;a href="https://gohugo.io/getting-started/quick-start/">ここ&lt;/a>を見ればすぐできます。&lt;/p>
+&lt;p>これに、私は、テーマを&lt;a href="https://github.com/Vimux/Mainroad">Mainroad&lt;/a>にしました。&lt;/p></description><content:encoded><![CDATA[
               <p>ほぼ<a href="https://gohugo.io/getting-started/quick-start/">ここ</a>を見ればすぐできます。</p>
 <p>これに、私は、テーマを<a href="https://github.com/Vimux/Mainroad">Mainroad</a>にしました。</p>
 

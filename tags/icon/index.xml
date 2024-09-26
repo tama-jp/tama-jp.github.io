@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>icon on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/icon/</link><description>Recent content in icon on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 21 May 2024 00:08:05 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/icon/index.xml" rel="self" type="application/rss+xml"/><item><title>iPhone等のアイコンを作る</title><link>https://kodawari.info/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</link><pubDate>Tue, 21 May 2024 00:08:05 +0900</pubDate><guid>https://kodawari.info/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</guid><description>1024x1024 の画像をもとに、iPhone等のiconを作るるのに、ImageMgicを使います。 !/usr/bin/env bash convert $1 -geometry 20x20 Icon-20@1x.png convert $1 -geometry 40x40 Icon-20@2x.png convert $1 -geometry 60x60 Icon-20@3x.png convert $1 -geometry 29x29 Icon-29@1x.png convert $1 -geometry 58x58 Icon-29@2x.png</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Icon on Ko-Da-Wa-Ri</title><link>https://example.org/tags/icon/</link><description>Recent content in Icon on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 21 May 2024 00:08:05 +0900</lastBuildDate><atom:link href="https://example.org/tags/icon/index.xml" rel="self" type="application/rss+xml"/><item><title>iPhone等のアイコンを作る</title><link>https://example.org/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</link><pubDate>Tue, 21 May 2024 00:08:05 +0900</pubDate><guid>https://example.org/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/</guid><description>&lt;p>1024x1024 の画像をもとに、iPhone等のiconを作るるのに、ImageMgicを使います。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 20x20 Icon-20@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 40x40 Icon-20@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 60x60 Icon-20@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 29x29 Icon-29@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 58x58 Icon-29@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 87x87 Icon-29@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 40x40 Icon-40@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 80x80 Icon-40@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 120x120 Icon-40@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 120x120 Icon-60@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 180x180 Icon-60@3x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 76x76 Icon-76@1x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 152x152 Icon--76@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 167x167 Icon-83.5@2x.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 512x512 iTunesArtwork.png
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>convert $1 -geometry 1024x1024 iTunesArtwork@2x.png
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[
               <p>1024x1024 の画像をもとに、iPhone等のiconを作るるのに、ImageMgicを使います。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>!/usr/bin/env bash
 </span></span><span style="display:flex;"><span>convert $1 -geometry 20x20 Icon-20@1x.png

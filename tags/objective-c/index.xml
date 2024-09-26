@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Objective-C on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/objective-c/</link><description>Recent content in Objective-C on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 16 May 2024 08:15:34 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/objective-c/index.xml" rel="self" type="application/rss+xml"/><item><title>Dispatch</title><link>https://kodawari.info/posts/2024-05-16-08-15-33-dispatch/</link><pubDate>Thu, 16 May 2024 08:15:34 +0900</pubDate><guid>https://kodawari.info/posts/2024-05-16-08-15-33-dispatch/</guid><description>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{ // バックグランドでAPIなどを実行 }); dispatch_async(dispatch_get_main_queue(), ^{ // メインスレッドで処理をしたい内容、UIを変更など。 }); dispatch_sync(dispatch_queue_create(&amp;#34;test_sample&amp;#34;, DISPATCH_QUEUE_SERIAL), ^{ // 同期処理 });</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Objective-C on Ko-Da-Wa-Ri</title><link>https://example.org/tags/objective-c/</link><description>Recent content in Objective-C on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Thu, 16 May 2024 08:15:34 +0900</lastBuildDate><atom:link href="https://example.org/tags/objective-c/index.xml" rel="self" type="application/rss+xml"/><item><title>Dispatch</title><link>https://example.org/posts/2024-05-16-08-15-33-dispatch/</link><pubDate>Thu, 16 May 2024 08:15:34 +0900</pubDate><guid>https://example.org/posts/2024-05-16-08-15-33-dispatch/</guid><description>&lt;pre tabindex="0">&lt;code class="language-objective_c" data-lang="objective_c">dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+// バックグランドでAPIなどを実行
+});
+dispatch_async(dispatch_get_main_queue(), ^{
+// メインスレッドで処理をしたい内容、UIを変更など。
+});
+dispatch_sync(dispatch_queue_create(&amp;#34;test_sample&amp;#34;, DISPATCH_QUEUE_SERIAL), ^{
+// 同期処理
+});
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <pre tabindex="0"><code class="language-objective_c" data-lang="objective_c">dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     // バックグランドでAPIなどを実行
 });
@@ -12,7 +21,14 @@ dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL
     // 同期処理
 });
 </code></pre>
-              ]]></content:encoded></item><item><title>遅延処理</title><link>https://kodawari.info/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</link><pubDate>Thu, 16 May 2024 07:55:58 +0900</pubDate><guid>https://kodawari.info/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</guid><description>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{ // 処理内容 }); - (void)doAfterDelay{ // 処理内容 } [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>遅延処理</title><link>https://example.org/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</link><pubDate>Thu, 16 May 2024 07:55:58 +0900</pubDate><guid>https://example.org/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</guid><description>&lt;pre tabindex="0">&lt;code class="language-objective_c" data-lang="objective_c">dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+// 処理内容
+});
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code class="language-objective_c" data-lang="objective_c"> - (void)doAfterDelay{
+// 処理内容
+}
+[self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <pre tabindex="0"><code class="language-objective_c" data-lang="objective_c">dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
     // 処理内容
 });
@@ -21,7 +37,25 @@ dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL
  }
  [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];
 </code></pre>
-              ]]></content:encoded></item><item><title>iOS(obj-c)の画面遷移</title><link>https://kodawari.info/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</link><pubDate>Thu, 21 Jul 2022 22:16:58 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</guid><description>・コードでの遷移 ・StoryBoardのsegueを使った遷移 ・NavigationControllerを使った遷移 Present [self presentVie</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)の画面遷移</title><link>https://example.org/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</link><pubDate>Thu, 21 Jul 2022 22:16:58 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/</guid><description>&lt;p>・コードでの遷移
+・StoryBoardのsegueを使った遷移
+・NavigationControllerを使った遷移&lt;/p>
+&lt;h2 id="present">Present&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[self presentViewController:移動先ViewController animated:YES completion:nil];
+&lt;/code>&lt;/pre>&lt;h2 id="segue">segue&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[self performSegueWithIdentifier:@&amp;#34;セグエのID&amp;#34; sender:self];
+&lt;/code>&lt;/pre>&lt;h2 id="push">Push&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[self.navigationController pushViewController:移動先ViewController animated:YES];
+&lt;/code>&lt;/pre>&lt;h2 id="pop">Pop&lt;/h2>
+&lt;h3 id="指定ビューコントローラーへ">指定ビューコントローラーへ&lt;/h3>
+&lt;pre tabindex="0">&lt;code>[self.navigationController popToViewController:viewController animated:YES];
+&lt;/code>&lt;/pre>&lt;h3 id="前の画面に戻る">前の画面に戻る&lt;/h3>
+&lt;pre tabindex="0">&lt;code>[self.navigationController popViewControllerAnimated:YES];
+&lt;/code>&lt;/pre>&lt;h3 id="navigationcontrollerの１番目の画面に戻る">NavigationControllerの１番目の画面に戻る&lt;/h3>
+&lt;pre tabindex="0">&lt;code>[self.navigationController popToRootViewControllerAnimated:YES];
+&lt;/code>&lt;/pre>&lt;h2 id="storyboard">StoryBoard&lt;/h2>
+&lt;h4 id="storyboard-id">・StoryBoard ID&lt;/h4>
+&lt;p>※storyboardファイルで &amp;lsquo;identify → StoryBoard ID&amp;rsquo;の入力が必要&lt;/p></description><content:encoded><![CDATA[
               <p>・コードでの遷移
 ・StoryBoardのsegueを使った遷移
 ・NavigationControllerを使った遷移</p>
@@ -48,7 +82,14 @@ UIViewController* viewController = [storyboard instantiateInitialViewController]
 <pre tabindex="0"><code>UINavigationController* rootNavigationController = [storyboard instantiateInitialViewController];
 UIViewController* viewController = [[rootNavigationController viewControllers] lastObject];
 </code></pre>
-              ]]></content:encoded></item><item><title>iOS(obj-c)のセグエの戻り(push)</title><link>https://kodawari.info/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</link><pubDate>Thu, 21 Jul 2022 22:14:45 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</guid><description>１つ前の画面に戻る [self.navigationController popViewControllerAnimated:YES]; ルート画面まで一気に戻る [self.navigationController popToRootViewControllerAnimated:YES]; 任意の画面（UIViewController）まで戻る [self.navigationController popToViewController:UIViewController animated:YES];</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)のセグエの戻り(push)</title><link>https://example.org/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</link><pubDate>Thu, 21 Jul 2022 22:14:45 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/</guid><description>&lt;h2 id="１つ前の画面に戻る">１つ前の画面に戻る&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[self.navigationController popViewControllerAnimated:YES];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ルート画面まで一気に戻る">ルート画面まで一気に戻る&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>[self.navigationController popToRootViewControllerAnimated:YES];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>[self.navigationController popToViewController:UIViewController animated:YES];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[
               <h2 id="１つ前の画面に戻る">１つ前の画面に戻る</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>[self.navigationController popViewControllerAnimated:YES];
@@ -57,10 +98,111 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span></code></pre></div><h2 id="任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[self.navigationController popToViewController:UIViewController animated:YES];
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>iOS(obj-c)で文字列結合</title><link>https://kodawari.info/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</link><pubDate>Thu, 21 Jul 2022 22:12:09 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</guid><description>NSString *urlString =[NSString stringWithFormat:@&amp;#34;%@/test.php&amp;#34;,dns];</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)で文字列結合</title><link>https://example.org/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</link><pubDate>Thu, 21 Jul 2022 22:12:09 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/</guid><description>&lt;pre tabindex="0">&lt;code class="language-ca" data-lang="ca"> NSString *urlString =[NSString stringWithFormat:@&amp;#34;%@/test.php&amp;#34;,dns];
+&lt;/code>&lt;/pre></description><content:encoded><![CDATA[
               <pre tabindex="0"><code class="language-ca" data-lang="ca">    NSString *urlString =[NSString stringWithFormat:@&#34;%@/test.php&#34;,dns];
 </code></pre>
-              ]]></content:encoded></item><item><title>iOS(obj-c)でgetとPOST</title><link>https://kodawari.info/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:09:00 +0900</pubDate><guid>https://kodawari.info/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</guid><description>GET NSString *urlString = [NSString stringWithFormat:@&amp;#34;https://xxxxx.co.jp/test?key1=%@&amp;#34;,key1]; DLog(@&amp;#34;urlString:%@&amp;#34;, urlString) NSURLSession *urlSession; NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration]; sessionConfig.timeoutIntervalForRequest = 5; sessionConfig.timeoutIntervalForResource = 20; // 処理を単純化させるためにdelegateは使用しませんでした。 // UI関連の処理を想定していないた</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>iOS(obj-c)でgetとPOST</title><link>https://example.org/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</link><pubDate>Thu, 21 Jul 2022 22:09:00 +0900</pubDate><guid>https://example.org/posts/iosobj-c%E3%81%A7get%E3%81%A8post/</guid><description>&lt;h2 id="get">GET&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-C" data-lang="C">&lt;span style="display:flex;">&lt;span>NSString &lt;span style="color:#f92672">*&lt;/span>urlString &lt;span style="color:#f92672">=&lt;/span> [NSString stringWithFormat:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://xxxxx.co.jp/test?key1=%@&amp;#34;&lt;/span>,key1];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;urlString:%@&amp;#34;&lt;/span>, urlString)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSession &lt;span style="color:#f92672">*&lt;/span>urlSession;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSessionConfiguration &lt;span style="color:#f92672">*&lt;/span>sessionConfig &lt;span style="color:#f92672">=&lt;/span> [NSURLSessionConfiguration defaultSessionConfiguration];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForRequest &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForResource &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">20&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 処理を単純化させるためにdelegateは使用しませんでした。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> urlSession &lt;span style="color:#f92672">=&lt;/span> [NSURLSession sessionWithConfiguration:sessionConfig
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegate:nil
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegateQueue:nil];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">NSLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;get start&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSMutableURLRequest &lt;span style="color:#f92672">*&lt;/span>request &lt;span style="color:#f92672">=&lt;/span> [NSMutableURLRequest new];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setURL:[NSURL URLWithString:urlString]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;YKTHttpClient&amp;#34;&lt;/span> forHTTPHeaderField:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;User-Agent&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setHTTPMethod:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;GET&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> NSURLSessionDataTask &lt;span style="color:#f92672">*&lt;/span>dataTask
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">=&lt;/span> [urlSession dataTaskWithRequest:request
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> completionHandler:&lt;span style="color:#f92672">^&lt;/span>(NSData &lt;span style="color:#f92672">*&lt;/span>data, NSURLResponse &lt;span style="color:#f92672">*&lt;/span>response, NSError &lt;span style="color:#f92672">*&lt;/span>error) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>httpUrlResponse &lt;span style="color:#f92672">=&lt;/span> (NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>) response;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Status code: %ld&amp;#34;&lt;/span>, httpUrlResponse.statusCode);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> CFStringEncoding encoding &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">CFStringConvertIANACharSetNameToEncoding&lt;/span>((CFStringRef) [response textEncodingName]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>body &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:data encoding:&lt;span style="color:#a6e22e">CFStringConvertEncodingToNSStringEncoding&lt;/span>(encoding)];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSData &lt;span style="color:#f92672">*&lt;/span>restoreData &lt;span style="color:#f92672">=&lt;/span> [[NSData alloc] initWithBase64EncodedString:body options:&lt;span style="color:#ae81ff">0&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>restoreString &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_async&lt;/span>(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_get_main_queue&lt;/span>(),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">^&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self.textView.text &lt;span style="color:#f92672">=&lt;/span> restoreString;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [dataTask resume];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="post">POST&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-C" data-lang="C">&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>NSString &lt;span style="color:#f92672">*&lt;/span>urlString &lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://xxxx.co.jp/test&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSDictionary &lt;span style="color:#f92672">*&lt;/span>params &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> name,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;uuid&amp;#34;&lt;/span>&lt;span style="color:#f92672">:&lt;/span> uuid,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> };
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;urlString:%@&amp;#34;&lt;/span>, urlString)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 連想配列として与えられたパラメータをクエリ文字列に変換する
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> NSData &lt;span style="color:#f92672">*&lt;/span>query &lt;span style="color:#f92672">=&lt;/span> [self buildQueryWithDictionary: params];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSession &lt;span style="color:#f92672">*&lt;/span>urlSession;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSURLSessionConfiguration &lt;span style="color:#f92672">*&lt;/span>sessionConfig &lt;span style="color:#f92672">=&lt;/span> [NSURLSessionConfiguration defaultSessionConfiguration];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForRequest &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sessionConfig.timeoutIntervalForResource &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">20&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 処理を単純化させるためにdelegateは使用しませんでした。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> urlSession &lt;span style="color:#f92672">=&lt;/span> [NSURLSession sessionWithConfiguration:sessionConfig
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegate:nil
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delegateQueue:nil];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">NSLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;get start&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSMutableURLRequest &lt;span style="color:#f92672">*&lt;/span>request &lt;span style="color:#f92672">=&lt;/span> [NSMutableURLRequest new];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setURL:[NSURL URLWithString:urlString]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;iOS&amp;#34;&lt;/span> forHTTPHeaderField:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;User-Agent&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setHTTPMethod:&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;POST&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;application/x-www-form-urlencoded&amp;#34;&lt;/span> forHTTPHeaderField: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Content-Type&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setValue: [NSString stringWithFormat: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;%lu&amp;#34;&lt;/span>, (&lt;span style="color:#66d9ef">unsigned&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span>)[query length]] forHTTPHeaderField: &lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Content-Length&amp;#34;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [request setHTTPBody: query];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> NSURLSessionDataTask &lt;span style="color:#f92672">*&lt;/span>dataTask
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">=&lt;/span> [urlSession dataTaskWithRequest:request
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> completionHandler:&lt;span style="color:#f92672">^&lt;/span>(NSData &lt;span style="color:#f92672">*&lt;/span>data, NSURLResponse &lt;span style="color:#f92672">*&lt;/span>response, NSError &lt;span style="color:#f92672">*&lt;/span>error) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>httpUrlResponse &lt;span style="color:#f92672">=&lt;/span> (NSHTTPURLResponse &lt;span style="color:#f92672">*&lt;/span>) response;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">DLog&lt;/span>(&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Status code: %ld&amp;#34;&lt;/span>, httpUrlResponse.statusCode);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> CFStringEncoding encoding &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">CFStringConvertIANACharSetNameToEncoding&lt;/span>((CFStringRef) [response textEncodingName]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>body &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:data encoding:&lt;span style="color:#a6e22e">CFStringConvertEncodingToNSStringEncoding&lt;/span>(encoding)];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSData &lt;span style="color:#f92672">*&lt;/span>restoreData &lt;span style="color:#f92672">=&lt;/span> [[NSData alloc] initWithBase64EncodedString:body options:&lt;span style="color:#ae81ff">0&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> NSString &lt;span style="color:#f92672">*&lt;/span>restoreString &lt;span style="color:#f92672">=&lt;/span> [[NSString alloc] initWithData:restoreData encoding:NSUTF8StringEncoding];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_async&lt;/span>(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">dispatch_get_main_queue&lt;/span>(),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">^&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [dataTask resume];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[
               <h2 id="get">GET</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>NSString <span style="color:#f92672">*</span>urlString <span style="color:#f92672">=</span> [NSString stringWithFormat:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;https://xxxxx.co.jp/test?key1=%@&#34;</span>,key1];
 </span></span><span style="display:flex;"><span>
@@ -162,7 +304,10 @@ UIViewController* viewController = [[rootNavigationController viewControllers] l
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    [dataTask resume];
 </span></span></code></pre></div>
-              ]]></content:encoded></item><item><title>UIButtonの文字の設定</title><link>https://kodawari.info/posts/uibutton%E3%81%AE%E6%96%87%E5%AD%97%E3%81%AE%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 30 Jun 2022 09:54:44 +0900</pubDate><guid>https://kodawari.info/posts/uibutton%E3%81%AE%E6%96%87%E5%AD%97%E3%81%AE%E8%A8%AD%E5%AE%9A/</guid><description>UIButtonの文字の設定 ボタンの設定 UIButton をコード上で使用することで、ボタンを追加することができます。 追加する時に、各状態になった場合のボタ</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>UIButtonの文字の設定</title><link>https://example.org/posts/uibutton%E3%81%AE%E6%96%87%E5%AD%97%E3%81%AE%E8%A8%AD%E5%AE%9A/</link><pubDate>Thu, 30 Jun 2022 09:54:44 +0900</pubDate><guid>https://example.org/posts/uibutton%E3%81%AE%E6%96%87%E5%AD%97%E3%81%AE%E8%A8%AD%E5%AE%9A/</guid><description>&lt;h1 id="uibuttonの文字の設定">UIButtonの文字の設定&lt;/h1>
+&lt;h2 id="ボタンの設定">ボタンの設定&lt;/h2>
+&lt;p>UIButton をコード上で使用することで、ボタンを追加することができます。
+追加する時に、各状態になった場合のボタンのタイトル、色などを指定することができます。&lt;/p></description><content:encoded><![CDATA[
               <h1 id="uibuttonの文字の設定">UIButtonの文字の設定</h1>
 <h2 id="ボタンの設定">ボタンの設定</h2>
 <p>UIButton をコード上で使用することで、ボタンを追加することができます。

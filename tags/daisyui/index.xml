@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>daisyUI on Ko-Da-Wa-Ri</title><link>https://kodawari.info/tags/daisyui/</link><description>Recent content in daisyUI on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 29 Jul 2022 16:43:35 +0900</lastBuildDate><atom:link href="https://kodawari.info/tags/daisyui/index.xml" rel="self" type="application/rss+xml"/><item><title>Vite + Svelte + Tailwind CSS + daisyUI + TypeScript の環境設定</title><link>https://kodawari.info/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</link><pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate><guid>https://kodawari.info/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</guid><description>パパッとコマンドなどだけですが、こんな感じで。。。。。。 npm create vite@latest kodawari -- --template svelte-ts cd kodawari npm i -D tailwindcss npm i -D daisyui npm install npx tailwindcss init -p ./src/app.css に追加 @tailwind base; @tailwind components; @tailwind utilities; ./tailwind.config.cjs を更新 /** @type {import(&amp;#39;tailwindcss&amp;#39;).Config} */ module.exports</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>DaisyUI on Ko-Da-Wa-Ri</title><link>https://example.org/tags/daisyui/</link><description>Recent content in DaisyUI on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Fri, 29 Jul 2022 16:43:35 +0900</lastBuildDate><atom:link href="https://example.org/tags/daisyui/index.xml" rel="self" type="application/rss+xml"/><item><title>Vite + Svelte + Tailwind CSS + daisyUI + TypeScript の環境設定</title><link>https://example.org/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</link><pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate><guid>https://example.org/posts/vite-+-svelte-+-tailwind-css-+-daisyui-+-typescript-%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A/</guid><description>&lt;p>パパッとコマンドなどだけですが、こんな感じで。。。。。。&lt;/p>
+&lt;pre tabindex="0">&lt;code>npm create vite@latest kodawari -- --template svelte-ts
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>cd kodawari
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>npm i -D tailwindcss
+npm i -D daisyui
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>npm install
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>npx tailwindcss init -p
+&lt;/code>&lt;/pre>&lt;p>./src/app.css に追加&lt;/p>
+&lt;pre tabindex="0">&lt;code>@tailwind base;
+@tailwind components;
+@tailwind utilities;
+&lt;/code>&lt;/pre>&lt;p>./tailwind.config.cjs を更新&lt;/p>
+&lt;pre tabindex="0">&lt;code>/** @type {import(&amp;#39;tailwindcss&amp;#39;).Config} */
+module.exports = {
+content: [],
+theme: {
+extend: {},
+},
+plugins: [],
+}
+&lt;/code>&lt;/pre>&lt;p>↓&lt;/p></description><content:encoded><![CDATA[
               <p>パパッとコマンドなどだけですが、こんな感じで。。。。。。</p>
 <pre tabindex="0"><code>npm create vite@latest kodawari -- --template svelte-ts
 </code></pre><pre tabindex="0"><code>cd kodawari

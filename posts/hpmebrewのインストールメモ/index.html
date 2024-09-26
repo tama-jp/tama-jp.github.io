@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61372&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HpmeBrewのインストールメモ - Ko-Da-Wa-Ri</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		
+  <meta itemprop="name" content="HpmeBrewのインストールメモ">
+  <meta itemprop="description" content="brew “mas” cask “adobe-acrobat-reader” cask “alfred” cask “apparency” cask “astah-professional” cask “bbedit” cask “bettertouchtool” cask “beyond-compare” cask “bootstrap-studio” cask “brave-browser” cask “brooklyn” cask “browserosaurus” cask “calibre” cask “coderunner” cask “dash” cask “docker” cask “drawio” cask “firefox” cask “google-chrome” cask “gyazmail” cask “istat-menus” cask “iterm2” cask “jedit-omega” cask “jetbrains-toolbox” cask “joplin” cask “kaleidoscope” cask “mamp” cask “openinterminal” cask “path-finder” cask “paw” cask “qlcolorcode” cask “qlimagesize” cask “qlmarkdown” cask “qlprettypatch” cask “qlstephen” cask “qlvideo” cask “quicklook-csv” cask “quicklook-json” cask “quicklookapk” cask “quicklookase” cask “smartgit” cask “stoplight-studio” cask “sublime-text” cask “suspicious-package” cask “syntax-highlight” cask “transmit” cask “typora” cask “vivaldi” cask “webpquicklook” cask “zoc” mas “Affinity Designer”, id: 824171161 mas “Display Menu”, id: 549083868 mas “Graphic”, id: 404705039 mas “GraphicConverter 11”, id: 1465576485 mas “Hidden Bar”, id: 1452453066 mas “Keka”, id: 470158793 mas “LINE”, id: 539883307 mas “Microsoft Excel”, id: 462058435 mas “Microsoft PowerPoint”, id: 462062816 mas “OmniPlan”, id: 1460319993 mas “Peek”, id: 1554235898 mas “Pixelmator Pro”, id: 1289583905 mas “Power JSON Editor”, id: 499768540 mas “QREncoderPro”, id: 479397466 mas “RunCat”, id: 1429033973 mas “SimpleMind Pro”, id: 434808346 mas “Xcode”, id: 497799835 mas “デスクトップ時計 &#43;”, id: 892038932">
+  <meta itemprop="datePublished" content="2022-07-04T16:45:55+09:00">
+  <meta itemprop="dateModified" content="2022-07-04T16:45:55+09:00">
+  <meta itemprop="wordCount" content="499">
+  <meta itemprop="keywords" content="HomeBrew">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Ko-Da-Wa-Ri" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cheer.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Ko-Da-Wa-Ri</div>
+					<div class="logo__tagline">たまたんの適当なブログ</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">HpmeBrewのインストールメモ</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">tama-tan</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-07-04T16:45:55&#43;09:00">2022-07-04</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%8A%80%E8%A1%93/" rel="category">技術</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#インストール">インストール</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#webブラウザ">Webブラウザ</a></li>
+    <li><a href="#ime">IME</a></li>
+    <li><a href="#cliツール">CLIツール</a></li>
+    <li><a href="#プログラミング言語">プログラミング言語</a></li>
+    <li><a href="#クイックルルック">クイックルルック</a></li>
+    <li><a href="#フォント">フォント</a></li>
+    <li><a href="#ユーティリティ">ユーティリティ</a>
+      <ul>
+        <li><a href="#アーカイバ">アーカイバ</a></li>
+        <li><a href="#画像動画ツール">画像･動画ツール</a></li>
+        <li><a href="#ブログ">ブログ</a></li>
+      </ul>
+    </li>
+    <li><a href="#starship">starship</a></li>
+    <li><a href="#zsh">zsh</a>
+      <ul>
+        <li><a href="#プラグイン">プラグイン</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#参考">参考：</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>brew &ldquo;mas&rdquo;
+cask &ldquo;adobe-acrobat-reader&rdquo;
+cask &ldquo;alfred&rdquo;
+cask &ldquo;apparency&rdquo;
+cask &ldquo;astah-professional&rdquo;
+cask &ldquo;bbedit&rdquo;
+cask &ldquo;bettertouchtool&rdquo;
+cask &ldquo;beyond-compare&rdquo;
+cask &ldquo;bootstrap-studio&rdquo;
+cask &ldquo;brave-browser&rdquo;
+cask &ldquo;brooklyn&rdquo;
+cask &ldquo;browserosaurus&rdquo;
+cask &ldquo;calibre&rdquo;
+cask &ldquo;coderunner&rdquo;
+cask &ldquo;dash&rdquo;
+cask &ldquo;docker&rdquo;
+cask &ldquo;drawio&rdquo;
+cask &ldquo;firefox&rdquo;
+cask &ldquo;google-chrome&rdquo;
+cask &ldquo;gyazmail&rdquo;
+cask &ldquo;istat-menus&rdquo;
+cask &ldquo;iterm2&rdquo;
+cask &ldquo;jedit-omega&rdquo;
+cask &ldquo;jetbrains-toolbox&rdquo;
+cask &ldquo;joplin&rdquo;
+cask &ldquo;kaleidoscope&rdquo;
+cask &ldquo;mamp&rdquo;
+cask &ldquo;openinterminal&rdquo;
+cask &ldquo;path-finder&rdquo;
+cask &ldquo;paw&rdquo;
+cask &ldquo;qlcolorcode&rdquo;
+cask &ldquo;qlimagesize&rdquo;
+cask &ldquo;qlmarkdown&rdquo;
+cask &ldquo;qlprettypatch&rdquo;
+cask &ldquo;qlstephen&rdquo;
+cask &ldquo;qlvideo&rdquo;
+cask &ldquo;quicklook-csv&rdquo;
+cask &ldquo;quicklook-json&rdquo;
+cask &ldquo;quicklookapk&rdquo;
+cask &ldquo;quicklookase&rdquo;
+cask &ldquo;smartgit&rdquo;
+cask &ldquo;stoplight-studio&rdquo;
+cask &ldquo;sublime-text&rdquo;
+cask &ldquo;suspicious-package&rdquo;
+cask &ldquo;syntax-highlight&rdquo;
+cask &ldquo;transmit&rdquo;
+cask &ldquo;typora&rdquo;
+cask &ldquo;vivaldi&rdquo;
+cask &ldquo;webpquicklook&rdquo;
+cask &ldquo;zoc&rdquo;
+mas &ldquo;Affinity Designer&rdquo;, id: 824171161
+mas &ldquo;Display Menu&rdquo;, id: 549083868
+mas &ldquo;Graphic&rdquo;, id: 404705039
+mas &ldquo;GraphicConverter 11&rdquo;, id: 1465576485
+mas &ldquo;Hidden Bar&rdquo;, id: 1452453066
+mas &ldquo;Keka&rdquo;, id: 470158793
+mas &ldquo;LINE&rdquo;, id: 539883307
+mas &ldquo;Microsoft Excel&rdquo;, id: 462058435
+mas &ldquo;Microsoft PowerPoint&rdquo;, id: 462062816
+mas &ldquo;OmniPlan&rdquo;, id: 1460319993
+mas &ldquo;Peek&rdquo;, id: 1554235898
+mas &ldquo;Pixelmator Pro&rdquo;, id: 1289583905
+mas &ldquo;Power JSON Editor&rdquo;, id: 499768540
+mas &ldquo;QREncoderPro&rdquo;, id: 479397466
+mas &ldquo;RunCat&rdquo;, id: 1429033973
+mas &ldquo;SimpleMind Pro&rdquo;, id: 434808346
+mas &ldquo;Xcode&rdquo;, id: 497799835
+mas &ldquo;デスクトップ時計 +&rdquo;, id: 892038932</p>
+<h1 id="homebrew">Homebrew</h1>
+<h2 id="インストール">インストール</h2>
+<h1 id="アプリ一覧">アプリ一覧</h1>
+<h2 id="webブラウザ">Webブラウザ</h2>
+<h2 id="ime">IME</h2>
+<p>cask &ldquo;atok&rdquo;</p>
+<h2 id="cliツール">CLIツール</h2>
+<p>コード行数を数える</p>
+<p>brew &ldquo;cloc&rdquo;</p>
+<p>brew &ldquo;colordiff&rdquo;</p>
+<p>alias diff=&lsquo;colordiff&rsquo;</p>
+<p>brew &ldquo;coreutils&rdquo;</p>
+<p>brew &ldquo;curl&rdquo;
+brew &ldquo;ffmpeg&rdquo;
+brew &ldquo;gnu-sed&rdquo;</p>
+<p>brew &ldquo;nkf&rdquo;</p>
+<p>brew &ldquo;tree&rdquo;
+brew &ldquo;wget&rdquo;
+brew &ldquo;pandoc&rdquo;
+brew &ldquo;plantuml&rdquo;
+brew &ldquo;htop&rdquo;
+brew &ldquo;graphviz&rdquo;
+brew &ldquo;jq&rdquo;</p>
+<h2 id="プログラミング言語">プログラミング言語</h2>
+<p>brew &ldquo;go&rdquo;
+brew &ldquo;yarn&rdquo;
+brew &ldquo;nodebrew&rdquo;</p>
+<h2 id="クイックルルック">クイックルルック</h2>
+<h2 id="フォント">フォント</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew tap homebrew/cask-fonts
+</span></span></code></pre></div><p>cask &ldquo;font-ricty-diminished&rdquo;</p>
+<h2 id="ユーティリティ">ユーティリティ</h2>
+<h3 id="アーカイバ">アーカイバ</h3>
+<p>keka</p>
+<h3 id="画像動画ツール">画像･動画ツール</h3>
+<p>brew &ldquo;yt-dlp&rdquo;</p>
+<h3 id="ブログ">ブログ</h3>
+<p>brew &ldquo;hugo&rdquo;</p>
+<h2 id="starship">starship</h2>
+<p>brew &ldquo;starship&rdquo;</p>
+<h2 id="zsh">zsh</h2>
+<h3 id="プラグイン">プラグイン</h3>
+<h4 id="zsh-completions">zsh-completions</h4>
+<p>brew &ldquo;zsh-completions&rdquo;</p>
+<p>$ brew install zsh-completions
+.zshrcに設定を追加します。</p>
+<p>$ cat &laquo; EOT &raquo; ~/.zshrc
+if type brew &amp;&gt;/dev/null; then
+FPATH=$(brew &ndash;prefix)/share/zsh-completions:$FPATH</p>
+<pre><code>autoload -Uz compinit
+compinit
+</code></pre>
+<p>fi
+EOT</p>
+<h4 id="zsh-autosuggestions">zsh-autosuggestions</h4>
+<p>brew &ldquo;zsh-autosuggestions&rdquo;</p>
+<p>入力中の文字列で.zsh_historyから過去に実行したコマンドを検索し、補完をしてくれます。</p>
+<p>$ brew install zsh-autosuggestions
+$ echo &lsquo;source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh&rsquo; &raquo; ~/.zshrc</p>
+<h4 id="zsh-syntax-highlighting">zsh-syntax-highlighting</h4>
+<p>brew &ldquo;zsh-syntax-highlighting&rdquo;</p>
+<p>コマンド入力中に、正常に入力されているか色分けをしてくれるプラグイン。</p>
+<p>$ brew install zsh-syntax-highlighting
+$ echo &lsquo;source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&rsquo; &raquo; ~/.zshrc</p>
+<h1 id="アプリケーション">アプリケーション</h1>
+<h2 id="参考">参考：</h2>
+<p><a href="https://blog.katsubemakito.net/macos/setup-macbookair2020">https://blog.katsubemakito.net/macos/setup-macbookair2020</a>
+<a href="https://qiita.com/uhooi/items/a2e19ff0af3449be91b1">https://qiita.com/uhooi/items/a2e19ff0af3449be91b1</a>
+<a href="https://lunalunadesign.net/2020/06/969/">https://lunalunadesign.net/2020/06/969/</a>
+<a href="https://mitsudo.net/mac-homebrew/">https://mitsudo.net/mac-homebrew/</a></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/homebrew/" rel="tag">HomeBrew</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="tama-tan avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About tama-tan</span>
+	</div>
+	<div class="authorbox__description">
+		いろいろプログラミングをやっています。今は、go言語にはまってます。
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/gorm%E3%81%A7time%E5%9E%8B%E3%82%92%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AE%E6%B3%A8%E6%84%8F/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">GORMでtime型をするときの注意</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/mac%E3%81%AE%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%A9%E5%BD%93/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Macの設定（超適当）</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Ko-Da-Wa-Ri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

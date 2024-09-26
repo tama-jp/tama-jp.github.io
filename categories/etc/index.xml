@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://kodawari.info/categories/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 23 Apr 2024 15:35:49 +0900</lastBuildDate><atom:link href="https://kodawari.info/categories/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>CentOS6でのリポジトリを取得する方法</title><link>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>基本的には、 http://mirrorlist.centos.org/ を https://archive.kernel.org/ に接続先を変えます、 どうするかというと、 mirrorlist定数をコメントアウトして、 baseurl=https://ar</description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ETC on Ko-Da-Wa-Ri</title><link>https://example.org/categories/etc/</link><description>Recent content in ETC on Ko-Da-Wa-Ri</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 23 Apr 2024 15:35:49 +0900</lastBuildDate><atom:link href="https://example.org/categories/etc/index.xml" rel="self" type="application/rss+xml"/><item><title>CentOS6でのリポジトリを取得する方法</title><link>https://example.org/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link><pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate><guid>https://example.org/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid><description>&lt;p>基本的には、&lt;/p>
+&lt;p>&lt;a href="http://mirrorlist.centos.org/">http://mirrorlist.centos.org/&lt;/a>&lt;/p>
+&lt;p>を&lt;/p>
+&lt;p>&lt;a href="https://archive.kernel.org/">https://archive.kernel.org/&lt;/a>&lt;/p>
+&lt;p>に接続先を変えます、&lt;/p>
+&lt;p>どうするかというと、&lt;/p>
+&lt;p>mirrorlist定数をコメントアウトして、&lt;/p>
+&lt;pre tabindex="0">&lt;code>baseurl=https://archive.kernel.org/centos-vault/[OSのバージョン]/xxxx/$basearch/
+&lt;/code>&lt;/pre>&lt;p>に置き換え。xxxは、各自のディレクトリにあわせます。&lt;/p></description><content:encoded><![CDATA[
               <p>基本的には、</p>
 <p><a href="http://mirrorlist.centos.org/">http://mirrorlist.centos.org/</a></p>
 <p>を</p>
@@ -58,7 +66,10 @@ enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 </code></pre><p>早く、別OSにしなければならないけど、とりあえずならこれで延命処置が出来て助かります。ε-(´∀｀*)ﾎｯ</p>
 
-              ]]></content:encoded></item><item><title>ハード作成の面白いサイト</title><link>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</link><pubDate>Sun, 21 Apr 2024 08:47:15 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</guid><description>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。 今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ って思いました。</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>ハード作成の面白いサイト</title><link>https://example.org/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</link><pubDate>Sun, 21 Apr 2024 08:47:15 +0900</pubDate><guid>https://example.org/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</guid><description>&lt;p>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。
+今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ
+って思いました。&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=qMYM1qFy8eA">https://www.youtube.com/watch?v=qMYM1qFy8eA&lt;/a>&lt;/p></description><content:encoded><![CDATA[
               <p>４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。
 今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ
 って思いました。</p>
@@ -70,7 +81,9 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 <p><a href="https://elchika.com/">https://elchika.com/</a></p>
 <p>難しいのや高いものはあるんですけど、これをヒントに何か作れたらなぁと。</p>
 
-              ]]></content:encoded></item><item><title>最近更新できてないなぁ。。。。</title><link>https://kodawari.info/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</link><pubDate>Fri, 19 Apr 2024 17:43:50 +0900</pubDate><guid>https://kodawari.info/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</guid><description>最近全然ブログが更新できていない。（；^ω^） hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、 git</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>最近更新できてないなぁ。。。。</title><link>https://example.org/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</link><pubDate>Fri, 19 Apr 2024 17:43:50 +0900</pubDate><guid>https://example.org/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</guid><description>&lt;p>最近全然ブログが更新できていない。（；^ω^）&lt;/p>
+&lt;p>hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、
+gitに上げるのもPCでしかできないから面倒、で全然更新がおろそかになってる。&lt;/p></description><content:encoded><![CDATA[
               <p>最近全然ブログが更新できていない。（；^ω^）</p>
 <p>hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、
 gitに上げるのもPCでしかできないから面倒、で全然更新がおろそかになってる。</p>
@@ -79,7 +92,21 @@ gitに上げるのもPCでしかできないから面倒、で全然更新がお
 <p>さぁ、うまく行くのやら。。。。</p>
 <p>これからなんとかいろいろなものを書くぞー</p>
 
-              ]]></content:encoded></item><item><title>HUGOでgistなどの埋め込みを実現させる</title><link>https://kodawari.info/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</link><pubDate>Wed, 15 Feb 2023 09:47:32 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</guid><description>大分久しぶりの更新 ドキュメントのここに載ってますね。 gist {{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}} 例 https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9 であれば、 {{&amp;lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &amp;gt;}} 表示 Tweet {{&amp;lt; gist [[ユーザー名</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>HUGOでgistなどの埋め込みを実現させる</title><link>https://example.org/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</link><pubDate>Wed, 15 Feb 2023 09:47:32 +0900</pubDate><guid>https://example.org/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</guid><description>&lt;p>大分久しぶりの更新&lt;/p>
+&lt;p>ドキュメントの&lt;a href="https://gohugo.io/content-management/shortcodes/">ここ&lt;/a>に載ってますね。&lt;/p>
+&lt;h3 id="gist">gist&lt;/h3>
+&lt;pre tabindex="0">&lt;code>{{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;h4 id="例">例&lt;/h4>
+&lt;p>&lt;a href="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9">https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9&lt;/a>&lt;/p>
+&lt;p>であれば、&lt;/p>
+&lt;pre tabindex="0">&lt;code>{{&amp;lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>表示&lt;/p>
+&lt;script src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js">&lt;/script>
+&lt;h3 id="tweet">Tweet&lt;/h3>
+&lt;pre tabindex="0">&lt;code>{{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;h4 id="例-1">例&lt;/h4>
+&lt;p>&lt;a href="https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;amp;t=GHSkw_zCyhNgjm1zBytAiw">https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;amp;t=GHSkw_zCyhNgjm1zBytAiw&lt;/a>&lt;/p>
+&lt;p>であれば、&lt;/p></description><content:encoded><![CDATA[
               <p>大分久しぶりの更新</p>
 <p>ドキュメントの<a href="https://gohugo.io/content-management/shortcodes/">ここ</a>に載ってますね。</p>
 <h3 id="gist">gist</h3>
@@ -89,7 +116,7 @@ gitに上げるのもPCでしかできないから面倒、で全然更新がお
 <p>であれば、</p>
 <pre tabindex="0"><code>{{&lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &gt;}}
 </code></pre><p>表示</p>
-<script type="application/javascript" src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js"></script>
+<script src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js"></script>
 
 <h3 id="tweet">Tweet</h3>
 <pre tabindex="0"><code>{{&lt; gist [[ユーザー名]] [[コード]] &gt;}}
@@ -110,12 +137,18 @@ gitに上げるのもPCでしかできないから面倒、で全然更新がお
 <pre tabindex="0"><code>{{&lt; youtube id=&#34;mXwUKQh8SbU&#34; autoplay=&#34;true&#34; &gt;}}
 </code></pre><p>表示</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/mXwUKQh8SbU?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mXwUKQh8SbU?autoplay=1&controls=1&end=0&loop=0&mute=1&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 
-              ]]></content:encoded></item><item><title>cuiをMacでアプリ化する為のファイル構成</title><link>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</link><pubDate>Wed, 27 Jul 2022 14:54:26 +0900</pubDate><guid>https://kodawari.info/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</guid><description>亀屋BLOGさんのPC-98えみゅでCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！ それで、これいちいち動かすの</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>cuiをMacでアプリ化する為のファイル構成</title><link>https://example.org/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</link><pubDate>Wed, 27 Jul 2022 14:54:26 +0900</pubDate><guid>https://example.org/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</guid><description>&lt;p>&lt;a href="http://kameya-z.way-nifty.com/blog/">亀屋BLOG&lt;/a>さんの&lt;a href="http://kameya-z.way-nifty.com/blog/2021/10/post-1bd017.html">PC-98えみゅ&lt;/a>でCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！&lt;/p>
+&lt;p>それで、これいちいち動かすのにコマンドラインからたたくのも面倒だと思い、アプリ化する方法を調べてたのでまとめておく。&lt;/p>
+&lt;h2 id="フォルダ構成">フォルダ構成&lt;/h2>
+&lt;p>フォルダ構成はこんな感じ&lt;/p></description><content:encoded><![CDATA[
               <p><a href="http://kameya-z.way-nifty.com/blog/">亀屋BLOG</a>さんの<a href="http://kameya-z.way-nifty.com/blog/2021/10/post-1bd017.html">PC-98えみゅ</a>でCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！</p>
 <p>それで、これいちいち動かすのにコマンドラインからたたくのも面倒だと思い、アプリ化する方法を調べてたのでまとめておく。</p>
 <h2 id="フォルダ構成">フォルダ構成</h2>
@@ -149,45 +182,45 @@ gitに上げるのもPCでしかできないから面倒、で全然更新がお
 &lt;/plist&gt;
 </code></pre><h4 id="一覧">一覧</h4>
 <table>
-<thead>
-<tr>
-<th>キー</th>
-<th>型</th>
-<th>概要</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CFBundleSignature</td>
-<td>String</td>
-<td>バンドルのクリエータを識別する四文字コードです</td>
-</tr>
-<tr>
-<td>CFBundlePackageType</td>
-<td>String</td>
-<td>バンドルのタイプを識別する、四文字のコードです。</td>
-</tr>
-<tr>
-<td>CFBundleVersion</td>
-<td>String</td>
-<td>バンドルのためのビルドバージョン番号です。</td>
-</tr>
-<tr>
-<td>CFBundleExecutable</td>
-<td>String</td>
-<td>バンドル実行可能ファイルの名前です。</td>
-</tr>
-<tr>
-<td>CFBundleDisplayName</td>
-<td>String</td>
-<td>バンドルの実際の名前です。</td>
-</tr>
-<tr>
-<td>CFBundleName</td>
-<td>String</td>
-<td>バンドルの短縮表示名です。</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">キー</th>
+          <th style="text-align: left">型</th>
+          <th style="text-align: left">概要</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">CFBundleSignature</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルのクリエータを識別する四文字コードです</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundlePackageType</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルのタイプを識別する、四文字のコードです。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleVersion</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルのためのビルドバージョン番号です。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleExecutable</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドル実行可能ファイルの名前です。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleDisplayName</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルの実際の名前です。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CFBundleName</td>
+          <td style="text-align: left">String</td>
+          <td style="text-align: left">バンドルの短縮表示名です。</td>
+      </tr>
+  </tbody>
 </table>
 <h4 id="詳細">詳細</h4>
 <h5 id="cfbundlesignature">CFBundleSignature</h5>
@@ -220,7 +253,9 @@ gitに上げるのもPCでしかできないから面倒、で全然更新がお
 <p>参考：
 <a href="http://potting.syuriken.jp/potting_conv/BPRuntimeConfig_J/chapter1.html">http://potting.syuriken.jp/potting_conv/BPRuntimeConfig_J/chapter1.html</a></p>
 
-              ]]></content:encoded></item><item><title>Google画像をスクレイピングしてみよう！！</title><link>https://kodawari.info/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link><pubDate>Tue, 05 Jul 2022 12:07:08 +0900</pubDate><guid>https://kodawari.info/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid><description>※ 過去に書いた記事を載せています。今動作するかは不明。。。。 すみっコぐらしをめっちゃ好きでLineスタンプはすべてコンプリートしています*.</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Google画像をスクレイピングしてみよう！！</title><link>https://example.org/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link><pubDate>Tue, 05 Jul 2022 12:07:08 +0900</pubDate><guid>https://example.org/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid><description>&lt;p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p>
+&lt;p>すみっコぐらしをめっちゃ好きでLineスタンプはすべてコンプリートしています*.⋆( ˘̴͈́ ॢ꒵ॢ ˘̴͈̀ )⋆.*
+それは置いといて。。。。 ＼(･&lt;em>＼)ｿﾉﾊﾅｼﾊ (／&lt;/em>･)／ｺｯﾁﾆｵｲﾄｲﾃ&lt;/p></description><content:encoded><![CDATA[
               <p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
 <p>すみっコぐらしをめっちゃ好きでLineスタンプはすべてコンプリートしています*.⋆( ˘̴͈́ ॢ꒵ॢ ˘̴͈̀ )⋆.*
 それは置いといて。。。。 ＼(･<em>＼)ｿﾉﾊﾅｼﾊ (／</em>･)／ｺｯﾁﾆｵｲﾄｲﾃ</p>
@@ -380,7 +415,109 @@ print(datetime.now().strftime(&#34;%Y/%m/%d %H:%M:%S&#34;))
 print(&#34;--- End ---&#34;)
 </code></pre><p>今回は短いですけどこんなんでw</p>
 
-              ]]></content:encoded></item><item><title>Macの設定（超適当）</title><link>https://kodawari.info/posts/mac%E3%81%AE%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%A9%E5%BD%93/</link><pubDate>Mon, 04 Jul 2022 17:28:43 +0900</pubDate><guid>https://kodawari.info/posts/mac%E3%81%AE%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%A9%E5%BD%93/</guid><description>雑な書き方だけどMacのインストールのファイルなどを公開 Homebrewのインストール 以下のファイルの内容() Brewfile tap &amp;#34;homebrew/bundle&amp;#34; tap &amp;#34;homebrew/cask&amp;#34; tap &amp;#34;homebrew/cask-fonts&amp;#34; tap &amp;#34;homebrew/core&amp;#34; brew &amp;#34;cloc&amp;#34; brew &amp;#34;colordiff&amp;#34; brew &amp;#34;coreutils&amp;#34;</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>Macの設定（超適当）</title><link>https://example.org/posts/mac%E3%81%AE%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%A9%E5%BD%93/</link><pubDate>Mon, 04 Jul 2022 17:28:43 +0900</pubDate><guid>https://example.org/posts/mac%E3%81%AE%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%A9%E5%BD%93/</guid><description>&lt;p>雑な書き方だけどMacのインストールのファイルなどを公開&lt;/p>
+&lt;h2 id="homebrewのインストール">Homebrewのインストール&lt;/h2>
+&lt;p>以下のファイルの内容()&lt;/p>
+&lt;p>Brewfile&lt;/p>
+&lt;pre tabindex="0">&lt;code>tap &amp;#34;homebrew/bundle&amp;#34;
+tap &amp;#34;homebrew/cask&amp;#34;
+tap &amp;#34;homebrew/cask-fonts&amp;#34;
+tap &amp;#34;homebrew/core&amp;#34;
+brew &amp;#34;cloc&amp;#34;
+brew &amp;#34;colordiff&amp;#34;
+brew &amp;#34;coreutils&amp;#34;
+brew &amp;#34;curl&amp;#34;
+brew &amp;#34;ffmpeg&amp;#34;
+brew &amp;#34;gnu-sed&amp;#34;
+brew &amp;#34;go&amp;#34;
+brew &amp;#34;graphviz&amp;#34;
+brew &amp;#34;htop&amp;#34;
+brew &amp;#34;hugo&amp;#34;
+brew &amp;#34;jq&amp;#34;
+brew &amp;#34;mas&amp;#34;
+brew &amp;#34;nkf&amp;#34;
+brew &amp;#34;nodebrew&amp;#34;
+brew &amp;#34;pandoc&amp;#34;
+brew &amp;#34;plantuml&amp;#34;
+brew &amp;#34;starship&amp;#34;
+brew &amp;#34;tree&amp;#34;
+brew &amp;#34;wget&amp;#34;
+brew &amp;#34;yarn&amp;#34;
+brew &amp;#34;yt-dlp&amp;#34;
+brew &amp;#34;zsh-autosuggestions&amp;#34;
+brew &amp;#34;zsh-completions&amp;#34;
+brew &amp;#34;zsh-syntax-highlighting&amp;#34;
+cask &amp;#34;adobe-acrobat-reader&amp;#34;
+cask &amp;#34;alfred&amp;#34;
+cask &amp;#34;apparency&amp;#34;
+cask &amp;#34;astah-professional&amp;#34;
+cask &amp;#34;atok&amp;#34;
+cask &amp;#34;bbedit&amp;#34;
+cask &amp;#34;bettertouchtool&amp;#34;
+cask &amp;#34;beyond-compare&amp;#34;
+cask &amp;#34;bootstrap-studio&amp;#34;
+cask &amp;#34;brave-browser&amp;#34;
+cask &amp;#34;brooklyn&amp;#34;
+cask &amp;#34;browserosaurus&amp;#34;
+cask &amp;#34;calibre&amp;#34;
+cask &amp;#34;coderunner&amp;#34;
+cask &amp;#34;dash&amp;#34;
+cask &amp;#34;docker&amp;#34;
+cask &amp;#34;drawio&amp;#34;
+cask &amp;#34;firefox&amp;#34;
+cask &amp;#34;font-ricty-diminished&amp;#34;
+cask &amp;#34;google-chrome&amp;#34;
+cask &amp;#34;gyazmail&amp;#34;
+cask &amp;#34;istat-menus&amp;#34;
+cask &amp;#34;iterm2&amp;#34;
+cask &amp;#34;jedit-omega&amp;#34;
+cask &amp;#34;jetbrains-toolbox&amp;#34;
+cask &amp;#34;joplin&amp;#34;
+cask &amp;#34;kaleidoscope&amp;#34;
+cask &amp;#34;mamp&amp;#34;
+cask &amp;#34;openinterminal&amp;#34;
+cask &amp;#34;path-finder&amp;#34;
+cask &amp;#34;paw&amp;#34;
+cask &amp;#34;qlcolorcode&amp;#34;
+cask &amp;#34;qlimagesize&amp;#34;
+cask &amp;#34;qlmarkdown&amp;#34;
+cask &amp;#34;qlprettypatch&amp;#34;
+cask &amp;#34;qlstephen&amp;#34;
+cask &amp;#34;qlvideo&amp;#34;
+cask &amp;#34;quicklook-csv&amp;#34;
+cask &amp;#34;quicklook-json&amp;#34;
+cask &amp;#34;quicklookapk&amp;#34;
+cask &amp;#34;quicklookase&amp;#34;
+cask &amp;#34;smartgit&amp;#34;
+cask &amp;#34;stoplight-studio&amp;#34;
+cask &amp;#34;sublime-text&amp;#34;
+cask &amp;#34;suspicious-package&amp;#34;
+cask &amp;#34;syntax-highlight&amp;#34;
+cask &amp;#34;transmit&amp;#34;
+cask &amp;#34;typora&amp;#34;
+cask &amp;#34;vivaldi&amp;#34;
+cask &amp;#34;webpquicklook&amp;#34;
+cask &amp;#34;zoc&amp;#34;
+mas &amp;#34;Affinity Designer&amp;#34;, id: 824171161
+mas &amp;#34;Display Menu&amp;#34;, id: 549083868
+mas &amp;#34;Graphic&amp;#34;, id: 404705039
+mas &amp;#34;GraphicConverter 11&amp;#34;, id: 1465576485
+mas &amp;#34;Hidden Bar&amp;#34;, id: 1452453066
+mas &amp;#34;Keka&amp;#34;, id: 470158793
+mas &amp;#34;LINE&amp;#34;, id: 539883307
+mas &amp;#34;Microsoft Excel&amp;#34;, id: 462058435
+mas &amp;#34;Microsoft PowerPoint&amp;#34;, id: 462062816
+mas &amp;#34;OmniPlan&amp;#34;, id: 1460319993
+mas &amp;#34;Peek&amp;#34;, id: 1554235898
+mas &amp;#34;Pixelmator Pro&amp;#34;, id: 1289583905
+mas &amp;#34;Power JSON Editor&amp;#34;, id: 499768540
+mas &amp;#34;QREncoderPro&amp;#34;, id: 479397466
+mas &amp;#34;RunCat&amp;#34;, id: 1429033973
+mas &amp;#34;SimpleMind Pro&amp;#34;, id: 434808346
+mas &amp;#34;Xcode&amp;#34;, id: 497799835
+mas &amp;#34;デスクトップ時計 +&amp;#34;, id: 892038932
+&lt;/code>&lt;/pre>&lt;h2 id="zshrc">zshrc&lt;/h2>
+&lt;p>~/.zshrc&lt;/p></description><content:encoded><![CDATA[
               <p>雑な書き方だけどMacのインストールのファイルなどを公開</p>
 <h2 id="homebrewのインストール">Homebrewのインストール</h2>
 <p>以下のファイルの内容()</p>
@@ -636,7 +773,16 @@ style = &#34;bold green&#34;
 style_user = &#34;bold dimmed blue&#34;
 show_always = false
 </code></pre>
-              ]]></content:encoded></item><item><title>HUGOの画像の置き方</title><link>https://kodawari.info/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</link><pubDate>Mon, 06 Jun 2022 16:51:49 +0900</pubDate><guid>https://kodawari.info/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</guid><description>どうやら、ファイル名が変換されてフォルダ名として扱っちゃうみたいなので、 同じディレクトリ内なら ![代替テキスト](../thank_you.</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>HUGOの画像の置き方</title><link>https://example.org/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</link><pubDate>Mon, 06 Jun 2022 16:51:49 +0900</pubDate><guid>https://example.org/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</guid><description>&lt;p>どうやら、ファイル名が変換されてフォルダ名として扱っちゃうみたいなので、
+同じディレクトリ内なら&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>![&lt;span style="color:#f92672">代替テキスト&lt;/span>](&lt;span style="color:#a6e22e">../thank_you.png&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>↓&lt;/p>
+&lt;p>&lt;img src="../thank_you.png" alt="代替テキスト">&lt;/p>
+&lt;p>一つ下なら&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>![&lt;span style="color:#f92672">代替テキスト&lt;/span>](&lt;span style="color:#a6e22e">../img/sorry.png&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>↓&lt;/p>
+&lt;p>&lt;img src="../img/sorry.png" alt="代替テキスト">&lt;/p>
+&lt;p>でなります。&lt;/p></description><content:encoded><![CDATA[
               <p>どうやら、ファイル名が変換されてフォルダ名として扱っちゃうみたいなので、
 同じディレクトリ内なら</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">代替テキスト</span>](<span style="color:#a6e22e">../thank_you.png</span>)
@@ -648,7 +794,9 @@ show_always = false
 <p><img src="../img/sorry.png" alt="代替テキスト"></p>
 <p>でなります。</p>
 
-              ]]></content:encoded></item><item><title>初めまして</title><link>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</link><pubDate>Sun, 05 Jun 2022 02:43:45 +0900</pubDate><guid>https://kodawari.info/posts/2022-06-05-02-43-45-my-first-post/</guid><description>たまたんです。久しぶりにブログ再開です。 今回から、 Hugo で作成を挑戦してみます。 よろしくお願いいたします。m(__)m</description><content:encoded><![CDATA[
+              ]]></content:encoded></item><item><title>初めまして</title><link>https://example.org/posts/2022-06-05-02-43-45-my-first-post/</link><pubDate>Sun, 05 Jun 2022 02:43:45 +0900</pubDate><guid>https://example.org/posts/2022-06-05-02-43-45-my-first-post/</guid><description>&lt;p>たまたんです。久しぶりにブログ再開です。&lt;/p>
+&lt;p>今回から、 &lt;strong>Hugo&lt;/strong> で作成を挑戦してみます。&lt;/p>
+&lt;p>よろしくお願いいたします。m(__)m&lt;/p></description><content:encoded><![CDATA[
               <p>たまたんです。久しぶりにブログ再開です。</p>
 <p>今回から、 <strong>Hugo</strong> で作成を挑戦してみます。</p>
 <p>よろしくお願いいたします。m(__)m</p>
