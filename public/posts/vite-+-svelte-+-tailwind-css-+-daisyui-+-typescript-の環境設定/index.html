@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61372&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vite &#43; Svelte &#43; Tailwind CSS &#43; daisyUI &#43; TypeScript の環境設定 - Ko-Da-Wa-Ri</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		
+  <meta itemprop="name" content="Vite &#43; Svelte &#43; Tailwind CSS &#43; daisyUI &#43; TypeScript の環境設定">
+  <meta itemprop="description" content="パパッとコマンドなどだけですが、こんな感じで。。。。。。
+npm create vite@latest kodawari -- --template svelte-ts cd kodawari npm i -D tailwindcss npm i -D daisyui npm install npx tailwindcss init -p ./src/app.css に追加
+@tailwind base; @tailwind components; @tailwind utilities; ./tailwind.config.cjs を更新
+/** @type {import(&#39;tailwindcss&#39;).Config} */ module.exports = { content: [], theme: { extend: {}, }, plugins: [], } ↓">
+  <meta itemprop="datePublished" content="2022-07-29T16:43:35+09:00">
+  <meta itemprop="dateModified" content="2022-07-29T16:43:35+09:00">
+  <meta itemprop="wordCount" content="278">
+  <meta itemprop="keywords" content="Vite,Svelte,Tailwind CSS,DaisyUI,TypeScript">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Ko-Da-Wa-Ri" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cheer.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Ko-Da-Wa-Ri</div>
+					<div class="logo__tagline">たまたんの適当なブログ</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Vite &#43; Svelte &#43; Tailwind CSS &#43; daisyUI &#43; TypeScript の環境設定</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">tama-tan</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-07-29T16:43:35&#43;09:00">2022-07-29</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%8A%80%E8%A1%93/" rel="category">技術</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>パパッとコマンドなどだけですが、こんな感じで。。。。。。</p>
+<pre tabindex="0"><code>npm create vite@latest kodawari -- --template svelte-ts
+</code></pre><pre tabindex="0"><code>cd kodawari
+</code></pre><pre tabindex="0"><code>npm i -D tailwindcss
+npm i -D daisyui
+</code></pre><pre tabindex="0"><code>npm install
+</code></pre><pre tabindex="0"><code>npx tailwindcss init -p
+</code></pre><p>./src/app.css に追加</p>
+<pre tabindex="0"><code>@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</code></pre><p>./tailwind.config.cjs を更新</p>
+<pre tabindex="0"><code>/** @type {import(&#39;tailwindcss&#39;).Config} */
+module.exports = {
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+</code></pre><p>↓</p>
+<pre tabindex="0"><code>/** @type {import(&#39;tailwindcss&#39;).Config} */
+module.exports = {
+  content: [&#39;./src/**/*.{svelte,js,ts}&#39;],
+  theme: {
+    extend: {},
+  },
+  plugins: [require(&#39;daisyui&#39;)],
+}
+</code></pre><p>./src/App.savelet を更新</p>
+<pre tabindex="0"><code>&lt;script lang=&#34;ts&#34;&gt;
+    import Counter from &#39;./lib/Counter.svelte&#39;
+    import Collapse from &#39;./lib/Collapse.svelte&#39;
+    import Modal from &#39;./lib/Modal.svelte&#39;
+&lt;/script&gt;
+
+&lt;main&gt;
+    &lt;button class=&#34;btn btn-secondary&#34;&gt;Hello daisyui&lt;/button&gt;
+    
+    &lt;button class=&#34;btn btn-ghost&#34;&gt;Button&lt;/button&gt;
+    &lt;button class=&#34;btn btn-link&#34;&gt;Button&lt;/button&gt;
+
+    &lt;div class=&#34;mockup-code&#34;&gt;
+        &lt;pre data-prefix=&#34;1&#34;&gt;&lt;code&gt;npm i daisyui&lt;/code&gt;&lt;/pre&gt;
+        &lt;pre data-prefix=&#34;2&#34;&gt;&lt;code&gt;installing...&lt;/code&gt;&lt;/pre&gt;
+        &lt;pre data-prefix=&#34;3&#34; class=&#34;bg-warning text-warning-content&#34;&gt;&lt;code&gt;Error!&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;card&#34;&gt;
+        &lt;Counter/&gt;
+    &lt;/div&gt;
+        &lt;Modal/&gt;
+    &lt;Collapse/&gt;
+
+&lt;/main&gt;
+</code></pre><p>./lib/Collapse.svelte を追加</p>
+<pre tabindex="0"><code>&lt;div class=&#34;collapse&#34;&gt;
+    &lt;input type=&#34;checkbox&#34; /&gt;
+    &lt;div class=&#34;collapse-title text-xl font-medium&#34;&gt;
+        Click me to show/hide content
+    &lt;/div&gt;
+    &lt;div class=&#34;collapse-content&#34;&gt;
+        &lt;p&gt;hello&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>./lib/Modal.svelte を追加</p>
+<pre tabindex="0"><code>
+&lt;!-- The button to open modal --&gt;
+&lt;label for=&#34;my-modal&#34; class=&#34;btn modal-button&#34;&gt;open modal&lt;/label&gt;
+
+&lt;!-- Put this part before &lt;/body&gt; tag --&gt;
+&lt;input type=&#34;checkbox&#34; id=&#34;my-modal&#34; class=&#34;modal-toggle&#34; /&gt;
+&lt;div class=&#34;modal&#34;&gt;
+    &lt;div class=&#34;modal-box&#34;&gt;
+        &lt;h3 class=&#34;font-bold text-lg&#34;&gt;Congratulations random Internet user!&lt;/h3&gt;
+        &lt;p class=&#34;py-4&#34;&gt;You&#39;ve been selected for a chance to get one year of subscription to use Wikipedia for free!&lt;/p&gt;
+        &lt;div class=&#34;modal-action&#34;&gt;
+            &lt;label for=&#34;my-modal&#34; class=&#34;btn&#34;&gt;Yay!&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>これで、テストしてみる。</p>
+<pre tabindex="0"><code>npm run dev
+</code></pre><p>こんな感じで表示されます。(^O^)</p>
+<p><img src="../img/ViteSvelteTSlocalhost.png" alt="画面"></p>
+<p>参考：</p>
+<p><a href="https://tailwindcss.com/docs/installation">https://tailwindcss.com/docs/installation</a>
+<a href="https://daisyui.com/">https://daisyui.com/</a>
+<a href="https://ja.vitejs.dev/guide/#%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88">https://ja.vitejs.dev/guide/#%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88</a></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/vite/" rel="tag">Vite</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/svelte/" rel="tag">Svelte</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/tailwind-css/" rel="tag">Tailwind CSS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/daisyui/" rel="tag">daisyUI</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/typescript/" rel="tag">TypeScript</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="tama-tan avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About tama-tan</span>
+	</div>
+	<div class="authorbox__description">
+		いろいろプログラミングをやっています。今は、go言語にはまってます。
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">cuiをMacでアプリ化する為のファイル構成</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">xcodeインストールのxcodebuildの確認でエラーがでたときの対処法</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Ko-Da-Wa-Ri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

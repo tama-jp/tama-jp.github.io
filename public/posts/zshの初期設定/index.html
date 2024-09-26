@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61372&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>zshの初期設定 - Ko-Da-Wa-Ri</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		
+  <meta itemprop="name" content="zshの初期設定">
+  <meta itemprop="description" content="ちょっとしたashの設定です。
+Homebrewからインストール brew install zsh シェル一覧リストを追加
+sudo sh -c &#34;echo &#39;/usr/local/bin/zsh&#39; &gt;&gt; /etc/shells&#34; インストールしたzshに設定
+chsh -s /usr/local/bin/zsh Changing shell for ruedap. Password for ruedap: パスワードを入力する zsh-completionsのインストール 補完機能の強化">
+  <meta itemprop="datePublished" content="2022-07-27T10:47:45+09:00">
+  <meta itemprop="dateModified" content="2022-07-27T10:47:45+09:00">
+  <meta itemprop="wordCount" content="978">
+  <meta itemprop="keywords" content="Zsh">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Ko-Da-Wa-Ri" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cheer.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Ko-Da-Wa-Ri</div>
+					<div class="logo__tagline">たまたんの適当なブログ</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">zshの初期設定</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">tama-tan</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-07-27T10:47:45&#43;09:00">2022-07-27</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%8A%80%E8%A1%93/" rel="category">技術</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#homebrewからインストール">Homebrewからインストール</a></li>
+    <li><a href="#zsh-completionsのインストール">zsh-completionsのインストール</a></li>
+    <li><a href="#zsh-syntax-highlighting-のインストール">zsh-syntax-highlighting のインストール</a></li>
+    <li><a href="#zsh-autosuggestions-のインストール">zsh-autosuggestions のインストール</a></li>
+    <li><a href="#色を使用出来るようにする">色を使用出来るようにする</a></li>
+    <li><a href="#日本語ファイル名を表示可能にする">日本語ファイル名を表示可能にする</a></li>
+    <li><a href="#cd-なしでもディレクトリ移動">cd なしでもディレクトリ移動</a></li>
+    <li><a href="#ビープ音の停止">ビープ音の停止</a></li>
+    <li><a href="#ビープ音の停止補完時">ビープ音の停止(補完時)</a></li>
+    <li><a href="#cd-tab-で以前移動したディレクトリを表示">cd [TAB] で以前移動したディレクトリを表示</a></li>
+    <li><a href="#ヒストリ-履歴-を保存数を増やす">ヒストリ (履歴) を保存、数を増やす</a></li>
+    <li><a href="#同時に起動した-zsh-の間でヒストリを共有する">同時に起動した zsh の間でヒストリを共有する</a></li>
+    <li><a href="#直前と同じコマンドの場合はヒストリに追加しない">直前と同じコマンドの場合はヒストリに追加しない</a></li>
+    <li><a href="#同じコマンドをヒストリに残さない">同じコマンドをヒストリに残さない</a></li>
+    <li><a href="#スペースから始まるコマンド行はヒストリに残さない">スペースから始まるコマンド行はヒストリに残さない</a></li>
+    <li><a href="#ヒストリに保存するときに余分なスペースを削除する">ヒストリに保存するときに余分なスペースを削除する</a></li>
+    <li><a href="#補完で小文字でも大文字にマッチさせる">補完で小文字でも大文字にマッチさせる</a></li>
+    <li><a href="#パス名の補完候補時パス名を選択">パス名の補完候補時パス名を選択</a></li>
+    <li><a href="#コマンドのスペルを訂正する">コマンドのスペルを訂正する</a></li>
+    <li><a href="#cd-した先のディレクトリをディレクトリスタックに追加する">cd した先のディレクトリをディレクトリスタックに追加する</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#拡張-glob-を有効にする">拡張 glob を有効にする</a></li>
+    <li><a href="#単語の一部として扱われる文字のセットを指定する">単語の一部として扱われる文字のセットを指定する</a></li>
+    <li><a href="#コマンド実行結果のあとに空行を挿入する">コマンド実行結果のあとに空行を挿入する</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>ちょっとしたashの設定です。</p>
+<h2 id="homebrewからインストール">Homebrewからインストール</h2>
+<pre tabindex="0"><code>brew install zsh
+</code></pre><p>シェル一覧リストを追加</p>
+<pre tabindex="0"><code>sudo sh -c &#34;echo &#39;/usr/local/bin/zsh&#39; &gt;&gt; /etc/shells&#34;
+</code></pre><p>インストールしたzshに設定</p>
+<pre tabindex="0"><code>chsh -s /usr/local/bin/zsh
+Changing shell for ruedap.
+Password for ruedap: パスワードを入力する
+</code></pre><h2 id="zsh-completionsのインストール">zsh-completionsのインストール</h2>
+<p>補完機能の強化</p>
+<pre tabindex="0"><code>brew install zsh-completions
+</code></pre><p>~./zshrc</p>
+<pre tabindex="0"><code># zsh-completions(補完機能)の設定
+if type brew &amp;&gt;/dev/null; then
+ FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+ autoload -Uz compinit
+ compinit
+fi
+</code></pre><h2 id="zsh-syntax-highlighting-のインストール">zsh-syntax-highlighting のインストール</h2>
+<p>コマンドにシンタックスハイライトをつける</p>
+<pre tabindex="0"><code>brew install zsh-syntax-highlighting
+</code></pre><p>~./zshrc</p>
+<pre tabindex="0"><code>source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+</code></pre><h2 id="zsh-autosuggestions-のインストール">zsh-autosuggestions のインストール</h2>
+<p>ターミナルのコマンド履歴に基づいてコマンド候補を表示、入力補完もしてくれる。</p>
+<pre tabindex="0"><code>brew install zsh-autosuggestions
+</code></pre><p>~./zshrc</p>
+<pre tabindex="0"><code> source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+</code></pre><h2 id="色を使用出来るようにする">色を使用出来るようにする</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>autoload -Uz colors &amp;&amp; colors
+</code></pre><h2 id="日本語ファイル名を表示可能にする">日本語ファイル名を表示可能にする</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt print_eight_bit
+</code></pre><h2 id="cd-なしでもディレクトリ移動">cd なしでもディレクトリ移動</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt auto_cd
+</code></pre><h2 id="ビープ音の停止">ビープ音の停止</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt no_beep
+</code></pre><h2 id="ビープ音の停止補完時">ビープ音の停止(補完時)</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt nolistbeep
+</code></pre><h2 id="cd-tab-で以前移動したディレクトリを表示">cd [TAB] で以前移動したディレクトリを表示</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt auto_pushd
+</code></pre><h2 id="ヒストリ-履歴-を保存数を増やす">ヒストリ (履歴) を保存、数を増やす</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+</code></pre><h2 id="同時に起動した-zsh-の間でヒストリを共有する">同時に起動した zsh の間でヒストリを共有する</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt share_history
+</code></pre><h2 id="直前と同じコマンドの場合はヒストリに追加しない">直前と同じコマンドの場合はヒストリに追加しない</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt hist_ignore_dups
+</code></pre><h2 id="同じコマンドをヒストリに残さない">同じコマンドをヒストリに残さない</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt hist_ignore_all_dups
+</code></pre><h2 id="スペースから始まるコマンド行はヒストリに残さない">スペースから始まるコマンド行はヒストリに残さない</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt hist_ignore_space
+</code></pre><h2 id="ヒストリに保存するときに余分なスペースを削除する">ヒストリに保存するときに余分なスペースを削除する</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt hist_reduce_blanks
+</code></pre><h2 id="補完で小文字でも大文字にマッチさせる">補完で小文字でも大文字にマッチさせる</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>zstyle &#39;:completion:*&#39; matcher-list &#39;m:{a-z}={A-Z}&#39;
+</code></pre><h2 id="パス名の補完候補時パス名を選択">パス名の補完候補時パス名を選択</h2>
+<p>[TAB] でパス名の補完候補を表示したあと、
+続けて [TAB] を押すと候補からパス名を選択できるようになる
+候補を選ぶには [TAB] か Ctrl-N,B,F,P</p>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>zstyle &#39;:completion:*:default&#39; menu select=1
+</code></pre><h2 id="コマンドのスペルを訂正する">コマンドのスペルを訂正する</h2>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt correct
+</code></pre><h2 id="cd-した先のディレクトリをディレクトリスタックに追加する">cd した先のディレクトリをディレクトリスタックに追加する</h2>
+<p>cd [TAB] でディレクトリのヒストリが表示されるので、選択して移動できる
+※ ディレクトリスタック: 今までに行ったディレクトリのヒストリのこと</p>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt auto_pushd
+</code></pre><h1 id="pushd-したときディレクトリがすでにスタックに含まれていればスタックに追加しない">pushd したとき、ディレクトリがすでにスタックに含まれていればスタックに追加しない</h1>
+<p>~./zshrc</p>
+<pre tabindex="0"><code>setopt pushd_ignore_dups
+</code></pre><h2 id="拡張-glob-を有効にする">拡張 glob を有効にする</h2>
+<p>拡張globを有効にする
+拡張globを有効にすると # ~ ^ もパターンとして扱われる
+glob: パス名にマッチするワイルドカードパターンのこと
+※ たとえば mv hoge.* ~/dir というコマンドにおける * のこと
+~./zshrc</p>
+<pre tabindex="0"><code>setopt extended_glob
+</code></pre><h2 id="単語の一部として扱われる文字のセットを指定する">単語の一部として扱われる文字のセットを指定する</h2>
+<p>単語の一部として扱われる文字のセットを指定する
+ここではデフォルトのセットから / を抜いたものにしている
+※ たとえば Ctrl-W でカーソル前の1単語を削除したとき / までで削除が止まる
+~./zshrc</p>
+<pre tabindex="0"><code>WORDCHARS=&#39;*?_-.[]~=&amp;;!#$%^(){}&lt;&gt;&#39;
+</code></pre><h2 id="コマンド実行結果のあとに空行を挿入する">コマンド実行結果のあとに空行を挿入する</h2>
+<p>~/.zshrc</p>
+<pre tabindex="0"><code>add_newline() {
+  if [[ -z $PS1_NEWLINE_LOGIN ]]; then
+    PS1_NEWLINE_LOGIN=true
+  else
+    printf &#39;\n&#39;
+  fi
+}
+precmd() { add_newline }
+</code></pre>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/zsh/" rel="tag">zsh</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="tama-tan avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About tama-tan</span>
+	</div>
+	<div class="authorbox__description">
+		いろいろプログラミングをやっています。今は、go言語にはまってます。
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/postgresql%E3%81%AE%E8%87%AA%E5%8B%95%E6%8E%A1%E7%95%AA%E3%82%92%E3%81%AA%E3%81%8A%E3%81%99/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">PostgreSQLの自動採番をなおす</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">cuiをMacでアプリ化する為のファイル構成</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Ko-Da-Wa-Ri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

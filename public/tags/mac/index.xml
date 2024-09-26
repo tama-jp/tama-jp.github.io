@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on Ko-Da-Wa-Ri</title>
+    <link>http://localhost:61372/tags/mac/</link>
+    <description>Recent content in Mac on Ko-Da-Wa-Ri</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 26 Sep 2024 19:38:11 +0900</lastBuildDate>
+    <atom:link href="http://localhost:61372/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ITerm2で起動時にTip of the Dayを出さない</title>
+      <link>http://localhost:61372/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</link>
+      <pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate>
+      <guid>http://localhost:61372/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/</guid>
+      <description>&lt;p&gt;iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法&lt;/p&gt;&#xA;&lt;p&gt;Term2の環境設定の［Advanced］タブ内に「Tip of the Day」セクションがあるので、&#xA;「Disable the Tip of the Day?」項目がデフォルトだと「No」になっているので「Yes」に変更する。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title>
+      <link>http://localhost:61372/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link>
+      <pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate>
+      <guid>http://localhost:61372/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid>
+      <description>&lt;p&gt;Docker Desktopを使用してもいいけど、&#xA;Limaっていうのを使用してDockerを使おうかなと思ったので、めも。&#xA;ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nodebrewのインストールと使い方</title>
+      <link>http://localhost:61372/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link>
+      <pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate>
+      <guid>http://localhost:61372/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
+      <description>&lt;h2 id=&#34;nodebrewをインストールする&#34;&gt;Nodebrewをインストールする&lt;/h2&gt;&#xA;&lt;p&gt;インストール&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install nodebrew&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;確認&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew -v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;バージョンが表示されればOK。&lt;/p&gt;&#xA;&lt;p&gt;.zshrcなどに環境変数を追加&#xA;vi ~/.zshrc&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export PATH=$HOME/.nodebrew/current/bin:$PATH&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;初期化&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew setup&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;バージョン指定してnodeをインストールする&#xA;インストール可能なバージョンを確認&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

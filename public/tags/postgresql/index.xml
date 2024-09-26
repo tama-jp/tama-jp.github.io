@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostgreSQL on Ko-Da-Wa-Ri</title>
+    <link>http://localhost:61372/tags/postgresql/</link>
+    <description>Recent content in PostgreSQL on Ko-Da-Wa-Ri</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 22 Jul 2022 19:01:53 +0900</lastBuildDate>
+    <atom:link href="http://localhost:61372/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PostgreSQLの自動採番をなおす</title>
+      <link>http://localhost:61372/posts/postgresql%E3%81%AE%E8%87%AA%E5%8B%95%E6%8E%A1%E7%95%AA%E3%82%92%E3%81%AA%E3%81%8A%E3%81%99/</link>
+      <pubDate>Fri, 22 Jul 2022 19:01:53 +0900</pubDate>
+      <guid>http://localhost:61372/posts/postgresql%E3%81%AE%E8%87%AA%E5%8B%95%E6%8E%A1%E7%95%AA%E3%82%92%E3%81%AA%E3%81%8A%E3%81%99/</guid>
+      <description>&lt;h2 id=&#34;シーケンスオブジェクトの値の更新&#34;&gt;シーケンスオブジェクトの値の更新&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-postgresql&#34; data-lang=&#34;postgresql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; MAX(id) &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; nextval(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;table_id_seq&amp;#39;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; setval(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;table_id_seq&amp;#39;&lt;/span&gt;, (&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; MAX(id) &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table&lt;/span&gt;));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

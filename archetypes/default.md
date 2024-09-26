@@ -1,6 +1,6 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
++++
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+date = {{ .Date }}
 slug: ""
 # categories : ["技術"]
 # tags: ["golang","Objective-C","Xcode", "hugo","gorm","HomeBrew"]
@@ -10,4 +10,4 @@ description: ""
 image: ""
 author: "tama-tan"
 draft: false
----
++++

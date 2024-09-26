@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61372&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UIButtonの文字の設定 - Ko-Da-Wa-Ri</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		
+  <meta itemprop="name" content="UIButtonの文字の設定">
+  <meta itemprop="description" content="UIButtonの文字の設定 ボタンの設定 UIButton をコード上で使用することで、ボタンを追加することができます。 追加する時に、各状態になった場合のボタンのタイトル、色などを指定することができます。">
+  <meta itemprop="datePublished" content="2022-06-30T09:54:44+09:00">
+  <meta itemprop="dateModified" content="2022-06-30T09:54:44+09:00">
+  <meta itemprop="wordCount" content="553">
+  <meta itemprop="keywords" content="Objective-C,IOS,UIButton">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Ko-Da-Wa-Ri" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cheer.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Ko-Da-Wa-Ri</div>
+					<div class="logo__tagline">たまたんの適当なブログ</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">UIButtonの文字の設定</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">tama-tan</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-06-30T09:54:44&#43;09:00">2022-06-30</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%8A%80%E8%A1%93/" rel="category">技術</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#ボタンの設定">ボタンの設定</a></li>
+    <li><a href="#枠線の設定">枠線の設定</a></li>
+    <li><a href="#押下時の動作">押下時の動作</a></li>
+    <li><a href="#大きさなどの変更">大きさなどの変更</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="uibuttonの文字の設定">UIButtonの文字の設定</h1>
+<h2 id="ボタンの設定">ボタンの設定</h2>
+<p>UIButton をコード上で使用することで、ボタンを追加することができます。
+追加する時に、各状態になった場合のボタンのタイトル、色などを指定することができます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//ボタンの宣言
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>UIButton <span style="color:#f92672">*</span>button <span style="color:#f92672">=</span> [[UIButton alloc]init];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　通常
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;ボタン&#34;</span> forState:UIControlStateNormal];
+</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateNormal];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　押下中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;押下中&#34;</span> forState:UIControlStateHighlighted];
+</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateHighlighted];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　選択中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;選択中&#34;</span> forState:UIControlStateSelected];
+</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
+</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateSelected];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//タイトル・テキスト色・画像　無効中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setTitle:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;無効&#34;</span> forState:UIControlStateDisabled];
+</span></span><span style="display:flex;"><span>[button setTitleColor:[UIColor blackColor] forState:UIControlStateDisabled];
+</span></span><span style="display:flex;"><span>[button setImage:[UIImage imageNamed:<span style="color:#960050;background-color:#1e0010">@</span><span style="color:#e6db74">&#34;image&#34;</span>] forState:UIControlStateDisabled];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//フォントサイズ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.titleLabel setFont:[UIFont systemFontOfSize:<span style="color:#ae81ff">30</span>]];
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//背景色
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button setBackgroundColor:[UIColor redColor]];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//画面に追加
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[self.view addSubview:button];
+</span></span></code></pre></div><h2 id="枠線の設定">枠線の設定</h2>
+<p>枠線の色は setBorderColor 、枠線の太さは setBorderWidth 、角丸の丸みは setCornerRadius 、
+で指定するができます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//枠線の色
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.layer setBorderColor:[UIColor blackColor].CGColor];
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//枠線の太さ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.layer setBorderWidth:<span style="color:#ae81ff">2.0</span>];
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//角丸の指定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button.layer setCornerRadius:<span style="color:#ae81ff">5.0</span>];
+</span></span></code></pre></div><h2 id="押下時の動作">押下時の動作</h2>
+<p>ボタンを選択した時の動作を追加する場合、 -(void)関数名:(UIButton *)button で動作を指定して、
+ボタン追加時に addTarget で関数を指定する必要あります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">//押下時の動作
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[button addTarget:self action:<span style="color:#960050;background-color:#1e0010">@</span>selector(button_select:) forControlEvents:UIControlEventTouchUpInside];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span>(<span style="color:#66d9ef">void</span>)button_select:(UIButton <span style="color:#f92672">*</span>)button {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//ボタンを選択中に変更する。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    button.selected <span style="color:#f92672">=</span> true;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//ボタンを無効中に変更する
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    button.enabled <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="大きさなどの変更">大きさなどの変更</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>    CGRect frame2 <span style="color:#f92672">=</span> CGRectMake(_overlayView.frame.size.width <span style="color:#f92672">-</span> <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">40</span>);
+</span></span><span style="display:flex;"><span>    self.closeButton.frame <span style="color:#f92672">=</span> frame2;
+</span></span></code></pre></div>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/objective-c/" rel="tag">Objective-C</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ios/" rel="tag">iOS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/uibutton/" rel="tag">UIButton</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="tama-tan avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About tama-tan</span>
+	</div>
+	<div class="authorbox__description">
+		いろいろプログラミングをやっています。今は、go言語にはまってます。
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/go%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7uml%E5%9B%B3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">goプロジェクトを自動でUML図に出力するツール</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/%E6%99%82%E9%96%93%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E6%96%B9/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">時間の取り扱い方</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Ko-Da-Wa-Ri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

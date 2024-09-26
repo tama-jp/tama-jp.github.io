@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Ko-Da-Wa-Ri</title>
+    <link>http://localhost:61372/tags/hugo/</link>
+    <description>Recent content in Hugo on Ko-Da-Wa-Ri</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 06 Jun 2022 14:28:28 +0900</lastBuildDate>
+    <atom:link href="http://localhost:61372/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HUGO便利スクリプト</title>
+      <link>http://localhost:61372/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link>
+      <pubDate>Mon, 06 Jun 2022 14:28:28 +0900</pubDate>
+      <guid>http://localhost:61372/posts/hugo%E4%BE%BF%E5%88%A9%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</guid>
+      <description>&lt;p&gt;HUGOの使い方がようやくわかってきて、今必死ですw&lt;/p&gt;&#xA;&lt;p&gt;コンテントを作成する時&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new post/なんたらー.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;って、書かなきゃならなく、中身もちょびちょび書き直さなければならない。&#xA;これって面倒ですね。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HUGOのインストール</title>
+      <link>http://localhost:61372/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Mon, 06 Jun 2022 14:28:23 +0900</pubDate>
+      <guid>http://localhost:61372/posts/hugo%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>&lt;p&gt;ほぼ&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;ここ&lt;/a&gt;を見ればすぐできます。&lt;/p&gt;&#xA;&lt;p&gt;これに、私は、テーマを&lt;a href=&#34;https://github.com/Vimux/Mainroad&#34;&gt;Mainroad&lt;/a&gt;にしました。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

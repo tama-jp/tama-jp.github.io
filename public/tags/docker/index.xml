@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Ko-Da-Wa-Ri</title>
+    <link>http://localhost:61372/tags/docker/</link>
+    <description>Recent content in Docker on Ko-Da-Wa-Ri</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 16 Feb 2023 00:40:43 +0900</lastBuildDate>
+    <atom:link href="http://localhost:61372/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacでDockerデスクトップをインストールしないで使う方法。(lima)</title>
+      <link>http://localhost:61372/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</link>
+      <pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate>
+      <guid>http://localhost:61372/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/</guid>
+      <description>&lt;p&gt;Docker Desktopを使用してもいいけど、&#xA;Limaっていうのを使用してDockerを使おうかなと思ったので、めも。&#xA;ただ、limaは、dockerやdocker-compose のコマンドがすべて使えるわけではないので、コマンドライン版のDockerもインストールする。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

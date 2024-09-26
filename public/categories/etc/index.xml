@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ETC on Ko-Da-Wa-Ri</title>
+    <link>http://localhost:61372/categories/etc/</link>
+    <description>Recent content in ETC on Ko-Da-Wa-Ri</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Apr 2024 15:35:49 +0900</lastBuildDate>
+    <atom:link href="http://localhost:61372/categories/etc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS6でのリポジトリを取得する方法</title>
+      <link>http://localhost:61372/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate>
+      <guid>http://localhost:61372/posts/2024-04-23-15-35-49-centos6%E3%81%A7%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;基本的には、&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://mirrorlist.centos.org/&#34;&gt;http://mirrorlist.centos.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;を&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://archive.kernel.org/&#34;&gt;https://archive.kernel.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;に接続先を変えます、&lt;/p&gt;&#xA;&lt;p&gt;どうするかというと、&lt;/p&gt;&#xA;&lt;p&gt;mirrorlist定数をコメントアウトして、&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;baseurl=https://archive.kernel.org/centos-vault/[OSのバージョン]/xxxx/$basearch/&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;に置き換え。xxxは、各自のディレクトリにあわせます。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ハード作成の面白いサイト</title>
+      <link>http://localhost:61372/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</link>
+      <pubDate>Sun, 21 Apr 2024 08:47:15 +0900</pubDate>
+      <guid>http://localhost:61372/posts/2024-04-21-08-47-15-%E3%83%8F%E3%83%BC%E3%83%89%E4%BD%9C%E6%88%90%E3%81%AE%E9%9D%A2%E7%99%BD%E3%81%84%E3%82%B5%E3%82%A4%E3%83%88/</guid>
+      <description>&lt;p&gt;４歳の息子がよく見ている段ボールで作る何ちゃらがあるんですけど。&#xA;今回ドリンクバーでして、これの装置だけでもあったら楽しいなぁ&#xA;って思いました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=qMYM1qFy8eA&#34;&gt;https://www.youtube.com/watch?v=qMYM1qFy8eA&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>最近更新できてないなぁ。。。。</title>
+      <link>http://localhost:61372/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</link>
+      <pubDate>Fri, 19 Apr 2024 17:43:50 +0900</pubDate>
+      <guid>http://localhost:61372/posts/2024-04-19-17-43-50-%E6%9C%80%E8%BF%91/</guid>
+      <description>&lt;p&gt;最近全然ブログが更新できていない。（；^ω^）&lt;/p&gt;&#xA;&lt;p&gt;hugo + git hub でブログをかけるようにしたら、便利かと思ったら、 最初にブログを追加するのが面倒、&#xA;gitに上げるのもPCでしかできないから面倒、で全然更新がおろそかになってる。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HUGOでgistなどの埋め込みを実現させる</title>
+      <link>http://localhost:61372/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</link>
+      <pubDate>Wed, 15 Feb 2023 09:47:32 +0900</pubDate>
+      <guid>http://localhost:61372/posts/hugo%E3%81%A7gist%E3%81%AA%E3%81%A9%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%95%E3%81%9B%E3%82%8B/</guid>
+      <description>&lt;p&gt;大分久しぶりの更新&lt;/p&gt;&#xA;&lt;p&gt;ドキュメントの&lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;ここ&lt;/a&gt;に載ってますね。&lt;/p&gt;&#xA;&lt;h3 id=&#34;gist&#34;&gt;gist&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;例&#34;&gt;例&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9&#34;&gt;https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;であれば、&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &amp;gt;}}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;表示&lt;/p&gt;&#xA;&lt;script src=&#34;https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js&#34;&gt;&lt;/script&gt;&#xA;&#xA;&lt;h3 id=&#34;tweet&#34;&gt;Tweet&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{&amp;lt; gist [[ユーザー名]] [[コード]] &amp;gt;}}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;例-1&#34;&gt;例&lt;/h4&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;amp;t=GHSkw_zCyhNgjm1zBytAiw&#34;&gt;https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;amp;t=GHSkw_zCyhNgjm1zBytAiw&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;であれば、&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>cuiをMacでアプリ化する為のファイル構成</title>
+      <link>http://localhost:61372/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</link>
+      <pubDate>Wed, 27 Jul 2022 14:54:26 +0900</pubDate>
+      <guid>http://localhost:61372/posts/cui%E3%82%92mac%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E5%8C%96%E3%81%99%E3%82%8B%E7%82%BA%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E6%A7%8B%E6%88%90/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://kameya-z.way-nifty.com/blog/&#34;&gt;亀屋BLOG&lt;/a&gt;さんの&lt;a href=&#34;http://kameya-z.way-nifty.com/blog/2021/10/post-1bd017.html&#34;&gt;PC-98えみゅ&lt;/a&gt;でCUI版PC98エミュの紹介がされていたのでコンパイルして見たら、動いた！！&lt;/p&gt;&#xA;&lt;p&gt;それで、これいちいち動かすのにコマンドラインからたたくのも面倒だと思い、アプリ化する方法を調べてたのでまとめておく。&lt;/p&gt;&#xA;&lt;h2 id=&#34;フォルダ構成&#34;&gt;フォルダ構成&lt;/h2&gt;&#xA;&lt;p&gt;フォルダ構成はこんな感じ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google画像をスクレイピングしてみよう！！</title>
+      <link>http://localhost:61372/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</link>
+      <pubDate>Tue, 05 Jul 2022 12:07:08 +0900</pubDate>
+      <guid>http://localhost:61372/posts/google%E7%94%BB%E5%83%8F%E3%82%92%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/</guid>
+      <description>&lt;p&gt;※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p&gt;&#xA;&lt;p&gt;すみっコぐらしをめっちゃ好きでLineスタンプはすべてコンプリートしています*.⋆( ˘̴͈́ ॢ꒵ॢ ˘̴͈̀ )⋆.*&#xA;それは置いといて。。。。 ＼(･&lt;em&gt;＼)ｿﾉﾊﾅｼﾊ (／&lt;/em&gt;･)／ｺｯﾁﾆｵｲﾄｲﾃ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Macの設定（超適当）</title>
+      <link>http://localhost:61372/posts/mac%E3%81%AE%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%A9%E5%BD%93/</link>
+      <pubDate>Mon, 04 Jul 2022 17:28:43 +0900</pubDate>
+      <guid>http://localhost:61372/posts/mac%E3%81%AE%E8%A8%AD%E5%AE%9A%E8%B6%85%E9%81%A9%E5%BD%93/</guid>
+      <description>&lt;p&gt;雑な書き方だけどMacのインストールのファイルなどを公開&lt;/p&gt;&#xA;&lt;h2 id=&#34;homebrewのインストール&#34;&gt;Homebrewのインストール&lt;/h2&gt;&#xA;&lt;p&gt;以下のファイルの内容()&lt;/p&gt;&#xA;&lt;p&gt;Brewfile&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;tap &amp;#34;homebrew/bundle&amp;#34;&#xA;tap &amp;#34;homebrew/cask&amp;#34;&#xA;tap &amp;#34;homebrew/cask-fonts&amp;#34;&#xA;tap &amp;#34;homebrew/core&amp;#34;&#xA;brew &amp;#34;cloc&amp;#34;&#xA;brew &amp;#34;colordiff&amp;#34;&#xA;brew &amp;#34;coreutils&amp;#34;&#xA;brew &amp;#34;curl&amp;#34;&#xA;brew &amp;#34;ffmpeg&amp;#34;&#xA;brew &amp;#34;gnu-sed&amp;#34;&#xA;brew &amp;#34;go&amp;#34;&#xA;brew &amp;#34;graphviz&amp;#34;&#xA;brew &amp;#34;htop&amp;#34;&#xA;brew &amp;#34;hugo&amp;#34;&#xA;brew &amp;#34;jq&amp;#34;&#xA;brew &amp;#34;mas&amp;#34;&#xA;brew &amp;#34;nkf&amp;#34;&#xA;brew &amp;#34;nodebrew&amp;#34;&#xA;brew &amp;#34;pandoc&amp;#34;&#xA;brew &amp;#34;plantuml&amp;#34;&#xA;brew &amp;#34;starship&amp;#34;&#xA;brew &amp;#34;tree&amp;#34;&#xA;brew &amp;#34;wget&amp;#34;&#xA;brew &amp;#34;yarn&amp;#34;&#xA;brew &amp;#34;yt-dlp&amp;#34;&#xA;brew &amp;#34;zsh-autosuggestions&amp;#34;&#xA;brew &amp;#34;zsh-completions&amp;#34;&#xA;brew &amp;#34;zsh-syntax-highlighting&amp;#34;&#xA;cask &amp;#34;adobe-acrobat-reader&amp;#34;&#xA;cask &amp;#34;alfred&amp;#34;&#xA;cask &amp;#34;apparency&amp;#34;&#xA;cask &amp;#34;astah-professional&amp;#34;&#xA;cask &amp;#34;atok&amp;#34;&#xA;cask &amp;#34;bbedit&amp;#34;&#xA;cask &amp;#34;bettertouchtool&amp;#34;&#xA;cask &amp;#34;beyond-compare&amp;#34;&#xA;cask &amp;#34;bootstrap-studio&amp;#34;&#xA;cask &amp;#34;brave-browser&amp;#34;&#xA;cask &amp;#34;brooklyn&amp;#34;&#xA;cask &amp;#34;browserosaurus&amp;#34;&#xA;cask &amp;#34;calibre&amp;#34;&#xA;cask &amp;#34;coderunner&amp;#34;&#xA;cask &amp;#34;dash&amp;#34;&#xA;cask &amp;#34;docker&amp;#34;&#xA;cask &amp;#34;drawio&amp;#34;&#xA;cask &amp;#34;firefox&amp;#34;&#xA;cask &amp;#34;font-ricty-diminished&amp;#34;&#xA;cask &amp;#34;google-chrome&amp;#34;&#xA;cask &amp;#34;gyazmail&amp;#34;&#xA;cask &amp;#34;istat-menus&amp;#34;&#xA;cask &amp;#34;iterm2&amp;#34;&#xA;cask &amp;#34;jedit-omega&amp;#34;&#xA;cask &amp;#34;jetbrains-toolbox&amp;#34;&#xA;cask &amp;#34;joplin&amp;#34;&#xA;cask &amp;#34;kaleidoscope&amp;#34;&#xA;cask &amp;#34;mamp&amp;#34;&#xA;cask &amp;#34;openinterminal&amp;#34;&#xA;cask &amp;#34;path-finder&amp;#34;&#xA;cask &amp;#34;paw&amp;#34;&#xA;cask &amp;#34;qlcolorcode&amp;#34;&#xA;cask &amp;#34;qlimagesize&amp;#34;&#xA;cask &amp;#34;qlmarkdown&amp;#34;&#xA;cask &amp;#34;qlprettypatch&amp;#34;&#xA;cask &amp;#34;qlstephen&amp;#34;&#xA;cask &amp;#34;qlvideo&amp;#34;&#xA;cask &amp;#34;quicklook-csv&amp;#34;&#xA;cask &amp;#34;quicklook-json&amp;#34;&#xA;cask &amp;#34;quicklookapk&amp;#34;&#xA;cask &amp;#34;quicklookase&amp;#34;&#xA;cask &amp;#34;smartgit&amp;#34;&#xA;cask &amp;#34;stoplight-studio&amp;#34;&#xA;cask &amp;#34;sublime-text&amp;#34;&#xA;cask &amp;#34;suspicious-package&amp;#34;&#xA;cask &amp;#34;syntax-highlight&amp;#34;&#xA;cask &amp;#34;transmit&amp;#34;&#xA;cask &amp;#34;typora&amp;#34;&#xA;cask &amp;#34;vivaldi&amp;#34;&#xA;cask &amp;#34;webpquicklook&amp;#34;&#xA;cask &amp;#34;zoc&amp;#34;&#xA;mas &amp;#34;Affinity Designer&amp;#34;, id: 824171161&#xA;mas &amp;#34;Display Menu&amp;#34;, id: 549083868&#xA;mas &amp;#34;Graphic&amp;#34;, id: 404705039&#xA;mas &amp;#34;GraphicConverter 11&amp;#34;, id: 1465576485&#xA;mas &amp;#34;Hidden Bar&amp;#34;, id: 1452453066&#xA;mas &amp;#34;Keka&amp;#34;, id: 470158793&#xA;mas &amp;#34;LINE&amp;#34;, id: 539883307&#xA;mas &amp;#34;Microsoft Excel&amp;#34;, id: 462058435&#xA;mas &amp;#34;Microsoft PowerPoint&amp;#34;, id: 462062816&#xA;mas &amp;#34;OmniPlan&amp;#34;, id: 1460319993&#xA;mas &amp;#34;Peek&amp;#34;, id: 1554235898&#xA;mas &amp;#34;Pixelmator Pro&amp;#34;, id: 1289583905&#xA;mas &amp;#34;Power JSON Editor&amp;#34;, id: 499768540&#xA;mas &amp;#34;QREncoderPro&amp;#34;, id: 479397466&#xA;mas &amp;#34;RunCat&amp;#34;, id: 1429033973&#xA;mas &amp;#34;SimpleMind Pro&amp;#34;, id: 434808346&#xA;mas &amp;#34;Xcode&amp;#34;, id: 497799835&#xA;mas &amp;#34;デスクトップ時計 +&amp;#34;, id: 892038932&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;zshrc&#34;&gt;zshrc&lt;/h2&gt;&#xA;&lt;p&gt;~/.zshrc&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HUGOの画像の置き方</title>
+      <link>http://localhost:61372/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</link>
+      <pubDate>Mon, 06 Jun 2022 16:51:49 +0900</pubDate>
+      <guid>http://localhost:61372/posts/hugo%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E7%BD%AE%E3%81%8D%E6%96%B9/</guid>
+      <description>&lt;p&gt;どうやら、ファイル名が変換されてフォルダ名として扱っちゃうみたいなので、&#xA;同じディレクトリ内なら&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;代替テキスト&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;../thank_you.png&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;↓&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../thank_you.png&#34; alt=&#34;代替テキスト&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;一つ下なら&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;代替テキスト&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;../img/sorry.png&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;↓&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../img/sorry.png&#34; alt=&#34;代替テキスト&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;でなります。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>初めまして</title>
+      <link>http://localhost:61372/posts/2022-06-05-02-43-45-my-first-post/</link>
+      <pubDate>Sun, 05 Jun 2022 02:43:45 +0900</pubDate>
+      <guid>http://localhost:61372/posts/2022-06-05-02-43-45-my-first-post/</guid>
+      <description>&lt;p&gt;たまたんです。久しぶりにブログ再開です。&lt;/p&gt;&#xA;&lt;p&gt;今回から、 &lt;strong&gt;Hugo&lt;/strong&gt; で作成を挑戦してみます。&lt;/p&gt;&#xA;&lt;p&gt;よろしくお願いいたします。m(__)m&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>初めまして</title>
+      <link>http://localhost:61372/posts/202y-mm-dd-hh-mm-ss-title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:61372/posts/202y-mm-dd-hh-mm-ss-title/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

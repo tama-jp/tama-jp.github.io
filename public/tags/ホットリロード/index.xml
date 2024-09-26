@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ホットリロード on Ko-Da-Wa-Ri</title>
+    <link>http://localhost:61372/tags/%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89/</link>
+    <description>Recent content in ホットリロード on Ko-Da-Wa-Ri</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 05 Jul 2022 13:00:04 +0900</lastBuildDate>
+    <atom:link href="http://localhost:61372/tags/%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golangでホットリロードする方法</title>
+      <link>http://localhost:61372/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 05 Jul 2022 13:00:04 +0900</pubDate>
+      <guid>http://localhost:61372/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;※ 過去に書いた記事を載せています。今動作するかは不明。。。。&lt;/p&gt;&#xA;&lt;p&gt;今回、Go言語で開発を行うことがありました。&lt;/p&gt;&#xA;&lt;p&gt;go言語は、PHPやRubyなどの言語とは異なり、ビルドをしないとソースは反映されません。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

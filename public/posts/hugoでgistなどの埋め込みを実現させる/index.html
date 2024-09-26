@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61372&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HUGOでgistなどの埋め込みを実現させる - Ko-Da-Wa-Ri</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		
+  <meta itemprop="name" content="HUGOでgistなどの埋め込みを実現させる">
+  <meta itemprop="description" content="大分久しぶりの更新
+ドキュメントのここに載ってますね。
+gist {{&lt; gist [[ユーザー名]] [[コード]] &gt;}} 例 https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9
+であれば、
+{{&lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &gt;}} 表示
+Tweet {{&lt; gist [[ユーザー名]] [[コード]] &gt;}} 例 https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;t=GHSkw_zCyhNgjm1zBytAiw
+であれば、">
+  <meta itemprop="datePublished" content="2023-02-15T09:47:32+09:00">
+  <meta itemprop="dateModified" content="2023-02-15T09:47:32+09:00">
+  <meta itemprop="wordCount" content="176">
+  <meta itemprop="keywords" content="ETC">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Ko-Da-Wa-Ri" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cheer.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Ko-Da-Wa-Ri</div>
+					<div class="logo__tagline">たまたんの適当なブログ</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">HUGOでgistなどの埋め込みを実現させる</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">tama-tan</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2023-02-15T09:47:32&#43;09:00">2023-02-15</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/etc/" rel="category">ETC</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#gist">gist</a></li>
+        <li><a href="#tweet">Tweet</a></li>
+        <li><a href="#youtube動画">YouTube動画</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>大分久しぶりの更新</p>
+<p>ドキュメントの<a href="https://gohugo.io/content-management/shortcodes/">ここ</a>に載ってますね。</p>
+<h3 id="gist">gist</h3>
+<pre tabindex="0"><code>{{&lt; gist [[ユーザー名]] [[コード]] &gt;}}
+</code></pre><h4 id="例">例</h4>
+<p><a href="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9">https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9</a></p>
+<p>であれば、</p>
+<pre tabindex="0"><code>{{&lt; gist tama-jp cfb018852412af5882428b19003c5ca9 &gt;}}
+</code></pre><p>表示</p>
+<script src="https://gist.github.com/tama-jp/cfb018852412af5882428b19003c5ca9.js"></script>
+
+<h3 id="tweet">Tweet</h3>
+<pre tabindex="0"><code>{{&lt; gist [[ユーザー名]] [[コード]] &gt;}}
+</code></pre><h4 id="例-1">例</h4>
+<p><a href="https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;t=GHSkw_zCyhNgjm1zBytAiw">https://twitter.com/pain_ame/status/1625641271137292288?s=20&amp;t=GHSkw_zCyhNgjm1zBytAiw</a></p>
+<p>であれば、</p>
+<pre tabindex="0"><code>{{&lt; tweet user=&#34;pain_ame&#34; id=&#34;1453110110599868418&#34; &gt;}}
+</code></pre><p>表示</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">みなさーん、おパよーございまーっす( ´▽｀)ﾉｼ</p>&mdash; パインアメの【パイン株式会社】（公式）🍍 (@pain_ame) <a href="https://twitter.com/pain_ame/status/1625641271137292288?ref_src=twsrc%5Etfw">February 14, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<h3 id="youtube動画">YouTube動画</h3>
+<pre tabindex="0"><code>{{&lt; youtube [[コード]] &gt;}}
+</code></pre><h4 id="例-2">例</h4>
+<p><a href="https://www.youtube.com/watch?v=mXwUKQh8SbU">https://www.youtube.com/watch?v=mXwUKQh8SbU</a></p>
+<p>であれば、</p>
+<pre tabindex="0"><code>{{&lt; youtube id=&#34;mXwUKQh8SbU&#34; autoplay=&#34;true&#34; &gt;}}
+</code></pre><p>表示</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mXwUKQh8SbU?autoplay=1&controls=1&end=0&loop=0&mute=1&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/etc/" rel="tag">ETC</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="tama-tan avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About tama-tan</span>
+	</div>
+	<div class="authorbox__description">
+		いろいろプログラミングをやっています。今は、go言語にはまってます。
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">CakePHPの規約ワードメーカー</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/mac%E3%81%A7docker%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95lima/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">MacでDockerデスクトップをインストールしないで使う方法。(lima)</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Ko-Da-Wa-Ri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

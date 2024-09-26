@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61372&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iOSとAndroidの共通モジュールをgomobileで作ってみる - Ko-Da-Wa-Ri</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		
+  <meta itemprop="name" content="iOSとAndroidの共通モジュールをgomobileで作ってみる">
+  <meta itemprop="description" content="まだうごかない
+※ 過去に書いた記事を載せています。今動作するかは不明。。。。
+今回は、「 iOSとAndroidの共通モジュールをgomobileで作ってみる」をかーんたんに紹介します(^O^)">
+  <meta itemprop="datePublished" content="2022-07-05T12:23:52+09:00">
+  <meta itemprop="dateModified" content="2022-07-05T12:23:52+09:00">
+  <meta itemprop="wordCount" content="2265">
+  <meta itemprop="keywords" content="Golang,Gomobile">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Ko-Da-Wa-Ri" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cheer.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Ko-Da-Wa-Ri</div>
+					<div class="logo__tagline">たまたんの適当なブログ</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">iOSとAndroidの共通モジュールをgomobileで作ってみる</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">tama-tan</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-07-05T12:23:52&#43;09:00">2022-07-05</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%8A%80%E8%A1%93/" rel="category">技術</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#開発プラットフォーム">開発プラットフォーム</a></li>
+    <li><a href="#ターゲットプラットフォーム">ターゲットプラットフォーム</a>
+      <ul>
+        <li><a href="#heading"></a></li>
+      </ul>
+    </li>
+    <li><a href="#コンパイル言語--パッケージ">コンパイル言語 &amp; パッケージ</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#ios">iOS</a></li>
+    <li><a href="#android">Android</a>
+      <ul>
+        <li><a href="#go言語">go言語</a></li>
+        <li><a href="#共通プログラム作成">共通プログラム作成</a></li>
+        <li><a href="#コンパイル">コンパイル</a></li>
+        <li><a href="#アプリに実装し起動">アプリに実装し、起動。</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>まだうごかない</p>
+<p>※ 過去に書いた記事を載せています。今動作するかは不明。。。。</p>
+<p>今回は、「 iOSとAndroidの共通モジュールをgomobileで作ってみる」をかーんたんに紹介します(^O^)</p>
+<h1 id="はじめに">はじめに</h1>
+<p>Android と iOSを開発をしていると共通モジュールを作るのがめんどくさいときがありませんか？
+Unity、Xamarin、Flutter、gomobile等いろいろあります。
+でも、全てをひとつのモジュールで作ろうと思うと大変です。</p>
+<p>例えば、課金関係などは、Android・iOSでは作りが全然違うなど…
+だったら、主要な部分だけを共通化したライブラリを作ってするという方法もあります。
+今回はそのひとつとして、go言語を使ったiOS・Androidの共通モジュールを作っていこうと思います。</p>
+<h1 id="開発環境">開発環境</h1>
+<h2 id="開発プラットフォーム">開発プラットフォーム</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">名称</th>
+          <th style="text-align: left">内容</th>
+          <th style="text-align: left">備考</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">機種</td>
+          <td style="text-align: left">MacBookPro</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">OS</td>
+          <td style="text-align: left">MacOS 11.0.1</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="ターゲットプラットフォーム">ターゲットプラットフォーム</h2>
+<h3 id="heading"></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">名称</th>
+          <th style="text-align: left">内容</th>
+          <th style="text-align: left">備考</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Android</td>
+          <td style="text-align: left">ndk/24.0.8215888 <!-- raw HTML omitted --> sdk/30.0.2</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">iOS</td>
+          <td style="text-align: left">14.0(Xcode 12.2)</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="コンパイル言語--パッケージ">コンパイル言語 &amp; パッケージ</h2>
+<p>go言語については、書くと時間がかかると思いますので省略します。
+詳しいことは、<a href="https://xn--go-hh0g6u.com/doc/">公式ドキュメント</a>が一番理解しやすいので参考にしてください。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">名称</th>
+          <th style="text-align: left">内容</th>
+          <th style="text-align: left">備考</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">go</td>
+          <td style="text-align: left">1.18.3</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">名称</th>
+          <th style="text-align: left">ソース</th>
+          <th style="text-align: left">備考</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">gobind</td>
+          <td style="text-align: left">golang.org/x/mobile/cmd/gobind</td>
+          <td style="text-align: left">※1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">gomobile</td>
+          <td style="text-align: left">golang.org/x/mobile/cmd/gomobile</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<p>※1 現在,gobobileをインストールしても自動的に入らないため別でいれる</p>
+<p>APIや文字処理だけならgo言語はすごく便利です。</p>
+<h1 id="gomobileはどんなことをするのか">gomobileは、どんなことをするのか</h1>
+<p>gomobileは、go言語でAndroidおよびiOSのモジュールまたは、アプリを作成するパッケージツールです。</p>
+<p>gomobileで作成できるのは2種類で「Application全体を作成」または、「モジュールを作成」です。
+「Application全体を作成では、OpenGL ES2を描画に使ったアプリケーションをまるっと作ります。C言語もバインディングできますのでいろいろなことが出来るようです。</p>
+<p>モジュール作成は、Androidでは、AAR（Android ARchive）ファイルを生成し、iOSではframeworkを作成します。</p>
+<p>今回は、モジュール作成をします。</p>
+<h1 id="前準備">前準備</h1>
+<h2 id="ios">iOS</h2>
+<p>Xcode を基本的にインストールすれば何もいりません。</p>
+<h2 id="android">Android</h2>
+<p>ndkをインストールする必要があります。
+ndkはAndroid Studioをインストールすると簡単に導入できるのでまずは下記からをインストールします。</p>
+<p><a href="https://developer.android.com/studio/?hl=ja">Android Studio (https://developer.android.com/studio/?hl=ja)</a></p>
+<p>NDKのインストールは、Android Studioを起動し、
+Preferences &gt; Appearance&amp;Behavior &gt; System Settings &gt; Android SDK の SDK Toolsタブを選択します。そして、右下の 「Show Package Details」を選択し、「NDK」内の「21.3.6528147」を選択し、インストールします。
+（NDKは、現在、21.3.6528147以前しか対応していないみたいなのでこういうようにします）</p>
+<p>(<img src="../img/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2020-12-12-22.34.32-resized.png" alt="スクリーンショット 2020-12-12 22.34.32.png"> image url)</p>
+<p>インストール後、パスを設定します。</p>
+<pre tabindex="0"><code>export ANDROID_NDK_ROOT=$HOME/Library/Android/sdk/ndk/24.0.8215888
+export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/ndk/24.0.8215888
+</code></pre><h3 id="go言語">go言語</h3>
+<h4 id="go本体インストール">go本体インストール</h4>
+<p>現在使えるgoのバージョンは、「1.15.6」です。
+goenvやHomebrewなどを使用してインストールしてください。
+（今回は、shellを用意しております。後ほど紹介します。）</p>
+<h3 id="共通プログラム作成">共通プログラム作成</h3>
+<p>今回は、goで作った関数に文字を入力すれば、
+前に文章をつけてくれるという簡単なプログラムを作成します。</p>
+<p>go言語では、クラスという概念がないのですが、オブジェクト指向として、
+構造体をインスタンスとして動作させることが出来ます。</p>
+<p>ですので、構造体の関数を作ります。</p>
+<p>main関数は作成しません。
+また、パッケージ名は、Androidで使用するパッケージクラスを用います。</p>
+<h4 id="パッケージの設定">パッケージの設定</h4>
+<p>go 12より正式採用されたGo Modulesを使用して、パッケージを設定します。</p>
+<pre tabindex="0"><code>mkdir sample1
+cd sample1
+</code></pre><p>必要なパッケージをインストール</p>
+<pre tabindex="0"><code>go install golang.org/x/mobile/cmd/gomobile@latest
+go install golang.org/x/mobile/cmd/gobind@latest
+</code></pre><pre tabindex="0"><code>go mod init example.com/sample1 # &lt;- これがAndroidのパッケージ名となります。
+gomobile init
+</code></pre><p>基本これで、gomobileのインストールは完了。パスが通っていれば使用出来ます。
+（※ ドキュメントには、gombileのみでいいように書いていますが、バージョン1.15だと
+うまく動作がしない場合があるので bindもインストールするようにしております。）</p>
+<h4 id="ソースの作成">ソースの作成</h4>
+<p>関数本体を作成します。</p>
+<p>sample1.go</p>
+<pre tabindex="0"><code>package sample1
+
+import (
+	&#34;errors&#34;
+)
+
+// Golib is an interface for go library
+type Sample1 interface {
+	Foo(msg string) (string, error)
+}
+
+type sample1 struct {}
+
+// NewClient returns an instance of GomoPoster
+func NewClient() Sample1 {
+	return &amp;sample1{}
+}
+
+func (g *sample1) Foo(msg string) (string, error) {
+	if msg == &#34;error&#34; {
+		return &#34;&#34;, errors.New(&#34;this is golang error&#34;)
+	}
+	return &#34;Hi! this is golang! your message is &#34; + msg, nil
+}
+</code></pre><p>フォルダ内は以下のようになります。</p>
+<pre tabindex="0"><code>./sample1
+├── go.mod
+├── go.sum
+└── sample1.go
+</code></pre><h3 id="コンパイル">コンパイル</h3>
+<p>コンパイルは、以下のコマンドをたたくと簡単に作ってくれます。</p>
+<pre tabindex="0"><code>gomobile build [-target android|ios] [-o output] [-bundleid bundleID] [build flags] [package]
+</code></pre><ul>
+<li>Androidの生成</li>
+</ul>
+<pre tabindex="0"><code>gomobile bind -v -o sample1.aar -target=android example.com/sample1
+</code></pre><p>「sample1.aar」が生成されます。</p>
+<ul>
+<li>iOSの生成</li>
+</ul>
+<pre tabindex="0"><code>gomobile bind  -v -target=ios example.com/sample1
+</code></pre><p>「Sample1.framework」が生成されます。</p>
+<h3 id="アプリに実装し起動">アプリに実装し、起動。</h3>
+<p>あとは、Androidでは、「AAR」ライブラリの取り込み、iOSでは、「framework」の取り込みすれば簡単に取り込めます。</p>
+<p>各ターゲットのサンプルの抜粋を書いておきます。</p>
+<p>Android(サンプル抜粋)</p>
+<pre tabindex="0"><code>・・・・
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val buttonGo: Button = findViewById(R.id.go)
+
+        buttonGo.setOnClickListener {view -&gt;
+            val edittextMessage: EditText = findViewById(R.id.message)
+            val textviewAnswer: TextView = findViewById(R.id.answer)
+            val sample1: Sample1_ = Sample1.newClient()
+
+            var msg:String
+            try {
+                msg = sample1.foo(edittextMessage.text.toString())
+            }catch(ex: Exception ) {
+                msg = ex.message.toString()
+            }
+            textviewAnswer.setText(msg)
+            edittextMessage.setText(&#34;&#34;)
+
+        }
+    }
+・・・・
+</code></pre><p>Androidの動作はこんな感じ</p>
+<p><img src="../img/androidsample-1.gif" alt="AndroidSample.gif"></p>
+<p>iOS(サンプル抜粋)</p>
+<pre tabindex="0"><code>・・・・
+    @IBAction func goButton(_ sender: Any) {
+        let golib:Sample1Sample1 = Sample1NewClient() as! Sample1Sample1
+        var msg:String = &#34;&#34;
+        do {
+            msg = golib.foo(edittextMessage.text, error: nil)
+        } catch  {
+            msg = &#34;エラー&#34;
+        }
+        textviewAnswer.text = msg
+        edittextMessage.text = &#34;&#34;
+    }
+・・・・
+</code></pre><p>iOSの動作はこんな感じ
+<img src="../img/iossample.gif" alt="IOSSample.gif"></p>
+<p>今回、テストで作ったソースは、<a href="">こちら</a>にあります。
+Mac用ですが、コンパイラのインストールからコンパイルまでやってくれるようにしております。
+参考になればと。。。。。。</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/golang/" rel="tag">golang</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/gomobile/" rel="tag">gomobile</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="tama-tan avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About tama-tan</span>
+	</div>
+	<div class="authorbox__description">
+		いろいろプログラミングをやっています。今は、go言語にはまってます。
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/posts/api%E3%81%AE%E6%AD%BB%E6%B4%BB%E7%9B%A3%E8%A6%96%E3%82%92rocketchat%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">APIの死活監視をRocketChatに送信する</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/posts/golang%E3%81%A7%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Golangでホットリロードする方法</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Ko-Da-Wa-Ri.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Ko-Da-Wa-Ri</title>
+    <link>http://localhost:61372/tags/</link>
+    <description>Recent content in Tags on Ko-Da-Wa-Ri</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 26 Sep 2024 19:38:11 +0900</lastBuildDate>
+    <atom:link href="http://localhost:61372/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ITerm2</title>
+      <link>http://localhost:61372/tags/iterm2/</link>
+      <pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate>
+      <guid>http://localhost:61372/tags/iterm2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mac</title>
+      <link>http://localhost:61372/tags/mac/</link>
+      <pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate>
+      <guid>http://localhost:61372/tags/mac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Icon</title>
+      <link>http://localhost:61372/tags/icon/</link>
+      <pubDate>Tue, 21 May 2024 00:08:05 +0900</pubDate>
+      <guid>http://localhost:61372/tags/icon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IPhone</title>
+      <link>http://localhost:61372/tags/iphone/</link>
+      <pubDate>Tue, 21 May 2024 00:08:05 +0900</pubDate>
+      <guid>http://localhost:61372/tags/iphone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Objective-C</title>
+      <link>http://localhost:61372/tags/objective-c/</link>
+      <pubDate>Thu, 16 May 2024 08:15:34 +0900</pubDate>
+      <guid>http://localhost:61372/tags/objective-c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xcode</title>
+      <link>http://localhost:61372/tags/xcode/</link>
+      <pubDate>Thu, 16 May 2024 08:15:34 +0900</pubDate>
+      <guid>http://localhost:61372/tags/xcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker Compose</title>
+      <link>http://localhost:61372/tags/docker-compose/</link>
+      <pubDate>Thu, 25 Apr 2024 23:37:23 +0900</pubDate>
+      <guid>http://localhost:61372/tags/docker-compose/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ETC</title>
+      <link>http://localhost:61372/tags/etc/</link>
+      <pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate>
+      <guid>http://localhost:61372/tags/etc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS CLI</title>
+      <link>http://localhost:61372/tags/aws-cli/</link>
+      <pubDate>Fri, 19 Apr 2024 22:05:17 +0900</pubDate>
+      <guid>http://localhost:61372/tags/aws-cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:61372/tags/docker/</link>
+      <pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate>
+      <guid>http://localhost:61372/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lima</title>
+      <link>http://localhost:61372/tags/lima/</link>
+      <pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate>
+      <guid>http://localhost:61372/tags/lima/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CakePHP</title>
+      <link>http://localhost:61372/tags/cakephp/</link>
+      <pubDate>Thu, 01 Dec 2022 20:39:35 +0900</pubDate>
+      <guid>http://localhost:61372/tags/cakephp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Php</title>
+      <link>http://localhost:61372/tags/php/</link>
+      <pubDate>Thu, 01 Dec 2022 20:39:35 +0900</pubDate>
+      <guid>http://localhost:61372/tags/php/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DaisyUI</title>
+      <link>http://localhost:61372/tags/daisyui/</link>
+      <pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate>
+      <guid>http://localhost:61372/tags/daisyui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Svelte</title>
+      <link>http://localhost:61372/tags/svelte/</link>
+      <pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate>
+      <guid>http://localhost:61372/tags/svelte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tailwind CSS</title>
+      <link>http://localhost:61372/tags/tailwind-css/</link>
+      <pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate>
+      <guid>http://localhost:61372/tags/tailwind-css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TypeScript</title>
+      <link>http://localhost:61372/tags/typescript/</link>
+      <pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate>
+      <guid>http://localhost:61372/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vite</title>
+      <link>http://localhost:61372/tags/vite/</link>
+      <pubDate>Fri, 29 Jul 2022 16:43:35 +0900</pubDate>
+      <guid>http://localhost:61372/tags/vite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zsh</title>
+      <link>http://localhost:61372/tags/zsh/</link>
+      <pubDate>Wed, 27 Jul 2022 10:47:45 +0900</pubDate>
+      <guid>http://localhost:61372/tags/zsh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PostgreSQL</title>
+      <link>http://localhost:61372/tags/postgresql/</link>
+      <pubDate>Fri, 22 Jul 2022 19:01:53 +0900</pubDate>
+      <guid>http://localhost:61372/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node.js</title>
+      <link>http://localhost:61372/tags/node.js/</link>
+      <pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate>
+      <guid>http://localhost:61372/tags/node.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nodebrew</title>
+      <link>http://localhost:61372/tags/nodebrew/</link>
+      <pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate>
+      <guid>http://localhost:61372/tags/nodebrew/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golang</title>
+      <link>http://localhost:61372/tags/golang/</link>
+      <pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate>
+      <guid>http://localhost:61372/tags/golang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wails V2</title>
+      <link>http://localhost:61372/tags/wails-v2/</link>
+      <pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate>
+      <guid>http://localhost:61372/tags/wails-v2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>アプリ</title>
+      <link>http://localhost:61372/tags/%E3%82%A2%E3%83%97%E3%83%AA/</link>
+      <pubDate>Thu, 21 Jul 2022 22:43:00 +0900</pubDate>
+      <guid>http://localhost:61372/tags/%E3%82%A2%E3%83%97%E3%83%AA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>http://localhost:61372/tags/android/</link>
+      <pubDate>Thu, 21 Jul 2022 22:04:39 +0900</pubDate>
+      <guid>http://localhost:61372/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Http</title>
+      <link>http://localhost:61372/tags/http/</link>
+      <pubDate>Thu, 21 Jul 2022 22:04:39 +0900</pubDate>
+      <guid>http://localhost:61372/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PC88</title>
+      <link>http://localhost:61372/tags/pc88/</link>
+      <pubDate>Tue, 12 Jul 2022 17:12:30 +0900</pubDate>
+      <guid>http://localhost:61372/tags/pc88/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quasi88</title>
+      <link>http://localhost:61372/tags/quasi88/</link>
+      <pubDate>Tue, 12 Jul 2022 17:12:30 +0900</pubDate>
+      <guid>http://localhost:61372/tags/quasi88/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openssl</title>
+      <link>http://localhost:61372/tags/openssl/</link>
+      <pubDate>Tue, 12 Jul 2022 14:07:34 +0900</pubDate>
+      <guid>http://localhost:61372/tags/openssl/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
