@@ -1,7 +1,7 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = {{ .Date }}
-slug: ""
+date = '{{ .Date }}'
+slug = ""
 # categories = ["技術"]
 # tags = ["golang","Objective-C","Xcode", "hugo","gorm","HomeBrew"]
 categories = ["技術"]
