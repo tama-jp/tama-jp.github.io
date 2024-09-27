@@ -78,5 +78,3 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          branch: gh-pages
