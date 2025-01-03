@@ -1,141 +1,523 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61372&amp;path=livereload" data-no-instant defer></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>iOS(obj-c)のセグエの戻り(push) - Ko-Da-Wa-Ri</title>
-	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="">
-		
-  <meta itemprop="name" content="iOS(obj-c)のセグエの戻り(push)">
-  <meta itemprop="description" content="１つ前の画面に戻る [self.navigationController popViewControllerAnimated:YES]; ルート画面まで一気に戻る [self.navigationController popToRootViewControllerAnimated:YES]; 任意の画面（UIViewController）まで戻る [self.navigationController popToViewController:UIViewController animated:YES]; ">
-  <meta itemprop="datePublished" content="2022-07-21T22:14:45+09:00">
-  <meta itemprop="dateModified" content="2022-07-21T22:14:45+09:00">
-  <meta itemprop="wordCount" content="55">
-  <meta itemprop="keywords" content="Objective-C">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+<html
+  lang="ja"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  
 
-	<link rel="stylesheet" href="/css/style.css">
-	
 
-	<link rel="shortcut icon" href="/favicon.ico">
-		
+
+  
+  
+
+
+<head lang="ja"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=62955&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="１つ前の画面に戻る
+
+[self.navigationController popViewControllerAnimated:YES];
+ルート画面まで一気に戻る
+[self.navigationController popToRootViewControllerAnimated:YES];
+任意の画面（UIViewController）まで戻る
+[self.navigationController popToViewController:UIViewController animated:YES];
+" />
+  <meta name="author" content="tama-tan">
+  <meta name="keywords" content="Objective-C">
+  <title>iOS(obj-c)のセグエの戻り(push) | Ko-Da-Wa-Ri</title>
+  <link rel="canonical" href="http://localhost:62955/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/" />
+  
+
+  
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="１つ前の画面に戻る
+
+[self.navigationController popViewControllerAnimated:YES];
+ルート画面まで一気に戻る
+[self.navigationController popToRootViewControllerAnimated:YES];
+任意の画面（UIViewController）まで戻る
+[self.navigationController popToViewController:UIViewController animated:YES];
+" />
+  <meta property="og:title" content="iOS(obj-c)のセグエの戻り(push)" />
+  <meta property="og:site_name" content="Ko-Da-Wa-Ri" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:url" content="http://localhost:62955/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/" />
+  <meta property="og:locale" content="ja" />
+
+  
+    <meta property="article:published_time" content="2022-07-21" />
+    <meta property="article:modified_time" content="2022-07-21" />
+     
+      <meta property="article:tag" content="Objective-C" />
+     
+  
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="iOS(obj-c)のセグエの戻り(push) | Ko-Da-Wa-Ri" />
+  <meta name="twitter:description" content="１つ前の画面に戻る
+
+[self.navigationController popViewControllerAnimated:YES];
+ルート画面まで一気に戻る
+[self.navigationController popToRootViewControllerAnimated:YES];
+任意の画面（UIViewController）まで戻る
+[self.navigationController popToViewController:UIViewController animated:YES];
+" />
+  <meta name="twitter:domain" content="http://localhost:62955/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/" />
+
+  
+  
+    <link rel="icon" href="http://localhost:62955/favicon.ico">
+  
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
+
+  
+  
+  
+
+  
+
+  
+    <link rel="stylesheet" href="http://localhost:62955/style.css" rel="preload stylesheet" as="style"/>
+  
+
+  
+  
 </head>
-<body class="body">
-	<div class="container container--outer">
-		<header class="header">
-	<div class="container header__container">
-		
-	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Ko-Da-Wa-Ri" rel="home">
-			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/img/cheer.png">
-				</div><div class="logo__item logo__text">
-					<div class="logo__title">Ko-Da-Wa-Ri</div>
-					<div class="logo__tagline">たまたんの適当なブログ</div>
-				</div>
-		</a>
-	</div>
-		<div class="divider"></div>
-	</div>
+
+  <body>
+    <header id="header">
+  <div class="row">
+    <div class="container has-padding nav">
+      <button id="navbar-toggler" class="navbar-button" aria-hidden="true">
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z'/></svg>
+
+
+
+
+
+</button>
+      <div class="navbar-brand">
+        <a class="logo navbar-button" href="http://localhost:62955/" title="Ko-Da-Wa-Ri">
+          <span>Ko-Da-Wa-Ri</span>
+        </a>
+      </div>
+      <nav class="navbar" role="navigation">
+        <ul>
+          
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="/posts/" title="blog">
+                <span>blog</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="/tags/" title="tags">
+                <span>tags</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="/archives/" title="archives">
+                <span>archives</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item">
+              <a class="nav-link navbar-button" href="/about/" title="about">
+                <span>about</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+      <div class="theme-selector">
+        <button class="button is-text" id="theme-selector-button" title="toggle theme">
+          <span class="label icon">
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M256 32C132.29 32 32 132.29 32 256s100.29 224 224 224 224-100.29 224-224S379.71 32 256 32zM128.72 383.28A180 180 0 01256 76v360a178.82 178.82 0 01-127.28-52.72z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+</span>
+        </button>
+      </div>
+    </div>
+    
+      <div class="container has-padding">
+        <div class="breadcrumb">
+          
+<ol  class="breadcrumb-nav">
+  
+
+  
+
+  
+
+<li >
+  <a href="http://localhost:62955/">Home</a>
+</li>
+
+
+<li >
+  <a href="http://localhost:62955/posts/">Posts</a>
+</li>
+
+
+<li class="active">
+  <a href="http://localhost:62955/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/">iOS(obj-c)のセグエの戻り(push)</a>
+</li>
+
+</ol>
+
+
+
+
+        </div>
+      </div>
+    
+  </div>
 </header>
-		<div class="wrapper flex">
-			<div class="primary">
-			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">iOS(obj-c)のセグエの戻り(push)</h1>
-			<div class="post__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">tama-tan</span>
-</div>
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-07-21T22:14:45&#43;09:00">2022-07-21</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%8A%80%E8%A1%93/" rel="category">技術</a>
-	</span>
-</div></div>
-		</header>
-		
-<div class="post__toc toc">
-	<div class="toc__title">Page content</div>
-	<div class="toc__menu">
-		<nav id="TableOfContents">
-  <ul>
-    <li><a href="#１つ前の画面に戻る">１つ前の画面に戻る</a></li>
-    <li><a href="#ルート画面まで一気に戻る">ルート画面まで一気に戻る</a></li>
-    <li><a href="#任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る</a></li>
-  </ul>
-</nav>
-	</div>
-</div><div class="content post__content clearfix">
-			<h2 id="１つ前の画面に戻る">１つ前の画面に戻る</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[self.navigationController popViewControllerAnimated:YES];
-</span></span></code></pre></div><h2 id="ルート画面まで一気に戻る">ルート画面まで一気に戻る</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[self.navigationController popToRootViewControllerAnimated:YES];
-</span></span></code></pre></div><h2 id="任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[self.navigationController popToViewController:UIViewController animated:YES];
+
+    
+
+<main id="main">
+  <div class="container has-padding">
+    <div class="article-card post single">
+      <h1 class="title">iOS(obj-c)のセグエの戻り(push)</h1>
+      <div class="post-info">
+        <span>
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M32 456a24 24 0 0024 24h400a24 24 0 0024-24V176H32zm320-244a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zM456 64h-55.92V32h-48v32H159.92V32h-48v32H56a23.8 23.8 0 00-24 23.77V144h448V87.77A23.8 23.8 0 00456 64z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<time datetime=2022-07-21T22:14:45&#43;0900 class="date">July 21, 2022</time></span>
+        <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M256 48C141.13 48 48 141.13 48 256c0 114.69 93.32 208 208 208 114.86 0 208-93.14 208-208 0-114.69-93.31-208-208-208zm108 240H244a4 4 0 01-4-4V116a4 4 0 014-4h24a4 4 0 014 4v140h92a4 4 0 014 4v24a4 4 0 01-4 4z'/></svg>
+a min to read</span>
+        
+          <span>
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M256 256a112 112 0 10-112-112 112 112 0 00112 112zm0 32c-69.42 0-208 42.88-208 128v64h416v-64c0-85.12-138.58-128-208-128z'/></svg>
+
+
+
+
+tama-tan</span>
+        
+        
+        
+          <span>posts </span>
+        
+      </div>
+      <article class="post-entry content">
+        
+          <h2 id="１つ前の画面に戻る">１つ前の画面に戻る<a hidden class="heading-anchor" aria-hidden="true" href="#１つ前の画面に戻る">#</a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">navigationController</span> <span class="nl">popViewControllerAnimated</span><span class="p">:</span><span class="n">YES</span><span class="p">];</span>
+</span></span></code></pre></div><h2 id="ルート画面まで一気に戻る">ルート画面まで一気に戻る<a hidden class="heading-anchor" aria-hidden="true" href="#ルート画面まで一気に戻る">#</a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">navigationController</span> <span class="nl">popToRootViewControllerAnimated</span><span class="p">:</span><span class="n">YES</span><span class="p">];</span>
+</span></span></code></pre></div><h2 id="任意の画面uiviewcontrollerまで戻る">任意の画面（UIViewController）まで戻る<a hidden class="heading-anchor" aria-hidden="true" href="#任意の画面uiviewcontrollerまで戻る">#</a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">navigationController</span> <span class="nl">popToViewController</span><span class="p">:</span><span class="n">UIViewController</span> <span class="nl">animated</span><span class="p">:</span><span class="n">YES</span><span class="p">];</span>
 </span></span></code></pre></div>
-		</div>
-		<footer class="post__footer">
-			
-<div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
-	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/objective-c/" rel="tag">Objective-C</a>
-		</li>
-	</ul>
+
+
+        
+      </article>
+    </div>
+
+    
+      <div class="meta article-card">
+    <div class="row">
+      <span class="label">
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M32 456a24 24 0 0024 24h400a24 24 0 0024-24V176H32zm320-244a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zM456 64h-55.92V32h-48v32H159.92V32h-48v32H56a23.8 23.8 0 00-24 23.77V144h448V87.77A23.8 23.8 0 00456 64z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Published At</span><time>2022-07-21 22:14 JST</time>
+      
+    </div>
+
+    
+      <div class="row">
+        <span class="label">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M288 16L0 304l176 176 288-288V16zm80 128a32 32 0 1132-32 32 32 0 01-32 32z'/><path d='M480 64v144L216.9 471.1 242 496l270-272V64h-32z'/></svg>
+
+
+
+Tagged with</span>
+        <ul class="tags">
+        
+          <li class="hashed-tag"><a href="http://localhost:62955/tags/objective-c">Objective-C</a></li>
+        
+        </ul>
+      </div>
+    
+
+    
+      <div class="row social-share">
+        <span class="label">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M272 176v161h-32V176H92a12 12 0 00-12 12v280a12 12 0 0012 12h328a12 12 0 0012-12V188a12 12 0 00-12-12zM272 92.63l64 64L358.63 134 256 31.37 153.37 134 176 156.63l64-64V176h32V92.63z'/></svg>
+
+Share with</span>
+        
+        
+          
+        
+        <a
+          target="_blank"
+          title="share to reddit"
+          rel="noopener noreferrer"
+          aria-label="share iOS(obj-c)のセグエの戻り(push) on reddit"
+          href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a62955%2fposts%2fiosobj-c%25E3%2581%25AE%25E3%2582%25BB%25E3%2582%25B0%25E3%2582%25A8%25E3%2581%25AE%25E6%2588%25BB%25E3%2582%258Apush%2f&title=iOS%28obj-c%29%e3%81%ae%e3%82%bb%e3%82%b0%e3%82%a8%e3%81%ae%e6%88%bb%e3%82%8a%28push%29">
+          
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512' fill="currentColor" stroke="currentColor" stroke-width="10"><path d='M324 256a36 36 0 1036 36 36 36 0 00-36-36z'/><circle cx='188' cy='292' r='36' transform='rotate(-22.5 187.997 291.992)'/><path d='M496 253.77c0-31.19-25.14-56.56-56-56.56a55.72 55.72 0 00-35.61 12.86c-35-23.77-80.78-38.32-129.65-41.27l22-79 66.41 13.2c1.9 26.48 24 47.49 50.65 47.49 28 0 50.78-23 50.78-51.21S441 48 413 48c-19.53 0-36.31 11.19-44.85 28.77l-90-17.89-31.1 109.52-4.63.13c-50.63 2.21-98.34 16.93-134.77 41.53A55.38 55.38 0 0072 197.21c-30.89 0-56 25.37-56 56.56a56.43 56.43 0 0028.11 49.06 98.65 98.65 0 00-.89 13.34c.11 39.74 22.49 77 63 105C146.36 448.77 199.51 464 256 464s109.76-15.23 149.83-42.89c40.53-28 62.85-65.27 62.85-105.06a109.32 109.32 0 00-.84-13.3A56.32 56.32 0 00496 253.77zM414 75a24 24 0 11-24 24 24 24 0 0124-24zM42.72 253.77a29.6 29.6 0 0129.42-29.71 29 29 0 0113.62 3.43c-15.5 14.41-26.93 30.41-34.07 47.68a30.23 30.23 0 01-8.97-21.4zM390.82 399c-35.74 24.59-83.6 38.14-134.77 38.14S157 423.61 121.29 399c-33-22.79-51.24-52.26-51.24-83A78.5 78.5 0 0175 288.72c5.68-15.74 16.16-30.48 31.15-43.79a155.17 155.17 0 0114.76-11.53l.3-.21.24-.17c35.72-24.52 83.52-38 134.61-38s98.9 13.51 134.62 38l.23.17.34.25A156.57 156.57 0 01406 244.92c15 13.32 25.48 28.05 31.16 43.81a85.44 85.44 0 014.31 17.67 77.29 77.29 0 01.6 9.65c-.01 30.72-18.21 60.19-51.25 82.95zm69.6-123.92c-7.13-17.28-18.56-33.29-34.07-47.72A29.09 29.09 0 01440 224a29.59 29.59 0 0129.41 29.71 30.07 30.07 0 01-8.99 21.39z'/><path d='M323.23 362.22c-.25.25-25.56 26.07-67.15 26.27-42-.2-66.28-25.23-67.31-26.27a4.14 4.14 0 00-5.83 0l-13.7 13.47a4.15 4.15 0 000 5.89c3.4 3.4 34.7 34.23 86.78 34.45 51.94-.22 83.38-31.05 86.78-34.45a4.16 4.16 0 000-5.9l-13.71-13.47a4.13 4.13 0 00-5.81 0z'/></svg>
+
+
+
+
+
+
+
+
+        </a>
+        <a
+          target="_blank"
+          title="share to twitter"
+          rel="noopener noreferrer"
+          aria-label="share iOS(obj-c)のセグエの戻り(push) on twitter"
+          href="https://twitter.com/intent/tweet/?text=iOS%28obj-c%29%e3%81%ae%e3%82%bb%e3%82%b0%e3%82%a8%e3%81%ae%e6%88%bb%e3%82%8a%28push%29&amp;url=http%3a%2f%2flocalhost%3a62955%2fposts%2fiosobj-c%25E3%2581%25AE%25E3%2582%25BB%25E3%2582%25B0%25E3%2582%25A8%25E3%2581%25AE%25E6%2588%25BB%25E3%2582%258Apush%2f&amp;hashtags=Objective-C">
+          
+
+
+
+
+
+
+
+
+
+
+<svg class="ionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:none;" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+
+
+
+
+
+
+
+        </a>
+        <a
+          target="_blank"
+          title="share to facebook"
+          rel="noopener noreferrer"
+          aria-label="share iOS(obj-c)のセグエの戻り(push) on facebook"
+          href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a62955%2fposts%2fiosobj-c%25E3%2581%25AE%25E3%2582%25BB%25E3%2582%25B0%25E3%2582%25A8%25E3%2581%25AE%25E6%2588%25BB%25E3%2582%258Apush%2f">
+          
+
+
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 24 24" style="fill:none;" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+
+
+
+
+
+
+
+
+
+        </a>
+      </div>
+    
+
+    
 </div>
-		</footer>
-	</article>
+
+    
+
+    
+
+  </div>
 </main>
 
-<div class="authorbox clearfix">
-	<figure class="authorbox__avatar">
-		<img alt="tama-tan avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
-	</figure>
-	<div class="authorbox__header">
-		<span class="authorbox__name">About tama-tan</span>
-	</div>
-	<div class="authorbox__description">
-		いろいろプログラミングをやっています。今は、go言語にはまってます。
-	</div>
-</div>
-
-<nav class="pager flex">
-	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">iOS(obj-c)で文字列結合</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">iOS(obj-c)の画面遷移</p>
-		</a>
-	</div>
-</nav>
-
-
-			</div>
-			
-		</div>
-		<footer class="footer">
-	<div class="container footer__container flex">
-		
-		<div class="footer__copyright">
-			&copy; 2024 Ko-Da-Wa-Ri.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
-		</div>
-	</div>
+    <footer id="footer">
+  <div class="container has-padding is-flex">
+    <ul class="links">
+      
+      <li>
+        
+        <a rel="nofollow" target="_blank" href="https://github.com/tama-jp" title="Github">Github</a>
+      </li>
+      
+      <li>
+        
+        <a rel="nofollow" target="_blank" href="https://x.com/tama_jp" title="x">x</a>
+      </li>
+      
+      <li>
+        <a
+          rel="nofollow"
+          target="_blank"
+          href="https://github.com/wayjam/hugo-theme-fluency"
+          title="using Hugo theme fluency">
+          Theme Fluency
+        </a>
+      </li>
+      <li>
+        <a rel="nofollow" target="_blank" href="https://gohugo.io" title="Built with hugo">Built with Hugo</a>
+      </li>
+    </ul>
+    <div class="copyright">
+       &copy; 2025 Ko-Da-Wa-Ri
+      
+    </div>
+  </div>
 </footer>
-	</div>
-<script async defer src="/js/menu.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
-</body>
+<script>
+    window.FluencyCopyIcon = '\n\n\n\n\n\n\n\u003csvg xmlns=\u0027http:\/\/www.w3.org\/2000\/svg\u0027 class=\u0027ionicon\u0027 viewBox=\u00270 0 512 512\u0027\u003e\u003crect x=\u0027128\u0027 y=\u0027128\u0027 width=\u0027336\u0027 height=\u0027336\u0027 rx=\u002757\u0027 ry=\u002757\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003cpath d=\u0027M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24\u0027 stroke-linecap=\u0027round\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003c\/svg\u003e\n\n\n\n\n\n\n\n\n\n\n'
+</script>
+
+
+<script defer src="http://localhost:62955/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
+
+
+
+<noscript>
+<style type=text/css>#theme-selector-button{display:none}</style>
+</noscript>
+
+
+
+
+  </body>
 </html>

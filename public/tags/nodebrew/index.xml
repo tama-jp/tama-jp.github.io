@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  
+>
   <channel>
     <title>Nodebrew on Ko-Da-Wa-Ri</title>
-    <link>http://localhost:61372/tags/nodebrew/</link>
+    <link>http://localhost:62955/tags/nodebrew/</link>
     <description>Recent content in Nodebrew on Ko-Da-Wa-Ri</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 22 Jul 2022 11:14:09 +0900</lastBuildDate>
-    <atom:link href="http://localhost:61372/tags/nodebrew/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:62955/tags/nodebrew/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nodebrewのインストールと使い方</title>
-      <link>http://localhost:61372/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link>
+      <link>http://localhost:62955/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</link>
       <pubDate>Fri, 22 Jul 2022 11:14:09 +0900</pubDate>
-      <guid>http://localhost:61372/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
-      <description>&lt;h2 id=&#34;nodebrewをインストールする&#34;&gt;Nodebrewをインストールする&lt;/h2&gt;&#xA;&lt;p&gt;インストール&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install nodebrew&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;確認&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew -v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;バージョンが表示されればOK。&lt;/p&gt;&#xA;&lt;p&gt;.zshrcなどに環境変数を追加&#xA;vi ~/.zshrc&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export PATH=$HOME/.nodebrew/current/bin:$PATH&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;初期化&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew setup&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;バージョン指定してnodeをインストールする&#xA;インストール可能なバージョンを確認&lt;/p&gt;</description>
+      <guid>http://localhost:62955/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
+      <description>&lt;h2 id=&#34;nodebrewをインストールする&#34;&gt;Nodebrewをインストールする&lt;/h2&gt;&#xA;&lt;p&gt;インストール&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install nodebrew&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;確認&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew -v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;バージョンが表示されればOK。&lt;/p&gt;&#xA;&lt;p&gt;.zshrcなどに環境変数を追加&#xA;vi ~/.zshrc&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export PATH=$HOME/.nodebrew/current/bin:$PATH&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;初期化&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew setup&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;バージョン指定してnodeをインストールする&#xA;インストール可能なバージョンを確認&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew ls-remote&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;nodeのインストール&#34;&gt;nodeのインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew install-binary &amp;lt;version&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;例：&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew install-binary v18.6.0&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;インストールしたバージョンを確認&#34;&gt;インストールしたバージョンを確認&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew ls&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;使いたいバージョンを指定&#34;&gt;使いたいバージョンを指定&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew use v18.6.0&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;アンインストール&#34;&gt;アンインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nodebrew uninstall &amp;lt;version&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;例：&lt;/p&gt;</description>
+      
     </item>
   </channel>
 </rss>

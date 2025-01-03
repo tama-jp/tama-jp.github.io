@@ -1,43 +1,37 @@
 #!/bin/bash
-set -u
 
-usage() {
-  echo "Usage : $0 [-w] [title_name]" 1>&2
-}
+# 現在時刻を取得
+current_time=$(date '+%Y-%m-%d-%H-%M-%S')
 
-main () {
-  cd $(cd $(dirname $0) && pwd)
-  OPEN_EDITOR=0
-  for ARG; do
-    case "$ARG" in
-      -*)
-      while getopts w OPT "$ARG"; do
-        case "$OPT" in
-          w) OPEN_EDITOR=1;;
-          *) usage; exit 1;;
-        esac
-      done
-      ;;
-    esac
-  done
+# タイトルを引数から取得
+if [ -z "$1" ]; then
+  echo "Usage: $0 <title>"
+  exit 1
+fi
 
-  shift $(expr $OPTIND - 1)
-  [ $# -ne 1 ] && usage && exit 1
+# タイトルをスラッグ形式に変換（スペースをハイフンに）
+title=$(echo "$1" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
-  slug="$1"
-  date_string="$(date +"%Y-%m-%d")"
-  file_name="posts/$(date +"%Y-%m-%d-%H-%M-%S")-${slug}.md"
-  file_path="content/$file_name"
-  if [ ! -e "$file_path" ]; then
-    hugo new "$file_name"
-#    sed -i '' "s/title: \".*\"/title: \"${date_string} ${slug}\"/g" "$file_path"
-    sed -i '' "s/title: \".*\"/title: \"${slug}\"/g" "$file_path"
-    sed -i '' "s/slug: \".*\"/slug: \"${slug}\"/g" "$file_path"
-  else
-    echo "$file_name already exists."
-  fi
+# ファイル名を生成
+filename="content/posts/${current_time}-${title}.md"
 
-  [ $OPEN_EDITOR -eq 1 ] && atom "$file_path"
+# Hugo用のテンプレートを作成
+cat <<EOF > "$filename"
+---
+title: "$1"
+date: "$(date '+%Y-%m-%dT%H:%M:%S%z')"
+slug: ""
+# categories: ["技術"]
+# tags: ["golang","Objective-C","Xcode", "hugo","gorm","HomeBrew"]
+categories: ["技術"]
+tags: [ "hugo" ]
+description: ""
+image: ""
+author: "tama-tan"
+draft: false
+---
 
-}
-main "$@"
+
+EOF
+
+echo "Post created: $filename"

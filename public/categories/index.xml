@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  
+>
   <channel>
     <title>Categories on Ko-Da-Wa-Ri</title>
-    <link>http://localhost:61372/categories/</link>
+    <link>http://localhost:62955/categories/</link>
     <description>Recent content in Categories on Ko-Da-Wa-Ri</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Sep 2024 19:38:11 +0900</lastBuildDate>
-    <atom:link href="http://localhost:61372/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Sep 2024 00:37:48 +0900</lastBuildDate>
+    <atom:link href="http://localhost:62955/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技術</title>
-      <link>http://localhost:61372/categories/%E6%8A%80%E8%A1%93/</link>
-      <pubDate>Thu, 26 Sep 2024 19:38:11 +0900</pubDate>
-      <guid>http://localhost:61372/categories/%E6%8A%80%E8%A1%93/</guid>
+      <link>http://localhost:62955/categories/%E6%8A%80%E8%A1%93/</link>
+      <pubDate>Fri, 27 Sep 2024 00:37:48 +0900</pubDate>
+      <guid>http://localhost:62955/categories/%E6%8A%80%E8%A1%93/</guid>
       <description></description>
+      
     </item>
     <item>
       <title>ETC</title>
-      <link>http://localhost:61372/categories/etc/</link>
+      <link>http://localhost:62955/categories/etc/</link>
       <pubDate>Tue, 23 Apr 2024 15:35:49 +0900</pubDate>
-      <guid>http://localhost:61372/categories/etc/</guid>
+      <guid>http://localhost:62955/categories/etc/</guid>
       <description></description>
+      
     </item>
     <item>
       <title>Mac</title>
-      <link>http://localhost:61372/categories/mac/</link>
+      <link>http://localhost:62955/categories/mac/</link>
       <pubDate>Thu, 16 Feb 2023 00:40:43 +0900</pubDate>
-      <guid>http://localhost:61372/categories/mac/</guid>
+      <guid>http://localhost:62955/categories/mac/</guid>
       <description></description>
+      
     </item>
     <item>
       <title>エミュレータ</title>
-      <link>http://localhost:61372/categories/%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF/</link>
+      <link>http://localhost:62955/categories/%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF/</link>
       <pubDate>Tue, 12 Jul 2022 17:12:30 +0900</pubDate>
-      <guid>http://localhost:61372/categories/%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF/</guid>
+      <guid>http://localhost:62955/categories/%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF/</guid>
       <description></description>
+      
     </item>
   </channel>
 </rss>

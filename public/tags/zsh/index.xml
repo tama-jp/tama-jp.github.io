@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  
+>
   <channel>
     <title>Zsh on Ko-Da-Wa-Ri</title>
-    <link>http://localhost:61372/tags/zsh/</link>
+    <link>http://localhost:62955/tags/zsh/</link>
     <description>Recent content in Zsh on Ko-Da-Wa-Ri</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 27 Jul 2022 10:47:45 +0900</lastBuildDate>
-    <atom:link href="http://localhost:61372/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:62955/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>zshの初期設定</title>
-      <link>http://localhost:61372/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link>
+      <link>http://localhost:62955/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</link>
       <pubDate>Wed, 27 Jul 2022 10:47:45 +0900</pubDate>
-      <guid>http://localhost:61372/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid>
-      <description>&lt;p&gt;ちょっとしたashの設定です。&lt;/p&gt;&#xA;&lt;h2 id=&#34;homebrewからインストール&#34;&gt;Homebrewからインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install zsh&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;シェル一覧リストを追加&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo sh -c &amp;#34;echo &amp;#39;/usr/local/bin/zsh&amp;#39; &amp;gt;&amp;gt; /etc/shells&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;インストールしたzshに設定&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;chsh -s /usr/local/bin/zsh&#xA;Changing shell for ruedap.&#xA;Password for ruedap: パスワードを入力する&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;zsh-completionsのインストール&#34;&gt;zsh-completionsのインストール&lt;/h2&gt;&#xA;&lt;p&gt;補完機能の強化&lt;/p&gt;</description>
+      <guid>http://localhost:62955/posts/zsh%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/</guid>
+      <description>&lt;p&gt;ちょっとしたashの設定です。&lt;/p&gt;&#xA;&lt;h2 id=&#34;homebrewからインストール&#34;&gt;Homebrewからインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install zsh&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;シェル一覧リストを追加&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo sh -c &amp;#34;echo &amp;#39;/usr/local/bin/zsh&amp;#39; &amp;gt;&amp;gt; /etc/shells&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;インストールしたzshに設定&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;chsh -s /usr/local/bin/zsh&#xA;Changing shell for ruedap.&#xA;Password for ruedap: パスワードを入力する&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;zsh-completionsのインストール&#34;&gt;zsh-completionsのインストール&lt;/h2&gt;&#xA;&lt;p&gt;補完機能の強化&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install zsh-completions&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;~./zshrc&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# zsh-completions(補完機能)の設定&#xA;if type brew &amp;amp;&amp;gt;/dev/null; then&#xA; FPATH=$(brew --prefix)/share/zsh-completions:$FPATH&#xA;&#xA; autoload -Uz compinit&#xA; compinit&#xA;fi&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;zsh-syntax-highlighting-のインストール&#34;&gt;zsh-syntax-highlighting のインストール&lt;/h2&gt;&#xA;&lt;p&gt;コマンドにシンタックスハイライトをつける&lt;/p&gt;</description>
+      
     </item>
   </channel>
 </rss>

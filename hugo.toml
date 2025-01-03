@@ -1,93 +1,106 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://tama-jp.github.io/'
 languageCode = 'ja'
 title = 'Ko-Da-Wa-Ri'
-# https://github.com/Vimux/Mainroad
-theme = "mainroad"
+
+# git submodule add https://github.com/wayjam/hugo-theme-fluency.git themes/fluency
+theme = 'fluency'
+
+summaryLength = 100 # Configure how long the post summary should be on the homepage.
+pygmentsUseClasses = true # enable theme-defined highlight style
+pygmentsCodefences = true
+# 日本語の文字数を正しく数えて、短いサマリーを表示できるようにするには、設定ファイルで下記のように hasCJKLanguage を true に設定します。
+hasCJKLanguage = true
+enableEmoji = true
 
 googleAnalytics = "G-788BH2CZ5H"
 
-# 日本語の文字数を正しく数えて、短いサマリーを表示できるようにするには、設定ファイルで下記のように hasCJKLanguage を true に設定します。
-hasCJKLanguage = true
+[minify]
+disableSVG = true
 
-rssLimit = 30
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
-[Author]
-name = "tama-tan"
-bio = "いろいろプログラミングをやっています。今は、go言語にはまってます。"
-avatar = "img/avatar.png"
-[Params]
-#opengraph = true # Enable OpenGraph if true
-schema = true # Enable Schema
-#twitter_cards = true # Enable Twitter Cards if true
-readmore = true # Show "Read more" button in list if true
-authorbox = true # Show authorbox at bottom of pages if true
-toc = true # Enable Table of Contents
-pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-#mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
-dateformat = "2006-01-02" # Change the format of dates
-mathjax = true # Enable MathJax
-mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
-mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
-#customCSS = ["css/custom.css"] # Include custom CSS files
-#customJS = ["js/custom.js"] # Include custom JS files
+[taxonomies]
+category = "Tech"
+tag = "tags"
 
-# DEPRECATED PARAMS
-subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
-highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
+[params]
+author = "tama-tan"
+description = "たまたんの適当なブログ"
+# copyright = "© 2021 &nbsp;<a href='https://github.com/wayjam/hugo-theme-fluency'>Hugo Theme Fluency</a>"
 
-[Params.style.vars]
-#highlightColor = "#e22d30" # Override highlight color
-highlightColor = "#c993ff" # Override highlight color
+mainSections = ["posts"]
 
-# Override font-family sets
-# Take care of different quotes OR escaping symbols in these params if necessary
-fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
-# Secondary font-family set responsible for pre, code, kbd, and samp tags font
-fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+[params.pageSize]
+index = 5
+list = 10
+archives = 20
 
-[Params.logo]
-image = "img/cheer.png" # Logo image. Path relative to "static"
-title = "Ko-Da-Wa-Ri" # Logo title, otherwise will use site title
-subtitle = "たまたんの適当なブログ" # Logo subtitle
+disableSocialShare = false
+disableIndexSummary = false
+disableAnchorHeading = false
+disableBreadcrumb = false
 
-#[Params.thumbnail]
-#visibility = ["list", "post"] # Control thumbnail visibility
+disableComment = false
+disableCommentByType = ["page"]
+#thirdPartyComment = "this is your comment"
+mathRender = true
+enableFullContentRSS = true
 
-[Params.sidebar]
-home = "right" # Configure layout for home page
-list = "left"  # Configure layout for list pages
-single = false # Configure layout for single pages
-# Enable widgets in given order
-widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
-# alternatively "ddg-search" can be used, to search via DuckDuckGo
-# widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+# customScript = "<script>console.log('hello world')</script>"
 
-[Params.widgets]
-recent_num = 5 # Set the number of articles in the "Recent articles" widget
-categories_counter = false # Enable counter for each category in "Categories" widget
-tags_counter = false # Enable counter for each tag in "Tags" widget
+[menu]
+    [[menu.main]]
+        identifier = "blog"
+        name = "blog"
+        url = "posts/"
+        weight = 1
+    [[menu.main]]
+        identifier = "tags"
+        name = "tags"
+        url = "tags/"
+        weight = 2
+        [[menu.main]]
+        identifier = "archives"
+        name = "archives"
+        url = "archives/"
+        weight = 3
+    [[menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "about/"
+        weight = 4
 
-[Params.widgets.social]
-# Enable parts of social widget
-#facebook = "username"
-#twitter = "username"
-#instagram = "username"
-#linkedin = "username"
-#telegram = "username"
-github = "tama-jp"
-#gitlab = "username"
-#bitbucket = "username"
-#email = "example@example.com"
+    [[menu.footer]]
+        identifier = "x"
+        url = "https://x.com/tama_jp"
+        name = "x"
+    [[menu.footer]]
+        identifier = "github"
+        url = "https://github.com/tama-jp"
+        name = "Github"
 
-# Custom social links
-#[[Params.widgets.social.custom]]
-#title = "Youtube"
-#url = "https://youtube.com/user/username"
-#icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
-
-[[Params.widgets.social.custom]]
-title = 'Ko-Da-Wa-Ri'
-url = 'https://kodawari.info/'
-
+[privacy]
+    [privacy.disqus]
+        disable = false
+    [privacy.googleAnalytics]
+        anonymizeIP = false
+        disable = false
+        respectDoNotTrack = false
+        useSessionStorage = false
+    [privacy.instagram]
+        disable = false
+        simple = false
+    [privacy.twitter]
+        disable = false
+        enableDNT = false
+        simple = false
+    [privacy.vimeo]
+        disable = false
+        enableDNT = false
+        simple = false
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = false
