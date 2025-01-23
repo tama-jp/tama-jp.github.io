@@ -7,17 +7,17 @@
 >
   <channel>
     <title>PC88 on Ko-Da-Wa-Ri</title>
-    <link>http://localhost:62955/tags/pc88/</link>
+    <link>http://localhost:1313/tags/pc88/</link>
     <description>Recent content in PC88 on Ko-Da-Wa-Ri</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 12 Jul 2022 17:12:30 +0900</lastBuildDate>
-    <atom:link href="http://localhost:62955/tags/pc88/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/pc88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PC-8801のエミュレータ、「quasi88」のSDL2対応版</title>
-      <link>http://localhost:62955/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</link>
+      <link>http://localhost:1313/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</link>
       <pubDate>Tue, 12 Jul 2022 17:12:30 +0900</pubDate>
-      <guid>http://localhost:62955/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</guid>
+      <guid>http://localhost:1313/posts/pc-8801%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BFquasi88%E3%81%AEsdl2%E5%AF%BE%E5%BF%9C%E7%89%88/</guid>
       <description>&lt;p&gt;Mac用PC88のエミュレータが欲しいと思ってたら、&#xA;こんなところに！！&lt;/p&gt;&#xA;&lt;p&gt;HomeBrewのインストーラーだと、SDL1なのでワーニングがでるけど、&#xA;SDL2対応だから、これならでない！！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://kameya-z.way-nifty.com/blog/2021/08/post-bf1e89.html&#34;&gt;http://kameya-z.way-nifty.com/blog/2021/08/post-bf1e89.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../img/icon20220712.png&#34; alt=&#34;icon20220712&#34;&gt;&#xA;コンパイルしたら出てきた。&lt;/p&gt;</description>
       
     </item>

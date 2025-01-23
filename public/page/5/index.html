@@ -11,7 +11,7 @@
   
 
 
-<head lang="ja"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=62955&amp;path=livereload" data-no-instant defer></script>
+<head lang="ja"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="HandheldFriendly" content="True" />
@@ -22,9 +22,9 @@
   <meta name="author" content="tama-tan">
   <meta name="keywords" content="">
   <title>Ko-Da-Wa-Ri</title>
-  <link rel="canonical" href="http://localhost:62955/" />
+  <link rel="canonical" href="http://localhost:1313/" />
   
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:62955/index.xml" title="Ko-Da-Wa-Ri">
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Ko-Da-Wa-Ri">
   
 
   
@@ -33,7 +33,7 @@
   <meta property="og:title" content="Ko-Da-Wa-Ri" />
   <meta property="og:site_name" content="Ko-Da-Wa-Ri" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:url" content="http://localhost:62955/" />
+  <meta property="og:url" content="http://localhost:1313/" />
   <meta property="og:locale" content="ja" />
 
   
@@ -42,11 +42,11 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Ko-Da-Wa-Ri" />
   <meta name="twitter:description" content="たまたんの適当なブログ" />
-  <meta name="twitter:domain" content="http://localhost:62955/" />
+  <meta name="twitter:domain" content="http://localhost:1313/" />
 
   
   
-    <link rel="icon" href="http://localhost:62955/favicon.ico">
+    <link rel="icon" href="http://localhost:1313/favicon.ico">
   
   
   
@@ -62,7 +62,7 @@
   
 
   
-    <link rel="stylesheet" href="http://localhost:62955/style.css" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="http://localhost:1313/style.css" rel="preload stylesheet" as="style"/>
   
 
   
@@ -93,7 +93,7 @@
 
 </button>
       <div class="navbar-brand">
-        <a class="logo navbar-button" href="http://localhost:62955/" title="Ko-Da-Wa-Ri">
+        <a class="logo navbar-button" href="http://localhost:1313/" title="Ko-Da-Wa-Ri">
           <span>Ko-Da-Wa-Ri</span>
         </a>
       </div>
@@ -176,7 +176,82 @@
       
       <article class="post">
         <h3 class="title">
-          <a href="http://localhost:62955/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/" title="iOS(obj-c)の画面遷移">iOS(obj-c)の画面遷移</a>
+          <a href="http://localhost:1313/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/" title="Nodebrewのインストールと使い方">Nodebrewのインストールと使い方</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><h2 id="nodebrewをインストールする">Nodebrewをインストールする</h2>
+<p>インストール</p>
+<pre tabindex="0"><code>brew install nodebrew
+</code></pre><p>確認</p>
+<pre tabindex="0"><code>nodebrew -v
+</code></pre><p>バージョンが表示されればOK。</p>
+<p>.zshrcなどに環境変数を追加
+vi ~/.zshrc</p>
+<pre tabindex="0"><code>export PATH=$HOME/.nodebrew/current/bin:$PATH
+</code></pre><p>初期化</p>
+<pre tabindex="0"><code>nodebrew setup
+</code></pre><p>バージョン指定してnodeをインストールする
+インストール可能なバージョンを確認</p>
+<pre tabindex="0"><code>nodebrew ls-remote
+</code></pre><h2 id="nodeのインストール">nodeのインストール</h2>
+<pre tabindex="0"><code>nodebrew install-binary &lt;version&gt;
+</code></pre><p>例：</p>
+<pre tabindex="0"><code>nodebrew install-binary v18.6.0
+</code></pre><h2 id="インストールしたバージョンを確認">インストールしたバージョンを確認</h2>
+<pre tabindex="0"><code>nodebrew ls
+</code></pre><h2 id="使いたいバージョンを指定">使いたいバージョンを指定</h2>
+<pre tabindex="0"><code>nodebrew use v18.6.0
+</code></pre><h2 id="アンインストール">アンインストール</h2>
+<pre tabindex="0"><code>nodebrew uninstall &lt;version&gt;
+</code></pre><p>例：</p></p>
+            
+              <span class="hellip">&hellip;</span>
+            
+          </div>
+          <a class="readmore" href="http://localhost:1313/posts/nodebrew%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2022-07-22T11:14:09&#43;0900" class="date">July 22, 2022</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://localhost:1313/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/" title="Wails v2の初期設定">Wails v2の初期設定</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><h2 id="wailsインストール">wailsインストール</h2>
+<pre tabindex="0"><code>go install github.com/wailsapp/wails/v2/cmd/wails@latest
+</code></pre><h2 id="ツールのcheck">ツールのcheck</h2>
+<pre tabindex="0"><code>wails doctor 
+</code></pre><h2 id="初期設定">初期設定</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wails init -n <span class="o">[</span>プロジェクトディレクトリ名<span class="o">]</span> -t <span class="o">[</span>テンプレート名または、url<span class="o">]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">wails init -n tamatan -t svelte-ts 
+</span></span></code></pre></div><p>現在バグなのか、フロントエンドの初期化がうまく行かないので
+yarnまたは、npm installを実行する。
+(yarnの方がうまく行くような気がする。)</p>
+<pre tabindex="0"><code>cd tamatan/frontend
+yarn
+</code></pre><p>テンプレートは、 リリースのv2.0.0-beta.35に書いてあった</p></p>
+            
+              <span class="hellip">&hellip;</span>
+            
+          </div>
+          <a class="readmore" href="http://localhost:1313/posts/wails-v2%E3%81%AE%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2022-07-21T22:43:00&#43;0900" class="date">July 21, 2022</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://localhost:1313/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/" title="iOS(obj-c)の画面遷移">iOS(obj-c)の画面遷移</a>
         </h3>
         
           <div class="content summary">
@@ -203,7 +278,7 @@
               <span class="hellip">&hellip;</span>
             
           </div>
-          <a class="readmore" href="http://localhost:62955/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/" aria-label="READ MORE">READ MORE</a>
+          <a class="readmore" href="http://localhost:1313/posts/iosobj-c%E3%81%AE%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB/" aria-label="READ MORE">READ MORE</a>
         
         <div class="date float-right">
           
@@ -213,7 +288,7 @@
       
       <article class="post">
         <h3 class="title">
-          <a href="http://localhost:62955/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/" title="iOS(obj-c)のセグエの戻り(push)">iOS(obj-c)のセグエの戻り(push)</a>
+          <a href="http://localhost:1313/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/" title="iOS(obj-c)のセグエの戻り(push)">iOS(obj-c)のセグエの戻り(push)</a>
         </h3>
         
           <div class="content summary">
@@ -227,7 +302,7 @@
 </span></span></code></pre></div></p>
             
           </div>
-          <a class="readmore" href="http://localhost:62955/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/" aria-label="READ MORE">READ MORE</a>
+          <a class="readmore" href="http://localhost:1313/posts/iosobj-c%E3%81%AE%E3%82%BB%E3%82%B0%E3%82%A8%E3%81%AE%E6%88%BB%E3%82%8Apush/" aria-label="READ MORE">READ MORE</a>
         
         <div class="date float-right">
           
@@ -237,7 +312,7 @@
       
       <article class="post">
         <h3 class="title">
-          <a href="http://localhost:62955/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/" title="iOS(obj-c)で文字列結合">iOS(obj-c)で文字列結合</a>
+          <a href="http://localhost:1313/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/" title="iOS(obj-c)で文字列結合">iOS(obj-c)で文字列結合</a>
         </h3>
         
           <div class="content summary">
@@ -245,272 +320,11 @@
 </code></pre></p>
             
           </div>
-          <a class="readmore" href="http://localhost:62955/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/" aria-label="READ MORE">READ MORE</a>
+          <a class="readmore" href="http://localhost:1313/posts/iosobj-c%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E7%B5%90%E5%90%88/" aria-label="READ MORE">READ MORE</a>
         
         <div class="date float-right">
           
           <time datetime="2022-07-21T22:12:09&#43;0900" class="date">July 21, 2022</time>
-        </div>
-      </article>
-      
-      <article class="post">
-        <h3 class="title">
-          <a href="http://localhost:62955/posts/iosobj-c%E3%81%A7get%E3%81%A8post/" title="iOS(obj-c)でgetとPOST">iOS(obj-c)でgetとPOST</a>
-        </h3>
-        
-          <div class="content summary">
-            <p><h2 id="get">GET</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">NSString</span> <span class="o">*</span><span class="n">urlString</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nl">stringWithFormat</span><span class="p">:</span><span class="err">@</span><span class="s">&#34;https://xxxxx.co.jp/test?key1=%@&#34;</span><span class="p">,</span><span class="n">key1</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nf">DLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;urlString:%@&#34;</span><span class="p">,</span> <span class="n">urlString</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">urlSession</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">NSURLSessionConfiguration</span> <span class="o">*</span><span class="n">sessionConfig</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLSessionConfiguration</span> <span class="n">defaultSessionConfiguration</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="n">sessionConfig</span><span class="p">.</span><span class="n">timeoutIntervalForRequest</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">sessionConfig</span><span class="p">.</span><span class="n">timeoutIntervalForResource</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// 処理を単純化させるためにdelegateは使用しませんでした。
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">urlSession</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLSession</span> <span class="nl">sessionWithConfiguration</span><span class="p">:</span><span class="n">sessionConfig</span>
-</span></span><span class="line"><span class="cl">                                               <span class="nl">delegate</span><span class="p">:</span><span class="n">nil</span>
-</span></span><span class="line"><span class="cl">                                          <span class="nl">delegateQueue</span><span class="p">:</span><span class="n">nil</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nf">NSLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;get start&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">NSMutableURLRequest</span> <span class="o">*</span><span class="n">request</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableURLRequest</span> <span class="n">new</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setURL</span><span class="p">:[</span><span class="n">NSURL</span> <span class="nl">URLWithString</span><span class="p">:</span><span class="n">urlString</span><span class="p">]];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setCachePolicy</span><span class="p">:</span><span class="n">NSURLRequestReloadIgnoringLocalCacheData</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setValue</span><span class="p">:</span><span class="err">@</span><span class="s">&#34;YKTHttpClient&#34;</span> <span class="nl">forHTTPHeaderField</span><span class="p">:</span><span class="err">@</span><span class="s">&#34;User-Agent&#34;</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setHTTPMethod</span><span class="p">:</span><span class="err">@</span><span class="s">&#34;GET&#34;</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">NSURLSessionDataTask</span> <span class="o">*</span><span class="n">dataTask</span>
-</span></span><span class="line"><span class="cl">            <span class="o">=</span> <span class="p">[</span><span class="n">urlSession</span> <span class="nl">dataTaskWithRequest</span><span class="p">:</span><span class="n">request</span>
-</span></span><span class="line"><span class="cl">                            <span class="nl">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">response</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                                <span class="n">NSHTTPURLResponse</span> <span class="o">*</span><span class="n">httpUrlResponse</span> <span class="o">=</span> <span class="p">(</span><span class="n">NSHTTPURLResponse</span> <span class="o">*</span><span class="p">)</span> <span class="n">response</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                                <span class="nf">DLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;Status code: %ld&#34;</span><span class="p">,</span> <span class="n">httpUrlResponse</span><span class="p">.</span><span class="n">statusCode</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                                <span class="n">CFStringEncoding</span> <span class="n">encoding</span> <span class="o">=</span> <span class="nf">CFStringConvertIANACharSetNameToEncoding</span><span class="p">((</span><span class="n">CFStringRef</span><span class="p">)</span> <span class="p">[</span><span class="n">response</span> <span class="n">textEncodingName</span><span class="p">]);</span>
-</span></span><span class="line"><span class="cl">                                <span class="n">NSString</span> <span class="o">*</span><span class="n">body</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithData</span><span class="p">:</span><span class="n">data</span> <span class="nl">encoding</span><span class="p">:</span><span class="nf">CFStringConvertEncodingToNSStringEncoding</span><span class="p">(</span><span class="n">encoding</span><span class="p">)];</span>
-</span></span><span class="line"><span class="cl">                                <span class="n">NSData</span> <span class="o">*</span><span class="n">restoreData</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSData</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithBase64EncodedString</span><span class="p">:</span><span class="n">body</span> <span class="nl">options</span><span class="p">:</span><span class="mi">0</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                                <span class="n">NSString</span> <span class="o">*</span><span class="n">restoreString</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithData</span><span class="p">:</span><span class="n">restoreData</span> <span class="nl">encoding</span><span class="p">:</span><span class="n">NSUTF8StringEncoding</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">                                <span class="nf">dispatch_async</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">                                        <span class="nf">dispatch_get_main_queue</span><span class="p">(),</span>
-</span></span><span class="line"><span class="cl">                                        <span class="o">^</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">                                            <span class="n">self</span><span class="p">.</span><span class="n">textView</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">restoreString</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                                        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                                <span class="p">);</span>
-</span></span><span class="line"><span class="cl">                            <span class="p">}];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">dataTask</span> <span class="n">resume</span><span class="p">];</span>
-</span></span></code></pre></div><h2 id="post">POST</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">NSString</span> <span class="o">*</span><span class="n">urlString</span> <span class="o">=</span><span class="err">@</span><span class="s">&#34;https://xxxx.co.jp/test&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">params</span> <span class="o">=</span> <span class="err">@</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="err">@</span><span class="s">&#34;name&#34;</span><span class="o">:</span> <span class="n">name</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="err">@</span><span class="s">&#34;uuid&#34;</span><span class="o">:</span> <span class="n">uuid</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="p">};</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">DLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;urlString:%@&#34;</span><span class="p">,</span> <span class="n">urlString</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// 連想配列として与えられたパラメータをクエリ文字列に変換する
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">NSData</span> <span class="o">*</span><span class="n">query</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nl">buildQueryWithDictionary</span><span class="p">:</span> <span class="n">params</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">urlSession</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">NSURLSessionConfiguration</span> <span class="o">*</span><span class="n">sessionConfig</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLSessionConfiguration</span> <span class="n">defaultSessionConfiguration</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="n">sessionConfig</span><span class="p">.</span><span class="n">timeoutIntervalForRequest</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">sessionConfig</span><span class="p">.</span><span class="n">timeoutIntervalForResource</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// 処理を単純化させるためにdelegateは使用しませんでした。
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// UI関連の処理を想定していないため、delegateQueueは独自に作成しました。
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">urlSession</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLSession</span> <span class="nl">sessionWithConfiguration</span><span class="p">:</span><span class="n">sessionConfig</span>
-</span></span><span class="line"><span class="cl">                                               <span class="nl">delegate</span><span class="p">:</span><span class="n">nil</span>
-</span></span><span class="line"><span class="cl">                                          <span class="nl">delegateQueue</span><span class="p">:</span><span class="n">nil</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nf">NSLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;get start&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">NSMutableURLRequest</span> <span class="o">*</span><span class="n">request</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableURLRequest</span> <span class="n">new</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setURL</span><span class="p">:[</span><span class="n">NSURL</span> <span class="nl">URLWithString</span><span class="p">:</span><span class="n">urlString</span><span class="p">]];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setCachePolicy</span><span class="p">:</span><span class="n">NSURLRequestUseProtocolCachePolicy</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setValue</span><span class="p">:</span><span class="err">@</span><span class="s">&#34;iOS&#34;</span> <span class="nl">forHTTPHeaderField</span><span class="p">:</span><span class="err">@</span><span class="s">&#34;User-Agent&#34;</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setHTTPMethod</span><span class="p">:</span><span class="err">@</span><span class="s">&#34;POST&#34;</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setValue</span><span class="p">:</span> <span class="err">@</span><span class="s">&#34;application/x-www-form-urlencoded&#34;</span>  <span class="nl">forHTTPHeaderField</span><span class="p">:</span> <span class="err">@</span><span class="s">&#34;Content-Type&#34;</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setValue</span><span class="p">:</span> <span class="p">[</span><span class="n">NSString</span> <span class="nl">stringWithFormat</span><span class="p">:</span> <span class="err">@</span><span class="s">&#34;%lu&#34;</span><span class="p">,</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)[</span><span class="n">query</span> <span class="n">length</span><span class="p">]]</span>  <span class="nl">forHTTPHeaderField</span><span class="p">:</span> <span class="err">@</span><span class="s">&#34;Content-Length&#34;</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">request</span> <span class="nl">setHTTPBody</span><span class="p">:</span> <span class="n">query</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="c1">// 取得するデータサイズが小さいのでtaskはNSURLSessionDataTaskを使用
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">NSURLSessionDataTask</span> <span class="o">*</span><span class="n">dataTask</span>
-</span></span><span class="line"><span class="cl">            <span class="o">=</span> <span class="p">[</span><span class="n">urlSession</span> <span class="nl">dataTaskWithRequest</span><span class="p">:</span><span class="n">request</span>
-</span></span><span class="line"><span class="cl">                            <span class="nl">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">NSURLResponse</span> <span class="o">*</span><span class="n">response</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                                <span class="n">NSHTTPURLResponse</span> <span class="o">*</span><span class="n">httpUrlResponse</span> <span class="o">=</span> <span class="p">(</span><span class="n">NSHTTPURLResponse</span> <span class="o">*</span><span class="p">)</span> <span class="n">response</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                                <span class="nf">DLog</span><span class="p">(</span><span class="err">@</span><span class="s">&#34;Status code: %ld&#34;</span><span class="p">,</span> <span class="n">httpUrlResponse</span><span class="p">.</span><span class="n">statusCode</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                                <span class="n">CFStringEncoding</span> <span class="n">encoding</span> <span class="o">=</span> <span class="nf">CFStringConvertIANACharSetNameToEncoding</span><span class="p">((</span><span class="n">CFStringRef</span><span class="p">)</span> <span class="p">[</span><span class="n">response</span> <span class="n">textEncodingName</span><span class="p">]);</span>
-</span></span><span class="line"><span class="cl">                                <span class="n">NSString</span> <span class="o">*</span><span class="n">body</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithData</span><span class="p">:</span><span class="n">data</span> <span class="nl">encoding</span><span class="p">:</span><span class="nf">CFStringConvertEncodingToNSStringEncoding</span><span class="p">(</span><span class="n">encoding</span><span class="p">)];</span>
-</span></span><span class="line"><span class="cl">                                <span class="n">NSData</span> <span class="o">*</span><span class="n">restoreData</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSData</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithBase64EncodedString</span><span class="p">:</span><span class="n">body</span> <span class="nl">options</span><span class="p">:</span><span class="mi">0</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">                                <span class="n">NSString</span> <span class="o">*</span><span class="n">restoreString</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithData</span><span class="p">:</span><span class="n">restoreData</span> <span class="nl">encoding</span><span class="p">:</span><span class="n">NSUTF8StringEncoding</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">                                <span class="nf">dispatch_async</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">                                        <span class="nf">dispatch_get_main_queue</span><span class="p">(),</span>
-</span></span><span class="line"><span class="cl">                                        <span class="o">^</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">                                        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                                <span class="p">);</span>
-</span></span><span class="line"><span class="cl">                            <span class="p">}];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="n">dataTask</span> <span class="n">resume</span><span class="p">];</span>
-</span></span></code></pre></div></p>
-            
-          </div>
-          <a class="readmore" href="http://localhost:62955/posts/iosobj-c%E3%81%A7get%E3%81%A8post/" aria-label="READ MORE">READ MORE</a>
-        
-        <div class="date float-right">
-          
-          <time datetime="2022-07-21T22:09:00&#43;0900" class="date">July 21, 2022</time>
-        </div>
-      </article>
-      
-      <article class="post">
-        <h3 class="title">
-          <a href="http://localhost:62955/posts/android%E3%81%A7get%E3%81%A8post/" title="AndroidでgetとPOST">AndroidでgetとPOST</a>
-        </h3>
-        
-          <div class="content summary">
-            <p><p>こんな感じ</p>
-<h2 id="get">GET</h2>
-<pre tabindex="0"><code class="language-aidl" data-lang="aidl"> public String getHistoryData(String key1) {
-        HttpURLConnection urlConnection = null;
-        InputStream inputStream = null;
-        String result = &#34;&#34;;
-        String str = &#34;&#34;;
-        try {
-            URL url = new URL(&#34;https://xxxxx.co.jp/test?key1=&#34; + key1);
-            // 接続先URLへのコネクションを開く．まだ接続されていない
-            urlConnection = (HttpURLConnection) url.openConnection();
-            // 接続タイムアウトを設定
-            urlConnection.setConnectTimeout(10000);
-            // レスポンスデータの読み取りタイムアウトを設定
-            urlConnection.setReadTimeout(10000);
-            // ヘッダーにUser-Agentを設定
-            urlConnection.addRequestProperty(&#34;User-Agent&#34;, &#34;Android&#34;);
-            // ヘッダーにAccept-Languageを設定
-            urlConnection.addRequestProperty(&#34;Accept-Language&#34;, Locale.getDefault().toString());
-            // HTTPメソッドを指定
-            urlConnection.setRequestMethod(&#34;GET&#34;);
-            //リクエストボディの送信を許可しない
-            urlConnection.setDoOutput(false);
-            //レスポンスボディの受信を許可する
-            urlConnection.setDoInput(true);
-            // 通信開始
-            urlConnection.connect();
-            // レスポンスコードを取得
-            int statusCode = urlConnection.getResponseCode();
-            // レスポンスコード200は通信に成功したことを表す
-            if (statusCode == 200) {
-                inputStream = urlConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, &#34;utf-8&#34;));
-                // 1行ずつレスポンス結果を取得しstrに追記
-                result = bufferedReader.readLine();
-                while (result != null) {
-                    str += result;
-                    result = bufferedReader.readLine();
-                }
-                bufferedReader.close();
-            }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        // レスポンス結果のJSONをString型で返す
-        return str;
-    }
-</code></pre><h2 id="post">POST</h2>
-<pre tabindex="0"><code class="language-aidl" data-lang="aidl">public String PostUserName(String key1, String key2) {
-        HttpURLConnection urlConnection = null;
-        InputStream inputStream = null;
-        String result = &#34;&#34;;
-        String str = &#34;&#34;;
-
-        try {
-            URL url = new URL(&#34;http://hpph;e.cp.jp&#34;&#34;);
-            // 接続先URLへのコネクションを開く．まだ接続されていない
-            urlConnection = (HttpURLConnection) url.openConnection();
-            // 接続タイムアウトを設定
-            urlConnection.setConnectTimeout(10000);
-            // レスポンスデータの読み取りタイムアウトを設定
-            urlConnection.setReadTimeout(10000);
-            // ヘッダーにUser-Agentを設定
-            urlConnection.addRequestProperty(&#34;User-Agent&#34;, &#34;Android&#34;);
-            // ヘッダーにAccept-Languageを設定
-            urlConnection.addRequestProperty(&#34;Accept-Language&#34;, Locale.getDefault().toString());
-            //ヘッダーにContent-Typeを設定する
-            urlConnection.addRequestProperty(&#34;Content-Type&#34;, &#34;application/x-www-form-urlencoded&#34;);
-            // HTTPメソッドを指定
-            urlConnection.setRequestMethod(&#34;POST&#34;);
-
-            urlConnection.setUseCaches(false);
-            //リクエストボディの送信を許可しない
-            urlConnection.setDoOutput(true);
-            //レスポンスボディの受信を許可する
-            urlConnection.setDoInput(true);
-            // 通信開始
-            urlConnection.connect();
-
-
-            //ステップ5:リクエストボディの書き出しを行う。
-            OutputStream outputStream = urlConnection.getOutputStream();
-            Map&lt;String, String&gt; keyValues = new HashMap&lt;&gt;();
-
-            keyValues.put(&#34;key1&#34;, key1);
-            keyValues.put(&#34;key2&#34;, key2);
-
-
-            if (keyValues.size() &gt; 0) {
-                Uri.Builder builder = new Uri.Builder();
-                //HashMapを[key=value]形式の文字列に変換する
-                for (String key : keyValues.keySet()) {
-                    //[key=value]形式の文字列に変換する。
-                    builder.appendQueryParameter(key, keyValues.get(key));
-                }
-                //[key=value&amp;key=value…]形式の文字列に変換する。
-                String join = builder.build().getEncodedQuery();
-                PrintStream ps = new PrintStream(outputStream);
-                ps.print(join);
-                ps.close();
-            }
-            outputStream.close();
-
-            // レスポンスコードを取得
-            int statusCode = urlConnection.getResponseCode();
-            // レスポンスコード200は通信に成功したことを表す
-            if (statusCode == 200) {
-                inputStream = urlConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
-                // 1行ずつレスポンス結果を取得しstrに追記
-                result = bufferedReader.readLine();
-                while (result != null) {
-                    str += result;
-                    result = bufferedReader.readLine();
-                }
-                bufferedReader.close();
-            }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        // レスポンス結果のJSONをString型で返す
-        return str;
-    }
-</code></pre></p>
-            
-          </div>
-          <a class="readmore" href="http://localhost:62955/posts/android%E3%81%A7get%E3%81%A8post/" aria-label="READ MORE">READ MORE</a>
-        
-        <div class="date float-right">
-          
-          <time datetime="2022-07-21T22:04:39&#43;0900" class="date">July 21, 2022</time>
         </div>
       </article>
       
@@ -678,7 +492,7 @@
       </li>
       
       <li>
-          <a class="nav-link navbar-button" href="http://localhost:62955/index.xml" type="application/rss&#43;xml">RSS</a>
+          <a class="nav-link navbar-button" href="http://localhost:1313/index.xml" type="application/rss&#43;xml">RSS</a>
         </li>
       <li>
         <a
@@ -705,7 +519,7 @@
 </script>
 
 
-<script defer src="http://localhost:62955/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
+<script defer src="http://localhost:1313/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
 
 
 

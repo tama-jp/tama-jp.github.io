@@ -7,10 +7,10 @@
 >
   <channel>
     <title>Tech on Ko-Da-Wa-Ri</title>
-    <link>http://localhost:62955/tech/</link>
+    <link>http://localhost:1313/tech/</link>
     <description>Recent content in Tech on Ko-Da-Wa-Ri</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <atom:link href="http://localhost:62955/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tech/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

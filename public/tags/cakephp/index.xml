@@ -7,17 +7,17 @@
 >
   <channel>
     <title>CakePHP on Ko-Da-Wa-Ri</title>
-    <link>http://localhost:62955/tags/cakephp/</link>
+    <link>http://localhost:1313/tags/cakephp/</link>
     <description>Recent content in CakePHP on Ko-Da-Wa-Ri</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 01 Dec 2022 20:39:35 +0900</lastBuildDate>
-    <atom:link href="http://localhost:62955/tags/cakephp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/cakephp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CakePHPの規約ワードメーカー</title>
-      <link>http://localhost:62955/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</link>
+      <link>http://localhost:1313/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</link>
       <pubDate>Thu, 01 Dec 2022 20:39:35 +0900</pubDate>
-      <guid>http://localhost:62955/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</guid>
+      <guid>http://localhost:1313/posts/cakephp%E3%81%AE%E8%A6%8F%E7%B4%84%E3%83%AF%E3%83%BC%E3%83%89%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/</guid>
       <description>&lt;p&gt;CakePHP 規約ワードメーカーがサイトなくなったと思ってたら、&#xA;本家がそのままやっとるじゃん。。。。&lt;/p&gt;&#xA;&lt;p&gt;ここ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://inflector.cakephp.org/&#34;&gt;https://inflector.cakephp.org/&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>

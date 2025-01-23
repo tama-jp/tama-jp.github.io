@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  hugo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hugo-server
+    ports:
+      - "1313:1313" # ローカルホストのポート1313をコンテナの1313にマッピング
+    volumes:
+      - ./:/src # ローカルのsrcディレクトリをコンテナの/srcにマウント
+    working_dir: /src
+    entrypoint: ["hugo", "server", "--bind", "0.0.0.0", "--watch", "--source", "/src"]

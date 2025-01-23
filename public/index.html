@@ -11,7 +11,7 @@
   
 
 
-<head lang="ja"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=62955&amp;path=livereload" data-no-instant defer></script>
+<head lang="ja"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="HandheldFriendly" content="True" />
@@ -22,9 +22,9 @@
   <meta name="author" content="tama-tan">
   <meta name="keywords" content="">
   <title>Ko-Da-Wa-Ri</title>
-  <link rel="canonical" href="http://localhost:62955/" />
+  <link rel="canonical" href="http://localhost:1313/" />
   
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:62955/index.xml" title="Ko-Da-Wa-Ri">
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Ko-Da-Wa-Ri">
   
 
   
@@ -33,7 +33,7 @@
   <meta property="og:title" content="Ko-Da-Wa-Ri" />
   <meta property="og:site_name" content="Ko-Da-Wa-Ri" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:url" content="http://localhost:62955/" />
+  <meta property="og:url" content="http://localhost:1313/" />
   <meta property="og:locale" content="ja" />
 
   
@@ -42,11 +42,11 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Ko-Da-Wa-Ri" />
   <meta name="twitter:description" content="たまたんの適当なブログ" />
-  <meta name="twitter:domain" content="http://localhost:62955/" />
+  <meta name="twitter:domain" content="http://localhost:1313/" />
 
   
   
-    <link rel="icon" href="http://localhost:62955/favicon.ico">
+    <link rel="icon" href="http://localhost:1313/favicon.ico">
   
   
   
@@ -62,7 +62,7 @@
   
 
   
-    <link rel="stylesheet" href="http://localhost:62955/style.css" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="http://localhost:1313/style.css" rel="preload stylesheet" as="style"/>
   
 
   
@@ -93,7 +93,7 @@
 
 </button>
       <div class="navbar-brand">
-        <a class="logo navbar-button" href="http://localhost:62955/" title="Ko-Da-Wa-Ri">
+        <a class="logo navbar-button" href="http://localhost:1313/" title="Ko-Da-Wa-Ri">
           <span>Ko-Da-Wa-Ri</span>
         </a>
       </div>
@@ -176,7 +176,58 @@
       
       <article class="post">
         <h3 class="title">
-          <a href="http://localhost:62955/posts/2024-09-27-00-37-47-hugo%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E3%81%82%E3%81%92%E3%81%A6%E3%81%BF%E3%81%9F/" title="Hugoのバージョンをあげてみた">Hugoのバージョンをあげてみた</a>
+          <a href="http://localhost:1313/posts/2025-01-23-20-42-57-homebrew%E3%81%AA%E3%81%A9%E4%B8%80%E5%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89shell%E9%96%A2%E6%95%B0/" title="HomeBrewなど一式アップグレードshell関数">HomeBrewなど一式アップグレードshell関数</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><p>「~/.zshrc」にこんな感じで関数を作ってます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="k">function</span> brewupgrade<span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;Homebrewを更新しています...&#34;</span>
+</span></span><span class="line"><span class="cl">    brew update <span class="o">&amp;&amp;</span> brew upgrade <span class="o">&amp;&amp;</span> brew cleanup <span class="o">&amp;&amp;</span> brew autoremove
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;GUIアプリケーションも更新しています...&#34;</span>
+</span></span><span class="line"><span class="cl">    brew upgrade --cask --greedy
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;Homebrewの更新が完了しました！&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;app を更新しています...&#34;</span>
+</span></span><span class="line"><span class="cl">    mas upgrade
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;app の更新が完了しました！&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;brew doctor&#34;</span>
+</span></span><span class="line"><span class="cl">    brew doctor
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>実行方法は、</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brewupgrade
+</span></span></code></pre></div><p>で簡単に実行できます。</p></p>
+            
+              <span class="hellip">&hellip;</span>
+            
+          </div>
+          <a class="readmore" href="http://localhost:1313/posts/2025-01-23-20-42-57-homebrew%E3%81%AA%E3%81%A9%E4%B8%80%E5%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89shell%E9%96%A2%E6%95%B0/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2025-01-23T20:42:57&#43;0900" class="date">January 23, 2025</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://localhost:1313/posts/2025-01-03-11-17-19-%E6%98%8E%E3%81%91%E3%81%BE%E3%81%97%E3%81%A6%E3%81%8A%E3%82%81%E3%81%A7%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99/" title="明けましておめでとうございます">明けましておめでとうございます</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><p>明けましておめでとうございます。hugoがうまく動作しなくて、しばらく放置してましたが、再開します。</p></p>
+            
+          </div>
+          <a class="readmore" href="http://localhost:1313/posts/2025-01-03-11-17-19-%E6%98%8E%E3%81%91%E3%81%BE%E3%81%97%E3%81%A6%E3%81%8A%E3%82%81%E3%81%A7%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2025-01-03T11:17:19&#43;0900" class="date">January 03, 2025</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://localhost:1313/posts/2024-09-27-00-37-47-hugo%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E3%81%82%E3%81%92%E3%81%A6%E3%81%BF%E3%81%9F/" title="Hugoのバージョンをあげてみた">Hugoのバージョンをあげてみた</a>
         </h3>
         
           <div class="content summary">
@@ -191,7 +242,7 @@
 <p>Build and deployment</p></p>
             
           </div>
-          <a class="readmore" href="http://localhost:62955/posts/2024-09-27-00-37-47-hugo%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E3%81%82%E3%81%92%E3%81%A6%E3%81%BF%E3%81%9F/" aria-label="READ MORE">READ MORE</a>
+          <a class="readmore" href="http://localhost:1313/posts/2024-09-27-00-37-47-hugo%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E3%81%82%E3%81%92%E3%81%A6%E3%81%BF%E3%81%9F/" aria-label="READ MORE">READ MORE</a>
         
         <div class="date float-right">
           
@@ -201,7 +252,7 @@
       
       <article class="post">
         <h3 class="title">
-          <a href="http://localhost:62955/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/" title="ITerm2で起動時にTip of the Dayを出さない">ITerm2で起動時にTip of the Dayを出さない</a>
+          <a href="http://localhost:1313/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/" title="ITerm2で起動時にTip of the Dayを出さない">ITerm2で起動時にTip of the Dayを出さない</a>
         </h3>
         
           <div class="content summary">
@@ -212,7 +263,7 @@
               <span class="hellip">&hellip;</span>
             
           </div>
-          <a class="readmore" href="http://localhost:62955/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/" aria-label="READ MORE">READ MORE</a>
+          <a class="readmore" href="http://localhost:1313/posts/2024-09-26-19-38-11-iterm2%E3%81%A7%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%ABtip-of-the-day%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84/" aria-label="READ MORE">READ MORE</a>
         
         <div class="date float-right">
           
@@ -222,7 +273,7 @@
       
       <article class="post">
         <h3 class="title">
-          <a href="http://localhost:62955/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/" title="iPhone等のアイコンを作る">iPhone等のアイコンを作る</a>
+          <a href="http://localhost:1313/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/" title="iPhone等のアイコンを作る">iPhone等のアイコンを作る</a>
         </h3>
         
           <div class="content summary">
@@ -248,64 +299,11 @@
 </span></span></code></pre></div></p>
             
           </div>
-          <a class="readmore" href="http://localhost:62955/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/" aria-label="READ MORE">READ MORE</a>
+          <a class="readmore" href="http://localhost:1313/posts/2024-05-21-00-08-05-iphone%E7%AD%89%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%82%92%E4%BD%9C%E3%82%8B/" aria-label="READ MORE">READ MORE</a>
         
         <div class="date float-right">
           
           <time datetime="2024-05-21T00:08:05&#43;0900" class="date">May 21, 2024</time>
-        </div>
-      </article>
-      
-      <article class="post">
-        <h3 class="title">
-          <a href="http://localhost:62955/posts/2024-05-16-08-15-33-dispatch/" title="Dispatch">Dispatch</a>
-        </h3>
-        
-          <div class="content summary">
-            <p><pre tabindex="0"><code class="language-objective_c" data-lang="objective_c">dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    // バックグランドでAPIなどを実行
-});
-
-dispatch_async(dispatch_get_main_queue(), ^{
-    // メインスレッドで処理をしたい内容、UIを変更など。
-});
-
-
-dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL), ^{
-    // 同期処理
-});
-</code></pre></p>
-            
-          </div>
-          <a class="readmore" href="http://localhost:62955/posts/2024-05-16-08-15-33-dispatch/" aria-label="READ MORE">READ MORE</a>
-        
-        <div class="date float-right">
-          
-          <time datetime="2024-05-16T08:15:34&#43;0900" class="date">May 16, 2024</time>
-        </div>
-      </article>
-      
-      <article class="post">
-        <h3 class="title">
-          <a href="http://localhost:62955/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/" title="遅延処理">遅延処理</a>
-        </h3>
-        
-          <div class="content summary">
-            <p><pre tabindex="0"><code class="language-objective_c" data-lang="objective_c">dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-    // 処理内容
-});
-</code></pre><pre tabindex="0"><code class="language-objective_c" data-lang="objective_c"> - (void)doAfterDelay{
-   // 処理内容
- }
- [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];
-</code></pre></p>
-            
-          </div>
-          <a class="readmore" href="http://localhost:62955/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/" aria-label="READ MORE">READ MORE</a>
-        
-        <div class="date float-right">
-          
-          <time datetime="2024-05-16T07:55:58&#43;0900" class="date">May 16, 2024</time>
         </div>
       </article>
       
@@ -461,7 +459,7 @@ dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL
       </li>
       
       <li>
-          <a class="nav-link navbar-button" href="http://localhost:62955/index.xml" type="application/rss&#43;xml">RSS</a>
+          <a class="nav-link navbar-button" href="http://localhost:1313/index.xml" type="application/rss&#43;xml">RSS</a>
         </li>
       <li>
         <a
@@ -488,7 +486,7 @@ dispatch_sync(dispatch_queue_create(&#34;test_sample&#34;, DISPATCH_QUEUE_SERIAL
 </script>
 
 
-<script defer src="http://localhost:62955/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
+<script defer src="http://localhost:1313/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
 
 
 

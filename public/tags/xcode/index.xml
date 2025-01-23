@@ -7,33 +7,33 @@
 >
   <channel>
     <title>Xcode on Ko-Da-Wa-Ri</title>
-    <link>http://localhost:62955/tags/xcode/</link>
+    <link>http://localhost:1313/tags/xcode/</link>
     <description>Recent content in Xcode on Ko-Da-Wa-Ri</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 16 May 2024 08:15:34 +0900</lastBuildDate>
-    <atom:link href="http://localhost:62955/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dispatch</title>
-      <link>http://localhost:62955/posts/2024-05-16-08-15-33-dispatch/</link>
+      <link>http://localhost:1313/posts/2024-05-16-08-15-33-dispatch/</link>
       <pubDate>Thu, 16 May 2024 08:15:34 +0900</pubDate>
-      <guid>http://localhost:62955/posts/2024-05-16-08-15-33-dispatch/</guid>
+      <guid>http://localhost:1313/posts/2024-05-16-08-15-33-dispatch/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-objective_c&#34; data-lang=&#34;objective_c&#34;&gt;dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{&#xA;    // バックグランドでAPIなどを実行&#xA;});&#xA;&#xA;dispatch_async(dispatch_get_main_queue(), ^{&#xA;    // メインスレッドで処理をしたい内容、UIを変更など。&#xA;});&#xA;&#xA;&#xA;dispatch_sync(dispatch_queue_create(&amp;#34;test_sample&amp;#34;, DISPATCH_QUEUE_SERIAL), ^{&#xA;    // 同期処理&#xA;});&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>遅延処理</title>
-      <link>http://localhost:62955/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</link>
+      <link>http://localhost:1313/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</link>
       <pubDate>Thu, 16 May 2024 07:55:58 +0900</pubDate>
-      <guid>http://localhost:62955/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</guid>
+      <guid>http://localhost:1313/posts/2024-05-16-07-55-58-%E9%81%85%E5%BB%B6%E5%87%A6%E7%90%86/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-objective_c&#34; data-lang=&#34;objective_c&#34;&gt;dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{&#xA;    // 処理内容&#xA;});&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-objective_c&#34; data-lang=&#34;objective_c&#34;&gt; - (void)doAfterDelay{&#xA;   // 処理内容&#xA; }&#xA; [self performSelector:@selector(doAfterDelay) withObject:nil afterDelay:1];&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>xcodeインストールのxcodebuildの確認でエラーがでたときの対処法</title>
-      <link>http://localhost:62955/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</link>
+      <link>http://localhost:1313/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</link>
       <pubDate>Thu, 04 Aug 2022 00:29:09 +0900</pubDate>
-      <guid>http://localhost:62955/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</guid>
+      <guid>http://localhost:1313/posts/xcode%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AExcodebuild%E3%81%AE%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E3%81%A7%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/</guid>
       <description>&lt;p&gt;こう言うのがでた場合。。。。。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ xcodebuild -version&#xA;error: tool &amp;#39;xcodebuild&amp;#39; requires Xcode, but active developer directory &amp;#39;/Library/Developer/CommandLineTools&amp;#39; is a command line tools instance&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;これたたいてみたら、、、、、&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;なおった。。。。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ xcodebuild -version&#xA;Xcode 13.4.1&#xA;Build version 13F100&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>

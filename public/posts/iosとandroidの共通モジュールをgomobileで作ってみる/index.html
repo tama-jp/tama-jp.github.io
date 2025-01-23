@@ -11,7 +11,7 @@
   
 
 
-<head lang="ja"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=62955&amp;path=livereload" data-no-instant defer></script>
+<head lang="ja"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="HandheldFriendly" content="True" />
@@ -28,7 +28,7 @@ Unity、Xamarin、Flutter、gomobile等いろいろあります。
   <meta name="author" content="tama-tan">
   <meta name="keywords" content="golang, gomobile">
   <title>iOSとAndroidの共通モジュールをgomobileで作ってみる | Ko-Da-Wa-Ri</title>
-  <link rel="canonical" href="http://localhost:62955/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/" />
+  <link rel="canonical" href="http://localhost:1313/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/" />
   
 
   
@@ -43,7 +43,7 @@ Unity、Xamarin、Flutter、gomobile等いろいろあります。
   <meta property="og:title" content="iOSとAndroidの共通モジュールをgomobileで作ってみる" />
   <meta property="og:site_name" content="Ko-Da-Wa-Ri" />
   <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:url" content="http://localhost:62955/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/" />
+  <meta property="og:url" content="http://localhost:1313/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/" />
   <meta property="og:locale" content="ja" />
 
   
@@ -66,11 +66,11 @@ Unity、Xamarin、Flutter、gomobile等いろいろあります。
 Android と iOSを開発をしていると共通モジュールを作るのがめんどくさいときがありませんか？
 Unity、Xamarin、Flutter、gomobile等いろいろあります。
 でも、全てをひとつのモジュールで作ろうと思うと大変です。" />
-  <meta name="twitter:domain" content="http://localhost:62955/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/" />
+  <meta name="twitter:domain" content="http://localhost:1313/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/" />
 
   
   
-    <link rel="icon" href="http://localhost:62955/favicon.ico">
+    <link rel="icon" href="http://localhost:1313/favicon.ico">
   
   
   
@@ -86,7 +86,7 @@ Unity、Xamarin、Flutter、gomobile等いろいろあります。
   
 
   
-    <link rel="stylesheet" href="http://localhost:62955/style.css" rel="preload stylesheet" as="style"/>
+    <link rel="stylesheet" href="http://localhost:1313/style.css" rel="preload stylesheet" as="style"/>
   
 
   
@@ -117,7 +117,7 @@ Unity、Xamarin、Flutter、gomobile等いろいろあります。
 
 </button>
       <div class="navbar-brand">
-        <a class="logo navbar-button" href="http://localhost:62955/" title="Ko-Da-Wa-Ri">
+        <a class="logo navbar-button" href="http://localhost:1313/" title="Ko-Da-Wa-Ri">
           <span>Ko-Da-Wa-Ri</span>
         </a>
       </div>
@@ -187,17 +187,17 @@ Unity、Xamarin、Flutter、gomobile等いろいろあります。
   
 
 <li >
-  <a href="http://localhost:62955/">Home</a>
+  <a href="http://localhost:1313/">Home</a>
 </li>
 
 
 <li >
-  <a href="http://localhost:62955/posts/">Posts</a>
+  <a href="http://localhost:1313/posts/">Posts</a>
 </li>
 
 
 <li class="active">
-  <a href="http://localhost:62955/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/">iOSとAndroidの共通モジュールをgomobileで作ってみる</a>
+  <a href="http://localhost:1313/posts/ios%E3%81%A8android%E3%81%AE%E5%85%B1%E9%80%9A%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92gomobile%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/">iOSとAndroidの共通モジュールをgomobileで作ってみる</a>
 </li>
 
 </ol>
@@ -576,9 +576,9 @@ Published At</span><time>2022-07-05 12:23 JST</time>
 Tagged with</span>
         <ul class="tags">
         
-          <li class="hashed-tag"><a href="http://localhost:62955/tags/golang">golang</a></li>
+          <li class="hashed-tag"><a href="http://localhost:1313/tags/golang">golang</a></li>
         
-          <li class="hashed-tag"><a href="http://localhost:62955/tags/gomobile">gomobile</a></li>
+          <li class="hashed-tag"><a href="http://localhost:1313/tags/gomobile">gomobile</a></li>
         
         </ul>
       </div>
@@ -614,7 +614,7 @@ Share with</span>
           title="share to reddit"
           rel="noopener noreferrer"
           aria-label="share iOSとAndroidの共通モジュールをgomobileで作ってみる on reddit"
-          href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a62955%2fposts%2fios%25E3%2581%25A8android%25E3%2581%25AE%25E5%2585%25B1%25E9%2580%259A%25E3%2583%25A2%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592gomobile%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2f&title=iOS%e3%81%a8Android%e3%81%ae%e5%85%b1%e9%80%9a%e3%83%a2%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e3%82%92gomobile%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b">
+          href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fios%25E3%2581%25A8android%25E3%2581%25AE%25E5%2585%25B1%25E9%2580%259A%25E3%2583%25A2%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592gomobile%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2f&title=iOS%e3%81%a8Android%e3%81%ae%e5%85%b1%e9%80%9a%e3%83%a2%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e3%82%92gomobile%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b">
           
 
 
@@ -640,7 +640,7 @@ Share with</span>
           title="share to twitter"
           rel="noopener noreferrer"
           aria-label="share iOSとAndroidの共通モジュールをgomobileで作ってみる on twitter"
-          href="https://twitter.com/intent/tweet/?text=iOS%e3%81%a8Android%e3%81%ae%e5%85%b1%e9%80%9a%e3%83%a2%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e3%82%92gomobile%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b&amp;url=http%3a%2f%2flocalhost%3a62955%2fposts%2fios%25E3%2581%25A8android%25E3%2581%25AE%25E5%2585%25B1%25E9%2580%259A%25E3%2583%25A2%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592gomobile%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2f&amp;hashtags=golang%2cgomobile">
+          href="https://twitter.com/intent/tweet/?text=iOS%e3%81%a8Android%e3%81%ae%e5%85%b1%e9%80%9a%e3%83%a2%e3%82%b8%e3%83%a5%e3%83%bc%e3%83%ab%e3%82%92gomobile%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%82%8b&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fios%25E3%2581%25A8android%25E3%2581%25AE%25E5%2585%25B1%25E9%2580%259A%25E3%2583%25A2%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592gomobile%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2f&amp;hashtags=golang%2cgomobile">
           
 
 
@@ -666,7 +666,7 @@ Share with</span>
           title="share to facebook"
           rel="noopener noreferrer"
           aria-label="share iOSとAndroidの共通モジュールをgomobileで作ってみる on facebook"
-          href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a62955%2fposts%2fios%25E3%2581%25A8android%25E3%2581%25AE%25E5%2585%25B1%25E9%2580%259A%25E3%2583%25A2%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592gomobile%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2f">
+          href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fios%25E3%2581%25A8android%25E3%2581%25AE%25E5%2585%25B1%25E9%2580%259A%25E3%2583%25A2%25E3%2582%25B8%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592gomobile%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2f">
           
 
 
@@ -739,7 +739,7 @@ Share with</span>
 </script>
 
 
-<script defer src="http://localhost:62955/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
+<script defer src="http://localhost:1313/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
 
 
 
