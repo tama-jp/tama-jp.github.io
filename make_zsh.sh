@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/bin/zsh
 
 # 現在時刻を取得
 current_time=$(date '+%Y-%m-%d-%H-%M-%S')
+
 # タイトルを引数から取得
-if [ -z "$1" ]; then
+if [[ -z "$1" ]]; then
   echo "Usage: $0 <title>"
   exit 1
 fi
@@ -19,10 +20,8 @@ cat <<EOF > "$filename"
 ---
 title: "$1"
 archives: ["$(date '+%Y/%m')"]
-date: "$(date '+%Y-%m-%dT%H:%M:%S%z')"
+date: "$(date '+%Y-%m-%dT%H:%M:%S%z')"]
 slug: ""
-# categories: ["技術"]
-# tags: ["golang","Objective-C","Xcode", "hugo","gorm","HomeBrew"]
 categories: ["技術"]
 tags: [ "hugo" ]
 description: ""
@@ -30,7 +29,6 @@ image: ""
 author: "tama-tan"
 draft: false
 ---
-
 
 EOF
 

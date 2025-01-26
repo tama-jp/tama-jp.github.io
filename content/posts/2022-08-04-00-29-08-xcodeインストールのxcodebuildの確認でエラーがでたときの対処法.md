@@ -8,6 +8,7 @@ description: ""
 image: ""
 author: "tama-tan"
 draft: false
+archives: ["2022/08"]
 ---
 
 こう言うのがでた場合。。。。。

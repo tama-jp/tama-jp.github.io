@@ -1,0 +1,39 @@
+name: PlantUML to Image and Artifact
+
+on:
+  workflow_call:
+
+env:
+  PLANT_UML_PATH: content/plantuml
+  IMGES_PATH: content/images
+  ARTIFACT: artifact
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  # Generate plantuml diagrams job
+  generate_puml_diagrams:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate PlantUML Diagrams
+        uses: holowinski/plantuml-github-action@main
+        with:
+          args: -v -tpng  ${PLANT_UML_PATH}/*.puml
+      - name: Create Destination Folder
+        run: mkdir -p ${ARTIFACT}  # フォルダを作成
+      - name: Copy Files
+        run: cp ${PLANT_UML_PATH}/*.png ${ARTIFACT}/  # ファイルをコピー
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: plant-uml-image
+          path: |
+            ${{ github.workspace }}/artifact
+          if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`

@@ -8,6 +8,7 @@ description: ""
 image: ""
 author: "tama-tan"
 draft: true
+archives: ["2022/07"]
 ---
 
 まだうごかない

@@ -8,6 +8,7 @@ description: ""
 image: ""
 author: "tama-tan"
 draft: false
+archives: ["2022/07"]
 ---
 
 パパッとコマンドなどだけですが、こんな感じで。。。。。。

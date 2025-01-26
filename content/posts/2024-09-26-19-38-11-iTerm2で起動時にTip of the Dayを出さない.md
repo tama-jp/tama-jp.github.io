@@ -10,6 +10,7 @@ description: ""
 image: ""
 author: "tama-tan"
 draft: false
+archives: ["2024/09"]
 ---
 
 iTerm2で起動時に左上に表示される「Tip of the Day（今日のTip）」を非表示にする方法
